@@ -2,6 +2,8 @@
 
 original theme: [https://github.com/shenoybr/hugo-goa](https://github.com/shenoybr/hugo-goa)
 
+Eventually want to connect to [forestry](https://forestry.io/docs/welcome/).
+
 ## Misc
 
 Link for emoji cheat sheet in Hugo [cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/).

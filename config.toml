@@ -5,8 +5,8 @@ title = "Kevin Quinn"
 # [markup.goldmark.renderer]
 #     unsafe = true # Allow us to use HTML tags
 
-baseURL = "https://kevinquinn.fun"
-baseurl = "https://kevinquinn.fun"
+# baseurl = "https://kevinquinn.fun"
+baseurl = "https://kevinquinn.netlify.app"
 builddrafts = false
 canonifyurls = false
 
