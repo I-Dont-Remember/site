@@ -40,10 +40,6 @@ html
     min-height: 100%;
     margin: 0;
 }
-li
-{
-    text-align: left;
-}
 .author
 {
     color: #444;
@@ -92,7 +88,7 @@ div.content
 {
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    color: #8b8b8b;
+    color: #bbb;
 }
 .error
 {
@@ -104,7 +100,7 @@ div.content
 {
     font-size: 80px;
 
-    color: #8b8b8b;
+    color: #bbb;
 }
 .error p
 {
@@ -125,7 +121,7 @@ div.content
 {
     margin-top: 10px;
 
-    color: #8b8b8b;
+    color: #bbb;
 }
 .header
 {
@@ -201,7 +197,7 @@ h3.intro
     font-size: 12px;
     font-weight: 200;
 
-    color: #8b8b8b;
+    color: #bbb;
 }
 a.meta
 {
@@ -213,10 +209,10 @@ h6.meta
     font-size: 12px;
     font-weight: 200;
 
-    color: #8b8b8b;
+    color: #bbb;
 }
 section.meta {
-    margin-top:
+    margin-top: 
 }
 .powered
 {
@@ -258,9 +254,4 @@ header.title
 
         margin-top: 30px;
     }
-}
-pre > code {
-    white-space: pre;
-    word-wrap: initial;
-    word-break: initial;
 }

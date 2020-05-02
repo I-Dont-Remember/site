@@ -29,8 +29,8 @@ enableEmoji= true
 author = "Kevin Quinn"
 intro = "Software Engineer"
 description = """
-### Currently **@CapitalOne**
-\n##### Previous: *@PropellerHealth*,  *@ExtremeEngineeringSolutions*.
+### Currently **@Capital One**
+\n##### Previous: *@Propeller Health*,  *@Extreme Engineering Solutions*.
 \n\n##### In a Nutshell: recently learned you only need one space before a new sentence.
 \n###### Spirit emoji:
 \n![Man Facepalming](/img/man-facepalming.png)
@@ -40,12 +40,12 @@ dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
 [params.meta]
-description = "Simple minimalist theme"
-keywords = "minimalist,blog,goa,hugo,developer"
+description = "Kevin Quinn's thoughts"
+keywords = "minimalist,blog,hugo,developer"
 
-## Social Accounts
+## Social Accounts (order is not same here as on page)
 [params.social]
-# TODO: add AngelList
+angellist = "i-dont-remember"
 github = "I-Dont-Remember"
 # instagram = "<username>"
 # xing = "<username>"
@@ -97,7 +97,12 @@ displayrssicon = false
     identifier = "blog"
     url = "/blog/"
 [[menu.main]]
+    name = "projects"
+    identifier = "projects"
+    weight = 200
+    url = "/projects/"
+[[menu.main]]
     name = "about"
     identifier = "about"
-    weight = 200
+    weight = 300
     url = "/about/"
