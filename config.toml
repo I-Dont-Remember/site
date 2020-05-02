@@ -1,0 +1,103 @@
+languageCode = "en-us"
+title = "Kevin Quinn"
+
+# TODO: needs work to get it not broken
+# [markup.goldmark.renderer]
+#     unsafe = true # Allow us to use HTML tags
+
+baseURL = "https://kevinquinn.fun"
+baseurl = "https://kevinquinn.fun"
+builddrafts = false
+canonifyurls = false
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Kevin Quinn"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+# disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+# googleAnalytics = "XYZ"
+enableRobotsTXT = true
+enableEmoji= true
+
+## Site Settings
+[params]
+author = "Kevin Quinn"
+intro = "Software Engineer"
+description = """
+### Currently **@CapitalOne**
+\n##### Previous: *@PropellerHealth*,  *@ExtremeEngineeringSolutions*.
+\n\n##### In a Nutshell: recently learned you only need one space before a new sentence.
+\n###### Spirit emoji:
+\n![Man Facepalming](/img/man-facepalming.png)
+"""
+authorimage = "kevin-portrait.jpeg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+# TODO: add AngelList
+github = "I-Dont-Remember"
+# instagram = "<username>"
+# xing = "<username>"
+linkedin = "quinnkevinp"
+# twitter = "<username>"
+# facebook = "<username>"
+# google = "<username>"
+# googlescholar = "<account_id>"
+stackoverflow = "7098233/i-dont-remember"
+# lastfm = "<username>"
+goodreads = "user/show/98626391-k"
+# gitlab = "<username>"
+# bitbucket = "<username>"
+# fivehundredpx = "<username>"
+# flickr = "<username>"
+# foursquare = "<username>"
+# hackernews = "<username>"
+# kickstarter = "<username>"
+# patreon = "<username>"
+# pintrest = "<username>"
+# steam = "<username>"
+# reddit = "<username>"
+# snapchat = "<username>"
+# youtube = "<channelid>"
+# keybase = "<username>"
+# twitch = "<username>"
+# soundcloud = "<username>"
+# tumblr = "<username>"
+# strava = "<username>"
+# skype = "<username>"
+# telegram = "<username>"
+# whatsapp = "<username>"
+email = "i_dont_remember@zoho.com"
+# pgp = "<key_fingerprint>"
+
+## Extras
+[params.extra]
+copyright = "© 2020. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+poweredby = true
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = false
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
