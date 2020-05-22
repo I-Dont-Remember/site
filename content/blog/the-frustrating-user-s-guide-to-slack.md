@@ -1,7 +1,6 @@
 +++
 categories = []
 date = 2020-05-21T05:00:00Z
-draft = true
 tags = ["slack"]
 title = "The Frustrating User's Guide to Slack"
 
