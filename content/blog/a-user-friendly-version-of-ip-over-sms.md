@@ -1,6 +1,6 @@
 +++
 categories = []
-date = 2020-06-27T05:00:00Z
+date = 2020-06-26T05:00:00Z
 tags = ["SMS"]
 title = "A user-friendly version of IP over SMS"
 
