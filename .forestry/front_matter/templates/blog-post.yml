@@ -18,3 +18,5 @@ fields:
   default: []
   label: tags
   description: page tags
+pages:
+- content/blog/the-ideal-life-gap.md
