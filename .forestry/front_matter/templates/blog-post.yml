@@ -18,5 +18,22 @@ fields:
   default: []
   label: tags
   description: page tags
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: description
+  description: Description used for Twitter cards/ Open Graph used in other social
+    media.
+- name: images
+  type: image_gallery
+  config: {}
+  label: images
+  description: Images section used for Twitter Card/Open Graph <a href="https://gohugo.io/templates/internal/#configure-open-graph"
+    title="https://gohugo.io/templates/internal/#configure-open-graph" target="_blank">https://gohugo.io/templates/internal/#configure-open-graph</a>
 pages:
 - content/blog/the-ideal-life-gap.md
