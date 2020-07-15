@@ -18,5 +18,3 @@ fields:
   default: []
   label: tags
   description: page tags
-pages:
-- content/blog/a-user-friendly-version-of-ip-over-sms.md
