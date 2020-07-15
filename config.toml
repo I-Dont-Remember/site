@@ -40,7 +40,7 @@ dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
 [params.meta]
-description = "Kevin Quinn's thoughts"
+description = "Kevin's ramblings"
 keywords = "minimalist,blog,hugo,developer"
 
 ## Social Accounts (order is not same here as on page)
