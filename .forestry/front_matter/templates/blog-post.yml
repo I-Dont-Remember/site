@@ -28,7 +28,9 @@ fields:
       format: markdown
   label: description
   description: Description used for Twitter cards/ Open Graph used in other social
-    media.
+    media. <a href="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
+    title="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
+    target="_blank">https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview</a>
 - name: images
   type: image_gallery
   config: {}
