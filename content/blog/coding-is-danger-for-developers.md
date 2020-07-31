@@ -5,7 +5,7 @@ description = ""
 draft = true
 images = []
 tags = ["software-development"]
-title = "Coding is danger for developers"
+title = "Coding is Dangerous for Developers"
 
 +++
 Coding is a tool, but there is so much depth within it it often feels like an art form. There are so many ways to approach the same problem with different frameworks, languages, or architectures. The end product could be the same but look totally different under the hood. This is the underlying reason coding is so dangerous for developers. With so much freedom, we can lose sight of the original goal: solving a problem.
