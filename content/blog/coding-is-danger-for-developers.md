@@ -2,7 +2,6 @@
 categories = []
 date = 2020-07-30T05:00:00Z
 description = ""
-draft = true
 images = []
 tags = ["software-development"]
 title = "Coding is Dangerous for Developers"
