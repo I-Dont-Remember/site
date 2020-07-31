@@ -38,4 +38,5 @@ fields:
   description: Images section used for Twitter Card/Open Graph <a href="https://gohugo.io/templates/internal/#configure-open-graph"
     title="https://gohugo.io/templates/internal/#configure-open-graph" target="_blank">https://gohugo.io/templates/internal/#configure-open-graph</a>
 pages:
+- content/blog/coding-is-danger-for-developers.md
 - content/blog/the-ideal-life-gap.md
