@@ -9,7 +9,7 @@ title = "Fixing the major flaw of Apple Screen Time"
 +++
 We've all done it. You're scrolling through your phone, long past the _"just a second"_ that you told yourself, when it hits you. Time Limit.
 
-![Apple Screen Time Time Limit Notification](/uploads/time-limit.png "Time Limit!")
+![Apple Screen Time Time Limit Notification](/uploads/time-limit.png#center "Time Limit!")
 
 With hardly a thought you click **'Ignore limit for Today'**, like so many times before, and continue on long past the aspirational limits you set for yourself.
 
@@ -25,8 +25,8 @@ The problem is how easy it is to click through the notification and continue scr
 
 ## The Solution
 
-The idea is simple and would require minimal change to the app. The notification would still pop as expected at your time limit, but upon clicking the **'Ignore Limit for Today'** button, you would be prompted to complete a small task. The goal is to test if you truly want to proceed or if you're going through the motions. Options abound, but a few examples would be a math problem, a short puzzle, or any other activity that requires you to concentrate. It doesn't matter if it can be solved with a calculator or some other "cheat" method, it only needs to jolt you enough to ask _"wait, wasn't I supposed to stop scrolling?"_.
+The idea is simple and would require minimal change to the app. The notification would still pop as expected at your time limit, but upon clicking the **'Ignore Limit for Today'** button, you would be prompted to complete a small task. The goal is to test if you truly want to proceed or if you're going through the motions. The task could be a math problem, a short puzzle, or any other activity that requires you to concentrate. It doesn't matter if it can be solved with a calculator or some other "cheat" method, it only needs to jolt you enough to ask _"wait, wasn't I supposed to stop scrolling?"_.
 
-![Screen Time Time Limit Notification with Math Problem](/uploads/ignore-limit-upgraded.png "A little math goes a long way")
+![Screen Time Time Limit Notification with Math Problem](/uploads/ignore-limit-upgraded.png#center "A little math goes a long way")
 
 App developers that want to build user-friendly tools that augment the humans they interact with should take this example to heart. Small tweaks like this abound in the software we use every day, and with very minimal amounts of development effort you can vastly improve the utility of products you create. If you know someone building software for humans, feel free to share this with them and have them reflect on what they could change for the betterment of their users.
