@@ -29,4 +29,4 @@ The idea is simple and would require minimal change to the app. The notification
 
 ![Screen Time Time Limit Notification with Math Problem](/uploads/ignore-limit-upgraded.png#center "A little math goes a long way")
 
-App developers that want to build user-friendly tools that augment the humans they interact with should take this example to heart. Small tweaks like this abound in the software we use every day, and with very minimal amounts of development effort you can vastly improve the utility of products you create. If you know someone building software for humans, feel free to share this with them and have them reflect on what they could change for the betterment of their users.
+App developers that want to build user-friendly tools that augment the humans they interact with should take this example to heart. Opportunities for small tweaks abound in the software we use every day, and with very minimal amounts of development effort you can vastly improve the utility of products you create. If you know someone building software for humans, feel free to share this with them and have them reflect on what they could change for the betterment of their users.

@@ -27,13 +27,12 @@ enableEmoji= true
 ## Site Settings
 [params]
 author = "Kevin Quinn"
-intro = "Software Engineer"
+intro = "Software Engineer & Bad Rememberer"
 description = """
 ### Currently **@Capital One**
-\n##### Previous: *@Propeller Health*,  *@Extreme Engineering Solutions*.
-\n\n##### In a Nutshell: recently learned you only need one space before a new sentence.
-\n###### Spirit emoji:
-\n `¯\\_(ツ)_/¯`
+\n#### Previous: *@Propeller Health*,  *@Extreme Engineering Solutions*.
+\n\n#### Spirit emoji:  `¯\\_(ツ)_/¯`
+\n##### Follow my writing by subscribing at [TinyLetter.com/kevin-quinn](https://tinyletter.com/kevin-quinn)
 """
 authorimage = "kevin-portrait.jpeg"
 dateformat = "Jan 2, 2006"
