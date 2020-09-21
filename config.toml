@@ -87,7 +87,7 @@ copyright = "© 2020. Kevin Quinn. [Some Rights Reserved](http://creativecommons
 poweredby = true
 highlightjs = true
 socialmarkup = true
-toc = true
+toc = false
 displayrssicon = false
 
 ## Main Menu
