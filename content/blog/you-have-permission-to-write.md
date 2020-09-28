@@ -13,7 +13,7 @@ There was also the stream of self-doubt so many face that crushes new ideas befo
 
 "Who would ever listen to a guy that runs into stationary objects on the regular?"
 
-What helped me make the switch was realizing that it's not up to you. It's not up to you to decide what people want to read or what information they may find helpful. As inherently selfish humans, we often struggle to remember there are lenses other than our own. It's hard to stay cognizant of the fact there might be people who are striving to get where your standing, and you have knowledge that could help. Your voice may be the one in a sea of options that makes a topic click for people. You may have a different angle on a story than any current work. You will never know until you've published.
+What helped me make the switch was realizing that **it's not up to you**. It's not up to you to decide what people want to read or what information they may find helpful. As inherently selfish humans, we often struggle to remember there are lenses other than our own. It's hard to stay cognizant of the fact there might be people who are striving to get where your standing, and you have knowledge that could help. Your voice may be the one in a sea of options that makes a topic click for people. You may have a different angle on a story than any current work. **You will never know until you've published**.
 
 I gave myself permission to write, and you can do the same. Don't self-sabotage your ideas before they ever see the light of day. It will be scary to have your thoughts roaming wild in the world, and everything won't be sunshine and butterflies.
 
