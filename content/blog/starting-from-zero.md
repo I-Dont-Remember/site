@@ -2,7 +2,6 @@
 categories = []
 date = 2020-10-30T05:00:00Z
 description = "I'm starting from zero with no audience, no businesses, no published projects or big ideas. Putting a line in the sand to look back on, no excuses."
-draft = true
 images = ["/uploads/initial-medium-earnings.png"]
 tags = []
 title = "Starting from Zero"
