@@ -8,7 +8,7 @@ tags = []
 title = "Starting from Zero"
 
 +++
-I lied. Though I said I'm starting from zero, I'm ever so slightly above zero in some of the categories mentioned in this piece. Sue me.
+_I lied. Though I said I'm starting from zero, I'm ever so slightly above zero in some of the categories mentioned in this piece. Sue me._
 
 Making my way through college and out the other side, I never took the time to notice the 9 to 5 isn't the only way to live life. I thought you went to college, learned a few snippets here and there in between cramming for tests, then you pop out a fully fledged adult! I found myself in a corporate office like I thought was my goal, so much energy was expended in college getting there, but still a I had a gnawing in my gut telling me it's not what I want out of life.
 
@@ -33,31 +33,31 @@ If you see me and I'm doing something boring, throw a rock and tell me to get up
 
 1 follower. [@maybekevinquinn](https://twitter.com/maybekevinquinn "Twitter: maybekevinquinn")
 
-![](/uploads/initial-twiter-stats.png)
+![Twitter profile page](/uploads/initial-twiter-stats.png#center)
 
 ### Medium
 
 4 pieces published, 1 follower, 167 views, 69 reads 😎. [@maybekevinquinn](https://medium.com/@maybekevinquinn "Medium: maybekevinquinn")
 
-![](/uploads/initial-medium-stats.png)
+![Medium stats page](/uploads/initial-medium-stats.png#center)
 
 ### Email List
 
 3 subscribers, 2 are friends and 1 is me 😬
 
-![](/uploads/initial-subscriber-list-cropped.png)
+![Subscribers count, 3, in Tinyletter service](/uploads/initial-subscriber-list-cropped.png#center)
 
 ### $0 from the Internet
 
 $0.52 made from doing things on the interwebs, nothing other than Medium so far.
 
-![](/uploads/initial-medium-earnings.png)
+![Medium earnings page showing 52 cents in 2 months](/uploads/initial-medium-earnings.png#center)
 
 ### Writing
 
 7, count em, 7 articles written on my personal site, [kevinquinn.fun](https://kevinquinn.fun/blog/ "Kevinquinn.fun/blog/")
 
-![](/uploads/seven-articles.png)
+![7 articles published on my site](/uploads/seven-articles.png#center)
 
 ### Misc
 
@@ -74,4 +74,4 @@ Just to keep it melodramatic, here's a quote I feel fits:
 
 > "It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat."
 >
->            - Theodore Roosevelt
+> -- _Theodore Roosevelt_
