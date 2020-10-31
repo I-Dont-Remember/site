@@ -30,13 +30,17 @@ fields:
   description: Description used for Twitter cards/ Open Graph used in other social
     media. <a href="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
     title="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
-    target="_blank">https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview</a>
+    target="_blank">https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview</a><br>*
+    Test what shows up <a href="http://debug.iframely.com/" title="http://debug.iframely.com/"
+    target="_blank">http://debug.iframely.com/</a>
 - name: images
   type: image_gallery
   config: {}
   label: images
   description: Images section used for Twitter Card/Open Graph <a href="https://gohugo.io/templates/internal/#configure-open-graph"
-    title="https://gohugo.io/templates/internal/#configure-open-graph" target="_blank">https://gohugo.io/templates/internal/#configure-open-graph</a>
+    title="https://gohugo.io/templates/internal/#configure-open-graph" target="_blank">https://gohugo.io/templates/internal/#configure-open-graph</a><br>-
+    simple images if we don't wanna come up with more <a href="https://www.mugshotbot.com/"
+    title="https://www.mugshotbot.com/" target="_blank">https://www.mugshotbot.com/</a>
 pages:
 - content/blog/365-ways-to-make-progress-towards-your-life-goals.md
 - content/blog/fixing-the-major-flaw-of-apple-screen-time.md
