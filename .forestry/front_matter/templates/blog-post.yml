@@ -32,7 +32,8 @@ fields:
     title="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
     target="_blank">https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview</a><br>*
     Test what shows up <a href="http://debug.iframely.com/" title="http://debug.iframely.com/"
-    target="_blank">http://debug.iframely.com/</a>
+    target="_blank">http://debug.iframely.com/</a><br>* <a href="https://cards-dev.twitter.com/validator"
+    title="https://cards-dev.twitter.com/validator" target="_blank">https://cards-dev.twitter.com/validator</a>
 - name: images
   type: image_gallery
   config: {}
