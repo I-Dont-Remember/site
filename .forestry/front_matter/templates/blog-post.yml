@@ -26,15 +26,20 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
+    max: 170
   label: description
-  description: Description used for Twitter cards/ Open Graph used in other social
+  description: 'Description used for Twitter cards/ Open Graph used in other social
     media. <a href="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
     title="https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview"
     target="_blank">https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview</a><br>*
     Test what shows up <a href="http://debug.iframely.com/" title="http://debug.iframely.com/"
     target="_blank">http://debug.iframely.com/</a><br>* <a href="https://cards-dev.twitter.com/validator"
     title="https://cards-dev.twitter.com/validator" target="_blank">https://cards-dev.twitter.com/validator</a><br>*
-    <a href="https://metatags.io/" title="https://metatags.io/" target="_blank">https://metatags.io/</a>
+    <a href="https://metatags.io/" title="https://metatags.io/" target="_blank">https://metatags.io/</a><br>The
+    meta description length is between <strong>120 – 158 characters</strong>. <br>FromMedium:
+    The SEO Description is used in place of your Subtitle on search engine results
+    pages. Good SEO descriptions utilize keywords, summarize the story and are between
+    140-156 characters long.'
 - name: images
   type: image_gallery
   config: {}
