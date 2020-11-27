@@ -39,7 +39,7 @@ At **Beer Money MRR**, you are making $100 every month. You have cracked the 3 d
 
 ## Show Me the Money!
 
-Ok we have some definitions locked in, now we'll go through 2 product examples: Product A at $10 and Product B at $50, again keeping the math easy. This could be a [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service "https://en.wikipedia.org/wiki/Software_as_a_service") charging monthly, an eBook, a course, paid newsletter, whatever. We're looking per month, so the specifics of what is pulling in the dough don't matter for this article. I took a couple liberties to knock off 1 sale here and there to keep it to 2 or 3 digits, because seeing those inflection points is what inspires me personally. Only 2 digits of people? I can do that.
+Ok we have some definitions locked in, now we'll go through 2 product examples: **Product A** at $10 and **Product B** at $50, again keeping the math easy. This could be a [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service "https://en.wikipedia.org/wiki/Software_as_a_service") charging monthly, an eBook, a course, paid newsletter, whatever. We're looking per month, so the specifics of what is pulling in the dough don't matter for this article. I took a couple liberties to knock off 1 sale here and there to keep it to 2 or 3 digits, because seeing those inflection points is what inspires me personally. Only 2 digits of people? I can do that.
 
 **Product A, $10:**
 
@@ -51,6 +51,8 @@ Ok we have some definitions locked in, now we'll go through 2 product examples: 
 
 **MA =** 999 people a month need to feel like your idea is worth it
 
+***
+
 **Product B, $50:**
 
 **BM =** 2 people
@@ -61,7 +63,7 @@ Ok we have some definitions locked in, now we'll go through 2 product examples: 
 
 **MA =** 200 people a month need to feel like your idea is worth it
 
-You can reach a life changing amount of money from your side project, and you need to convince less than 1,000 people that what you do/create/build is worth it. It's often thrown around that you need [1,000 true fans](https://kk.org/thetechnium/1000-true-fans/ "https://kk.org/thetechnium/1000-true-fans/"), or as the math would suggest, just 99. Out of [7.8 billion](https://www.worldometers.info/world-population/ "https://www.worldometers.info/world-population/") humans, you only need 99 in your corner to break the threshold to **Rent MRR**. It's still a large group of people, don't get me wrong. I would be terrified to give a speech to that crowd, but it's small enough you can comprehend it. To make it even easier, let's do some visualizations and connect these numbers to concrete concepts in our lives. Recognizing a connection with something you already know helps it feel achievable.
+You can reach a life changing amount of money from your side hustle, and you need to convince less than 1,000 people that what you do/create/build is worth it. It's often thrown around that you need [1,000 true fans](https://kk.org/thetechnium/1000-true-fans/ "https://kk.org/thetechnium/1000-true-fans/"), or as the math would suggest, just 99. Out of [7.8 billion](https://www.worldometers.info/world-population/ "https://www.worldometers.info/world-population/") humans, you only need 99 in your corner to break the threshold to **Rent MRR**. It's still a large group of people, don't get me wrong. I would be terrified to give a speech to that crowd, but it's small enough you can comprehend it. To make it even easier, let's do some visualizations and connect these numbers to concrete concepts in our lives. Recognizing a connection with something you already know helps it feel achievable.
 
 ### 20 People
 
