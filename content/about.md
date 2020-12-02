@@ -10,6 +10,6 @@ title = "About"
 showpagemeta = false
 +++
 
-Software engineer by day, all sorts of stuff by night. Investigating a growing interest in NoCode, Serverless, development best practices, and entrepreneurship. Forever building projects.
+Software engineer by day, all sorts of stuff by night. Investigating a growing interest in NoCode, Serverless, Security, development best practices, and entrepreneurship. Forever building projects.
 
-Currently at [Capital One](http://capitalone.com), previously worked at [Propeller Health](https://www.propellerhealth.com/) and [Extreme Engineering Solutions](https://www.xes-inc.com/)
+If you'd like to reach out for whatever reason, easiest place to reach me is through Twitter or LinkedIn.
