@@ -4,7 +4,7 @@ date = 2020-12-06T06:00:00Z
 description = "Our days are filled with little decisions, problems where it's just not worth searching for the optimal solution. Yet we waste time digging into the details, anyway."
 images = []
 tags = []
-title = "stop wasting time on the small potatoes decisions"
+title = "Stop Wasting Time on The Small Potatoes Decisions"
 
 +++
 There's no impact on your life if you pick the perfect burger at McDonald's. You're gonna eat it, then it's gone.
