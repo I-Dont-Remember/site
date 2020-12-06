@@ -2,7 +2,7 @@
 categories = []
 date = 2020-12-06T06:00:00Z
 description = "Our days are filled with little decisions, problems where it's just not worth searching for the optimal solution. Yet we waste time digging into the details, anyway."
-images = ["/uploads/mugshotbot-small-potatoes.jpeg"]
+images = ["/uploads/hai-nguyen-lszfnpvzjtw-unsplash.jpg"]
 tags = []
 title = "Stop Wasting Time on The Small Potatoes Decisions"
 
@@ -53,3 +53,5 @@ We are in luck, because the smart guys & gals over in mathematics & computer sci
 Going forward, you're still gonna make a lot of bad decisions. You'll have regrets when you look back with hindsight bias and see the right path clear as day. But if you begin filtering out the inconsequential, at least those decisions will have mattered. Put time into your goals & dreams. Don't look back at life and realize you optimized a bunch of little decisions. Great, you always chose the best burger. Put it on your tombstone.
 
 What are you more afraid of: regret & failure, or never doing anything of consequence?
+
+_Preview Image by_ [_Hai Nguyen_](https://unsplash.com/@wssb495?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) _on_ [_Unsplash_](https://unsplash.com/s/photos/potatoes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
