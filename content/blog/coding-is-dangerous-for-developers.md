@@ -3,7 +3,7 @@ categories = []
 date = 2020-07-30T05:00:00Z
 description = "Don't lose your tether to the original goal"
 images = []
-tags = ["software-development"]
+tags = ["developers"]
 title = "Coding is Dangerous for Developers"
 
 +++
