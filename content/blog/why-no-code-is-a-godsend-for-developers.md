@@ -3,7 +3,7 @@ categories = []
 date = 2020-12-10T06:00:00Z
 description = "It's so easy as a developer to dismiss the idea of learning no-code tools. After all, you know how to code, why spend time learning tools designed for those who can't?"
 images = []
-tags = ["tech"]
+tags = ["developers"]
 title = "Why No-code is a Godsend for Developers"
 
 +++
