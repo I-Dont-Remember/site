@@ -2,7 +2,7 @@
 title: Learning Ballerina
 date: 2020-05-09T23:30:10.000+00:00
 tags:
-- programming
+- software-development
 - Ballerina
 draft: true
 

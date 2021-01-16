@@ -3,6 +3,7 @@ categories = []
 date = 2020-05-21T05:00:00Z
 tags = ["slack"]
 title = "The Frustrating User's Guide to Slack"
+description = "A quick list to know you are doing everything you can to endear yourself to your teammates on Slack."
 
 +++
 The following is a collection of tips I've curated working with a few different organizations using Slack that range in size from 3 people to thousands. If you follow these tips, I can _guarantee_ you will be well known throughout your workspace. For those who are literal and think I'm serious, this is a tongue-in-cheek article. Please _please_ **PLEASE** do the exact opposite.

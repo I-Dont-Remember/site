@@ -30,6 +30,7 @@ author = "Kevin Quinn"
 intro = "Software Engineer & Bad Rememberer"
 description = """
 \n\n#### Spirit emoji:  `¯\\_(ツ)_/¯`
+\n
 """
 authorimage = "kevin-portrait.jpeg"
 dateformat = "Jan 2, 2006"
@@ -79,7 +80,7 @@ goodreads = "user/show/98626391-k"
 
 ## Extras
 [params.extra]
-copyright = "© 2020. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+copyright = "© 2021. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
 poweredby = false
 highlightjs = true
 socialmarkup = true
@@ -88,22 +89,32 @@ displayrssicon = false
 
 ## Main Menu
 [[menu.main]]
-    name = "blog"
+    name = "✍️ Blog"
     weight = 100
     identifier = "blog"
     url = "/blog/"
 [[menu.main]]
-    name = "Open Analytics"
+    name = "📋 Bucket List"
     weight = 101
-    identifier = "Open Analytics"
-    url = "https://plausible.io/kevinquinn.fun"
+    identifier = "bucket list"
+    url = "https://bucketlist.glideapp.io/"
 [[menu.main]]
-    name = "projects"
+    name = "🎧 Podcast"
+    weight = 102
+    identifier = "podcast"
+    url = "https://facadeproject.com/"
+[[menu.main]]
+    name = "👷 Projects"
     identifier = "projects"
-    weight = 200
+    weight = 103
     url = "/projects/"
 [[menu.main]]
     name = "about"
     identifier = "about"
-    weight = 300
+    weight = 104
     url = "/about/"
+[[menu.main]]
+    name = "📈 Open Analytics"
+    weight = 105
+    identifier = "open analytics"
+    url = "https://plausible.io/kevinquinn.fun"

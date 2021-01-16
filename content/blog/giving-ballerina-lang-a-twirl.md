@@ -1,7 +1,7 @@
 +++
 categories = []
 date = 2020-12-20T06:00:00Z
-description = ""
+description = "My experience learning the language by building a small package."
 images = []
 tags = ["developers", "Ballerina"]
 title = "Giving Ballerina Lang a Twirl"

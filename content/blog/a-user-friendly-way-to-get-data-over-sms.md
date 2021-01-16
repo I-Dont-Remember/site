@@ -1,7 +1,7 @@
 +++
 categories = []
 date = 2020-06-26T05:00:00Z
-tags = ["SMS"]
+tags = ["SMS", "developers"]
 title = "A User-Friendly Way to get Data over SMS"
 
 +++

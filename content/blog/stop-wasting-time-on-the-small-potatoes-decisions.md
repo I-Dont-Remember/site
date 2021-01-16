@@ -3,7 +3,7 @@ categories = []
 date = 2020-12-06T06:00:00Z
 description = "Our days are filled with little decisions, problems where it's just not worth searching for the optimal solution. Yet we waste time digging into the details, anyway."
 images = ["/uploads/hai-nguyen-lszfnpvzjtw-unsplash.jpg"]
-tags = []
+tags = ["self-help"]
 title = "Stop Wasting Time on The Small Potatoes Decisions"
 
 +++
