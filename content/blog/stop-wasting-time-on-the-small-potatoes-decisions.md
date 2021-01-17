@@ -50,6 +50,8 @@ Unfortunately, there are hairy problems in life which are not reversible and don
 
 We are in luck, because the smart guys & gals over in mathematics & computer sciences ran into this concept, a host of problems under the umbrella 'Optimal Stopping', and found the best solutions. This [excerpt from the book 'Algorithms to Live By'](https://medium.com/galleys/optimal-stopping-45c54da6d8d0) says it better than I ever could. The gist is you need to review a number of options to understand what's available, then the next one that beats all you've previously seen you should jump on. Like the cliché, you need to look before you leap, but there are diminishing returns after long enough searching. It's not always easy to apply the concept to your own life, but even awareness of the rule should help temper your inclination to search too long.
 
+_Edit: Found this great thread with 15 razors (like Occam's Razor) for making better decisions, very worth a read if you're interested in more strategies_ [_Twitter: Rules of Thumb to Simplify decisions_](https://twitter.com/george__mack/status/1350513143387189248 "Twitter: Rules of Thumb to Simplify decisions")
+
 Going forward, you're still gonna make a lot of bad decisions. You'll have regrets when you look back with hindsight bias and see the right path clear as day. But if you begin filtering out the inconsequential, at least those decisions will have mattered. Put time into your goals & dreams. Don't look back at life and realize you optimized a bunch of little decisions. Great, you always chose the best burger. Put it on your tombstone.
 
 What are you more afraid of: regret & failure, or never doing anything of consequence?
