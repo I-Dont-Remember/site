@@ -11,3 +11,5 @@ According to docs on [this theme](https://themes.gohugo.io/hugo-future-imperfect
 Link for emoji cheat sheet in Hugo [cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
 
 Reference for escaping characters [https://www.werockyourweb.com/html-escape-characters/](https://www.werockyourweb.com/html-escape-characters/).
+
+Stealing shortcodes that are incredibly handy from this repo https://learn.netlify.app/en/shortcodes/.

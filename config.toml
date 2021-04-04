@@ -23,6 +23,7 @@ theme = "hugo-goa"
 # googleAnalytics = "XYZ"
 enableRobotsTXT = true
 enableEmoji= true
+enableGitInfo = true
 
 ## Site Settings
 [params]
@@ -90,9 +91,14 @@ displayrssicon = false
 ## Main Menu
 [[menu.main]]
     name = "✍️ Blog"
-    weight = 100
+    weight = 99
     identifier = "blog"
     url = "/blog/"
+[[menu.main]]
+    name = "🧠 Open Questions"
+    weight = 100
+    identifier = "open-questions"
+    url = "/open-questions/"
 [[menu.main]]
     name = "📋 Bucket List"
     weight = 101

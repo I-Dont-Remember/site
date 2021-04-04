@@ -4,6 +4,8 @@
 
 {{ partial "menu.html" . }}
 
-{{ partial "email-form.html" . }}
+{{ if ne .Params.showpagemeta false }}
+    {{ partial "email-form.html" . }}
+{{ end }}
 
 {{ partial "footer.html" . }}

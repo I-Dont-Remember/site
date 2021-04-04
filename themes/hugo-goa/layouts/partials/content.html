@@ -27,7 +27,9 @@
     {{ end }} -->
     {{ .Content }}
     <br />
-    {{ partial "email-form.html" . }}
+    {{ if ne .Params.showpagemeta false }}
+        {{ partial "email-form.html" . }}
+    {{ end }}
   </div>
 </section>
 <section id="tag-pane" class="row meta">
