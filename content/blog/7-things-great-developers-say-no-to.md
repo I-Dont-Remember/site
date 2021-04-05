@@ -1,8 +1,8 @@
 +++
 categories = []
 date = 2021-04-05T05:00:00Z
-description = "Do you want to be more than a code monkey? "
-images = []
+description = "Do you want to be more than a code monkey? Learn to avoid blunders and become a superhero to your team. "
+images = ["/uploads/sarah-kilian-52jrtc2s_ve-unsplash.jpg"]
 tags = ["developers"]
 title = "7 Blunders Great Developers Say 'No' To"
 
@@ -24,3 +24,6 @@ If you want to be a great developer, learn to say 'No' more.
 * **No to...** excuses. Take ownership of the work you do and predict problems so you can get ahead of them. When things blow up, buckle down and find a solution instead of pointing fingers. The business' customers don't care who made it break, they just want it fixed.
 
 The great developers I've worked with understand when saying 'No' will lead to a better outcome. Software development is an expensive undertaking, so even small blunders can have a big impact. Finding ways to cut out the cruft burning through developer time makes you a more valuable member of the team. If you want to emulate the best, learn to say 'No'.
+
+
+*Photo by [Sarah Kilian]("https://unsplash.com/@rojekilian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash]("https://unsplash.com/s/photos/mistake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")*
