@@ -1,11 +1,10 @@
 +++
 categories = []
 date = 2021-04-05T05:00:00Z
-description = "Do you want to be more than a code monkey?"
-draft = true
+description = "Do you want to be more than a code monkey? "
 images = []
 tags = ["developers"]
-title = "7 Things Great Developers Say 'No' To"
+title = "7 Blunders Great Developers Say 'No' To"
 
 +++
 Do you want to be more than a [code monkey](https://softwareengineering.stackexchange.com/questions/79997/whats-wrong-with-being-a-code-monkey-or-what-is-a-code-monkey)?
@@ -24,4 +23,4 @@ If you want to be a great developer, learn to say 'No' more.
 * **No to...** shiny new frameworks & tools. The allure is strong. Trust me, I get it, I fall into the same trap constantly. If you're part of a larger organization, don't make it difficult to maintain what you built if you leave. If you're small, don't add risk to your endeavor without thinking through the trade offs being made. [Make tech choices intentionally](https://thebootstrappedfounder.com/making-tech-choices/).
 * **No to...** excuses. Take ownership of the work you do and predict problems so you can get ahead of them. When things blow up, buckle down and find a solution instead of pointing fingers. The business' customers don't care who made it break, they just want it fixed.
 
-The great developers I've worked with understand when saying 'No' will lead to a better outcome. Software development is an expensive undertaking. Finding ways to cut out the cruft burning through developer time makes you a more valuable member of the team. If you want to emulate the best, learn to say 'No'.
+The great developers I've worked with understand when saying 'No' will lead to a better outcome. Software development is an expensive undertaking, so even small blunders can have a big impact. Finding ways to cut out the cruft burning through developer time makes you a more valuable member of the team. If you want to emulate the best, learn to say 'No'.
