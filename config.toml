@@ -100,27 +100,32 @@ displayrssicon = false
     identifier = "open-questions"
     url = "/open-questions/"
 [[menu.main]]
-    name = "📋 Bucket List"
-    weight = 101
-    identifier = "bucket list"
-    url = "https://bucketlist.glideapp.io/"
-[[menu.main]]
     name = "🎧 Podcast"
-    weight = 102
+    weight = 101
     identifier = "podcast"
     url = "https://facadeproject.com/"
 [[menu.main]]
+    name = "🧑‍🍳 Recipes"
+    weight = 101
+    identifier = "recipes"
+    url = "/recipes/"
+[[menu.main]]
     name = "👷 Projects"
     identifier = "projects"
-    weight = 103
+    weight = 120
     url = "/projects/"
 [[menu.main]]
     name = "about"
     identifier = "about"
-    weight = 104
+    weight = 125
     url = "/about/"
 [[menu.main]]
+    name = "📋 Bucket List"
+    weight = 130
+    identifier = "bucket list"
+    url = "https://bucketlist.glideapp.io/"
+[[menu.main]]
     name = "📈 Open Analytics"
-    weight = 105
+    weight = 140
     identifier = "open analytics"
     url = "https://plausible.io/kevinquinn.fun"
