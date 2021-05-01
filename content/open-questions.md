@@ -21,6 +21,7 @@ The U.S. is full of places where you have row after row of houses, each with 1-2
 * Tool Libraries are a fascinating concept
 * Seen several startups which let you get paid to loan out your items
 * https://www.creatortowns.com/, though it seems mostly focused on the community aspect.
+* Peer-to-Peer renting services would be awesome solutions if they were able to take off, .e.g. [Yoodlize](https://wefunder.com/yoodlize/details),  [Fat Llama](https://fatllama.com/). There have been numerous tried, but not that really got off the ground too far.
 
 ---
 
