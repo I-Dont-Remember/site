@@ -275,3 +275,12 @@ img[src$='#floatright'] {
     float: right;
     margin: 0.7rem;
 }
+
+body {
+    line-height: 1.6em;
+
+}
+
+li{
+    margin: 0.5em 0;
+}
