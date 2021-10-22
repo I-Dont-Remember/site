@@ -116,7 +116,12 @@ displayrssicon = false
     weight = 120
     url = "/projects/"
 [[menu.main]]
-    name = "about"
+    name = "🏁 Firsts"
+    identifier = "firsts"
+    weight = 124
+    url = "/firsts/"
+[[menu.main]]
+    name = "🚶 About"
     identifier = "about"
     weight = 125
     url = "/about/"
