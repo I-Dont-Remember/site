@@ -34,7 +34,7 @@ description = """
 Firm Believer in [Murphy's Law](https://www.dictionary.com/browse/murphy-s-law)
 \n
 """
-authorimage = "kevin-portrait.jpeg"
+authorimage = "kevin-profile-photo-fall21-small.jpg" # "kevin-portrait.jpeg"
 dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
