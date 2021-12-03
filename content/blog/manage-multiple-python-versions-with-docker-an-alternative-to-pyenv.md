@@ -1,6 +1,6 @@
 +++
 categories = []
-date = ""
+date = 2021-12-03T05:00:00Z
 description = "Most devs don't need a complicated setup for Python, they just need to get running. Leverage a single Docker command to run any version in isolation."
 draft = true
 images = []
