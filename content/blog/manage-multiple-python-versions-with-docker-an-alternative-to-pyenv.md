@@ -51,7 +51,6 @@ A prerequisite to managing Python versions with containers is to have either [Do
     
     # Step 4
     # install dependencies following the directions based on your project
-    
 
 ### Explanation
 
@@ -78,7 +77,6 @@ Couple extra steps needed to get a [Pipenv](https://pipenv.pypa.io/en/latest/) p
     echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc
     . ~/.bashrc # equivalent to 'source ~/.bashrc'
     pipenv install --dev
-    
 
 ### Poetry (`poetry.lock`)
 
@@ -89,7 +87,6 @@ Check the [Poetry docs](https://python-poetry.org/docs/master/#installation) to 
     echo "export PATH=~/.local/bin:$PATH" >> ~/.bashrc
     . ~/.bashrc # equivalent to 'source ~/.bashrc'
     poetry install
-    
 
 ## FAQ
 
