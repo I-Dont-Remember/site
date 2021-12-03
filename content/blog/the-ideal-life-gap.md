@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2020-07-14T05:00:00Z
 description = "There are two versions of your life: the one you are living in & the one you dream about."
 images = ["/uploads/intro-circles_650px.jpg"]

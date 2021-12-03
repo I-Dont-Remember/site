@@ -1,5 +1,5 @@
 +++
-categories = ["about"]
+categories = []
 comments = false
 date = "2020-05-02T00:00:00-06:00"
 draft = false

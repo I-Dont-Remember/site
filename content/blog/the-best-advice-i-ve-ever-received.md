@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2021-04-19T05:00:00Z
 description = "\"If more information was the answer, then we'd all be billionaires with perfect abs.\""
 images = []

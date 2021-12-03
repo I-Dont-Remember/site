@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Software Development"]
 date = 2020-07-30T05:00:00Z
 description = "Don't lose your tether to the original goal"
 images = []

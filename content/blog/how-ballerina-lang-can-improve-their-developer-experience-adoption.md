@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Software Development"]
 date = 2020-12-20T06:00:00Z
 description = ""
 images = []

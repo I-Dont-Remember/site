@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Software Development"]
 date = 2021-04-05T05:00:00Z
 description = "Do you want to be more than a code monkey? Learn to avoid blunders and become a superhero to your team. "
 images = ["/uploads/sarah-kilian-52jrtc2s_ve-unsplash.jpg"]

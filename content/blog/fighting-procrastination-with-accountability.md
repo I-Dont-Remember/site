@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2021-02-14T06:00:00Z
 description = "Starting a project is easy. Consistently working on one after the initial energy has faded? Much more difficult."
 images = []

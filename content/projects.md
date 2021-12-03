@@ -1,5 +1,5 @@
 +++
-categories = ["projects"]
+categories = []
 comments = false
 date = 2020-05-02T06:00:00Z
 showpagemeta = false

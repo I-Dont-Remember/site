@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Writing"]
 date = 2020-09-27T05:00:00Z
 description = "Your piece may be bad.\n\nThe topic may be over done.\n\nIt may get ignored.\n\nBut for the chance your words resonate with someone, write."
 images = ["/uploads/youhavepermission-mugshot.jpeg"]

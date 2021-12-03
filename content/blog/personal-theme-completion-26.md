@@ -1,5 +1,5 @@
 +++
-categories = ["Personal Theme"]
+categories = ["Personal Development"]
 date = 2021-10-20T04:00:00Z
 description = "A personal theme for my year of 26 to guide me to a fulfilling year."
 draft = false

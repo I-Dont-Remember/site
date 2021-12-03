@@ -1,5 +1,5 @@
 +++
-categories = ["Year in Review"]
+categories = ["Personal Development"]
 date = 2021-10-20T04:00:00Z
 description = "My Year in Review for 25. Ups, downs, and sideways."
 draft = false

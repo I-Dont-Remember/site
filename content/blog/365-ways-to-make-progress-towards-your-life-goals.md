@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2020-09-01T02:00:00Z
 description = "Ask yourself, \"What did I do today that pushed me towards my long term goals?\""
 images = []

@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2020-12-20T06:00:00Z
 description = "This is a snapshot in time of the productivity system I use: what it is, where it came from, and where it might go."
 images = []
