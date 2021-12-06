@@ -2,7 +2,7 @@
 categories = ["Software Development"]
 date = 2021-12-03T05:00:00Z
 description = "Most devs don't need a complicated setup for Python, they just need to get running. Leverage a single Docker command to run any version in isolation."
-images = ["/uploads/docker-mugshotbot.jpg"]
+images = ["/uploads/docker-mugshotbot-gr.jpg"]
 tags = ["developers"]
 title = "Manage Multiple Python Versions With Docker: an Alternative to Pyenv"
 
