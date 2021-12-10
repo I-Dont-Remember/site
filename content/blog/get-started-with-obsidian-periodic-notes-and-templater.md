@@ -1,12 +1,12 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2021-12-10T05:00:00Z
 description = "Configure Obsidian for seamless daily notes by adding the Periodic Notes, Templater, and Calendar community plugins."
-draft = true
+draft = false
 images = []
 tags = ["obsidian"]
 title = "Get Started With Obsidian Periodic Notes and Templater"
-
+toc = true
 +++
 I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more complicated to get configured than I thought it would be, so I'm sharing it here to hopefully make setup smoother for those in the future - as well as a few extra credit pieces I've picked up along the way.
 
@@ -18,9 +18,10 @@ I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more c
 4. Open settings and enable all the plugins.
 5. Open the sub-settings for Periodic Notes and enable all the time periods you will use. Feel free to adjust any of the file naming conventions, for me, I updated the weekly format to `gggg-[W]WW` to match my navigation bar template.
 
-   <aside> ⚠️ Don't set templates in the Periodic Notes settings. They will be configured with Templater since it has more features.
+```
+ ⚠️ Don't set templates in the Periodic Notes settings. They will be configured with Templater since it has more features.
+```
 
-   </aside>
 6. Open the Templater sub-settings, then set your `Template folder location` to what you created in Step 2.
 7. Enable `Trigger Templater on new file creation`.
 8. Under `Folder Templates`**,** connect each of the periodic folders you created in Step 1 to the base template files from Step 2.
@@ -35,9 +36,9 @@ It's a bit overkill, but I originally saw this on the [Obsidian Reddit](https://
 
 `❮❮ ⋮ 2021 › 12 › Q4 › W49 ⋮ ❯❯`
 
-<aside> ℹ️ It's possible to have a similar navbar on other periods besides 'daily', though it does cause more difficulties since you aren't pulling the exact day from the title. What date should it pick if you're looking at 2022-Q2? Doable, but it's an exercise left to the reader.
-
-</aside>
+```
+ ℹ️ It's possible to have a similar navbar on other periods besides 'daily', though it does cause more difficulties since you aren't pulling the exact day from the title. What date should it pick if you're looking at 2022-Q2? Doable, but it's an exercise left to the reader.
+```
 
 Want your own? This relies on your files having the date in the name, so as long as you are using Periodic Notes plugin and match up your chosen format setting with this code, you'll be ready to rock. The section in the frontmatter sets up a number of variables, then later on the page I can access them.
 
