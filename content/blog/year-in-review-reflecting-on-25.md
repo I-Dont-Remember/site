@@ -6,7 +6,7 @@ draft = false
 images = []
 tags = ["Year in Review"]
 title = "Year in Review: Reflecting On 25"
-
+toc = true
 +++
 It's the first few hours of being 26, the year of 25 has breathed it's last. What changed in the last year? It's easy to go through day to day and feel like nothing is changing because it happens slowly, but things happened. There were new 'Firsts' in my life. I visited people. I celebrated with people. Inspired by [Michael Lynch's](https://mtlynch.io/solo-developer-year-3/) year in review articles, I thought I would do my own version to help me reflect on the year, appreciate the good parts, and recognize the parts that didn't go so well so I can aim to improve them. No judgement, just reflection.
 

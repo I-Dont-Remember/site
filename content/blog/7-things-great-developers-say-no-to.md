@@ -5,7 +5,6 @@ description = "Do you want to be more than a code monkey? Learn to avoid blunder
 images = ["/uploads/sarah-kilian-52jrtc2s_ve-unsplash.jpg"]
 tags = ["developers"]
 title = "7 Blunders Great Developers Say 'No' To"
-
 +++
 Do you want to be more than a [code monkey](https://softwareengineering.stackexchange.com/questions/79997/whats-wrong-with-being-a-code-monkey-or-what-is-a-code-monkey)?
 

@@ -5,7 +5,7 @@ description = "This is a snapshot in time of the productivity system I use: what
 images = []
 tags = ["productivity"]
 title = "My Productivity System Snapshot: Dec 2020"
-
+toc = true
 +++
 This is a snapshot in time of the productivity system I use: what it is, where it came from, and where it might go.
 
