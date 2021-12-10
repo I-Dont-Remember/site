@@ -3,7 +3,7 @@
 <h2>Categories</h2>
 <div class="text-justify content" style="text-align: center;">
 -{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    <a href="{{.Permalink}}">{{.Title}}</a></li> - 
+    <a href="{{.Permalink}}">{{.Title}} ({{ len (.Pages) }})</a></li> - 
 {{end}}
 </div>
 
