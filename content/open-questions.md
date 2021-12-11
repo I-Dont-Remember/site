@@ -41,7 +41,7 @@ How does one figure out what their passions are?
 
 ## Life stagnation vs incredible transformations
 
-It blows my mind that one one hand, you can have pretty much the same life for decades if you don't have any inclination to change yourself and have found a comfortable job/family/etc. that doesn't force change, and on the other, you can have people who change careers to wildly different fields in just 6 months or become fluent in a language in 3. We have these preconceived notions of things taking a very long time, but there are loads of examples of humans moving super fast.
+It blows my mind that on one hand, you can have pretty much the same life for decades if you don't have any inclination to change yourself and have found a comfortable job/family/etc. that doesn't force change, and on the other, you can have people who change careers to wildly different fields in just 6 months or become fluent in a language in 3. We have these preconceived notions of things taking a very long time, but there are loads of examples of humans moving super fast.
 
 ---
 
@@ -53,7 +53,7 @@ Some people seem to have an easier time breaking the mold and doing whatever com
 
 ---
 
-## Reframing failure in adults after decades of focus on tests not learning
+## Reframing failure in adults after decades of focus on tests - rather than learning
 
 There are millions of people like me, who grew up in a school system that taught you to shy away from failure and actually learning came second. It destroys your curiosity, your creativity, and you become a machine that's only goal is to do as good as possible on arbitrary test questions that only somewhat show your knowledge.
 
