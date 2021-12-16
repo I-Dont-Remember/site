@@ -130,8 +130,8 @@ displayrssicon = false
     weight = 130
     identifier = "bucket list"
     url = "https://bucketlist.glideapp.io/"
-[[menu.main]]
-    name = "📈 Open Analytics"
-    weight = 140
-    identifier = "open analytics"
-    url = "https://plausible.io/kevinquinn.fun"
+# [[menu.main]]
+#     name = "📈 Open Analytics"
+#     weight = 140
+#     identifier = "open analytics"
+#     url = "https://plausible.io/kevinquinn.fun"

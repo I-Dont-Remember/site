@@ -2,8 +2,8 @@
 categories = ["Guides"]
 date = 2021-12-16T05:00:00Z
 description = "With a few small tweaks, take the default terminal and make it uniquely yours - then watch your dotfiles evolve as you find new tricks for your toolkit."
-draft = true
-images = []
+draft = false
+images = ["/uploads/dotfiles-terminal-prompt.jpg"]
 tags = ["dotfiles", "command-line", "terminal"]
 title = "Personalize your Development Environment with Dotfiles"
 
@@ -34,7 +34,7 @@ If you want the least amount of effort, follow **Option A** with Dotbot. If you 
 
 There are a variety of fantastic tools to track dotfile history, syncing, and anything else you can think of at [https://dotfiles.github.io/](https://dotfiles.github.io/ "https://dotfiles.github.io/").
 
-⚠️ The only one I'd recommend out of the lot for a beginner is [Dotbot](https://github.com/anishathalye/dotbot), since it eschews most of the complexity of other dotfiles systems. No need to set up a complex syncing tool if you end up ignoring your dotfiles after you finish setting them up.
+> ⚠️ _The only one I'd recommend out of the list for a beginner is [Dotbot](https://github.com/anishathalye/dotbot), since it eschews most of the complexity of other dotfiles systems. No need to set up a complex syncing tool if you end up ignoring your dotfiles after you finish setting them up._
 
 ### Option B: Using a custom script
 
@@ -52,7 +52,7 @@ My [dotfiles](https://github.com/I-Dont-Remember/dotfiles) are full of tidbits I
 
 Probably the most generally useful tweak I have is fleshing out the prompt with more information. Mine includes the time it ran, the current working directory, Git branch & status, and last exit code. In text form `15:36:45:~/dotfiles:(master)* [0]▶`.
 
-![Terminal prompt with previous exit code, current working directory, Git information, and time.](/uploads/dotfiles-terminal-prompt.jpg)
+![Terminal prompt with previous exit code, current working directory, Git information, and time.](/uploads/dotfiles-terminal-prompt.jpg#center)
 
 The exit code has saved me in a surprising number of situations from deeper debugging. You can use [https://scriptim.github.io/bash-prompt-generator/](https://dotfiles.github.io/ "https://dotfiles.github.io/") or [http://bashrcgenerator.com/](https://dotfiles.github.io/ "https://dotfiles.github.io/") to easily generate a similar setup.
 
