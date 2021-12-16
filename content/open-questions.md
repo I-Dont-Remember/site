@@ -60,3 +60,19 @@ There are millions of people like me, who grew up in a school system that taught
 There's lots of people working to make teaching better, though somewhat slow about it. How do we retroactively rewire all these 20-50 year old adults to look at failure in a different light, and be willing to try new things?
 
 * Inspired by [The Super Mario Effect - Tricking Your Brain into Learning More | Mark Rober | TEDxPenn](https://www.youtube.com/watch?v=9vJRopau0g0)
+
+---
+
+## Improving the sustainability of OSS that enterprise depends on
+**Log4Shell** opened up discussion again on the crappy system we have for open source software powering huge chunks of the internet, with companies benefiting massively and often not supporting the efforts of maintainers. 
+
+Oftentimes it's not even necessarily about the money - dealing with running a business isn't what open source maintainers signed up for, especially if they do it for enjoyment. 
+> ["What I do is a side project for fun; turning it into a job isn't attractive. I've rejected sponsorships because I don't want someone else defining my priorities. I'm fortunate not to need money from OSS, but I think that's where most maintainers are? It's hard to imagine someone will be willing to pay me enough for me to want to deal with the consequences of getting paid. :)"](https://twitter.com/DavidAns/status/1469852336696672259?s=20)
+
+### Idea Seeds
+
+- [Professional Maintainers](https://blog.filippo.io/professional-maintainers/) - [Original Twitter Thread](https://twitter.com/FiloSottile/status/1469749412998041610)
+-   [Software Bill of Materials](https://www.cisa.gov/sbom)
+-   [Twitter thread from a Googler who used to be in charge of funding OSS about challenges](https://twitter.com/lorenc_dan/status/1470032309441212416?s=20)
+-   [Twitter thread from a professor with more challenge discussion](https://twitter.com/matthew_d_green/status/1469715416549367812?s=20)
+-   https://thenextweb.com/news/log4j-bug-internet-open-source-contributors-analysis  
