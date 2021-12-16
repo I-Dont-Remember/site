@@ -101,13 +101,18 @@ displayrssicon = false
     identifier = "open-questions"
     url = "/open-questions/"
 [[menu.main]]
-    name = "🎧 Podcast"
+    name = "⏩ No Speed Limit"
     weight = 101
+    identifier = "no-speed-limit"
+    url = "/no-speed-limit/"
+[[menu.main]]
+    name = "🎧 Podcast"
+    weight = 102
     identifier = "podcast"
     url = "https://facadeproject.com/"
 [[menu.main]]
     name = "🧑‍🍳 Recipes"
-    weight = 101
+    weight = 110
     identifier = "recipes"
     url = "/recipes/"
 [[menu.main]]
