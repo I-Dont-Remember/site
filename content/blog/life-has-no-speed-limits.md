@@ -1,8 +1,8 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2021-12-17T05:00:00Z
-description = ""
-draft = true
+description = "A college degree takes 4 years, a year or more to write a book, 10 years at the DMV. Facts...or are they? Life has no speed limits, so why treat them as laws?"
+draft = false
 images = []
 tags = []
 title = "Life Has No Speed Limits"
@@ -10,7 +10,7 @@ title = "Life Has No Speed Limits"
 +++
 What if I said you could write a book in 1 month? Sounds like baloney, right?
 
-Most of us have never written a book, but we come up with our own hand-wavy assumptions for how long it takes to complete tasks. Sometimes we’ll put in even less thought and just use the average pace defined by society as a rule. Should college **_really___ take 4 years for everyone?*
+Most of us have never written a book, but we come up with our own hand-wavy assumptions for how long it takes to complete tasks. Sometimes we’ll put in even less thought and just use the average pace defined by society as a rule. Should college **_really_** take 4 years for everyone?*
 
 These assumptions are difficult to overcome, but luckily there are examples all around of people bucking the curve — people who realized [life has no speed limits](https://sive.rs/kimo). How can we be more like them?
 
@@ -18,7 +18,7 @@ These assumptions are difficult to overcome, but luckily there are examples all 
 
 ### Assumption #1: the average pace is law
 
-How long it takes to do certain activities are just "known". Brush your teeth = 2 minutes, a college degree = 4 years, waiting at the DMV = 10 years, etc. We know them as facts, but humans have so much variety, how could we possibly all operate at the exact same pace? Likely we are succumbing to the [anchoring effect](https://www.verywellmind.com/what-is-the-anchoring-bias-2795029). Once we collectively agree on how long something should take, that's the starting point of future estimates. We take the average pace as a law, rather than suggestion.
+How long it takes to do certain activities are just _"known"_. Brush your teeth = 2 minutes, a college degree = 4 years, waiting at the DMV = 10 years, etc. We know them as facts, but humans have so much variety, how could we possibly all operate at the exact same pace? Likely we are succumbing to the [anchoring effect](https://www.verywellmind.com/what-is-the-anchoring-bias-2795029). Once we collectively agree on how long something should take, that's the starting point of future estimates. We take the average pace as a law, rather than suggestion.
 
 ### Assumption #2: daunting, hand-wavy estimates are correct
 
@@ -65,6 +65,6 @@ You're going to get 6 months older no matter what — why not spend it on someth
 
 ***
 
-\*_Yes, I am aware some people do it in 3, some in 5. Majority end up taking 4 years, so the point stands._
+\*_Yes, I am aware there is variation. Majority end up taking 4 years, so the point stands._
 
 _Thanks to_ [_Derek Sivers article "Kimo"_](https://sive.rs/kimo) _for inspiration._

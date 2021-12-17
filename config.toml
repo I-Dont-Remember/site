@@ -101,10 +101,10 @@ displayrssicon = false
     identifier = "open-questions"
     url = "/open-questions/"
 [[menu.main]]
-    name = "⏩ No Speed Limit"
+    name = "⏩ No Speed Limits"
     weight = 101
-    identifier = "no-speed-limit"
-    url = "/no-speed-limit/"
+    identifier = "no-speed-limits"
+    url = "/no-speed-limits/"
 [[menu.main]]
     name = "🎧 Podcast"
     weight = 102
