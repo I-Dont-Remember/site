@@ -30,6 +30,11 @@
   {{ with .Site.Params.social.angellist}}
   <a href="https://angel.co/{{.}}"><i class="fa fa-angellist social-icon" style="padding-left: 2%;" aria-hidden="true"></i></a>
   {{ end }}
+  {{ with .Site.Params.social.polywork}}
+  <a href="https://www.polywork.com/{{.}}">
+    <img src="img/polywork-rubix-icon-black20x20.png" alt="Polywork" style="padding-left: 2%; font-size:x-small;"/>
+  </a>
+  {{ end }}
   {{ with .Site.Params.social.email }}
   <a href="mailto:{{.}}"><i class="fa fa-envelope-o social-icon" style="padding-left: 2%;" aria-hidden="true"></i></a>
   {{ end }}
