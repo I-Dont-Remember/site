@@ -76,7 +76,8 @@ Oftentimes it's not even necessarily about the money - dealing with running a bu
 * [Software Bill of Materials](https://www.cisa.gov/sbom)
 * [Twitter thread from a Googler who used to be in charge of funding OSS about challenges](https://twitter.com/lorenc_dan/status/1470032309441212416?s=20)
 * [Twitter thread from a professor with more challenge discussion](https://twitter.com/matthew_d_green/status/1469715416549367812?s=20)
-* <https://thenextweb.com/news/log4j-bug-internet-open-source-contributors-analysis>  
+* <https://thenextweb.com/news/log4j-bug-internet-open-source-contributors-analysis>
+* [Security-oriented review of state of Open Source, positive outlook](https://snyk.io/blog/responding-to-open-source-criticism-post-log4shell/)
 
 ---
 
