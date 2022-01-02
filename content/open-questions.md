@@ -78,6 +78,7 @@ Oftentimes it's not even necessarily about the money - dealing with running a bu
 * [Twitter thread from a professor with more challenge discussion](https://twitter.com/matthew_d_green/status/1469715416549367812?s=20)
 * <https://thenextweb.com/news/log4j-bug-internet-open-source-contributors-analysis>
 * [Security-oriented review of state of Open Source, positive outlook](https://snyk.io/blog/responding-to-open-source-criticism-post-log4shell/)
+* [What the Log4j Incident Means for Open Source and the Entire Internet  | Hacker Noon](https://hackernoon.com/log4j-and-the-future-of-open-source)
 
 ---
 
@@ -89,6 +90,18 @@ I think for 1, we'll need to have new materials either created or become cheap e
 
 ---
 
-## Bringing the present to more of the world
+## Bringing the present to more of the world + tech literacy + security for the non-tech-literate
 
 Some of us live in a world where average people, not just billionaires, can unlock their phones with just a glance while sitting in a self-driving electric car. This is the present, not even the distant future. At the exact same time, there are millions of humans who don't know if they will have enough to eat to make it through the week. Global wealth disparity is not a new issue, but there has to be more which can be done. I refuse to believe the collective brain power of millions of people can't find solutions to bring up the quality of life for the millions just like them except for the circumstances of birth.
+
+Somewhat of an extension to this idea is tech literacy for all - across all demographics. How can we ease people, especially older generations, into technology? Give them access to it's capabilities in an approachable way.
+An extension of the extension - finding ways to keep everyone safe by default when using technology, despite humans usually being the weak link.
+
+---
+
+## How do we preserve the quality information on the internet when faced with link rot
+
+The web is linked together with URLs, but over time sites change where content is saved, sites go offline, companies shutter. Link rot attacks the web, but how do we design around it? Can libraries provide examples we can translate to the digital world?
+
+* [Permanent.link](https://permanent.link/)
+* [Sites designed to last](https://jeffhuang.com/designed_to_last)
