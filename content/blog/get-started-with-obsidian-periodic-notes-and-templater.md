@@ -3,8 +3,8 @@ categories = ["Guides"]
 date = 2021-12-10T05:00:00Z
 description = "Configure Obsidian for seamless daily notes by adding the Periodic Notes, Templater, and Calendar community plugins."
 draft = false
-images = []
-tags = ["obsidian"]
+images = ["/uploads/obsidian-periodic-notes.png"]
+tags = ["obsidian", "personal-development"]
 title = "Get Started With Obsidian Periodic Notes and Templater"
 toc = true
 +++
