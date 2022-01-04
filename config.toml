@@ -24,6 +24,8 @@ theme = "hugo-goa"
 enableRobotsTXT = true
 enableEmoji= true
 enableGitInfo = true
+[frontmatter]
+    lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 ## Site Settings
 [params]

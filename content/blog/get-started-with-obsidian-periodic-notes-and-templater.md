@@ -8,7 +8,7 @@ tags = ["obsidian", "personal-development"]
 title = "Get Started With Obsidian Periodic Notes and Templater"
 toc = true
 +++
-I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more complicated to get configured than I thought it would be, so I'm sharing it here to hopefully make setup smoother for those in the future - as well as a few extra credit pieces I've picked up along the way.
+I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more complicated to get configured than I thought it would be, so I'm sharing it here to hopefully make setup smoother for those in the future - as well as a few [extra credit](#extra-credit) pieces I've picked up along the way.
 
 ## Daily Notes Steps
 
@@ -24,11 +24,13 @@ I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more c
 
 6. Open the Templater sub-settings, then set your `Template folder location` to what you created in Step 2.
 7. Enable `Trigger Templater on new file creation`.
-8. Under `Folder Templates`**,** connect each of the periodic folders you created in Step 1 to the base template files from Step 2.
+8. Under `Folder Templates`, connect each of the periodic folders you created in Step 1 to the base template files from Step 2.
 
 Now, whenever a new file is created in any of those folders, it will run Templater first. The Calendar sidebar is a handy tool for easily selecting any day's file vs the Command Palette/File search .
 
 ## Extra Credit
+
+You've got the basics set up, now bump it up a notch. Add a [Navigation Bar](#navigation-bar), [Period Completion Percentage](#period-completion-percentage), and/or [other fun plugins](#other-plugins).
 
 ### Navigation Bar
 
@@ -65,7 +67,7 @@ Want your own? This relies on your files having the date in the name, so as long
     %>
     
 
-### Completion Percentage
+### Period Completion Percentage
 
 I'm a visual person, so it's very handy for me to be able to see how far through the week/month/year I currently am. Can't pretend you have plenty of time left if the ticker says 95% finished.
 

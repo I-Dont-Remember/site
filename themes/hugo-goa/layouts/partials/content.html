@@ -5,7 +5,22 @@
   {{ if ne .Params.showpagemeta false }}
   <div class="col-md-12">
     <h6 class="text-left meta">
-       {{ if not .Date.IsZero }} PUBLISHED ON {{ .Date.Format .Site.Params.dateformat | upper }}&colon; {{ .WordCount }} words&comma; {{.ReadingTime}} minute read{{end}}
+      <!-- {{ if not .Date.IsZero }} PUBLISHED ON {{ .Date.Format .Site.Params.dateformat | upper }}&colon; {{ .WordCount }} words&comma; {{.ReadingTime}} minute read{{end}} -->
+
+      {{ if not .Date.IsZero }}
+        {{- $pubdate := .Date.Format .Site.Params.dateformat | upper}}
+        {{- if .Lastmod }}
+          {{- $lastmod := .Lastmod.Format .Site.Params.dateformat | upper }}
+            {{- if ne $lastmod $pubdate }}
+              UPDATED ON {{ $lastmod }}
+            {{ else }}
+              PUBLISHED ON {{ $pubdate }}
+            {{ end }}
+        {{ else }}
+          PUBLISHED ON {{ $pubdate }}
+        {{- end }}
+        &colon; {{ .WordCount }} words&comma; {{.ReadingTime}} minute read
+      {{end}}
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
       {{ if gt $total 0 }}
