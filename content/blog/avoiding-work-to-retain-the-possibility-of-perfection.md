@@ -7,7 +7,7 @@ tags = ["painting", "life-lessons"]
 title = "Avoiding work to retain the possibility of perfection"
 
 +++
-Over 9 months ago, I set out with a simple task: take the 3-D printed Halo Pelican I was given as a gift and paint it. Do I have any experience painting miniatures? Tons, and none[^1].
+Over 9 months ago, I set out with a simple task: take the 3-D printed Halo Pelican I was given as a gift and paint it. Do I have any experience painting miniatures? Tons, and none\[^1\].
 
 A pelican you say? An airship from the Halo video games, not the bird you're thinking of.
 
@@ -40,10 +40,9 @@ As a chronic over-thinker and over-researcher, I was exacerbating this problem. 
 
 ## Imperfect, but Complete
 
-Though the final product wasn't up to my armchair expert standards, I was incredibly proud of taking action and completing the paint job. I also felt a huge weight come off my chest. I didn't realize how much all the half-finished projects weigh on my mind, even something as simple as painting a desk toy. May this be a lesson to us all to default to learning from action rather than consuming. I leave you with my Halo Pelican in all it's imperfect glory.
+Though the final product wasn't up to my armchair expert standards, I was incredibly proud of taking action and completing the paint job. I also felt a huge weight come off my chest. I didn't realize how much all the half-finished projects weigh on my mind, even something as simple as painting a desk toy. May this be a lesson to us all to default to learning from action rather than consuming. I leave you with my Halo Pelican in all its imperfect glory.
 
 ![Rubber ducky for scale.](/uploads/pelican-close-up-small.jpeg#center)
 _Rubber ducky for scale._
 
-
-[^1]: Tons of theoretical knowledge, almost no practical experience.
+\[^1\]: Tons of theoretical knowledge, almost no practical experience.
