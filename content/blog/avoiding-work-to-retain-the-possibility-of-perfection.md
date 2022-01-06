@@ -1,9 +1,8 @@
 +++
 categories = ["Personal Development"]
 date = 2022-01-05T05:00:00Z
-description = "Over 9 months ago, I set out with a simple task: take the 3-D printed Halo Pelican I was given as a gift and paint it. Do I have any experience painting miniatures? Tons, and none."
-draft = false
-images = []
+description = "Over 9 months ago, I set out with a simple task: paint a 3-D printed Halo Pelican I was gifted. Do I have any experience painting miniatures? Tons, and none."
+images = ["/uploads/not-this-pelican-small.png"]
 tags = ["painting", "life-lessons"]
 title = "Avoiding work to retain the possibility of perfection"
 
