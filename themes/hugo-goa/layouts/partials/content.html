@@ -54,6 +54,13 @@
 </section>
 <section id="content-pane" class="row">
   <div class="col-md-12 text-justify content">
+    {{ if isset .Params "showHeaderImage" }}
+      {{ if gt (len .Params.images)  0}}
+        {{ range .Params.images }}
+          <img src="{{ . }}" alt="">
+        {{ end }}
+      {{ end }}
+    {{ end }}
     {{ if and ( eq .Params.toc true) (gt .WordCount 400 ) }}
         {{ .TableOfContents }}
     {{ end }}
