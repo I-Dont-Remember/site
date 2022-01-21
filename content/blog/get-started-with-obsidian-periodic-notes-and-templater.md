@@ -1,5 +1,5 @@
 +++
-categories = ["Guides"]
+categories = ["Technical"]
 date = 2021-12-10T05:00:00Z
 description = "Configure Obsidian for seamless daily notes by adding the Periodic Notes, Templater, and Calendar community plugins."
 draft = false
