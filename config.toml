@@ -95,9 +95,14 @@ displayrssicon = false
 ## Main Menu
 [[menu.main]]
     name = "✍️ Writing"
-    weight = 99
+    weight = 98
     identifier = "writing"
     url = "/blog/"
+[[menu.main]]
+    name = "⚛️ Atomic Writing"
+    weight = 99
+    identifier = "atomic"
+    url = "/atomic/"
 [[menu.main]]
     name = "🧠 Open Questions"
     weight = 100
