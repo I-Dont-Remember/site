@@ -82,6 +82,21 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
+            <div class="input-group" style="padding-top:5px">
+              <input id='search-input' type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <a id='generated-link' target="_blank" class="btn btn-default" href="https://duckduckgo.com/">Go!</a>
+              </span>
+            </div>
+            <script type="text/javascript">
+              var link= document.getElementById('generated-link');
+              var input= document.getElementById('search-input');
+              input.onchange=input.onkeyup= function() {
+                  link.search= '?q=site%3Akevinquinn.fun+'+encodeURIComponent(input.value);
+              };
+            </script>
+        </li>
+        <li>
           {{ with .Site.Params.social.twitter }}
             <a href="https://twitter.com/{{.}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           {{ end }}
