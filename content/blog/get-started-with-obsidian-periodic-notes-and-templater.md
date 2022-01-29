@@ -118,10 +118,34 @@ Since I use the progress bar in a number of places, I have it stored as a Templa
        This is regular content to show you you can place the progress bars wherever.
        
 
+### Colorful Year Timeline
+
+If you want something more colorful with less work than the progress bars, there is an awesome [discussion on the Obsidian forum on how to use an SVG to create a beautiful timeline](https://forum.obsidian.md/t/svg-year-timeline-in-your-daily-note/31418).
+
+![Colorful Year Timeline with Day Marker](/uploads/obsidian-forum-colorful-svg.png#center)
+
+It requires the Daily Notes plugin, but you don't have to set up any functions to make it work, just paste the svg code into your Daily template file. The 'Day Marker' is based off the day of the year. [From the MomentJs Docs](https://momentjs.com/docs/#/displaying/format/):
+
+> `DDD` = Day of Year = 1,2,3...365
+
+Since I configure my notes from the date in file name & not the current day, I had to make a small adjustment to the marker:
+
+```
+# See the 'Navigation Bar' section for example of how I parse fileDate at beginning of page.
+# Swapped the "{{date:DDD}}0" to use fileDate.
+
+<circle cx="<% fileDate.format("DDD") %>0" ....
+```
+
+
 ### Other Plugins
 
-If you're interested in gleaning insights from Daily Notes over time, e.g. habit summaries in each Weekly Note, average number of hours you worked per day, pulling in summaries of tasks across many files, then I highly recommend adding the plugins [Dataview](https://blacksmithgu.github.io/obsidian-dataview) and [Tracker](https://github.com/pyrochlore/obsidian-tracker). I have barely dipped my toes into what they can do and can already see huge potential to get a better understanding of my moods, habits, and more. There's some great Dataview inspiration on the [Obsidian forum](https://forum.obsidian.md/t/dataview-plugin-snippet-showcase/13673/190).
+If you're interested in gleaning insights from Daily Notes over time, e.g. habit summaries in each Weekly Note, average number of hours you worked per day, pulling in summaries of tasks across many files, then I highly recommend adding the plugins [Dataview](https://blacksmithgu.github.io/obsidian-dataview) and [Tracker](https://github.com/pyrochlore/obsidian-tracker). I have barely dipped my toes into what they can do and can already see huge potential to get a better understanding of my moods, habits, and more. There's some great Dataview inspiration on the [Obsidian forum](https://forum.obsidian.md/t/dataview-plugin-snippet-showcase/13673/190). Emoji habit tracker, anyone? Didn't do so hot on the example week 😬, oops.
+
+![Weekly habit tracker with emoji symbols](/uploads/weekly-emoji-habit-example.png#center)
 
 ## Fin
 
-You should be all set with a basic configuration for taking Periodic Notes in Obsidian with Templater, though now that you have such a powerful tool, the sky is the limit. Get creative with daily rituals, morning routines, and the many community plugins available in Obsidian. If you have any questions or responses, feel free to reach out to me on [Twitter](https://twitter.com/maybekq).
+You should be all set with a basic configuration for taking Periodic Notes in Obsidian with Templater - though now that you have such a powerful tool, the sky is the limit. Get creative with daily rituals, morning routines, and the many community plugins available in Obsidian. To stay up to date with all the wild new happenings in the Obsidian world, make sure to check out the [Obsidian Roundup](https://www.obsidianroundup.org/).It's a fantastic newsletter for finding plugins and new ways to use this awesome tool.
+
+ If you have any questions or feedback, feel free to reach out to me on [Twitter](https://twitter.com/maybekq).
