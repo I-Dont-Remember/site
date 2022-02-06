@@ -35,7 +35,10 @@ description = """
 \n\n#### Spirit emoji:  `¯\\_(ツ)_/¯`
 Firm Believer in [Murphy's Law](https://www.dictionary.com/browse/murphy-s-law)
 \n
+_How do I become a better writer?_ **Write, a lot.** Goal is 1 million words published on the great wild web.
+\n
 """
+
 authorimage = "kevin-profile-photo-fall21-small.jpg" # "kevin-portrait.jpeg"
 dateformat = "Jan 2, 2006"
 
