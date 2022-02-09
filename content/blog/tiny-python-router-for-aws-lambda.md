@@ -1,5 +1,5 @@
 +++
-categories = ["Atomic"]
+categories = ["TIL"]
 date = 2022-01-21T05:00:00Z
 description = "The utility of Python Flask routing on a Lambda, without the framework."
 draft = false

@@ -73,12 +73,22 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="{{ .Site.BaseURL }}/blog/">Writing</a></li>
-        <li><a href="{{ .Site.BaseURL }}/open-questions/">Open Questions</a></li>
-        <li><a href="{{ .Site.BaseURL }}/no-speed-limits/">No Speed Limits</a></li>
-        <li><a href="{{ .Site.BaseURL }}/projects/">Projects</a></li>
-        <li><a href="https://facadeproject.com/">Podcast</a></li>
-        <li><a href="{{ .Site.BaseURL }}/atomic/">Atomic Writing</a></li>
+        {{ range sort .Site.Menus.main }}
+        <li><a class="menu-item" href="{{ .URL }}" {{ with .Params.Newtab }}target="_blank"{{ end }}>{{ .Name | lower }}</a></li>
+        {{ end }}
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Me <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {{range .Site.Params.dropdown }}
+              <li><a class="menu-item" href="{{ .URL }}">{{ .Name | lower }}</a></li>
+            {{ end }}
+            <li><a href="/about/">🚶 About</a></li>
+            <li><a href="/projects/">👷 Projects</a></li>
+            <li><a href="https://bucketlist.glideapp.io/" target="_blank">📋 Bucket List</a></li>
+            <li><a href="/firsts/">🏁 Firsts</a></li>
+            <li><a href="/recipes/">🧑‍🍳 Recipes</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>

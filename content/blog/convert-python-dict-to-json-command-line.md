@@ -1,5 +1,5 @@
 +++
-categories = ["Atomic"]
+categories = ["TIL"]
 date = 2022-01-20T05:00:00Z
 description = ""
 draft = false

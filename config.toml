@@ -30,12 +30,11 @@ enableGitInfo = true
 ## Site Settings
 [params]
 author = "Kevin Quinn"
-intro = "Software Engineer (usually)"
+intro = "Software Engineer (usually) 🤹"
 description = """
-\n\n#### Spirit emoji:  `¯\\_(ツ)_/¯`
-Firm Believer in [Murphy's Law](https://www.dictionary.com/browse/murphy-s-law)
-\n
-_How do I become a better writer?_ **Write, a lot.** Goal is 1 million words published on the great wild web.
+\n\n#### _Spirit emoji_:  `¯\\_(ツ)_/¯`
+<br />  
+_How do I become a better writer?_  **Write, a lot.** Goal is 1 million words published on the great wild web.
 \n
 """
 
@@ -95,57 +94,51 @@ socialmarkup = true
 toc = false
 displayrssicon = false
 
+[menu]
 ## Main Menu
 [[menu.main]]
     name = "✍️ Writing"
     weight = 98
-    identifier = "writing"
     url = "/blog/"
-[[menu.main]]
-    name = "⚛️ Atomic Writing"
-    weight = 99
-    identifier = "atomic"
-    url = "/atomic/"
 [[menu.main]]
     name = "🧠 Open Questions"
     weight = 100
-    identifier = "open-questions"
     url = "/open-questions/"
 [[menu.main]]
     name = "⏩ No Speed Limits"
     weight = 101
-    identifier = "no-speed-limits"
     url = "/no-speed-limits/"
 [[menu.main]]
     name = "🎧 Podcast"
     weight = 102
-    identifier = "podcast"
     url = "https://facadeproject.com/"
-[[menu.main]]
-    name = "🧑‍🍳 Recipes"
-    weight = 110
-    identifier = "recipes"
-    url = "/recipes/"
-[[menu.main]]
-    name = "👷 Projects"
-    identifier = "projects"
-    weight = 120
-    url = "/projects/"
-[[menu.main]]
-    name = "🏁 Firsts"
-    identifier = "firsts"
-    weight = 124
-    url = "/firsts/"
-[[menu.main]]
-    name = "🚶 About"
-    identifier = "about"
-    weight = 125
-    url = "/about/"
-[[menu.main]]
-    name = "📋 Bucket List"
-    weight = 130
-    identifier = "bucket list"
-    url = "https://bucketlist.glideapp.io/"
+    [menu.main.params]
+        newtab = true # target blank
+
+# Moved directly into header.html so I wouldn't have to deal with Dropdown menu configuration
+# [[menu.main]]
+#     name = "🧑‍🍳 Recipes"
+#     weight = 110
+#     url = "/recipes/"
+# [[menu.main]]
+#     name = "👷 Projects"
+#     weight = 120
+#     url = "/projects/"
+# [[menu.main]]
+#     name = "🏁 Firsts"
+#     weight = 124
+#     url = "/firsts/"
+# [[menu.main]]
+#     name = "🚶 About"
+#     weight = 125
+#     url = "/about/"
+# [[menu.main]]
+#     name = "📋 Bucket List"
+#     weight = 130
+#     url = "https://bucketlist.glideapp.io/"
+
+
+
 # [[menu.main]]
 #     name = "📈 Open Analytics"
 #     weight = 140

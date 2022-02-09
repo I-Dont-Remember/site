@@ -1,5 +1,5 @@
 +++
-categories = ["Atomic"]
+categories = ["TIL"]
 date = 2022-02-03T05:00:00Z
 description = "Parsing RSS with Python standard library."
 draft = false

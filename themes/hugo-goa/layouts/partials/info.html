@@ -6,7 +6,7 @@
   <h4 class="description">{{ . | markdownify }}</h4>
   {{ end }}
   {{ $scratch := newScratch }}
-  {{ range (where .Site.RegularPages "Type" "in" (slice "page" "atomic" "blog")) }}
+  {{ range (where .Site.RegularPages "Type" "in" (slice "page" "blog")) }}
   {{ $scratch.Add "wordcount" .WordCount }}
   {{ end }}
   <h4><em>{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} / 1,000,000 words</em></h4>

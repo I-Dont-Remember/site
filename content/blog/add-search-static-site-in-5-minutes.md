@@ -1,5 +1,5 @@
 +++
-categories = ["Atomic"]
+categories = ["TIL"]
 date = 2022-01-28T05:00:00Z
 description = "Add search to your static site in 5 minutes, the 80/20 effort-saving guide. No dependencies needed here."
 draft = false

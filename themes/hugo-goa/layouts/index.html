@@ -4,8 +4,37 @@
 
 {{ partial "info.html" . }}
 
-{{ partial "main_menu.html" . }}
+{{/*  {{ partial "main_menu.html" . }}  */}}
 
+{{/*  Curated articles  */}}
+<br />
+<h2>Favorite Posts</h2>
+<ul >
+    {{ range where .Site.RegularPages "Params.curated" true }}
+    <li class="list-entry">
+      <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{/*  <p class="meta">
+        {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat | upper }}&comma; {{ .ReadingTime }} minute read{{end}}
+        <span class="category">
+        {{ if isset .Params "categories" }}
+        {{ $total := len .Params.categories }}
+        {{ if gt $total 0 }}
+        —
+        {{ $total := sub $total 1 }}
+        {{ range $i, $cat := sort .Params.categories }}
+        <a class="category" href="{{ "/categories/" | relURL }}{{ $cat | humanize | urlize }}">{{ $cat | upper }}</a>{{ if lt $i $total }}, {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        </span>
+      </p>  */}}
+      <p class="excerpt">
+      {{ .Description }}
+      </p>
+    </li>
+    {{ end }}
+  </ul>
+</br />
 {{ partial "social.html" . }}
 
 {{ partial "footer.html" . }}
