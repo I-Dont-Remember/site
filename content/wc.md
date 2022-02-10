@@ -1,0 +1,18 @@
+
++++
+categories = []
+comments = false
+date = "2022-02-09T00:00:00-06:00"
+draft = false
+slug = ""
+tags = ["wc"]
+title = "Words Written"
+showpagemeta = false
++++
+
+I struggle with over-thinking, perfectionism, and never shipping. To that end I've been setting goals for myself geared towards taking action.
+
+Goal is to reach 1 million words written on the world wide web. For now I approximate this with just what appears on this site, as I'd rather undercount a little and write extra than have random internet comments give me a false sense of progress.
+
+Partially inspired by https://www.kalzumeus.com/wc/
+

@@ -9,5 +9,5 @@
   {{ range (where .Site.RegularPages "Type" "in" (slice "page" "blog")) }}
   {{ $scratch.Add "wordcount" .WordCount }}
   {{ end }}
-  <h4><em>{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} / 1,000,000 words</em></h4>
+  <a href="/wc/"><h4><em>{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} / 1,000,000 words</em></h4></a>
 </section>
