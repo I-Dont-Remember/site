@@ -4,7 +4,7 @@ date = 2022-01-20T05:00:00Z
 description = ""
 draft = false
 images = []
-tags = []
+tags = ["Python","CLI"]
 title = "Convert Python Dict to JSON on the Command Line With Sed"
 +++
 

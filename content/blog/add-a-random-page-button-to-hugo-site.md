@@ -1,8 +1,8 @@
 +++
-categories = ["Technical"]
+categories = ["TIL"]
 date = 2022-02-13T05:00:00Z
 description = "Let users read a random page on your site. A quick guide on how to add this feature to your site in no time."
-draft = true
+draft = false
 images = []
 tags = ["Hugo"]
 title = "Add a Random Page Button to Hugo Site"
