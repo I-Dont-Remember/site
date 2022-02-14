@@ -6,7 +6,7 @@ draft = false
 images = []
 tags = []
 title = "Life Has No Speed Limits"
-
+curated = true
 +++
 What if I said you could write a book in 1 month? Sounds like baloney, right?
 

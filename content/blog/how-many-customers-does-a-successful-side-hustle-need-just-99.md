@@ -6,6 +6,7 @@ images = ["/uploads/mugshotbot-how-many-customers.jpeg"]
 tags = ["indie-hackers", "developers"]
 title = "How Many Customers Does a Successful Side Hustle Need? Just 99."
 toc = true
+curated = true
 +++
 The founding stories of big tech companies get people pumped on the idea of starting their own thing, from [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service "https://en.wikipedia.org/wiki/Software_as_a_service") products to [paid newsletters](https://trends.vc/trends-0036-paid-newsletters/ "https://trends.vc/trends-0036-paid-newsletters/") . The concept sounds awesome. Build something, it picks up speed, and swiftly grows into a multi-million dollar company. It's a crazy success story, you're set for life! Silicon Valley has no shortage of examples to be gawked at: AirBnb, Amazon, Dropbox, Facebook, Google, Netflix, etc which all exploded in the last 15 years.
 
