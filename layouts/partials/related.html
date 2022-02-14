@@ -1,0 +1,31 @@
+<div>
+    <h3>See Also</h3>
+    <ul >
+        {{ $related := .Site.RegularPages.Related . | first 5 }}
+        {{ range first 3 $related }}
+        <li class="list-entry">
+          <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+          <p class="meta">
+            {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat | upper }}&comma; {{ .ReadingTime }} minute read{{end}}
+            <span class="category">
+            {{ if isset .Params "categories" }}
+            {{ $total := len .Params.categories }}
+            {{ if gt $total 0 }}
+            —
+            {{ $total := sub $total 1 }}
+            {{ range $i, $cat := sort .Params.categories }}
+            <a class="category" href="{{ "/categories/" | relURL }}{{ $cat | humanize | urlize }}">{{ $cat | upper }}</a>{{ if lt $i $total }}, {{ end }}
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            </span>
+          </p>
+          <p class="excerpt">
+          {{ .Description }}
+          </p>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+
+

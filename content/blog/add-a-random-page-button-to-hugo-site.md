@@ -27,6 +27,13 @@ Hugo conveniently lets you output JSON data, so we create one at the root which 
 {{- $.Scratch.Get "index" | jsonify -}}
 ```
 
+I needed to add a small param in my `config.toml`, here's an [article if you want to dive a bit deeper](https://zwbetz.com/build-a-search-bar-for-your-hugo-blog-with-a-json-index-and-some-vanilla-js/) and understand more of what is going on.
+
+```
+[outputs]
+    home = ["json", "html"]
+```
+
 ### Prod JSON output
 
 For reference, the JSON that the above Hugo code will end up outputting.

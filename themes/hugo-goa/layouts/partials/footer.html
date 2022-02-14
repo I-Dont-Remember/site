@@ -23,5 +23,27 @@ hljs.initHighlightingOnLoad();
 {{ if (in .Site.BaseURL "localhost") }}
     {{ partial "debug.html" . }}
 {{ end }}
+<script>
+  var searchIndexData = [];
+  // fetch on page load from the search index
+  let json_path = window.location.origin + '/index.json'
+
+  fetch(json_path).then(function (response) {
+    return response.json();
+  })
+    .then(function (data) {
+      searchIndexData = data;
+    })
+    .catch(function (err) {
+      console.log(err)
+    });
+
+
+  function sendToRandomArticle() {
+    let randIndex = Math.floor(Math.random() * searchIndexData.length);
+    let randArticle = searchIndexData[randIndex]['permalink'] + '?utm_source=RandomButton';
+    window.location.href = randArticle;
+  }
+</script>
 </body>
 </html>
