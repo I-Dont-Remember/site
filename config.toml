@@ -153,7 +153,7 @@ displayrssicon = false
 
 [related]
   includeNewer = true
-  threshold = 80
+  threshold = 60
   toLower = false
 [[related.indices]]
   name = 'keywords'
@@ -166,4 +166,4 @@ displayrssicon = false
   weight = 70
 [[related.indices]]
   name = 'date'
-  weight = 10
+  weight = 60
