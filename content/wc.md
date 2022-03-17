@@ -14,4 +14,7 @@ I struggle with over-thinking, perfectionism, and never shipping. To that end I'
 
 Goal is to reach 1 million words written on the world wide web. For now I approximate this with just what appears on this site, as I'd rather undercount a little and write extra than have random internet comments give me a false sense of progress.
 
-Partially inspired by https://www.kalzumeus.com/wc/ and https://flynnblair.com/.
+Partially inspired by:
+
+- [Patio11's WC page](https://www.kalzumeus.com/wc/)
+- [Author's public word count progress towards next book](https://flynnblair.com/).

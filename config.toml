@@ -34,8 +34,11 @@ intro = "Software Engineer (usually) 🤹"
 description = """
 \n\n#### _Spirit emoji_:  `¯\\_(ツ)_/¯`
 <br />  
-_How do I become a better writer?_  **Write, a lot.** Goal is 1 million words published on the great wild web.
+_How do I become a better writer?_  **Write, a lot.**
 \n
+"""
+description2 = """
+😰 _Drafts waiting on my [perfectionism](/blog/avoiding-work-to-retain-the-possibility-of-perfection/): **17**_
 """
 
 authorimage = "kevin-profile-photo-fall21-small.jpg" # "kevin-portrait.jpeg"
