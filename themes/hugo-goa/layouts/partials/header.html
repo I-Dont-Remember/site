@@ -18,11 +18,9 @@
 
 <title>{{ .Site.Title }}</title>
 
-{{ .Hugo.Generator }}
-
 <link rel="canonical" href="{{ .Permalink }}" />
 
-{{ if .RSSLink }}
+{{ if .RelPermalink }}
   <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   <link href="{{ . }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
