@@ -1,12 +1,12 @@
 +++
 categories = ["Software Development"]
-date = 2022-03-21T04:00:00Z
+date = 2022-03-21T12:00:00Z
 description = "A reflection on my failure to build a viable product, so others can learn from my mistakes."
 draft = true
-images = []
+images = ["/uploads/madtown-deals-mvp-deals-on-tap.png"]
 tags = ["startups", "developers", "bootstrappers", "indiehackers"]
 title = "Reflecting on my Failure to Build a One-Dollar Company"
-
+curated = true
 +++
 > TL;DR: No market validation, coding doesn’t get users, and fantasizing instead of taking action.
 
@@ -20,7 +20,7 @@ These lessons are a hard pill to swallow knowing I went the wrong direction for 
 
 What was it? [DoT](https://dealsontap.netlify.app/) was a collection of the daily specials at bars around campus, which usually only appeared on chalkboards or buried on bar websites no one checks. I'm a sucker for a bargain, so I was building this for myself & friends initially without any concept of spreading it farther.
 
-![](/uploads/deals-on-tap-final-state.png)
+![Web app with bar deals](/uploads/deals-on-tap-final-state.png#center)
 
 ## An abbreviated list of what I did wrong
 
@@ -34,7 +34,7 @@ Without knowing it, I actually started with a decent MVP. I put up a minimal sta
 
 then it all fell apart.
 
-![](/uploads/madtown-deals-mvp-deals-on-tap.png)
+![Basic website with bar deals](/uploads/madtown-deals-mvp-deals-on-tap.png#center)
 
 I was showing the site to friends, but never made any effort to distribute it more widely or see how people I didn't know would use it. I had lots of ideas for how it could make money through bars, who the target audience might be, how to keep users coming back, but I wasn't taking action to see if my assumptions had any ground to stand on.
 
@@ -61,7 +61,7 @@ Something I heard recently that resonated with me was
 >
 > _(paraphrased, if you know of the original let me know so I can attribute it)_
 
-One thing I knew for sure was I had no experience trying to build products or start businesses. None of my friends did either, but that didn't stop me from picking their brains for ideas on everything from new features to business strategies. **A lot** of energy was burned going down wrong paths because I wasn't discerning with suggestions I was given. I also tried going to a number of small startup events on campus where they would connect you with community mentors. Unfortunately, I treated everything they said to me as gospel. They often came up with feature ideas, potential markets, or changes I "had to make" for a bar owner to even consider talking with me. Looking back, I'm sure it was well-intentioned, but it was ultimately pretty crappy advice. These were people I would have thought knew better, yet no one asked me the difficult questions that I needed to hear.
+One thing I knew for sure was I had no experience trying to build products or start businesses. None of my friends did either, but that didn't stop me from picking their brains for ideas on everything from new features to business strategies. **A lot** of energy was burned going down wrong paths because I wasn't discerning with suggestions I was given. I also tried going to a number of small startup events on campus where they would connect you with community mentors. Unfortunately, I treated everything they said to me as gospel. They often came up with feature ideas, potential markets, or changes I "had to make" for a bar owner to even consider talking with me. Looking back, I'm sure it was well-intentioned, but it was ultimately pretty crappy advice. These were people I would have thought knew better, yet no one asked me the difficult [questions that I needed to hear](https://indielurker.com/critical-questions).
 
 * _"What actionable steps will you take this week to grow and get your first 10 users?"_
 * _"When do you plan on talking to bar owners about this?"_
@@ -80,11 +80,11 @@ Hypothetically, they could see themselves maybe using this one feature on your a
 
 I wasn't just asking others bad questions, I was also asking myself the wrong questions. Products follow the Pareto principle, 20% of your features will get 80% of the usage. If you're trying to move fast you need to be able to answer "what features will be used the majority of the time?"
 
-Take a todo list app, for example. Wunderlist (RIP), TickTick, Todoist, Microsoft ToDo, and so many more are all loaded with features. If they didn't nail the user experience for adding & viewing todos, though, nobody would care about the pile of other ways you can them.
+Take a todo list app, for example. Wunderlist (RIP), TickTick, Todoist, Microsoft ToDo, and so many more are all loaded with features. If they didn't nail the user experience for adding & viewing todos, though, nobody would care about the pile of other ways you can use them.
 
 ### **Making fake progress with code**
 
-Coding is such an incredibly powerful tool, but [dangerous for developers.](https://kevinquinn.fun/blog/coding-is-dangerous-for-developers/)
+Coding is such an incredibly powerful tool, but [dangerous for developers.](/blog/coding-is-dangerous-for-developers/)
 
 At the time, I was unaware of the threat looming in front of me. For one thing, as a developer I was (and am) constantly under the pull of **Shiny Object Syndrome**. I want to use new & interesting tools, despite having no experience with them. This is great if the goal is to learn, but not a hot idea if you want to build something quickly that just works. I was also still a student trying to learn and prepare for the job search, and much of what I thought would be important for full-time software engineering leaked into what I was building. I got hung up on design patterns, documentation, writing lots of tests, and following best practices to ensure I had a pristine code base. I wasted many hours debugging or tweaking the code to perfection, which at the time made me feel great. Look Mom, I'm building a real app!
 
