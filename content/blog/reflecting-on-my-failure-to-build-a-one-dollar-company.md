@@ -1,24 +1,25 @@
 +++
-categories = ["Software Development"]
-date = 2022-03-21T12:00:00Z
+categories = ["Bootstrappers"]
+date = 2022-03-23T12:00:00Z
 description = "A reflection on my failure to build a viable product, so others can learn from my mistakes."
-draft = true
+draft = false
 images = ["/uploads/madtown-deals-mvp-deals-on-tap.png"]
 tags = ["startups", "developers", "bootstrappers", "indiehackers"]
 title = "Reflecting on my Failure to Build a One-Dollar Company"
 curated = true
 +++
-> TL;DR: No market validation, coding doesn’t get users, and fantasizing instead of taking action.
+
+> TL;DR: No market validation, coding doesn't get users, and fantasizing instead of taking action.
 
 Failure is the world's best teacher.
 
-Second best is getting to learn from someone else failing, then you skip all the pain and frustration. This is a reflection on what went wrong when I was trying to build my first product, Deals on Tap (DoT), so that others can avoid running into the same issues.
+Second best is getting to learn from someone else failing, then you skip all the pain and frustration. This is a reflection on what went wrong while attempting to build my first product.
 
-These lessons are a hard pill to swallow knowing I went the wrong direction for so long, but the silver lining of failure is we learn. You don't want to spend months working on a project no one uses. I've done it. Let me walk you through my failures, and hopefully you can avoid them.
+These lessons are a hard pill to swallow knowing I went in the wrong direction for so long, but the silver lining of failure is we learn. You don't want to spend months working on a project no one uses. I've done it. Let me walk you through my failures, and hopefully you can avoid them.
 
 ## What was it?
 
-What was it? [DoT](https://dealsontap.netlify.app/) was a collection of the daily specials at bars around campus, which usually only appeared on chalkboards or buried on bar websites no one checks. I'm a sucker for a bargain, so I was building this for myself & friends initially without any concept of spreading it farther.
+What was it? **[Deals on Tap (DoT)](https://dealsontap.netlify.app/), orig. Madtown Deals**, was a collection of the daily specials at bars around campus, which usually only appeared on chalkboards or buried on bar websites no one checks. I'm a sucker for a bargain, so I was building this for myself & friends initially without any concept of spreading it farther. This was great, until I let my imagination run wild.
 
 ![Web app with bar deals](/uploads/deals-on-tap-final-state.png#center)
 
@@ -34,7 +35,7 @@ Without knowing it, I actually started with a decent MVP. I put up a minimal sta
 
 then it all fell apart.
 
-![Basic website with bar deals](/uploads/madtown-deals-mvp-deals-on-tap.png#center)
+![Basic website with bar deals](/uploads/madtown-deals-mvp-deals-on-tap-smaller.png#center)
 
 I was showing the site to friends, but never made any effort to distribute it more widely or see how people I didn't know would use it. I had lots of ideas for how it could make money through bars, who the target audience might be, how to keep users coming back, but I wasn't taking action to see if my assumptions had any ground to stand on.
 
