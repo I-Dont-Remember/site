@@ -30,7 +30,7 @@ enableGitInfo = true
 ## Site Settings
 [params]
 author = "Kevin Quinn"
-intro = "Software Engineer [(usually)](https://facadeproject.com#current-bios) 🤹"
+intro = "Backend Software Engineer [(usually)](https://facadeproject.com#current-bios) 🤹"
 description = """
 \n\n#### _Spirit emoji_:  `¯\\_(ツ)_/¯`
 <br />  
@@ -38,7 +38,7 @@ _How do I become a better writer?_  **Write, a lot.**
 \n
 """
 description2 = """
-😰 _Drafts waiting on my [perfectionism](/blog/avoiding-work-to-retain-the-possibility-of-perfection/): **17**_
+😰 _Drafts waiting on my [perfectionism](/blog/avoiding-work-to-retain-the-possibility-of-perfection/): **16**_
 """
 
 authorimage = "kevin-profile-photo-fall21-small.jpg" # "kevin-portrait.jpeg"

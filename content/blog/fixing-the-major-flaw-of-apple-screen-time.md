@@ -1,5 +1,5 @@
 +++
-categories = ["Software Development"]
+categories = ["User Experience"]
 date = 2020-09-20T05:00:00Z
 description = "We've all done it. You're scrolling through your phone, long past the \"just a second\" that you told yourself, when it hits you. Time Limit."
 images = ["/uploads/time-limit.png"]

@@ -10,6 +10,6 @@ title = "About"
 showpagemeta = false
 +++
 
-Software engineer by day, [all sorts of stuff by night](https://facadeproject.com). Investigating a growing interest in No-code, security, development best practices, and entrepreneurship. Usually building [projects](/projects).
+Backend/API software engineer by day, [all sorts of stuff by night](https://facadeproject.com). Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security. Usually building [projects](/projects).
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).

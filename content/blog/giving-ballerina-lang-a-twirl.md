@@ -1,5 +1,5 @@
 +++
-categories = ["Software Development"]
+categories = ["Developer Experience"]
 date = 2020-12-20T06:00:00Z
 description = "My experience learning the language by building a small package."
 images = []
