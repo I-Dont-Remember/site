@@ -1,12 +1,11 @@
 +++
+title = "Obsidian Plugins for the Casual User"
 categories = ["Technical"]
 date = 2022-04-09T05:00:00Z
 description = "Plugins to make Obsidian as comfortable as other note apps, aimed at those who want tools that don’t need tinkering."
-draft = true
 images = ["/uploads/"]
-tags = [""]
-title = "Obsidian Plugins for the Casual User"
-
+tags = ["obsidian", "obsidian-plugins", "writing"]
+toc = true
 +++
 Obsidian is an amazing tool with a bazillion themes and plugins available for you to go crazy tinkering and customizing. Some people don’t enjoy tinkering with their tools, though - they want a simple experience that “just works”. These community plugins are the ones I have found to provide the best bang-for-buck in improving user experience without requiring more than clicking  `Install`🖱️.
 
@@ -52,8 +51,10 @@ Slack-style inline emojis that prompt when you type a colon `:`. I personally fi
 
 Not a plugin but a theme. I would feel remiss if I didn’t mention Minimal, as I have seen many recommendations around the web for how it makes Obsidian feel like a native app. It also adds extra utilities like image filters, alternate checkbox symbols like `incomplete /` , and more.
 
+## You forgot < X >!
+
 Let me know on [Twitter](https://twitter.com/maybekq) if I missed something critical for the average user - don’t be sending me [Dataview](https://github.com/blacksmithgu/obsidian-dataview)! I know it’s cool, but leave the fancy plugins for tinkerers and future exploration. This list is meant to help people onboard and get used to using Obsidian by making it as comfortable as more popular note taking apps.
 
-***
+---
 
 📖 Interested in diving deeper into Obsidian content? I encourage following the [Obsidian Roundup](https://www.obsidianroundup.org) weekly email, exploring the resources there, or diving into the community-driven [Hub docs](https://publish.obsidian.md/hub/) — especially their [list of plugins by category](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.01+Plugins+by+Category/%F0%9F%97%82%EF%B8%8F+02.01+Plugins+by+Category).
