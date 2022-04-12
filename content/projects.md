@@ -17,6 +17,7 @@ Project Status Guide:
 - ☠ Killed
 - 📚 Archive
 
+---
 
 * [**💻 Hugo Shortcodes**](https://hugoshortcodes.netlify.app/)
   * **Status: 🏃‍♂️**

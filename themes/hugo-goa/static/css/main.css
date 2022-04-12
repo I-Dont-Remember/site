@@ -288,3 +288,36 @@ body {
 li{
     margin: 0.5em 0;
 }
+
+.bg-highlighted {
+    background-image: linear-gradient(122deg, #eed63e 10%, #ffffff 10%, #ffffff 50%, #eed63e 50%, #eed63e 60%, #ffffff 60%, #ffffff 100%);
+    background-size: 15.00px 24.01px;
+    border-style: solid;
+    border: #444;
+}
+
+@media (min-width: 576px) {
+    .hero-text {
+        padding-left:15%;
+    }
+}
+
+
+.excalidraw-bg {
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 6px 13px;
+    box-decoration-break: clone;
+}
+
+.exc-yellow {
+    background-image: url(/img/yellow-excalidraw-bg.png);
+}
+
+.exc-blue {
+    background-image: url(/img/blue-excalidraw-bg.png);
+}
+
+.exc-green {
+    background-image: url(/img/green-excalidraw-bg.png);
+}

@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+<div class="container">
 <h2>Categories</h2>
 <div class="text-justify content" style="text-align: center;">
 -{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}

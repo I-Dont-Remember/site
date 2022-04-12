@@ -1,0 +1,19 @@
+<header class="row header">
+  <div class="col-xs-12 col-sm-8 hero-text">
+    <h1 class="author"><span class="excalidraw-bg exc-yellow">🚯 Hoarding Minimalist.</span></h1>
+    <h1 class="author"><span class="excalidraw-bg exc-blue">🥾 Failed bootstrapper.</span></h1>
+    <h1 class="author"><span class="excalidraw-bg exc-green">📝 Writer.</span></h1>
+    <h1 class="author">👩‍💻 <a href="https://blog.pragmaticengineer.com/the-product-minded-engineer/">Product-minded</a> <span class="excalidraw-bg exc-yellow">Backend Engineer.</span></h1>
+    <div class="row">
+      <div class="col-xs-3">
+        <a href="/about"><em>About></em></a>
+      </div>
+      <div class="col-xs-3">
+        <a href="/projects"><em>Projects></em></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4" style="margin-top: 20px">
+    {{ with .Site.Params.authorimage }} <img src="img/{{ . }}" alt="Author Image" class="img-circle text-center headshot"> {{ end }}
+  </div>
+</header>

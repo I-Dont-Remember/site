@@ -1,14 +1,19 @@
 {{ partial "header.html" . }}
 
-{{ partial "avatar.html" . }}
+<div class="container-fluid">
+{{ partial "hero.html" . }}
+</div>
 
-{{ partial "info.html" . }}
+<div class="container">
+{{/*  {{ partial "avatar.html" . }}
+
+{{ partial "info.html" . }}  */}}
 
 {{/*  {{ partial "main_menu.html" . }}  */}}
 
 {{/*  Curated articles  */}}
 <br />
-<h2>Favorite Posts</h2>
+<h2>Favorites from the <a href="https://joelhooks.com/digital-garden">Digital Garden</a></h2>
 <ul >
     {{ range where .Site.RegularPages "Params.curated" true }}
     <li class="list-entry">
