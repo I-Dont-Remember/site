@@ -3,8 +3,8 @@ comments = false
 draft = false
 slug = "open-questions"
 title = "Open Questions"
-
 showpagemeta = false
+showrelated = false
 +++
 
 These are questions and ideas I'm curious about, but don't have much in the way of answers for. I hope to keep this as a living document, adding relevant information as I find it.

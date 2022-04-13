@@ -296,12 +296,19 @@ li{
     border: #444;
 }
 
-@media (min-width: 576px) {
+.hero-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (min-width: 400px) {
     .hero-text {
         padding-left:15%;
     }
+    .hero-image {
+        text-align: left;
+    }
 }
-
 
 .excalidraw-bg {
     background-repeat: no-repeat;

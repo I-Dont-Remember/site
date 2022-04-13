@@ -6,7 +6,7 @@ showpagemeta = false
 slug = ""
 tags = ["projects"]
 title = "Projects"
-
+showrelated = false
 +++
 Projects listed below are in a very rough chronological order.
 

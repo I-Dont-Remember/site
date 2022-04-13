@@ -1,0 +1,5 @@
+{{ $scratch := newScratch }}
+{{ range (where .Site.RegularPages "Type" "in" (slice "page" "blog")) }}
+{{ $scratch.Add "wordcount" .WordCount }}
+{{ end }}
+{{ $scratch.Get "wordcount" | lang.NumFmt 0 }}

@@ -6,8 +6,8 @@ draft = false
 slug = ""
 tags = ["Firsts!"]
 title = "Firsts!"
-
 showpagemeta = false
+showrelated = false
 +++
 
 I really like the idea of tracking the 'Firsts' I experience in my life, so starting it off with the first 'Firsts'! Fun to remember that the world is huge and we can only touch a tiny fraction of the possibilities with our lives. Life is one giant experiment, try a lot of new things because you're not gonna accidentally build a habit of things you don't like (except heroin, maybe don't try that). No one will force you to keep doing things except taxes and not murdering people. Other than that you're pretty much free to do whatever. 

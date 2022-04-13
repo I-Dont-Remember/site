@@ -9,7 +9,9 @@
 
 {{ partial "menu.html" . }}
 
-{{ partial "related.html" . }}
+{{ if ne .Params.showrelated false }}
+    {{ partial "related.html" . }}
+{{ end }}
 
 {{ partial "footer.html" . }}
 

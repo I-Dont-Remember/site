@@ -6,8 +6,8 @@ draft = false
 slug = ""
 tags = ["No Speed Limits"]
 title = "No Speed Limits"
-
 showpagemeta = false
+showrelated = false
 +++
 
 Core list of inspiring tales from [Life Has No Speed Limits](/life-has-no-speed-limits).
