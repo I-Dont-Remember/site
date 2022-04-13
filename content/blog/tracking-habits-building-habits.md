@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Habits"]
 date = 2022-04-13T04:00:00Z
 description = ""
 draft = true

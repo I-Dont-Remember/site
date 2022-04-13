@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = [""]
 date = 2022-04-13T04:00:00Z
 description = ""
 draft = true
@@ -21,12 +21,9 @@ Stop asking for advice - especially if you won’t use it.
 The list goes on. In very few situations will a person give you what you seek, so you keep searching. Asking around feels useful, but if you don’t act on it, you’re just wasting the time of someone you respect.
 
 > ⚠️ If what you are really asking is **‘is my idea stupid’**, “good” advice might dissuade you from ever trying. Lots of ideas sound stupid before the world steps in with a surprise:
-
-\*- “I’ll chug wine and cook poorly, then post a video of it on the internet” → [My Drunk Kitchen](https://en.wikipedia.org/wiki/My_Drunk_Kitchen) had millions of subscribers & hundreds of millions of views.
-
-* “I will put water in a can, then pretend it’s beer and make it expensive” → Liquid Death, [valued at >$500 MILLION in Jan 2022](https://www.fooddive.com/news/liquid-death-raises-75m-in-funding-round-that-values-water-brand-at-more-t/616729/).*
-
-> 
+>
+> - “I’ll chug wine and cook poorly, then post a video of it on the internet” → [My Drunk Kitchen](https://en.wikipedia.org/wiki/My_Drunk_Kitchen) had millions of subscribers & hundreds of millions of views.
+> - “I will put water in a can, then pretend it’s beer and make it expensive” → Liquid Death, [valued at >$500 MILLION in Jan 2022](https://www.fooddive.com/news/liquid-death-raises-75m-in-funding-round-that-values-water-brand-at-more-t/616729/).*
 
 ## You got advice. Can you trust it?
 
