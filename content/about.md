@@ -14,6 +14,12 @@ Backend software engineer by day at Large Corp 🏛, and [all sorts of stuff by 
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).
 
+## How I got into writing code
+
+Ended up studying Computer Engineering in my first year of university, but the classes I started with didn't catch my attention, and I assumed it wasn't for me. Amidst cramming for exams, I attempted to write a small Python script to spam [a certain well-known music video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) in new browser tabs on my friends computer. I had no idea how to distribute my mildly-malicious program (thereby only spamming myself), but the seed was planted 🌱. What my courses were missing that this ~10 line script had was the capability -- unlike my classes building Java apps in the IDE CLI I didn't understand, here I was actually controlling the computer! Thus, the spark grew into into my modern-day self of Jira tickets and [**LGTM**](https://justtechdebt.com/articles/dev-already-abandoned-new-years-resolution-to-actually-read-prs/).
+
+## What I do
+
 ### 🧑‍💻 [Product-minded](https://blog.pragmaticengineer.com/the-product-minded-engineer/) Backend Software Engineer
 
 - Know enough to be dangerous across the stack, from Ansible to Python to React, but most effective working with non-GUI projects — CLIs, APIs, backend systems.
@@ -29,19 +35,19 @@ If you'd like to reach out for whatever reason, easiest place to reach me is thr
 - Emoji lover — been described as having “strong emoji game”.
 - Strength in empathy, encouragement, and building a positive team atmosphere. Unfortunately, that pairs with having trouble making tough decisions about people — don’t put me in charge of firing anyone, they’ll end up with a bonus instead.
 
-## 📝 Writer
+### 📝 Writer
 
 Attempting to wrangle the mess of ideas in my head with words. Moderately succeeding. Lofty goal of [1 million words published](https://kevinquinn.fun/wc/) on big wide web.
 
-## 🚯 Hoarding Minimalist
+### 🚯 Hoarding Minimalist
 
 Embraced minimalism, but I struggle to throw things away that are “perfectly good” (spoiler: to most people they are already trash). 
 
-## 🥣 Serial Creator
+### 🥣 Serial Creator
 
 Keep trying to build things after listening to too many episodes of Indie Hackers. You’ll find the full list on my Projects page, but one of my more potent learning experiences around startups/product-building I cover in-depth in [Reflecting on my Failure to Build a One Dollar Company.](https://kevinquinn.fun/blog/reflecting-on-my-failure-to-build-a-one-dollar-company/)
 
-## 🤹 Professional Dabbler
+### 🤹 Professional Dabbler
 
 I aim to be curious and open to new experiences, which leads me down a variety of rabbit holes.
 
