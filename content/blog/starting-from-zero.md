@@ -30,13 +30,13 @@ If you see me and I'm doing something boring, throw a rock and tell me to get up
 
 ### Twitter
 
-1 follower. [@maybekevinquinn](https://twitter.com/maybekevinquinn "Twitter: maybekevinquinn")
+1 follower. [@maybekq](https://twitter.com/maybekq "Twitter: maybekq")
 
 ![Twitter profile page](/uploads/initial-twiter-stats.png#center)
 
 ### Medium
 
-4 pieces published, 1 follower, 167 views, 69 reads 😎. [@maybekevinquinn](https://maybekevinquinn.medium.com/ "Medium: maybekevinquinn")
+4 pieces published, 1 follower, 167 views, 69 reads 😎. [@maybekq](https://maybekq.medium.com/ "Medium: maybekq")
 
 ![Medium stats page](/uploads/initial-medium-stats.png#center)
 

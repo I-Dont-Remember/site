@@ -38,7 +38,7 @@ Project Status Guide:
 
 * **Writing**
   * **Status: 🏃‍♂️**
-  * I started writing on this blog, [**Dev.to**](https://dev.to/idontremember), and [**Medium**](https://maybekevinquinn.medium.com/). Whether or not anyone reads it, it has been incredibly helpful to process thoughts instead of letting them endlessly bounce within my skull.
+  * I started writing on this blog, [**Dev.to**](https://dev.to/idontremember), and [**Medium**](https://maybekq.medium.com/). Whether or not anyone reads it, it has been incredibly helpful to process thoughts instead of letting them endlessly bounce within my skull.
 
 * [**👩‍💻Thyme**](https://central.ballerina.io/i_dont_remember/thyme)
   * **Status: ⏳**
