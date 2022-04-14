@@ -1,10 +1,10 @@
 +++
-categories = [""]
+categories = ["Career"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "90% of advice ends up wasted, so stop asking."
+draft = false
 images = []
-tags = []
+tags = ["advice", "career"]
 title = "Stop Asking for Advice"
 
 +++

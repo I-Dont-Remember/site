@@ -1,14 +1,14 @@
 +++
 categories = ["Personal Development"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
-images = []
+description = "if a genie could snap their fingers and give you 500 hours to spend on anything, what would you use it for?"
+draft = false
+#images = []
 tags = []
 title = "What Would You do With an Extra 500 Hours?"
 
 +++
-if a genie could snap their fingers and give you 500 hours to spend on anything, what would you use it for? Think of those personal wish list ideas you've had for so long, yet they never seem to make it into your schedule. Every so often you get reminded with a pang of regret, wondering why you still haven't done it. For some it's learning a language or instrument, for others it's learning a new skill so they can break into a different career. It's heartbreaking how commonplace it is to live with longing but never taking action. Have one in mind? Now imagine where you could be if you had 500 hours devoted to it exclusively. Picture the progress, the opportunities, which might arise.
+If a genie could snap their fingers and give you 500 hours to spend on anything, what would you use it for? Think of those personal wish list ideas you've had for so long, yet they never seem to make it into your schedule. Every so often you get reminded with a pang of regret, wondering why you still haven't done it. For some it's learning a language or instrument, for others it's learning a new skill so they can break into a different career. It's heartbreaking how commonplace it is to live with longing but never taking action. Have one in mind? Now imagine where you could be if you had 500 hours devoted to it exclusively. Picture the progress, the opportunities, which might arise.
 
 What if I told you those hours were hiding in your life already, waiting to be put to good use?
 

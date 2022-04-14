@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Career"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Leveraging multiple strengths in concert to make the whole better."
+draft = false
 images = []
-tags = []
+tags = ["talent-stack", "strengths"]
 title = "Exploring My Talent Stack"
 
 +++

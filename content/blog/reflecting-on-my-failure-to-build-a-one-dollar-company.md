@@ -1,5 +1,5 @@
 +++
-categories = ["Bootstrappers"]
+categories = ["Bootstrapping"]
 date = 2022-03-23T12:00:00Z
 description = "A reflection on my failure to build a viable product, so others can learn from my mistakes."
 draft = false

@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Privacy & Security"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Incrementally remove Google from your life without having to rip it out immediately."
+draft = false
 images = []
-tags = []
+tags = ["google", "de-google"]
 title = "De-Google Yourself Without Cutting Cold Turkey"
 
 +++

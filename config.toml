@@ -29,9 +29,13 @@ enableGitInfo = true
 
 ## Site Settings
 [params]
+# gohugo.io/templates/internal/#open-graph
 author = "Kevin Quinn"
 intro = "Backend Software Engineer [(usually)](https://facadeproject.com#current-bios) 🤹"
-description = """
+description = "Writer. Product-minded Software Engineer. Professional Dabbler."
+# for og:image, featured image if there isn't a page one
+images = ['img/kq-fun-default-site-img.png']
+description1 = """
 \n\n#### _Spirit emoji_:  `¯\\_(ツ)_/¯`
 <br />  
 _How do I become a better writer?_  **Write, a lot.**

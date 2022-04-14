@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "A project person that can't seem to ship ideas."
+draft = false
 images = []
-tags = []
+tags = ["completion", "impostor-syndrome"]
 title = "Beating Half-Baked Project Syndrome"
 
 +++

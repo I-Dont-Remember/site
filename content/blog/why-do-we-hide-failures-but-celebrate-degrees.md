@@ -1,10 +1,9 @@
 +++
-categories = ["Learning"]
+categories = ["Career"]
 date = 2022-04-13T04:00:00Z
 description = ""
-draft = true
-images = []
-tags = []
+draft = false
+tags = ["learning", "brand"]
 title = "Why Do We Hide Failures But Celebrate Degrees"
 
 +++

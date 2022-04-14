@@ -1,12 +1,11 @@
 +++
-categories = []
+categories = ["Personal Development"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Desiring to be creative, but defaulting to consuming content to the extreme."
+draft = false
 images = []
 tags = []
 title = "Creator Trapped in a Consumer Body"
-
 +++
 
 **TL;DR:** _Find out whether you default to consuming or creating. Bias yourself towards action, **Stop reading about creating and start doing it.** Not watching TV does not mean you're productive._
@@ -15,11 +14,9 @@ title = "Creator Trapped in a Consumer Body"
 
 I am a creator trapped in a consumer's body.
 
-> *Some people are consumer by nature; they consume vast quantities of knowledge purely for learning's sake. Others are producers; they consume knowledge with the intent of one day acting on the knowledge and producing something, be it a book, a song, a blog, a startup, etc... Neither is better than the other.
+> *Some people are consumer by nature; they consume vast quantities of knowledge purely for learning's sake. Others are producers; they consume knowledge with the intent of one day acting on the knowledge and producing something, be it a book, a song, a blog, a startup, etc... Neither is better than the other*[^1].
 
-The key is to answer one question: **which are you?__*
-
-_Rob Walling_*
+The key is to answer one question: __which are you?__.
 
 ## Years of experience
 
@@ -44,4 +41,4 @@ The first step was recognizing my default tendency. The second was realizing I h
 
 This will be constantly evolving as I find out new ways to spend more time creating and less time consuming.
 
-\*_This quote is from an article that does not appear to be on his site any longer, 'The Single Most Important Career Question You Can Ask Yourself'_ [_https://robwalling.com_](https://robwalling.com "https://robwalling.com")
+[^1]: _This quote is from an article that does not appear to be on his site any longer, 'The Single Most Important Career Question You Can Ask Yourself'_ [_https://robwalling.com_](https://robwalling.com "https://robwalling.com")

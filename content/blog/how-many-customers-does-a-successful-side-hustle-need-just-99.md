@@ -1,5 +1,5 @@
 +++
-categories = ["Creators"]
+categories = ["Bootstrapping"]
 date = 2020-11-26T06:00:00Z
 description = "Let's break it down and see how you only need 99 people's support for your side hustle to make a drastic change to your life."
 images = ["/uploads/mugshotbot-how-many-customers.jpeg"]

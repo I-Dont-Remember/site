@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Bootstrapping"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Maintain a toolkit to avoid shiny objects and be a quicker creator."
+draft = false
 images = []
-tags = []
+tags = ["toolkit", "side-projects", "programming"]
 title = "On the Importance of Maintaining a Toolkit"
 
 +++

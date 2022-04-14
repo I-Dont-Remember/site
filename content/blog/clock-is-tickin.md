@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Time Management"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Are you spending your minutes with intention?"
+draft = false
 images = []
-tags = []
+tags = ["time-management", "attention-management"]
 title = "Clock is Tickin’"
 
 +++

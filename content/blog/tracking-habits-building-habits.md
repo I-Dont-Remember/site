@@ -1,10 +1,10 @@
 +++
-categories = ["Habits"]
+categories = ["Personal Development"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Confusing the tracking of habits as being enough to build them."
+draft = false
 images = []
-tags = []
+tags = ["habits"]
 title = "Tracking Habits ≠ Building Habits"
 
 +++

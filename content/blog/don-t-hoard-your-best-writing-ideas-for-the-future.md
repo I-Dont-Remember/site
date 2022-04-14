@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Writing"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Stockpiling your best ideas for a future audience won’t make you a better writer."
+draft = false
 images = []
-tags = []
+tags = ["impostor-syndrome"]
 title = "Don’t Hoard Your Best Writing Ideas for The Future"
 
 +++

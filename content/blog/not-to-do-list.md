@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Time Management"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Removing negative elements of your day can be more effective than optimizing your time to perfection."
+draft = false
 images = []
-tags = []
+tags = ["todo-list", "time-management"]
 title = "Not-To-Do List"
 
 +++

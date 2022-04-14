@@ -1,12 +1,11 @@
 +++
-categories = []
+categories = ["Privacy & Security"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Help your friends nab the low hanging fruits of security posture."
+draft = false
 images = []
-tags = []
+tags = ["privacy", "password-management"]
 title = "Make Your Non-Techy Friends Safer Online in Under an Hour"
-
 +++
 As someone who pretends to know tech, it can be a hair-pulling experience watching the blatant disregard people you care about have for privacy & security online. Unsecured Wi-Fi named `Sturbucks`? seems legit 🤦‍♀️. They might not know the dangers all around and need someone to watch out for them.
 

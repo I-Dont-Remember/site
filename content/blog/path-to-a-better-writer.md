@@ -3,7 +3,7 @@ categories = ["Writing"]
 date = 2021-01-10T05:00:00Z
 # published on April 13th with the other 17, but it really needs to have the original date or it makes no sense in context - For me. I'm the only one that reads every article on # my site in order and remember context around things.
 description = ""
-draft = true
+draft = false
 images = []
 tags = []
 title = "Path to a Better Writer"

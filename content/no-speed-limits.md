@@ -1,10 +1,10 @@
 +++
-categories = ["No Speed Limits"]
+categories = ["Career"]
 comments = false
 date = "2021-08-30T00:00:00-06:00"
 draft = false
 slug = ""
-tags = ["No Speed Limits"]
+tags = ["no-speed-limits"]
 title = "No Speed Limits"
 showpagemeta = false
 showrelated = false

@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Technical"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "Ways to programmatically generate pages from data for Hugo. Automate your page creation."
+draft = false
 images = []
-tags = []
+tags = ["hugo", "static-site-generator"]
 title = "Creating Pages from Data Programmatically for Hugo"
 
 +++

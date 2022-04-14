@@ -1,10 +1,10 @@
 +++
-categories = ["Job Searching"]
+categories = ["Career"]
 date = 2022-04-13T04:00:00Z
-description = ""
-draft = true
+description = "If the resume should showcase your skills, why is company pedigree the most eye-catching?"
+draft = false
 images = []
-tags = []
+tags = ["resume", "job-searching"]
 title = "Rethinking the Default Resume Sections"
 
 +++
