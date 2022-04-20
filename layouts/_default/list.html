@@ -1,10 +1,18 @@
 {{ partial "header.html" . }}
 
 <div class="container">
-<h2>Categories</h2>
+<h2 class="text-center">Thoughts</h2>
+<h4 class="text-center">Total of <span class="excalidraw-bg exc-yellow">{{len (where .Site.RegularPages "Section" "==" "blog") }}</span> thoughts to sink your teeth into.</h4>
 <div class="text-justify content" style="text-align: center;">
--{{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    <a href="{{.Permalink}}">{{.Title}} ({{ len (.Pages) }})</a></li> - 
+{{range $index, $element := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+    {{ if eq ( mod $index 3) 0}}
+        <span class="excalidraw-bg exc-blue">
+    {{ else if eq ( mod $index 3) 1}}
+        <span class="excalidraw-bg exc-green">
+    {{ else }}
+        <span class="excalidraw-bg exc-yellow">
+    {{ end }}
+    <a href="{{$element.Permalink}}">{{$element.Title}} ({{ len ($element.Pages) }})</a></span></li>  
 {{end}}
 </div>
 
