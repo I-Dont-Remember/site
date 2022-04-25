@@ -16,12 +16,12 @@ document.onmousemove = function(event) {
     event.y;
     if (location.pathname == '/') {
         // Only be annoying on home page, defaults to runner
-        const cursorTopHalf = event.y < (window.innerHeight/2)
-        if(cursorTopHalf) {
+        const cursorTopSection = event.y < (window.innerHeight/1.5)
+        if(cursorTopSection) {
           // do something with image classes
-            elem.classList = ["emoji-cursor--astrocat"]
+            elem.classList = ["emoji-cursor--page-top"]
         } else {
-            elem.classList = ["emoji-cursor--upside-down"]
+            elem.classList = ["emoji-cursor--page-bottom"]
         }
     }
 }
