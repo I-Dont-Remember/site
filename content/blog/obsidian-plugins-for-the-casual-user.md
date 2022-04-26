@@ -23,7 +23,7 @@ You’re all set to up your writing game ✍️!
 
 Each of these plugins adds a useful bit of note-taking functionality you may be used to from other writing tools like Google Docs, such as simple text formatting, table of contents, and more.
 
-### 📜 [Obsidian cMenu](https://github.com/chetachiezikeuzor/cMenu-Plugin) - no need to learn markdown by heart
+### 📜 [Obsidian cMenu](https://github.com/chetachiezikeuzor/cMenu-Plugin) - _no need to learn markdown by heart_
 
 No need to master every bit of markdown to be a  writing wizard 🧙‍♂️. cMenu adds a floating bar with text formatting options you need while writing. Even handy for regular markdown users for easily changing large highlighted blocks at once or for the hard to remember formats like superscript.
 
@@ -53,8 +53,8 @@ Not a plugin but a theme. I would feel remiss if I didn’t mention Minimal, as 
 
 ## You forgot < X >!
 
-Let me know on [Twitter](https://twitter.com/maybekq) if I missed something critical for the average user - don’t be sending me [Dataview](https://github.com/blacksmithgu/obsidian-dataview)! I know it’s cool, but leave the fancy plugins for tinkerers and future exploration. This list is meant to help people onboard and get used to using Obsidian by making it as comfortable as more popular note taking apps.
+Let me know on [Twitter](https://twitter.com/maybekq)🐤 if I missed something critical for the **average** user - don’t be sending me [Dataview](https://github.com/blacksmithgu/obsidian-dataview)! I know it’s cool, but leave the fancy plugins for tinkerers👩‍🔧 and future exploration 🚀. This list is meant to help people onboard and get used to Obsidian by making it as comfortable as other, more popular, note taking apps.
 
 ---
 
-📖 Interested in diving deeper into Obsidian content? I encourage following the [Obsidian Roundup](https://www.obsidianroundup.org) weekly email, exploring the resources there, or diving into the community-driven [Hub docs](https://publish.obsidian.md/hub/) — especially their [list of plugins by category](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.01+Plugins+by+Category/%F0%9F%97%82%EF%B8%8F+02.01+Plugins+by+Category).
+📖 Interested in diving deeper into Obsidian content? I encourage following the [Obsidian Roundup](https://www.obsidianroundup.org) weekly email 📩, exploring the resources there, or diving into the community-driven [Hub docs](https://publish.obsidian.md/hub/) — especially their [list of plugins by category](https://publish.obsidian.md/hub/02+-+Community+Expansions/02.01+Plugins+by+Category/%F0%9F%97%82%EF%B8%8F+02.01+Plugins+by+Category).

@@ -10,6 +10,11 @@ toc = true
 +++
 I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more complicated to get configured than I thought it would be, so I'm sharing it here to hopefully make setup smoother for those in the future - as well as a few [extra credit](#extra-credit) pieces I've picked up along the way.
 
+> 
+>  🛑 _Realizing you don't want to set everything up just yet? There's [a few must have plugins](/obsidian-plugins-for-the-casual-user) that require **0** fiddling and make Obsidian **10x** easier to use, even without daily notes._
+> 
+
+
 ## Daily Notes Steps
 
 1. Create a folder for the periodic notes (`periodic_notes`), and then a sub folder for each of the time periods you want to use, .e.g `periodic_notes/daily`. You can choose whatever naming scheme you like.
