@@ -2,17 +2,18 @@
 +++
 categories = ["Software Development"]
 date = 2022-04-25T05:00:00Z
-description = ""
+description = "I thought sales was a distant concept from compilers and syntax errors...I've been a fool."
 draft = false
 images = ["/uploads/sales-all-the-way-turtle-smaller.png"]
 tags = ["sales", "software-engineering", "bootstrapping", "indie-hackers"]
 title = "Software Engineering: It's Sales All the Way Down"
+curated = true
 +++
 
 > *["Turtles all the way down"](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)*
 > 
 
-As an engineer, I always though sales was this distant land of people with slicked-back hair, and that I'd never have to concern myself with it - but I've misled myself. **It's sales all the way down**.
+As an engineer, I always thought sales was this distant land of people with slicked-back hair, and that I'd never have to concern myself with it - but I've misled myself. **It's sales all the way down**.
 
 ![Stack of turtles with sales written on them, with a confused developer turtle at the bottom wondering why they're labeled "sales"](/uploads/sales-all-the-way-turtle-smaller.png#center)
 
