@@ -64,14 +64,15 @@ Preparing you for your best career. You'll learn the majority of your skills at 
     - Like mentioned previously, **pedigree matters**. Put in the effort so you have a chance at getting them, but don’t beat yourself up if you don’t. You can only guarantee not getting it if you don’t apply.
     - Prep for the interviews with the time you save not trying to get As.
     - **Bonus:** *Try to work at one big company and one startup <100 people while in school. Then you’ll have a feel for what YOU like when you graduate and apply for your first full-time position.*
-- **Get an internship every summer ***(yes, even freshman year!)*
+- **Get an internship every summer** _(yes, even freshman year!)_
     - The people hiring you for future jobs care about your **experience, not GPA**. Make your own life easy by gaining as much as possible.
     - Find jobs which let you start learning to code (ideally on a team), even if they aren’t fancy or pay less than something irrelevant to your career — the worry is the invisible Opportunity Cost of not building your skills.
         
-        > *You should never think you are too good to do a job. Be a forever new guy. Never think that you are above taking out the trash.
-         - LT. Jonny Kim, (MD,Astronaut,Navy SEAL)*
+        > _You should never think you are too good to do a job. Be a forever new guy. Never think that you are above taking out the trash._
         > 
-    - **Bonus: ***If you’re feeling up for it, find a part-time job during the school year where you code on top of summer internships.*
+        > _- LT. Jonny Kim, (MD,Astronaut,Navy SEAL)_
+
+    - **Bonus:** _If you’re feeling up for it, find a part-time job during the school year where you code on top of summer internships._
 
 ## 🕳️ Common pitfalls
 
