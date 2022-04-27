@@ -3,7 +3,7 @@ title = "Obsidian Plugins for the Casual User"
 categories = ["Technical"]
 date = 2022-04-09T05:00:00Z
 description = "Plugins to make Obsidian as comfortable as other note apps, aimed at those who want tools that don’t need tinkering."
-images = ["/uploads/"]
+images = []
 tags = ["obsidian", "obsidian-plugins", "writing"]
 toc = true
 +++
