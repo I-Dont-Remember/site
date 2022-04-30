@@ -1,4 +1,4 @@
-<form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/kevin-quinn"
+{{/*  <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/kevin-quinn"
     method="post" target="popupwindow"
     onsubmit="window.open('https://tinyletter.com/kevin-quinn', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
     <p><label for="tlemail"><em>
@@ -11,3 +11,25 @@
         <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
     </p>
 </form>
+  */}}
+<div id="revue-embed" style="border:1px solid #ccc;padding:3px;text-align:center;">
+    <form action="https://www.getrevue.co/profile/maybekq/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+    <p><label for="member_email"><em>
+        Get 3 interesting idea in your inbox, every other Thursday.
+        </em></label>
+    </p>
+    <div class="revue-form-group">
+      <input style="width:300px" class="revue-form-field" placeholder="curious-learner@gmail.com" type="email" name="member[email]" id="member_email">
+    </div>
+    <div class="revue-form-actions">
+      <input style="margin-top:1%;" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+    </div>
+    <div class="revue-form-footer">
+        <p style="font-size: 10px;margin-top:2%;">
+            By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
+        </p>
+    </div>
+    </form>
+</div>
+  
+  
