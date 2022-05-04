@@ -1,5 +1,5 @@
 +++
-categories = ["Technical"]
+categories = ["Guides"]
 date = 2021-12-11T05:00:00Z
 description = "Learn how to set-up the Pi-hole ad blocker on a headless Raspberry Pi Zero and connect your Android and Windows devices for maximum adblock protection!"
 images = ["/uploads/setup-pi-hole-raspberrypi-og.png"]

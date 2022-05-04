@@ -1,6 +1,6 @@
 <section id="list-pane" class="row list">
   <ul>
-    {{/*  {{ $technical_pages := where .Data.Pages ".Params.categories" "intersect" (slice "Technical") }}
+    {{/*  {{ $technical_pages := where .Data.Pages ".Params.categories" "intersect" (slice "Guides") }}
     {{ range (.Data.Pages | complement $technical_pages).ByPublishDate.Reverse }}  */}}
     {{ range .Data.Pages.ByPublishDate.Reverse }}
     <li class="list-entry">

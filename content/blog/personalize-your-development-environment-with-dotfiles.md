@@ -1,5 +1,5 @@
 +++
-categories = ["Technical"]
+categories = ["Guides"]
 date = 2021-12-16T05:00:00Z
 description = "With a few small tweaks, take the default terminal and make it uniquely yours - then watch your dotfiles evolve as you find new tricks for your toolkit."
 draft = false

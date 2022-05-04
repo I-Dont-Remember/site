@@ -1,5 +1,5 @@
 +++
-categories = ["Technical"]
+categories = ["Guides"]
 date = 2022-04-13T04:00:00Z
 description = "Ways to programmatically generate pages from data for Hugo. Automate your page creation."
 draft = false
