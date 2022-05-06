@@ -10,7 +10,7 @@ showpagemeta = false
 showrelated = false
 +++
 
-Core list of inspiring tales from [Life Has No Speed Limits](/life-has-no-speed-limits).
+Core list of inspiring tales from [Life Has No Speed Limits](/blog/life-has-no-speed-limits).
 
 > "Everything’s impossible until somebody does it."
 

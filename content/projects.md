@@ -91,7 +91,7 @@ Project Status Guide:
 
 * **LifeText: SMS Information Hub**
   * **Status: ☠**
-  * [*Frontend*](www.lifetext.us)
+  * [*Frontend*](https://www.lifetext.us)
   * [*GitHub*](https://github.com/I-Dont-Remember/MHacks2017)
   * SMS based API hub to allow access to information when you don't have data.  MHacks X project.  We used the Twilio API to handle SMS, then used Python's built in difflib to make it so texts can be somewhat natural sounding as long as they include something close to spelled like a key word.  API's were Dark Sky for weather, Wikipedia, and NewsAPI.  It's hosted on AWS in a Docker container for ease of setup and rebuilding.  The frontend we added later on in the hackathon to give users a way to adjust the emergency contacts that want listed, but it ended up causing the most trouble so we had to pivot and build it just as a mock.  We'd like to continue on and see what this could become if we integrated social media and had a strong focus on countries/ areas that rarely have data connection.
 

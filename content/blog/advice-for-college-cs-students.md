@@ -45,7 +45,7 @@ What is the current landscape of working as a software engineer?
     - Even if you hate what Facebook has created, or Google, or whoever, fact of the matter is they ain't going anywhere, and having those names on your resume makes life easier.
 - **Interviews are a separate game from software engineering**
     - Many companies still use brain-teaser-ish coding questions for their interviews.
-    - The skills you learn for building actual software systems are rarely tested in interviews. If you can [Leetcode](leetcode.com/) heavily, you can get a job in big tech companies without being good at the 80% of the job that isn’t writing code. Bleak? Yes. Disappointing? Undoubtedly. Gameable? Absolutely.
+    - The skills you learn for building actual software systems are rarely tested in interviews. If you can [Leetcode](https://leetcode.com/) heavily, you can get a job in big tech companies without being good at the 80% of the job that isn’t writing code. Bleak? Yes. Disappointing? Undoubtedly. Gameable? Absolutely.
 
 ---
 

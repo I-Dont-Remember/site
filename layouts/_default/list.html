@@ -3,6 +3,7 @@
 <div class="container">
 <h2 class="text-center">Thoughts</h2>
 <h4 class="text-center">Total of <span class="excalidraw-bg exc-yellow">{{len (where .Site.RegularPages "Section" "==" "blog") }}</span> thoughts to sink your teeth into.</h4>
+<p class="text-center" style="font-size:12px !important;"><a href="/categories/">Categories</a> - <a href="/tags/">Tags</a></p>
 <div class="text-justify content" style="text-align: center;">
 {{range $index, $element := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     {{ if eq ( mod $index 3) 0}}
