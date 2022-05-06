@@ -32,7 +32,8 @@ enableGitInfo = true
 # gohugo.io/templates/internal/#open-graph
 author = "Kevin Quinn"
 intro = "Backend Software Engineer [(usually)](https://facadeproject.com#current-bios) 🤹"
-description = "Writer. Product-minded Software Engineer. Professional Dabbler."
+description = "Writer. Product-minded Software Engineer. Professional Dabbler. Usually confused."
+keywords = "minimalist,blog,hugo,developer,software,writing"
 # for og:image, featured image if there isn't a page one
 images = ['img/kq-fun-default-site-img.png']
 description1 = """
@@ -47,11 +48,6 @@ description2 = """
 
 authorimage = "kevin-profile-photo-fall21-small.jpg" # "kevin-portrait.jpeg"
 dateformat = "Jan 2, 2006"
-
-## Site Meta Settings
-[params.meta]
-description = "Kevin Quinn"
-keywords = "minimalist,blog,hugo,developer,software,writing"
 
 ## Social Accounts (order is not same here as on page)
 [params.social]

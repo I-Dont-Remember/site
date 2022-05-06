@@ -1,22 +1,31 @@
 {{ partial "header.html" . }}
 
 <div class="container">
-<h2 class="text-center">Thoughts</h2>
-<h4 class="text-center">Total of <span class="excalidraw-bg exc-yellow">{{len (where .Site.RegularPages "Section" "==" "blog") }}</span> thoughts to sink your teeth into.</h4>
-<p class="text-center" style="font-size:12px !important;"><a href="/categories/">Categories</a> - <a href="/tags/">Tags</a></p>
-<div class="text-justify content" style="text-align: center;">
-{{range $index, $element := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    {{ if eq ( mod $index 3) 0}}
-        <span class="excalidraw-bg exc-blue">
-    {{ else if eq ( mod $index 3) 1}}
-        <span class="excalidraw-bg exc-green">
-    {{ else }}
-        <span class="excalidraw-bg exc-yellow">
+    
+{{ if or (eq .Section "tags") (eq .Section "categories") }}
+    {{ if or (eq .Permalink (`tags/` | absURL)) (eq .Permalink (`categories/` | absURL)) }}
+        <h1 class="mb-3 text-center">{{.Title | markdownify}}</h1>
+        {{else}}
+        <h1 class="mb-3 text-center text-dark font-weight-bold">Showing posts from <mark>{{.Title | markdownify}}</mark></h1>
     {{ end }}
-    <a href="{{$element.Permalink}}">{{$element.Title}} ({{ len ($element.Pages) }})</a></span></li>  
-{{end}}
-</div>
-
+    <p class="text-center" style="font-size:12px !important;"><a href="/categories/">Categories</a> - <a href="/tags/">Tags</a></p>
+{{ else }}
+    <h1 class="text-center">Thoughts</h1>
+    <h4 class="text-center">Total of <span class="excalidraw-bg exc-yellow">{{len (where .Site.RegularPages "Section" "==" "blog") }}</span> thoughts to sink your teeth into.</h4>
+    <p class="text-center" style="font-size:12px !important;"><a href="/categories/">Categories</a> - <a href="/tags/">Tags</a></p>
+    <div class="text-justify content" style="text-align: center;">
+        {{range $index, $element := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+            {{ if eq ( mod $index 3) 0}}
+                <span class="excalidraw-bg exc-blue">
+            {{ else if eq ( mod $index 3) 1}}
+                <span class="excalidraw-bg exc-green">
+            {{ else }}
+                <span class="excalidraw-bg exc-yellow">
+            {{ end }}
+            <a href="{{$element.Permalink}}/">{{$element.Title}} ({{ len ($element.Pages) }})</a></span></li>  
+        {{end}}
+    </div>
+{{ end }}
 
 {{ partial "li.html" . }}
 
