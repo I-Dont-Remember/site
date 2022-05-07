@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Guides"]
 date = 2022-05-07T04:00:00Z
 description = ""
 draft = true
@@ -16,6 +16,7 @@ Speaking of budgeting, you’re here because you want to host [Actual](https://a
 
 Your first step is to get the Actual server code on your machine and running.
 
+```
     git clone git@github.com:actualbudget/actual-server.git
     cd actual-server/
     docker build -t actual-server .
@@ -23,9 +24,9 @@ Your first step is to get the Actual server code on your machine and running.
     ....
     <lots of Docker output>
     ....
-    
+```
 
-At this point, you should be able to navigate to `[<http://localhost:5006>](<http://localhost:5006>)` and see the Actual application! Awesome!
+At this point, you should be able to navigate to _[localhost:5006](http://localhost:5006)_ and see the Actual application! Awesome!
 
 Now kill that process with `Ctrl+C` and let’s put it somewhere with more longevity.
 
@@ -44,7 +45,7 @@ We’re back on track! You should be back in the same `actual-server/` directory
 
 * `cp fly.template.toml fly.toml`
 * `flyctl launch --no-deploy`
-
+  ```
       21:51:14:~/work/actual-server:(master) [1]▶ flyctl launch --no-deploy
       An existing fly.toml file was found for app actualbudget-otter
       ? Would you like to copy its configuration to the new app? Yes
@@ -57,11 +58,11 @@ We’re back on track! You should be back in the same `actual-server/` directory
       Created app lively-meadow-7214 in organization personal
       Wrote config file fly.toml
       Your app is ready. Deploy with `flyctl deploy`
-      
+  ```
 * `flyctl volumes create actualbudget_vol --size 1 -r ord`
 
   > ℹ️ _I set this to volume of 1 GB since I am deploying multiple apps on Fly, but the free tier supports up to_ [_3GB for your account_](https://fly.io/docs/about/pricing/#free-allowances)_._
-
+  ```
       21:53:07:~/work/actual-server:(master) [130]▶ flyctl volumes create actualbudget_vol --size 1 -r ord
               ID: vol_<redacted>
             Name: actualbudget_vol
@@ -71,15 +72,15 @@ We’re back on track! You should be back in the same `actual-server/` directory
          Size GB: 1
        Encrypted: true
       Created at: 07 May 22 01:53 UTC
-      
+  ```
 * Update the mounts section in the `fly.toml` , `source` will be the name of your sweet new volume, and `destination` is [defined by Actual](https://github.com/actualbudget/actual-server#persisting-server-data). Now is also a great time to edit the app name - I got the fantastic `lively-meadow-7214`, but not everyone will be that lucky.
-
+  ```
       [mounts]
         source="actualbudget_vol"
         destination="/data"
-      
+  ```
 * The big moment you’ve been waiting for - deployment! Run `flyctl deploy` and watch the magic work.
-
+  ```
       21:55:35:~/work/actual-server:(master) [0]▶ flyctl deploy
       ==> Verifying app config
       --> Verified app config
@@ -99,7 +100,7 @@ We’re back on track! You should be back in the same `actual-server/` directory
       
        1 desired, 1 placed, 1 healthy, 0 unhealthy [health checks: 1 total, 1 passing]
       --> v0 deployed successfully
-      
+  ```
 
 Now you have a live app running on [Fly.io](http://Fly.io)!
 
@@ -109,11 +110,11 @@ With a few commands and almost no thought required, I have a self-hosted Actual 
 
 The very first thing you’re greeted with is Actual prompting for server configuration, explained [in more depth in the repo](https://github.com/actualbudget/actual-server#configuring-the-server-url). **TL;DR** You can just pick `Use this domain` and not worry about it.
 
-![](/uploads/actual-budget-landing-smaller.png)
+![Opening screen for Actual budgeting software prompting for server URL](/uploads/actual-budget-landing-smaller.png)
 
 After that, I chose the option to fill Actual with demo data so I could play around and actually check out it’s features.
 
-![](/uploads/actual-budget-demo-data-smaller.png)
+![Landing screen for Actual once you have data in it](/uploads/actual-budget-demo-data-smaller.png)
 
 ## Fin
 
