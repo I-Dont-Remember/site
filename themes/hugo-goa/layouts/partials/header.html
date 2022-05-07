@@ -52,7 +52,9 @@
 
 {{/*  <script async defer data-domain="kevinquinn.fun" src="https://plausible.io/js/plausible.js"></script>  */}}
 {{/* https://plausible.io/docs/proxy/guides/cloudflare */}}
-<script defer data-domain="kevinquinn.fun" data-api="https://innocuous.idontremember.workers.dev/zzvcvfdfef/event" src="https://innocuous.idontremember.workers.dev/akgdfdsaf/script.js"></script>
+{{ if not (in .Site.BaseURL "localhost") }}
+  <script defer data-domain="kevinquinn.fun" data-api="https://innocuous.idontremember.workers.dev/zzvcvfdfef/event" src="https://innocuous.idontremember.workers.dev/akgdfdsaf/script.js"></script>
+{{ end }}
 </head>
 <body id="body" lang="{{ .Site.LanguageCode }}" class="emoji-cursor--default">
 {{/*  <div class="home-link" style="margin-top: 1%; margin-left: 2%;">

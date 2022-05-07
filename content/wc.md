@@ -1,11 +1,10 @@
-
 +++
 categories = []
 comments = false
 date = "2022-02-09T00:00:00-06:00"
 draft = false
 slug = ""
-tags = ["wc"]
+tags = []
 title = "Words Written"
 showpagemeta = false
 showrelated = false
