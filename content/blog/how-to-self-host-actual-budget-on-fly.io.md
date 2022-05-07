@@ -8,7 +8,7 @@ tags = ["fly.io", "self-hosting"]
 title = "How to Self-Host Actual Budget on Fly.io"
 toc = true
 +++
-You want to self-host apps for fun or privacy - but not the _‘running servers in your garage’_ type of self-hosted. In 2022 we live in a Golden Era of low-cost VPCs and hosting providers, and there has never been a better time for people looking to offload the frustrating parts of self-hosting, while still operating on a shoe-string budget (or free!).
+You want to [self-host](https://www.reddit.com/r/selfhosted/) apps for fun or privacy - but not the _‘running servers in your garage’_ type of self-hosted. In 2022 we live in a Golden Era of low-cost VPCs and hosting providers, and there has never been a better time for people looking to offload the frustrating parts of self-hosting, while still operating on a shoe-string budget (or free!).
 
 Speaking of budgeting, you’re here because you want to host [Actual](https://actualbudget.com/) and take control of your finances! These deployment instructions are available [on the repo as well](https://github.com/actualbudget/actual-server), but I wanted an excuse to go through the process of deploying onto [Fly.io](http://Fly.io) and documenting. Plus, now I can add pretty pictures, and who doesn’t love pretty pictures and see what they’re getting themselves into?
 
