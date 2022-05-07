@@ -1,16 +1,18 @@
 +++
 categories = ["Guides"]
 date = 2022-05-07T04:00:00Z
-description = ""
-draft = true
-images = []
-tags = []
+description = "A simple guide to self-host an Actual server in just a few minutes, for free."
+draft = false
+images = ["/uploads/actual-budget-demo-data-smaller.png"]
+tags = ["fly.io", "self-hosting"]
 title = "How to Self-Host Actual Budget on Fly.io"
-
+toc = true
 +++
 You want to self-host apps for fun or privacy - but not the _‘running servers in your garage’_ type of self-hosted. In 2022 we live in a Golden Era of low-cost VPCs and hosting providers, and there has never been a better time for people looking to offload the frustrating parts of self-hosting, while still operating on a shoe-string budget (or free!).
 
 Speaking of budgeting, you’re here because you want to host [Actual](https://actualbudget.com/) and take control of your finances! These deployment instructions are available [on the repo as well](https://github.com/actualbudget/actual-server), but I wanted an excuse to go through the process of deploying onto [Fly.io](http://Fly.io) and documenting. Plus, now I can add pretty pictures, and who doesn’t love pretty pictures and see what they’re getting themselves into?
+
+![Landing screen for Actual once you have data in it](/uploads/actual-budget-demo-data-smaller.png)
 
 ## 🛠️ Local setup
 
@@ -112,9 +114,7 @@ The very first thing you’re greeted with is Actual prompting for server config
 
 ![Opening screen for Actual budgeting software prompting for server URL](/uploads/actual-budget-landing-smaller.png)
 
-After that, I chose the option to fill Actual with demo data so I could play around and actually check out it’s features.
-
-![Landing screen for Actual once you have data in it](/uploads/actual-budget-demo-data-smaller.png)
+After that, I chose the option to fill Actual with demo data so I could play around and actually check out it’s features (see the image at top of page again).
 
 ## Fin
 
