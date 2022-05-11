@@ -98,7 +98,15 @@ Since I use the progress bar in a number of places, I have it stored as a Templa
        module.exports = makeProgressBar;
        
 3. Restart Obsidian, in the settings for Templater you should see it loaded your function.
-4. Now you can use it in your Daily Notes (or elsewhere) like so:
+4. Now you can use it in your Daily Notes (or elsewhere) like so: 
+
+        ---
+        <%*
+        var fileDate = moment(tp.file.title);
+        ---
+        ^^❗need this variable in the frontmatter section to get date from page name^^
+
+        .... page contents .....
 
        <%* 
        function month() {
