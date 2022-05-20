@@ -76,6 +76,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">✍️ Writing <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {{range .Site.Params.dropdown }}
+              <li><a class="menu-item" href="{{ .URL }}">{{ .Name | lower }}</a></li>
+            {{ end }}
+            <li><a href="/blog/">📜 Posts</a></li>
+            <li><a href="/open-questions/">🤔 Open Questions</a></li>
+            <li><a href="/no-speed-limits/">⏩ No Speed Limits</a></li>
+          </ul>
+        </li>
         {{ range sort .Site.Menus.main }}
         <li><a class="menu-item" href="{{ .URL }}" {{ with .Params.Newtab }}target="_blank"{{ end }}>{{ .Name | lower }}</a></li>
         {{ end }}
@@ -94,11 +105,11 @@
             <li><a href="/recipes/">🧑‍🍳 Recipes</a></li>
           </ul>
         </li>
-        <li><button type="button" class="btn-warning" onclick='sendToRandomArticle()'>Random Read!</button></li>
+        <li style="margin-left: 10px;"><button type="button" class="btn-warning" onclick='sendToRandomArticle()'>Random Read!</button></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-            <div class="input-group" style="padding-top:5px">
+            <div class="input-group" style="padding-top:5px; max-width: 220px;">
               <input id='search-input' type="text" class="form-control" placeholder="Search for...">
               <span class="input-group-btn">
                 <a id='generated-link' target="_blank" class="btn btn-default" href="https://duckduckgo.com/">Go!</a>

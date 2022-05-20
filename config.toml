@@ -99,18 +99,18 @@ displayrssicon = false
 
 [menu]
 ## Main Menu
-[[menu.main]]
-    name = "✍️ Writing"
-    weight = 98
-    url = "/blog/"
-[[menu.main]]
-    name = "🧠 Open Questions"
-    weight = 100
-    url = "/open-questions/"
-[[menu.main]]
-    name = "⏩ No Speed Limits"
-    weight = 101
-    url = "/no-speed-limits/"
+# [[menu.main]]
+#    name = "✍️ Writing"
+#    weight = 98
+#    url = "/blog/"
+# [[menu.main]]
+#    name = "🧠 Open Questions"
+#    weight = 100
+#    url = "/open-questions/"
+# [[menu.main]]
+#    name = "⏩ No Speed Limits"
+#    weight = 101
+#    url = "/no-speed-limits/"
 [[menu.main]]
     name = "🎧 Podcast"
     weight = 102

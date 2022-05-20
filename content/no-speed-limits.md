@@ -25,6 +25,6 @@ Core list of inspiring tales from [Life Has No Speed Limits](/blog/life-has-no-s
 * The myriad of stories online of people creating stunning body transformations in <1 year.
 * Writing a book in one month (50,000 words) [https://nanowrimo.org/what-is-nanowrimo](https://nanowrimo.org/what-is-nanowrimo "https://nanowrimo.org/what-is-nanowrimo").
 * Ultralearners - [World Championship public speaker within 7 months](https://www.scotthyoung.com/blog/2019/07/29/conquering-public-speaking-from-zero-experience-to-world-championships-in-seven-months/), Tristan de Montebello.
-* Rich Roll went from struggling with alchohol and other issues in middle age to being a world class Ultraman [https://www.richroll.com/bio/](https://nanowrimo.org/what-is-nanowrimo "https://nanowrimo.org/what-is-nanowrimo")
-* Patrick Collison has a related list of _"quickly accomplishing ambitious things together"_ [https://patrickcollison.com/fast](https://nanowrimo.org/what-is-nanowrimo "https://nanowrimo.org/what-is-nanowrimo").
+* Rich Roll went from struggling with alchohol and other issues in middle age to being a world class Ultraman [richroll.com/bio/](https://www.richroll.com/bio/)
+* Patrick Collison has a related list of _"quickly accomplishing ambitious things together"_ [patrickcollison.com/fast](https://www.richroll.com/bio/).
 * A million others just a web search away...
