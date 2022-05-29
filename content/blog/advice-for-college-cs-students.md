@@ -111,3 +111,6 @@ Preparing you for your best career. You'll learn the majority of your skills at 
 Don’t worry if you don’t do one or all of these things, this is just one of many potential recipes with positive outcomes. Perfection isn’t required, but these concepts will set you up to have an easier road in your career so you can [spend your attention](https://ofdollarsanddata.com/do-i-have-your-attention-now/) on what truly matters. 
 
 Best wishes, from your local person who has no idea what he’s doing.
+
+## Resources
+ - [Developer Roadmaps for different specialties](https://roadmap.sh/roadmaps)
