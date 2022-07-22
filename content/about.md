@@ -45,7 +45,7 @@ Embraced minimalism, but I struggle to throw things away that are “perfectly g
 
 ### 🥣 Serial Creator
 
-Keep trying to build things after listening to too many episodes of Indie Hackers. You’ll find the full list on my Projects page, but one of my more potent learning experiences around startups/product-building I cover in-depth in [Reflecting on my Failure to Build a One Dollar Company.](https://kevinquinn.fun/blog/reflecting-on-my-failure-to-build-a-one-dollar-company/)
+Keep trying to build things after listening to too many episodes of Indie Hackers. You’ll find the full list on my [Projects](/projects/) page, but one of my more potent learning experiences around startups/product-building I cover in-depth in [Reflecting on my Failure to Build a One Dollar Company.](https://kevinquinn.fun/blog/reflecting-on-my-failure-to-build-a-one-dollar-company/)
 
 ### 🤹 Professional Dabbler
 

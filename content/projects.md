@@ -10,14 +10,18 @@ showrelated = false
 +++
 Projects listed below are in a very rough chronological order.
 
-Project Status Guide:
+Project Status Guide (_**22** in total_):
 
-- 🏃‍♂️ Active
-- ⏳ Functional, but not regularly contributing
-- ☠ Killed
-- 📚 Archive
+- 🏃‍♂️ Active **(5)**
+- ⏳ Functional, but not regularly contributing **(3)**
+- ☠ Killed **(7)**
+- 📚 Archive **(7)**
 
 ---
+
+* [**💻 Tech Debt**](https://justtechdebt.com/)
+  * **Status: 🏃‍♂️**
+  * Editor for a small satire site - The Onion for developers & tech folks.
 
 * [**💻 Hugo Shortcodes**](https://hugoshortcodes.netlify.app/)
   * **Status: 🏃‍♂️**
@@ -36,7 +40,7 @@ Project Status Guide:
   * I missed out on getting free food on my birthday, so I started collecting all the ones I could find into an Airtable database. A No-code project.
   * _Why did I kill it?_ - Realized I have reached a point in my life where I want to invest my time in projects that go beyond saving someone a couple bucks on their birthday. I used to be all about finding bargains & being cheap, hence the existence of **Deals on Tap/Madtown Deals**, but eventually something clicked and I realized that I was missing out on long-term opportunities and investing in myself just to get a discount on wings 🍗.
 
-* **Writing**
+* **✍ Writing**
   * **Status: 🏃‍♂️**
   * I started writing on this blog, [**Dev.to**](https://dev.to/idontremember), and [**Medium**](https://maybekq.medium.com/). Whether or not anyone reads it, it has been incredibly helpful to process thoughts instead of letting them endlessly bounce within my skull.
 
