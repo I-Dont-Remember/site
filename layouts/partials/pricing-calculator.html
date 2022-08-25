@@ -1,0 +1,68 @@
+<div>
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <strong>Total Users: </strong>
+            <input type="number" id="numUsersInput" min="0" value="50" onChange="calculateCostFromUsers(this.value)" style="max-width: 80px" />
+        </div>
+        <div class="col-sm-6">
+            <strong>
+            Total Cost:
+            <span id="displayCost">
+            $0
+            </span></strong>
+        </div>
+    </div>
+    <h4 class="text-center">Marginal Cost Breakdown</h4>
+    <div class="container" id="displayBreakdown">
+    </div>
+</div>
+<script>
+let displayElem = document.getElementById("displayCost");
+let displayBreakdownElem = document.getElementById("displayBreakdown");
+
+const calculateCostFromUsers = (totalNumUsers) => {
+    let marginalBreakdownStrs = [];
+
+    const pricingTiers = [
+        { tier: 0, marginalUserSlots: 2, costPerUser: 0.0 },
+        { tier: 1, marginalUserSlots: 5, costPerUser: 2.0 },
+        { tier: 2, marginalUserSlots: 15, costPerUser: 1.5 },
+        { tier: 3, marginalUserSlots: 50, costPerUser: 1.25 },
+        { tier: 4, marginalUserSlots: 999999999, costPerUser: 1.0 },
+    ]
+
+    let finalCost = 0.0;
+    let remainingUsers = totalNumUsers;
+
+    for (let i = 0; i < pricingTiers.length; i++) {
+        let tier = pricingTiers[i];
+        if (tier.marginalUserSlots < remainingUsers) {
+            // calculate cost
+            finalCost += tier.marginalUserSlots * tier.costPerUser;
+            marginalBreakdownStrs.push(`${tier.marginalUserSlots} @ $${tier.costPerUser}`)
+            // remove the users
+            remainingUsers -= tier.marginalUserSlots;
+        } else {
+            // only need the partial group of the marginal user slots/ potentially all of them
+            finalCost += (tier.costPerUser * remainingUsers)
+            marginalBreakdownStrs.push(`${remainingUsers} @ $${tier.costPerUser}`)
+            remainingUsers = 0;
+        }
+        console.log('RemainingUsers: ', remainingUsers)
+    }
+
+    displayElem.innerHTML = `$${finalCost}`;
+
+    let breakdownHtml = '';
+    marginalBreakdownStrs.forEach(s => {
+    breakdownHtml += `<p class="text-center"><em>${s}</em></p>`
+    })
+    displayBreakdownElem.innerHTML = breakdownHtml;
+    // display breakdown strings neatly
+    console.log(marginalBreakdownStrs)
+    return finalCost;
+}
+let totalNumUsers = document.getElementById("numUsersInput").value;
+calculateCostFromUsers(totalNumUsers)
+</script>
