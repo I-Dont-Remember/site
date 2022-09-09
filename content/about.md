@@ -14,21 +14,32 @@ Backend software engineer by day at Large Corp 🏛, and [all sorts of stuff by 
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).
 
+
+{{< bootstrap-panel title="😊 Personality" >}}
+If you are curious what it's like to work with me, I have been described as:
+- _having Golden Retriever energy_
+- [_Phil Dunphy approach to life_](https://modernfamily.fandom.com/wiki/Phil_Dunphy)
+
+Unfortunately no one has used _"impossibly handsome"_ or _"The Rock"_ as their descriptors, but someday....
+{{< /bootstrap-panel >}}
+
 ## How I got into writing code
 
 Ended up studying Computer Engineering in my first year of university, but the classes I started with didn't catch my attention, and I assumed it wasn't for me. Amidst cramming for exams, I attempted to write a small Python script to spam [a certain well-known music video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) in new browser tabs on my friends computer. I had no idea how to distribute my mildly-malicious program (thereby only spamming myself), but the seed was planted 🌱. What my courses were missing that this ~10 line script had was the capability -- unlike my classes building Java apps in the IDE CLI I didn't understand, here I was actually controlling the computer! Thus, the spark grew into into my modern-day self of Jira tickets and [**LGTM**](https://justtechdebt.com/articles/dev-already-abandoned-new-years-resolution-to-actually-read-prs/).
 
 ## What I do
 
-### 🧑‍💻 [Product-minded](https://blog.pragmaticengineer.com/the-product-minded-engineer/) Backend Software Engineer
+### 🧑‍💻 [Product-minded](https://blog.pragmaticengineer.com/the-product-minded-engineer/) Backend Software Engineer/ [Developer Generalist](https://granot.dev/developer-generalists/)
 
-- Know enough to be dangerous across the stack, from Ansible to Python to React, but most effective working with non-GUI projects — CLIs, APIs, backend systems.
+- If you’re looking for a code monkey to optimize clicks, we’ll both be disappointed 🙈.
+- Know enough to be dangerous across the stack, from Ansible to Python to React, but most effective working with non-GUI projects — CLIs, APIs, backend systems. Frontend just ain't my jam long-term.
 - I focus on building products with value, rather than being obsessed with any particular language or tool. Sometimes the best language to use is the Delete button.
-- If you’re looking for a code monkey, we’ll both be disappointed 🙈.
+- Obsessed with documentation and automation - my memory sucks, so if it's not written down somewhere easy to find, it doesn't exist. Every team I've ever been on I've been a champion for documenting processes in our repos and writing scripts for any annoying tasks.
 - Exploring an interest in developer experience & UX
     - [How to Build Tools Developers Love](https://kevinquinn.fun/blog/how-to-build-tools-developers-love/)
     - [How Ballerina Lang can Improve their Developer Experience & Adoption](https://kevinquinn.fun/blog/how-ballerina-lang-can-improve-their-developer-experience-adoption/)
     - [Fixing the major flaw of Apple Screen Time](https://kevinquinn.fun/blog/fixing-the-major-flaw-of-apple-screen-time/)
+- 
 
 ### 👩‍👩‍👧‍👧 Coworker
 
