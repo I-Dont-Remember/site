@@ -28,14 +28,14 @@ We need to take a quick detour to ensure you have an account with [Fly.io](http:
 - [Install](https://fly.io/docs/getting-started/installing-flyctl/) the `flyctl` CLI tool.
 - Authenticate with `flyctl auth signup` (for newbies), or `flyctl auth login` (existing accounts).
 
-    > ⚠️ *You will have to add credit card information to the account, so if that’s enough to keep you from using a **free** service 🤷- keep your usage to the free tier and you’ll have no issues.*
+    > ⚠️ _You will have to add credit card information to the account, so if that’s enough to keep you from using a **free** service 🤷- keep your usage to the free tier and you’ll have no issues._
     > 
 
 ## 🤸Deploying NocoDB to Fly.io
 
 With account setup out of the way, we will have a running instance of NocoDB on the interwebs in just 4 quick CLI commands.  For reference,  the [Docker instructions for NocoDB](https://docs.nocodb.com/getting-started/installation/#docker).
 
-- **Create a new directory & initialize the project.**
+- **Create a new directory & initialize the project with fly.toml.**
 
     ```
      mkdir fly-nocodb/
@@ -85,7 +85,7 @@ With account setup out of the way, we will have a running instance of NocoDB on 
     --> v0 deployed successfully
     ```
 
-    You now have a live app running on [Fly.io](http://Fly.io)!  Not needed, but if you already forgot the URL (like me), anytime you can run `flyctl info` to check on your shiny new app.
+You now have a live app running on [Fly.io](http://Fly.io)!  Not needed, but if you already forgot the URL (like me), anytime you can run `flyctl info` to check on your shiny new app.
 
     ```
     19:16:50:~/work/fly-nocodb: [0]▶ flyctl info
