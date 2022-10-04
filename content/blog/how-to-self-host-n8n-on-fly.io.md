@@ -3,7 +3,7 @@ categories = ["Guides"]
 date = 2022-10-04T05:00:00Z
 description = "A simple guide to self-host n8n in just a few minutes on fly.io."
 draft = false
-images = ["/uploads/n8n-fly-io-working-ybg.png"]
+images = ["/uploads/n8n-fly-io-working-ybg-sm.png"]
 tags = ["fly.io", "self-hosting", "n8n"]
 title = "How to Self-Host n8n on Fly.io"
 
@@ -17,7 +17,7 @@ In this guide we'll be setting up your own instance of [n8n](https://n8n.io/), a
 > _You’d be surprised how much traffic you can support with SQLite - [NomadList & RemoteOK](https://www.nocsdegree.com/pieter-levels-learn-coding/#what-technologies-does-pieter-levels-use) both run on it and pull in significant revenue ($millions) and handle tons of traffic.  Read more in [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite) and how [Michael Lynch uses SQLite + Litestream to never worry about backups](https://mtlynch.io/litestream/)._
 > 
 
-![A n8n workflow open and ready for use](/uploads/n8n-fly-io-working-ybg.png)
+![A n8n workflow open and ready for use](/uploads/n8n-fly-io-working-ybg-sm.png)
 
 Time to get your self-hosted **n8n** off the ground so you can get back to procrastinating!
 
@@ -117,7 +117,7 @@ flyctl deploy
 
 With almost no effort at all, I have a self-hosted [n8n](https://n8n.io) instance running!
 
-![A n8n node after successfully executing on my self-hosted instance](/uploads/n8n-fly-io-functional-execution-ybg.png)
+![A n8n node after successfully executing on my self-hosted instance](/uploads/n8n-fly-io-functional-execution-ybg-sm.png)
 
 ## Other quick options
 
