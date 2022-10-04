@@ -1,4 +1,6 @@
-<div class="panel panel-info">
+<!-- https://getbootstrap.com/docs/3.3/components/#panels-alternatives -->
+{{ $style := .Get "style" | default "info"}}
+<div class="panel panel-{{$style}}">
     {{ with .Get "title" }}
     <div class="panel-heading">{{ . }}</div>
     {{ end }}

@@ -1,6 +1,8 @@
+<div class="table-responsive">
 {{ $htmlTable := .Inner | markdownify }}
 {{ $class := .Get 0 | default "" }}
 {{ $old := "<table>" }}
-{{ $new := printf "<table class=\"%s\">" $class }}
+{{ $new := printf "<table class=\"%s\" style=\"overflow-x: auto;\">" $class }}
 {{ $htmlTable := replace $htmlTable $old $new }}
 {{ $htmlTable | safeHTML }}
+</div>
