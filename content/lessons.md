@@ -1,14 +1,17 @@
 +++
 categories = []
 date = 2022-10-07T05:00:00Z
-description = ""
-draft = true
+description = "Life is a long string of making mistakes and learning lessons. This list is a living document for me to reflect on past experiences."
+draft = false
 images = []
 tags = []
 title = "Lessons"
-
+toc = true
 +++
-Life is a long string of making mistakes and learning lessons. 
+
+---
+
+Life is a long string of making mistakes and learning lessons.
 
 This list is a living document for me to reflect on past experiences.
 
@@ -17,6 +20,8 @@ The more I reflect, the less likely I am to fall for the same mistakes...
 or so I hope.
 
 > ℹ _Some of these are quotes I've collected from others, unfortunately I don't have attribution for all of them. Assume most things on this page were written by wiser people than me._
+
+---
 
 ## 🌱 Life Lessons
 
