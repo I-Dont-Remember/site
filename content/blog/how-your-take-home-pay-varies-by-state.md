@@ -9,23 +9,23 @@ title = "How Your Take-home Pay Varies By State"
 toc = true
 +++
 
-I had a vague understanding that different states had different levels of taxes _(wow Florida with that no-income tax woot woot!)_, but never went deeper. The recent rise of remote work brought this question into sharper focus:
+I had a vague understanding that different states had different levels of taxes _(wow Florida with that no-income tax woot woot!)_, but never went deeper. The rise of remote work in the last couple years brought this question into sharper focus:
 
-Given a remote worker allowed to live in any state, with salary not adjusted, how does their tax burden vary?
+**Given a remote worker allowed to live in any state, with salary not adjusted, how does their tax burden vary?**
 
 {{< bootstrap-panel title="Cost of living" >}}
-_This analysis does not take into account any cost of living - this is purely based on my chosen scenario with no regard for housing, job market, etc._
+_This analysis does not take into account cost of living - this is purely based on my chosen scenario with no regard for housing, job market opportunities, etc._
 {{< /bootstrap-panel >}}
 
 ## The data
 
-I decided to analyze the information using a [handy online calculator](https://www.talent.com/tax-calculator?salary=50000&from=year&region=Illinois), run it for a variety of salaries, then run the numbers on the aggregate across states & salary buckets.
+I found a [handy online calculator](https://www.talent.com/tax-calculator?salary=50000&from=year&region=Illinois) for the base data, ran it for a variety of salaries, then did some simple calcs on the aggregate across states & salary buckets.
 
 Buckets I chose:
 
 - $50k, $75k, $100k, $125k - _(then for giggles & Silicon Valley folks)_ - $150k, $200k, $250k, $300k.
 
-If you want to dive deeper into the data for your exact salary, I highly recommend checking out that calculator, because they also provide extra information, like how much a marginal salary increase will net you. Example: `For instance, an increase of $100 in your salary will be taxed $25.15, hence, your net pay will only increase by $74.85.`[src](https://www.talent.com/tax-calculator?salary=50000&from=year&region=Illinois).
+> [ℹ️] _If you want to dive deeper into the data for your exact salary, I highly recommend checking out that calculator, because they also provide extra information, like how much a marginal salary increase will net you. Example: `For instance, an increase of $100 in your salary will be taxed $25.15, hence, your net pay will only increase by $74.85.`[src](https://www.talent.com/tax-calculator?salary=50000&from=year&region=Illinois)._
 
 
 ## Best & worst states, per salary bucket
@@ -34,8 +34,8 @@ This table goes through and compares the best & worst amounts of take-home pay f
 
 - I thought the difference between best & worst would be higher, but it's fairly consistent around **8%** of your base salary. Guess that's the Federal taxes keeping things level.
 - If I made `$75k` base salary in Hawaii and then moved to Florida, I'd have an extra `$5,659.00` to spend on plastic trinkets from Amazon. **Wild!**
-  - That said, moving can be an expensive endeavor, and I had originally hypothesized it might be a no-brainer to move for a free _"bonus"_ to your salary. Doesn't seem to pan out.
-- If you aren't going highest to lowest, but highest to mid tier, that number drops to median of `$3,335.00`. A couple grand ain't nothing, but that's in best case scenario of highest taxes to average - which won't be a lot of people. I haven't done the calculations for averaging the difference between every combination of states, but it would likely be `$2-4k`.
+- If you aren't moving highest taxes to lowest, but highest to mid tier, that number drops to median of `$3,335.00`. A couple grand ain't nothing, but that's in best case scenario of highest taxes to average - which won't be a lot of people. I haven't done the calculations for averaging the difference between every combination of states, but it would likely be `$2-4k`.
+  - I had originally hypothesized it would be a no-brainer to move for a free & sizable _"bonus"_ to your salary. Looks like it's not so cut-and-dry, especially considering moving can be an expensive endeavor on it's own.
 
 {{< bootstrap-table "table table-dark table-striped table-bordered" >}}
 | salary bucket | best        | worst       | best\_pct | worst\_pct | best\_state | worst\_state | diff $     | diff\_pct\_of\_base\_pay | median $    | median diff $ | mean $      |
@@ -58,7 +58,8 @@ I was then curious about how states vary in ranking as income increases. My pers
 
 - Vermont (`28`), New Jersey (`25`), and California (`22`) had the largest change in ranking across the 8 salary buckets. Seems like those are states that are pretty decent to be in at _"common"_ salary bands, but if you're crazy rich the taxes are giving you a hard time.
 - The top 10 states didn't budge at all - this makes sense as [8 of them don't have state income tax, and NH doesn't tax earned wages](https://www.investopedia.com/financial-edge/0210/7-states-with-no-income-tax.aspx). North Dakota holds it spot by having it at [<3% even if you make $500k/year](https://www.tax-rates.org/north_dakota/income-tax).
-- Median change was `5` places - which to me feels like a fairly consistent set of rankings.
+  > ⚠️ _It was mentioned to me that Washington has some FMLA Tax that doesn't technically count as state tax, but which should end up demoting it on this list. I couldn't find any specific % numbers to include, but if you have more info I'd appreciate if you reached out!_
+- Median change was `5` places - which to me feels like a fairly consistent set of rankings. I have no stats background, so just nod along if that's wildly innacurate 😅.
 
 {{< bootstrap-table "table table-dark table-striped table-bordered" >}}
 |                | Lowest | Highest | Diff |
