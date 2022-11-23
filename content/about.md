@@ -5,12 +5,12 @@ date = "2020-05-02T00:00:00-06:00"
 draft = false
 slug = ""
 tags = []
-title = "About"
+title = "About Kevin Quinn"
 showpagemeta = false
 showrelated = false
 +++
 
-Backend software engineer by day at Large Corp 🏛, and [all sorts of stuff by night](https://facadeproject.com) since I can’t sit still.  I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓.  I’ve worn a lot of hats, from founder, developer, writer, podcaster, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
+Software engineer by day at Large Corp 🏛, and [all sorts of stuff by night](https://facadeproject.com) since I can’t sit still. I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓. I’ve worn a lot of hats, from founder, developer, writer, podcaster, open source contributor, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).
 
@@ -19,6 +19,7 @@ If you'd like to reach out for whatever reason, easiest place to reach me is thr
 If you are curious what it's like to work with me, I have been described as:
 - _having Golden Retriever energy_
 - [_Phil Dunphy approach to life_](https://modernfamily.fandom.com/wiki/Phil_Dunphy)
+- [Playing Sean Paul's _"Get Busy"_ on a recorder?](/recorder-escapades/)
 
 Unfortunately no one has used _"impossibly handsome"_ or _"The Rock"_ as their descriptors, but someday....
 {{< /bootstrap-panel >}}
@@ -32,14 +33,14 @@ Ended up studying Computer Engineering in my first year of university, but the c
 ### 🧑‍💻 [Product-minded](https://blog.pragmaticengineer.com/the-product-minded-engineer/) Backend Software Engineer/ [Developer Generalist](https://granot.dev/developer-generalists/)
 
 - If you’re looking for a code monkey to optimize clicks, we’ll both be disappointed 🙈.
-- Know enough to be dangerous across the stack, from Ansible to Python to React, but most effective working with non-GUI projects — CLIs, APIs, backend systems. Frontend just ain't my jam long-term.
+- Know enough to be dangerous across the stack, from [infra with Ansible](https://github.com/I-Dont-Remember/AnsibleLaptop) to APIs in Python to SPAs like React, but most effective working with non-GUI projects — CLIs, APIs, backend systems. Frontend just ain't my jam long-term.
+  - _Slack bots are the most fun to work with, because you can do "front-end" UX work without having to deal with CSS - their [Block Kit framework](https://api.slack.com/block-kit) just takes JSON and then renders things all pretty for you._
 - I focus on building products with value, rather than being obsessed with any particular language or tool. Sometimes the best language to use is the Delete button.
 - Obsessed with documentation and automation - my memory sucks, so if it's not written down somewhere easy to find, it doesn't exist. Every team I've ever been on I've been a champion for documenting processes in our repos and writing scripts for any annoying tasks.
 - Exploring an interest in developer experience & UX
     - [How to Build Tools Developers Love](https://kevinquinn.fun/blog/how-to-build-tools-developers-love/)
     - [How Ballerina Lang can Improve their Developer Experience & Adoption](https://kevinquinn.fun/blog/how-ballerina-lang-can-improve-their-developer-experience-adoption/)
     - [Fixing the major flaw of Apple Screen Time](https://kevinquinn.fun/blog/fixing-the-major-flaw-of-apple-screen-time/)
-- 
 
 ### 👩‍👩‍👧‍👧 Coworker
 
@@ -64,6 +65,7 @@ I aim to be curious and open to new experiences, which leads me down a variety o
 
 - Podcast host
 - Writer
+- Open-source contributor
 - Building a second brain in Obsidian.md cuz the first one is slacking.
 - YouTuber - timer videos
 - Juggling
@@ -72,4 +74,4 @@ I aim to be curious and open to new experiences, which leads me down a variety o
 
 ---
 
-[*The Importance of Having an About Page | Kevin Quirk*](https://kevq.uk/the-importance-of-an-about-page/)
+Inspiration for writing an in-depth `About` -> [_The Importance of Having an About Page | Kevin Quirk_](https://kevq.uk/the-importance-of-an-about-page/)
