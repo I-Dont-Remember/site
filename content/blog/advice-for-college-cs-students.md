@@ -4,7 +4,7 @@ categories = ["Career"]
 date = 2022-04-27T05:00:00Z
 description = "The simple steps I would follow if I got to re-do my college CS program."
 images = []
-tags = ["career", "programming"]
+tags = ["career", "programming", "leetcode"]
 toc = true
 +++
 

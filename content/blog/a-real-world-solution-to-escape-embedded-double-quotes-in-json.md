@@ -1,21 +1,22 @@
 +++
-categories = []
+categories = ["Software Development"]
 date = 2022-12-09T06:00:00Z
-description = ""
-draft = true
+description = "Finding a solution to parse unescaped double quotes in my JSON strings, with minimal tears."
+draft = false
 images = []
-tags = []
+tags = ["developers", "json"]
 title = "A Real-World Solution to Escape Embedded Double Quotes in JSON"
-
+toc = false
+curated = true
 +++
 **The problem:** you need to decode a JSON string, but at some point in the process you don't control, unescaped double quotes are inserted into your string values. How might you sanitize the string to get a valid JSON object for decoding?
 
 > ⚠️
-> _The first answer I saw on Stack Overflow was "Go make the upstream service give you valid JSON, \[duh you idiot (implied tone added by me)\]". Helpful! Sometimes you're stuck in crappy situations and need a way forward, even if it's not ideal. Hopefully this article is the answer for someone in the future I wish I had found._
+> _The first answer I saw on Stack Overflow was "Go make the upstream service give you valid JSON, \[duh you stupid idiot\]". Helpful! Sometimes you're stuck in crappy situations and need a way forward, even if it's not ideal. Hopefully this article acts as the answer I wish I had found._
 
 ## Why
 
-Why am I bothering to do this? JSON with unescaped double quotes in it isn't valid JSON, so shouldn't it be getting sanitized before reaching me? Unfortunately, no. As a part of building [Workflow Buddy](https://github.com/happybara-io/WorkflowBuddy/), an open-source tool to extend [Slack's no-code workspace automation](https://slack.com/features/workflow-automation), I need to handle untrusted variables being inserted into plain-text JSON strings before I have a chance to decode them.
+Why am I bothering to do this? JSON with unescaped double quotes in it isn't valid JSON, so shouldn't it be getting sanitized before reaching me? Unfortunately, no. As a part of building [Workflow Buddy,](https://github.com/happybara-io/WorkflowBuddy/) an open-source tool to extend [Slack's no-code workspace automation,](https://slack.com/features/workflow-automation) I need to handle untrusted variables being inserted into plain-text JSON strings before I have a chance to decode them.
 
 An actual example of this in action looks like:
 ```
@@ -40,23 +41,45 @@ This makes the standard JSON parser go 💥, because how is it supposed to know 
 It provides the most flexibility for end users. I don't want my arbitrary decisions to block them from the critical last-mile of what they're building. Whether you think that's a stupid reason or not, this article is moving on without you.
 
 ## Potential approaches
-As the intrepid developer I am, I checked Stack Overflow first and came up with squat that felt useful. As all heroes do, after crying in the bathroom that they failed me, I closed all my SO tabs and started frantically coming up with ideas. Gotta dig through some garbage to find the gold, right?
+
+As the intrepid developer I am, I checked Stack Overflow first and came up with squat that felt useful. As all heroes do, after crying in the bathroom, I closed all my SO tabs and started frantically coming up with ideas. Gotta dig through some garbage to find the gold, right?
 
 - 🤮 Randomly change a quote to escaped, then see if decode works _(slow and inefficient)_.
 - 😖 Walk through string chars, keep a STATE to check if we are in a key or a value - _(how to actually tell if we are in a key/value vs just finding JSON special characters, e.g. {}",, in a string?)_.
-- 🤔🥇 Make an educated guess for which quote we could escape, then try to decode again and see what happens.
+- 🤔🥇 Make an educated guess for which quote we could escape, then try to decode again and see what happens _(Not the worst idea to explore....)_.
 
 ## Escape double quotes in JSON with Python
 
-This Python version follows the principle of _"Ask forgiveness, not permission"_. When we get a decoding failure, we make an educated guess about which quote we can tweak (e.g. convert to escaped, `\"`), then attempt to decode again. If the decoder made deeper progress into the string, it was a positive change. If not, then we really mucked things up and should bubble the error up.
+This Python version follows the principle of _"Ask forgiveness, not permission"_. When we get a decoding failure, we make an educated guess about which quote we can tweak (e.g. convert to escaped, `\"`), then attempt to decode again. If the decoder made deeper progress into the string characters, it was a positive change. If not, then we really mucked things up and should bubble the error up.
 
 ```
-SOLUTION
+def sanitize_unescaped_quotes_and_load_json_str(s: str, strict=False) -> dict:  # type: ignore
+    # TODO: one thing this doesn't handle, is if the unescaped text includes valid JSON - then you're just out of luck
+    js_str = s
+    prev_pos = -1
+    curr_pos = 0
+    while curr_pos > prev_pos:
+        # after while check, move marker before we overwrite it
+        prev_pos = curr_pos
+        try:
+            return json.loads(js_str, strict=strict)
+        except json.JSONDecodeError as err:
+            curr_pos = err.pos
+            if curr_pos <= prev_pos:
+                # previous change didn't make progress, so error
+                raise err
+
+            # find the previous " before e.pos
+            prev_quote_index = js_str.rfind('"', 0, curr_pos)
+            # escape it to \"
+            js_str = js_str[:prev_quote_index] + "\\" + js_str[prev_quote_index:]
 ```
 
-## Limitations
+_[Workflow Buddy source file: utils.py](https://github.com/happybara-io/WorkflowBuddy/blob/main/buddy/utils.py)_
 
-Is this a perfect solution? Nope, you'll have to consider if the limitations screw up your use case. The most important limitation I've found is if you provide some valid JSON inside of your string, you'll end up with different top level keys in your object than you expect. For example:
+### Limitations
+
+Is this a perfect solution? Nope, you'll have to consider if the limitations screw up your use case. The most important I've run into is if you provide valid JSON inside of your string, you'll end up with different top level keys in your object than you expect. For example:
 
 ```
  # valid unescaped JSON nested inside string - won't error, but won't come out as you want.
@@ -75,7 +98,7 @@ What you'll get is:
 }
 ```
 
-If you are curious about digging deeper, feel free to check out the test cases for the parser in the [Workflow Buddy repo](https://github.com/happybara-io/WorkflowBuddy/blob/main/tests/test_utils.py). Function is `sut.sanitize_unescaped_quotes_and_load_json_str(test_str)`.
+If you are curious about digging deeper, feel free to check out the test cases for the parser in the [Workflow Buddy repo.](https://github.com/happybara-io/WorkflowBuddy/blob/main/tests/test_utils.py). Function is `sut.sanitize_unescaped_quotes_and_load_json_str(test_str)`.
 
 ## Escape double quotes in JSON with Javascript (WIP)
 
@@ -93,11 +116,12 @@ You should be able to get creative and "hop" lines by looking for next `\n`, the
 Ideally we would find a way to do it without needing any information from the decoder other than `success/failure` - then any language would be able to use it.
 
 ### WIP JSON testing
+
 ```
 const json = '{"result":true, "count":42, "str": "a"bc"}';
 try {
   const obj = JSON.parse(json);
-	console.log(obj);
+  console.log(obj);
 } catch(e) {
   console.error(e instanceof SyntaxError);
   console.error(e.message);
@@ -111,4 +135,4 @@ try {
 
 ## Tell me why I'm wrong
 
-As this is the internet, someone reading this will have an opinion about my approach. Let me know if you have suggestions or alternative approaches through [Twitter DMs]() or my [email proxy]().
+As this is the internet, someone reading this will have an opinion about my approach. Let me know if you have suggestions or alternative approaches through [Twitter DMs](https://twitter.com/maybekq) or my [email proxy](mailto:kevinquinnfun@notxss.anonaddy.com).
