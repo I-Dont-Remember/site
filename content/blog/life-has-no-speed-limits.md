@@ -1,16 +1,16 @@
 +++
 categories = ["Personal Development"]
+curated = true
 date = 2021-12-17T05:00:00Z
 description = "A college degree takes 4 years, a year or more to write a book, 10 years at the DMV. Facts...or are they? Life has no speed limits, so why treat them as laws?"
-draft = false
 images = []
 tags = []
 title = "Life Has No Speed Limits"
-curated = true
+
 +++
 What if I said you could write a book in 1 month? Sounds like baloney, right?
 
-Most of us have never written a book, but we come up with our own hand-wavy assumptions for how long it takes to complete tasks. Sometimes we’ll put in even less thought and just use the average pace defined by society as a rule. Should college **_really_** take 4 years for everyone?*
+Most of us have never written a book, but we come up with our own hand-wavy assumptions for how long it takes to complete tasks. Sometimes we’ll put in even less thought and just use the average pace defined by society as a rule. Should college **_really___ take 4 years for everyone?*
 
 These assumptions are difficult to overcome, but luckily there are examples all around of people bucking the curve — people who realized [life has no speed limits](https://sive.rs/kimo). How can we be more like them?
 
@@ -57,7 +57,7 @@ You can read these and assume they are gifted freaks, pick holes in each story a
 
 ## Fear your own inertia
 
-> "I don’t want to go back to school. I’ll be 35 by the time I get my degree.....You’ll turn 35 anyway." -unknown
+> _"I don’t want to go back to school. I’ll be 35 by the time I get my degree.....You’ll turn 35 anyway." -unknown_
 
 Despite the life-altering changes possible in mere months, [inertia can keep us stagnant for years](https://apoorvagovind.substack.com/p/how-to-waste-your-career-one-comfortable). The same person, with the same skills, same habits, same sinking feeling they are missing something from their life. It's comfortable and easy to keep doing what we already know, even if we have a desire to do something totally different. It's scary to jump into the unknown and be open to failure. Use the stories above as your guide, making the path a little less uncertain. Don't worry about what you have or haven't done until now. Introspect and understand what you want out of life, then go chase it. What's the worst thing that happens, you spend 6 months trying to accomplish a dream and find out you don't actually like it? Now you won't die with the regret of not trying and can chase the next one.
 
