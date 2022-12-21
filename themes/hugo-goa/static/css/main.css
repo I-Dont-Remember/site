@@ -10,6 +10,7 @@
 {
     width: device-width;
 }
+
 a,
 a:hover,
 a:visited,
@@ -352,4 +353,19 @@ li{
 
 .emoji-cursor--kqface {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🙄</text></svg>"), auto;    
+}
+
+.hanchor {
+    visibility: hidden;
+    color: silver;
+    font-size: 100%;
+    transition: 0.2s;
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+/* This hide on hover effect isn't working, but don't care to fix 🤷‍♀️ https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/12?u=kaushalmodi */
+h2:hover a, h3:hover a, h4:hover a {
+visibility: visible;
+text-decoration: none;
 }

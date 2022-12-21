@@ -64,7 +64,9 @@
     {{ if and ( eq .Params.toc true) (gt .WordCount 400 ) }}
         {{ .TableOfContents }}
     {{ end }}
-    {{ .Content }}
+    {{- with .Content -}}
+      {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
+    {{- end -}}
     <br />
     {{ if ne .Params.showpagemeta false }}
         {{ partial "email-form.html" . }}
