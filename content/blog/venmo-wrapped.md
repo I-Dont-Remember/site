@@ -5,6 +5,6 @@ description = ""
 draft = true
 images = []
 tags = []
-title = "Venmo Wrapped"
+title = "Make Your Own Venmo Wrapped"
 
 +++
