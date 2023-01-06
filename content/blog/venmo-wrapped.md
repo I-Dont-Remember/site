@@ -16,44 +16,70 @@ To give you a preview of what sort of info you might find in your own Venmo Wrap
 
 ![](/uploads/venmo-wrapped-2022.jpg)
 
-* Oldest incomplete request is 1,332 days (May 10, 2019)
-* 45 people interacted with
-* 2 businesses
-* 49/64 of my requests went to one person
-* 20% of notes I received had >1 emoji
-* 25% of notes I received were a joke of some sort (e.g. `no u`, `💩`)
-* I sent the majority of my requests on Sun & Mon (63%)
+* ⏳ Oldest incomplete request is **1,332 days** _(May 10, 2019)_
+* 👯 **45** people interacted with
+* 🏢 **2** businesses
+* 🤷 **49/64** of my requests went to one person
+* 😶 **20%** of notes I received had emojis
+* 🃏 **25%** of notes I received were a joke of some sort (e.g. `no u`, `💩`)
+* 📅 I sent the majority of my requests on **Sun & Mon** _(63%)_
 
-If this piqued your interest at all, read on to make your own! I'll add a list farther down of other interesting stats people have suggested.
+If this piqued your interest at all, read on to make your own! I'll add a list farther down of other interesting stats you might want to explore.
 
 ## How to make your own Venmo Wrapped
 
-Making your own Wrapped only takes a couple of steps: gathering the CSV file of transactions from the Venmo website, copying them into either the Google Sheet template I made (or one of your own), then just update your Venmo name in the specified Sheet cell. A bunch of default stats will populate, then the sky is the limit for digging through your own data!
+Making your own Wrapped only takes a few steps:
 
-### Gather
+1. Gathering the CSV file of transactions from the Venmo website.
+   1. Go to your [Venmo Statements tab](`https://account.venmo.com/statement`).
+   2. In a new tab, use the URL `https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true` and hit ENTER to download the full year of transactions history.
+2. Copy them into either the Google Sheet template I made (or one of your own).
+	< write up the pieces that need to be ignore and cleaned up. >
+3. Update your Venmo name in the specified Sheet cell.
+
+A bunch of default stats will populate, then the sky is the limit for digging through your own data!
+
+### ⚠️ Why download this way
+
+Why use the URL I suggested above to get transactions? To save you the annoyance of downloading 12 files and manually combining them.
+
+Venmo only gives the option to download 1 month of transactions through CSV at a time - or so it seems. I noticed their API doesn't restrict you from requesting more than 1 month, so by modifying the URL params (called `startDate` and `endDate` in the URL above) we can have it download the entire year in one swoop.
+
+### Venmo terminology
+
+To make sure we're on the same page, my understanding of some of the vocabulary used in their CSV file [_(if I'm wrong, please let me know!)_](#share-your-venmo-wrapped):
+
+* **Payment** - Money was directly sent. Negative values are when I (you) paid someone else.
+* **Charge** - Money was requested, and then accepted. Negative values are when someone else requested me (you).
+  * _To the best of my knowledge, the `date` on a Charge is when it was accepted & paid._
 
 ### Useful Google Sheets-fu
 
 If you want to expand on the concepts in Venmo Wrapped, there's a few utilities in Google Sheets I picked up to make things easier:
 
-- `query()` is super handy, especially if you have more SQL experience than spreadsheets.
-- `{;} and {,}` is called Arrays - was able to use this to line up the rows of my two WeekDay queries (to split Payments & Charges) and easily create a chart out of the combo.
+* `query()` is super handy, especially if you have more SQL experience than spreadsheets. There's a [helpful blog post with examples](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/), and the [Google reference doc](https://developers.google.com/chart/interactive/docs/querylanguage#overview) if you need to dive deeper.
+* `{;} and {,}` is called Arrays - I was able to use this to line up the days of my two WeekDay queries (to split Payments & Charges into 2 columns) and easily create a chart out of the combo.
 
 ## How I made my own Venmo Wrapped
 
-Ok I have a sheet of all my Venmo transactions for the year - now what? Since I have no idea what I'm doing with data, I just starting listing off a bunch of really obvious calculations to see if inspiration would strike. 
+< how did I get to this point? >
+
+talk about how I fooled the API ?
+
+Ok I have a sheet of all my Venmo transactions for the year - now what? Since I have no idea what I'm doing with data, I just starting listing off a bunch of really obvious calculations to see if inspiration would strike.
 
 ## Potentially interesting data points
 
 After showing a few friends, I started getting feedback with ideas - I haven't explored them, but maybe one of the curious citizens of the internet will find them interesting:
 
- - Time of day trends, similar to Spotify's _"Your morning aesthetic was X_"
-  - What time of day am I most likely to pay?
-- day/week/month of the year you were most active
-- Most common words/emojis in the notes
-- Top 3 "givers" vs "moochers" - basically people that give you money, and people that take your money
-* Who paid the slowest/fastest? \*_(I don't believe this is possible with existing CSV data provided by Venmo)_
-- < Your great idea here >...
+* Time of day trends, similar to Spotify's _"Your morning aesthetic was X_"
+* What time of day am I most likely to pay?
+* day/week/month of the year you were most active
+* Most common words/emojis in the notes
+* Top 3 "givers" vs "moochers" - basically people that give you money, and people that take your money
+* Who paid the slowest/fastest? *_(I don't believe this is possible with existing CSV data provided by Venmo)_
+* < Your great idea here >...
 
+## Share your Venmo Wrapped
 
-Share what you come up with me on Twitter or email, would love to see this be a collaborative effort :D 
+Share what you come up with me on Twitter or email, would love to see this be a collaborative effort :D
