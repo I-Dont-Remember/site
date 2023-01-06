@@ -32,6 +32,17 @@ Making your own Wrapped only takes a couple of steps: gathering the CSV file of 
 
 ### Gather
 
+### Useful Google Sheets-fu
+
+If you want to expand on the concepts in Venmo Wrapped, there's a few utilities in Google Sheets I picked up to make things easier:
+
+- `query()` is super handy, especially if you have more SQL experience than spreadsheets.
+- `{;} and {,}` is called Arrays - was able to use this to line up the rows of my two WeekDay queries (to split Payments & Charges) and easily create a chart out of the combo.
+
+## How I made my own Venmo Wrapped
+
+Ok I have a sheet of all my Venmo transactions for the year - now what? Since I have no idea what I'm doing with data, I just starting listing off a bunch of really obvious calculations to see if inspiration would strike. 
+
 ## Potentially interesting data points
 
 After showing a few friends, I started getting feedback with ideas - I haven't explored them, but maybe one of the curious citizens of the internet will find them interesting:
