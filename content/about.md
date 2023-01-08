@@ -10,13 +10,13 @@ showpagemeta = false
 showrelated = false
 +++
 
-Software engineer by day at Large Corp 🏛, and [all sorts of stuff by night](https://facadeproject.com) since I can’t sit still. I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓. I’ve worn a lot of hats, from founder, developer, writer, podcaster, open source contributor, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
+Software engineer by day at Large Corp 🏛, and [all sorts of stuff by night - notary, reluctant runner, ordained, ....](#-professional-dabbler) since I can’t sit still. I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓. I’ve worn a lot of hats, from founder, developer, writer, podcaster, open source contributor, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).
 
-
 {{< bootstrap-panel title="😊 Personality" >}}
 If you are curious what it's like to work with me, I have been described as:
+
 - _having Golden Retriever energy_
 - [_Phil Dunphy approach to life_](https://modernfamily.fandom.com/wiki/Phil_Dunphy)
 - [Playing Sean Paul's _"Get Busy"_ on a recorder?](/recorder-escapades/)
@@ -61,13 +61,16 @@ Keep trying to build things after listening to too many episodes of Indie Hacker
 
 ### 🤹 Professional Dabbler
 
-I aim to be curious and open to new experiences, which leads me down a variety of rabbit holes.
+I aim to be curious and open to new experiences, which leads me down a variety of [rabbit holes](https://facadeproject.com).
 
-- Podcast host
+- Podcast host - [Facade Project](https://facadeproject.com)
 - Writer
+- Notary
+- Ordained in 3 online churches - _u got a wedding coming up?👀_
 - Open-source contributor
-- Building a second brain in Obsidian.md cuz the first one is slacking.
-- YouTuber - timer videos
+- Reluctant long-distance runner
+- Building a second brain in Obsidian.md, cuz the first one is slacking.
+- [YouTuber - timer videos](https://www.youtube.com/channel/UC9YP1-_DAlDcW4vri2YUmcg/about)
 - Juggling
 - Indie hacking/bootstrappers
 - Popcorn cartel
