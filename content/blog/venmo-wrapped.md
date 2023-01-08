@@ -2,7 +2,7 @@
 categories = ["Guides"]
 date = 2023-01-04T06:00:00Z
 description = "Not overwhelmed yet by all the Spotify Wrapped clones? Follow along to make your own Venmo Wrapped!"
-draft = true
+draft = false
 images = ["/uploads/venmo-wrapped-2022.jpg"]
 tags = ["venmo", "wrapped", "data"]
 title = "Make Your Own Venmo Wrapped"
