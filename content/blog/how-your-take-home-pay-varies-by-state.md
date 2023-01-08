@@ -1,10 +1,10 @@
 +++
-categories = []
+categories = ["Career"]
 date = 2022-10-04T05:00:00Z
 description = "Given a remote worker allowed to live in any state, how does their tax burden vary if they move?"
 draft = false
 images = []
-tags = []
+tags = ["data"]
 title = "How Your Take-home Pay Varies By State"
 toc = true
 +++
