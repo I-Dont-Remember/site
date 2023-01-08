@@ -12,7 +12,7 @@ I'm no data scientist, but inspired by Spotify Wrapped (and even more so by [Jim
 
 ## My Venmo Wrapped 2022
 
-To give you a preview of what sort of info you might find in your own Venmo Wrapped, here's mine for 2022 (omitting any sensitive details like specific people or amounts):
+To give you a preview of what sort of info you might find in your own Venmo Wrapped, here's mine for 2022 (omitting any sensitive details like specific people or amounts) and a [copyable Sheets template](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing):
 
 ![](/uploads/venmo-wrapped-2022.jpg)
 
@@ -31,11 +31,14 @@ If this piqued your interest at all, read on to make your own! I'll add a list f
 Making your own Wrapped only takes a few steps:
 
 1. Gathering the CSV file of transactions from the Venmo website.
-   1. Go to your [Venmo Statements tab](`https://account.venmo.com/statement`).
-   2. In a new tab, use the URL `https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true` and hit ENTER to download the full year of transactions history.
-2. Copy them into either the Google Sheet template I made (or one of your own).
-	< write up the pieces that need to be ignore and cleaned up. >
-3. Update your Venmo name in the specified Sheet cell.
+   1. Go to your [Venmo Statements tab](\`https://account.venmo.com/statement\`).
+   2. In a new tab, use the URL `https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true` and hit ENTER to download the full year of transactions history. [_⚠️ Why download this way_](#-why-download-this-way)
+2. Copy them into either the [Google Sheet template I made](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) _(or one of your own)_.
+
+   > ℹ️ _The data needs a small amount of cleanup before it's ready._
+   > * _In the transactions file, you can ignore the extra meta information above the line starting with `,ID,Datetime`. You can also skip the last line that has `In case of errors...`. Only copy the actual transactions in between to your Sheet._
+   > * _For the `Amount (...)` fields, we need to make sure Sheets understands they are numbers, so we have to do a find & replace for `+ $` to an empty string \`\`. My Sheets automatically understood the negatives were numbers, though you may need to find & replace `- $` with `-` if it doesn't._
+3. Update your Venmo name in the specified Sheet cell. This is used in queries like "# of charges I sent".
 
 A bunch of default stats will populate, then the sky is the limit for digging through your own data!
 
@@ -80,6 +83,6 @@ After showing a few friends, I started getting feedback with ideas - I haven't e
 * Who paid the slowest/fastest? *_(I don't believe this is possible with existing CSV data provided by Venmo)_
 * < Your great idea here >...
 
-## Share your Venmo Wrapped
+## Make your own Venmo Wrapped
 
-Share what you come up with me on Twitter or email, would love to see this be a collaborative effort :D
+Feel free to borrow the [Google Sheets Template](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) I used, and let me know what you come up with me on [Twitter @maybekq]() or [email](mailto:)! I'd love to see what the data wizards of the world come up with.
