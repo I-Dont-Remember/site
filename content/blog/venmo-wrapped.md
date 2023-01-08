@@ -1,14 +1,19 @@
 +++
-categories = []
+categories = ["Guides"]
 date = 2023-01-04T06:00:00Z
-description = ""
+description = "Not overwhelmed yet by all the Spotify Wrapped clones? Follow along to make your own Venmo Wrapped!"
 draft = true
 images = ["/uploads/venmo-wrapped-2022.jpg"]
-tags = []
+tags = ["venmo", "wrapped", "data"]
 title = "Make Your Own Venmo Wrapped"
-
+toc = true
 +++
-I'm no data scientist, but inspired by Spotify Wrapped (and even more so by [Jimmy John's Wrapped](https://twitter.com/BBarberie/status/1608476950108209158)) - let's explore what a Venmo Wrapped might look like! Unfortunately, this won't be as exciting as when Venmo left a public API open for the whole world's transactions - [https://publicbydefault.fyi/](https://publicbydefault.fyi/).
+
+I'm no data scientist, but inspired by Spotify Wrapped (and even more so by [Jimmy John's Wrapped](https://twitter.com/BBarberie/status/1608476950108209158)) - let's continue the [descent into year-end madness](https://news.yahoo.com/spotify-wrapped-created-end-menace-194534713.html) and make a Venmo Wrapped!
+
+{{< bootstrap-panel title="Venmo's Past Folly" >}}
+_Unfortunately, I can't promise this wil be as exciting as when Venmo left everyone's transactions public for the world to explore - making it easy to identify drug dealers, rough locations & schedules, and more -> [https://publicbydefault.fyi/](https://publicbydefault.fyi/)._
+{{< /bootstrap-panel >}}
 
 ## My Venmo Wrapped 2022
 
@@ -31,14 +36,15 @@ If this piqued your interest at all, read on to make your own! I'll add a list f
 Making your own Wrapped only takes a few steps:
 
 1. Gathering the CSV file of transactions from the Venmo website.
-   1. Go to your [Venmo Statements tab](\`https://account.venmo.com/statement\`).
-   2. In a new tab, use the URL `https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true` and hit ENTER to download the full year of transactions history. [_⚠️ Why download this way_](#-why-download-this-way)
+   1. Go to your [`Venmo Statements` tab](https://account.venmo.com/statement).
+   2. In a new tab, use the URL `https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true`{{< new_tab_link title="[↗️]" url="https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true" >}}  
+   to download the full year of transactions history. [_⚠️ Why download this way._](#-why-download-this-way)
 2. Copy them into either the [Google Sheet template I made](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) _(or one of your own)_.
 
    > ℹ️ _The data needs a small amount of cleanup before it's ready._
    > * _In the transactions file, you can ignore the extra meta information above the line starting with `,ID,Datetime`. You can also skip the last line that has `In case of errors...`. Only copy the actual transactions in between to your Sheet._
    > * _For the `Amount (...)` fields, we need to make sure Sheets understands they are numbers, so we have to do a find & replace for `+ $` to an empty string \`\`. My Sheets automatically understood the negatives were numbers, though you may need to find & replace `- $` with `-` if it doesn't._
-3. Update your Venmo name in the specified Sheet cell. This is used in queries like "# of charges I sent".
+3. Update your Venmo name in the specified Sheet cell. This is used in queries like _"# of charges I (you!) sent"_.
 
 A bunch of default stats will populate, then the sky is the limit for digging through your own data!
 
@@ -47,6 +53,8 @@ A bunch of default stats will populate, then the sky is the limit for digging th
 Why use the URL I suggested above to get transactions? To save you the annoyance of downloading 12 files and manually combining them.
 
 Venmo only gives the option to download 1 month of transactions through CSV at a time - or so it seems. I noticed their API doesn't restrict you from requesting more than 1 month, so by modifying the URL params (called `startDate` and `endDate` in the URL above) we can have it download the entire year in one swoop.
+
+[🔙](#how-to-make-your-own-venmo-wrapped)
 
 ### Venmo terminology
 
@@ -63,14 +71,6 @@ If you want to expand on the concepts in Venmo Wrapped, there's a few utilities 
 * `query()` is super handy, especially if you have more SQL experience than spreadsheets. There's a [helpful blog post with examples](https://www.benlcollins.com/spreadsheets/google-sheets-query-sql/), and the [Google reference doc](https://developers.google.com/chart/interactive/docs/querylanguage#overview) if you need to dive deeper.
 * `{;} and {,}` is called Arrays - I was able to use this to line up the days of my two WeekDay queries (to split Payments & Charges into 2 columns) and easily create a chart out of the combo.
 
-## How I made my own Venmo Wrapped
-
-< how did I get to this point? >
-
-talk about how I fooled the API ?
-
-Ok I have a sheet of all my Venmo transactions for the year - now what? Since I have no idea what I'm doing with data, I just starting listing off a bunch of really obvious calculations to see if inspiration would strike.
-
 ## Potentially interesting data points
 
 After showing a few friends, I started getting feedback with ideas - I haven't explored them, but maybe one of the curious citizens of the internet will find them interesting:
@@ -85,4 +85,4 @@ After showing a few friends, I started getting feedback with ideas - I haven't e
 
 ## Make your own Venmo Wrapped
 
-Feel free to borrow the [Google Sheets Template](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) I used, and let me know what you come up with me on [Twitter @maybekq]() or [email](mailto:)! I'd love to see what the data wizards of the world come up with.
+Feel free to borrow the [Google Sheets Template](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) I used, and let me know what you come up with on [Twitter @maybekq](https://twitter.com/maybekq) or [email](mailto:kevinquinnfun@notxss.anonaddy.com)! I'd love to see what the data wizards of the world come up with, or if there are bugs in my queries.

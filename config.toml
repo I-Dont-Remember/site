@@ -90,7 +90,7 @@ polywork = "kevinquinn"
 
 ## Extras
 [params.extra]
-copyright = "© 2022. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+copyright = "© 2023. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
 poweredby = false
 highlightjs = true
 socialmarkup = true
