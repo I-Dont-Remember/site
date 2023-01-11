@@ -17,7 +17,7 @@ _Unfortunately, I can't promise this wil be as exciting as when Venmo left every
 
 ## My Venmo Wrapped 2022
 
-To give you a preview of what sort of info you might find in your own Venmo Wrapped, here's mine for 2022 (omitting any sensitive details like specific people or amounts) and a [copyable Sheets template](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing):
+To give you a preview of what sort of info you might find in your own Venmo Wrapped, here's mine for 2022 (omitting any sensitive details like specific people or amounts) and a [**copyable Sheets template**](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing):
 
 ![](/uploads/venmo-wrapped-2022.jpg)
 
@@ -31,6 +31,10 @@ To give you a preview of what sort of info you might find in your own Venmo Wrap
 
 If this piqued your interest at all, read on to make your own! I'll add a list farther down of other interesting stats you might want to explore.
 
+## Google Sheets Template
+
+To make your own, there is a [**copyable Sheets template**](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing). Directions for how to gather your transactions & update the sheet are below.
+
 ## How to make your own Venmo Wrapped
 
 Making your own Wrapped only takes a few steps:
@@ -39,7 +43,7 @@ Making your own Wrapped only takes a few steps:
    1. Go to your [`Venmo Statements` tab](https://account.venmo.com/statement).
    2. In a new tab, use the URL `https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true`{{< new_tab_link title="[↗️]" url="https://account.venmo.com/api/statement/download?startDate=2022-01-01&endDate=2022-12-31&csv=true" >}}  
    to download the full year of transactions history. [_⚠️ Why download this way._](#-why-download-this-way)
-2. Copy them into either the [Google Sheet template I made](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) _(or one of your own)_.
+2. Copy them into either the [**Google Sheet template**](https://docs.google.com/spreadsheets/d/1MotwaQm1jyDeqBVdD-ZTFTSHyvJyyI9gSwjt3B9_Wa0/edit?usp=sharing) I made _(or one of your own)_.
 
    > ℹ️ _The data needs a small amount of cleanup before it's ready._
    > * _In the transactions file, you can ignore the extra meta information above the line starting with `,ID,Datetime`. You can also skip the last line that has `In case of errors...`. Only copy the actual transactions in between to your Sheet._
