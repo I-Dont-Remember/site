@@ -1,21 +1,21 @@
 +++
-categories = []
+categories = ["Software Development"]
 date = 2023-01-12T06:00:00Z
 description = "A small collection of confessions from everyday devs at companies across the industry. When impostor syndrome strikes, they can act as a reminder that we're all human."
-draft = true
+draft = false
 images = []
-tags = ["FAANG", "Leetcode", "confessions"]
+tags = ["FAANG", "Leetcode", "confessions", "software-engineering"]
 title = "Confessions of Everyday Software Engineers"
 
 +++
 Impostor syndrome sucks, and without hearing from real people, you can easily assume every software engineer is a god-tier FAANG architect mage who eats Leetcode Hard problems for breakfast, and never makes a mistake (_or at least, I did)_. Luckily, there's some normal people out here, too, but we’re the quiet majority.
 
-Read on for a small collection of real world confessions from anonymous devs. These people work at companies ranging from tiny 2 person startups up to the FAANG companies you can't stop gushing over.
+Read on for a small collection of real world confessions from anonymous devs. These people work at companies ranging from tiny 2 person startups, up to the FAANG companies you can't stop gushing over.
 
 ## Why am I minimally qualified to write this?
 
 * I’ve been a software engineer at a Fortune 100 since 2019, had a couple internships in other companies, and been building side projects all the while.
-* There are really smart developers at FAANG, Fortune X, and small startups that let me hang out with them, for unknown reasons. Ostensibly for friendship, but I have a hunch they all need my kidneys.
+* There are really smart developers at FAANG, Fortune X, and startups that let me hang out with them, for unknown reasons. Ostensibly for friendship, but I have a hunch they all need my kidneys.
 * Reformed code purist - I used to feel like every codebase should have perfect test coverage, no linting errors, the most efficient architecture, and so on. Anyone who didn't was clearly a [lazy, terrible, no good, very bad](https://en.wikipedia.org/wiki/Alexander_and_the_Terrible,_Horrible,_No_Good,_Very_Bad_Day) developer. Guess what? Now **I’m** that lazy, terrible, no good dev without a perfect codebase!
 
 ## Confessions of real-world software engineers
@@ -24,7 +24,7 @@ Since I probably have to add this disclaimer:
 
 > _This list is meant to be a transparent look into reality to help those with Impostor Syndrome. If you are trying to use this list in a negative way, I’ll be disappointed._
 >
-> _The `I...` is to make them easy to read. A small number of the following are from myself, the rest are from friends, acquaintances, and reading between the lines of online posts on places like Reddit and Teamblind._
+> _The `I...` is to make them easy to read, not claiming them as my own. A small number of the following are from myself, the rest are from friends, acquaintances, and reading between the lines of online posts on places like Reddit and Teamblind._
 
 ### Technical
 
