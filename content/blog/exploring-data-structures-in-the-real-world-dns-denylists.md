@@ -1,7 +1,7 @@
 +++
 categories = ["Software Development"]
 date = 2023-01-22T06:00:00Z
-description = ""
+description = "DNS sinkholes like Pi-hole have to rapidly decide whether a new URL is allowed - what data structures might they use under the hood to enable quick responses?"
 draft = true
 images = []
 tags = ["data structures", "dns", "pi-hole"]
