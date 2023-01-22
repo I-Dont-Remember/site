@@ -2,13 +2,13 @@
 categories = ["Software Development"]
 date = 2023-01-22T06:00:00Z
 description = "DNS sinkholes like Pi-hole have to rapidly decide whether a new URL is allowed - what data structures might they use under the hood to enable quick responses?"
-draft = true
+draft = false
 images = []
 tags = ["data structures", "dns", "pi-hole"]
 title = "Exploring Data Structures in the Real World: DNS Denylists"
 
 +++
-As a long time user of [Pi-hole](https://pi-hole.net/) (and now [NextDNS](https://nextdns.io)) to unclog my network from all the garbage ads the internet serves, I've always been amazed at the speed their systems operate at. It has to take a target URL request and compare it against huge block lists of thousands of bad domains*, all in the span of a few ms. Otherwise, we would get frustrated and go back to browsing the web naked.
+As a long time user of [Pi-hole](https://pi-hole.net/) (and now [NextDNS](https://nextdns.io)) to unclog my network from all the garbage ads the internet serves, I've always been amazed at the speed at which their systems operate. It has to take a target URL request and compare it against huge block lists of thousands of bad domains[^1], all in the span of a few ms. Otherwise, we would get frustrated and go back to browsing the web naked & afraid.
 
 ## Potential Data Structures
 
@@ -40,4 +40,4 @@ As far as I understand, we would still need to handle the  `possibly in set` out
 
 Pi-hole is open-source, so if we dig far enough, we can find out how a real world DNS sinkhole keeps it's lookup operations speedy - if you find it before I do, let me know so I can link directly to it! Otherwise, here's the link to the [Github organization](https://github.com/pi-hole) and the [FTL repo]() which I believe is where it resides.
 
-\* _While thousands of URLs isn't a ton of data to search through for a computer, when operating at the DNS level and the insane speed it requires, they probably don't want to waste any time._
+[^1]: _While thousands of URLs isn't a ton of data to search through for a computer, when operating at the DNS level and the insane speed it requires, they probably don't want to waste any time._
