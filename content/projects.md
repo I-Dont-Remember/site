@@ -42,9 +42,9 @@ Project Status Guide (**_23_** _in total_):
 * **✍ Writing**
   * **Status: 🏃‍♂️**
   * I started writing on this blog, [**Dev.to**](https://dev.to/idontremember), and [**Medium**](https://maybekq.medium.com/). Whether or not anyone reads it, it has been incredibly helpful to process thoughts instead of letting them endlessly bounce within my skull.
-* [**👩‍💻Thyme**](https://central.ballerina.io/i_dont_remember/thyme)
+* [**👩‍💻Thyme**](https://i-dont-remember.github.io/thyme/)
   * **Status: ⏳**
-  * An open source [**Ballerina lang**](https://ballerina.io/ "Ballerina Lang site") module to humanize working with the `stdlib` time module.
+  * An open source [**Ballerina lang**](https://ballerina.io/ "Ballerina Lang site") module to humanize working with the `stdlib` time module. [_Github_](https://github.com/I-Dont-Remember/thyme).
 * [**💻Equation Finder**](https://equation-finder.netlify.app/)
   * **Status: ⏳**
   * A tool to help you understand what equations you have available base on given quantities. For solving problems in Physics, Math, Chemistry, and more.
