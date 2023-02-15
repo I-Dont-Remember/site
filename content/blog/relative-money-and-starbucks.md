@@ -14,25 +14,29 @@ I was recently walking past Equinox, the fancy $250/mo gym, and was thinking abo
 
 Let's establish a baseline that a new college-grad, or maybe tradesperson like a plumber, making $65k/year considers an individual Starbucks drink to have a trivial effect on their finances.
 
-I'm considering **Trivial** to be: even if you do it 10 times a month, it has a low impact on your budget. 
+I'm considering **Trivial** to be: even if you do it 10 times a month, it has a low impact on your budget.
 
 With this definition, it sets our purchase threshold at **0.1%** of monthly income - 10x would be only 1%. If we set our threshold to 1% though, 10x is **10%**! 10% is a big chunk of rent/groceries/etc, so that's a no-no.
 
 ## When Equinox == Starbucks
+
 With our definition of trivial purchase set, how does our Starbucks-wielding friend fare?
 
-- Starbucks coffee ~ $5
-- $65k => $5400/mo
-- 5/5400 = 0.0925%
+* Starbucks coffee \~ $5
+* $65k => $5400/mo
+* 5/5400 = 0.0925%
 
 That's less than our threshold of 0.1%! If we follow that same ratio, what would their Super Rich Friend need to make for the fancy gym membership to be a no-brainer like a coffee?
 
-- 0.0925% = $250 / X (monthly income)
-- X = $270k/mo, or $3.2 million/yr!
+* 0.0925% = $250 / X (monthly income)
+* X = $270k/mo, or $3.2 million/yr!
 
 ## Find your trivial purchase price
 
-Now that we see how it works under the hood, this chart maps out a ratio of 0.1% of monthly income vs a yearly salary to understand how it scales up and down.
+Now that we see how it works under the hood, this chart maps out a ratio of 0.1% of monthly income vs a yearly salary to understand how it scales up and down. Unfortunately our Super Rich friend doesn't even show up on this chart! 
 
 ![](/uploads/how-does-trivial-purchase-size-change-with-salary.png)
 
+If we actually want to see them on a chart, we have to scale up by a lot.
+
+![](/uploads/labeled-yearly-vs-trivial.jpg)
