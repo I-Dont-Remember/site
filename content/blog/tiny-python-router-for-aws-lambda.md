@@ -96,7 +96,6 @@ Diving in, the router is a simple class holding the mappings between method-path
                 m(self.aws_event)
     
             return path_func(aws_event, aws_context, kwargs)
-    
 
 ### Example usage
 
@@ -106,62 +105,58 @@ An example, you say? Why of course! I too am tired of digging through repos with
 2. Run `python test_router.py`.
 3. Thank the heavens you don't have to install Flask just for simple routing.
 
-    import json
-    import random
-    
-    from tiny_router import TinyLambdaRouter
-    
-    app = TinyLambdaRouter()
-    
-    
-    @app.middleware()
-    def logging_middleware(aws_event):
-        print('In da middleware for the request')
-        aws_event['middleware'] = f'added_from_middleware-{random.randint(1,100)}'
-    
-    
-    @app.route('/implicit-health', extra_arg='an extra arg')
-    def health(aws_event, aws_context, kwargs):
-        kwargs['middleware'] = aws_event['middleware']
-        return {
-            'statusCode': 200,
-            'body': json.dumps(kwargs)
-        }
-    
-    @app.route('/health', extra_arg='an extra arg', methods=['GET'])
-    def health(aws_event, aws_context, kwargs):
-        kwargs['middleware'] = aws_event['middleware']
-        return {
-            'statusCode': 200,
-            'body': json.dumps(kwargs)
-        }
-    
-    
-    def lambda_handler(event, context):
-        return app.run(event, context)
-    
-    
-    if __name__ == '__main__':
-        events = [
-            {'path': '/health', 'httpMethod': 'GET'},
-            {'path': '/definitely/fake', 'httpMethod': 'GET'},
-            {'path': '/health', 'httpMethod': 'PUT'},
-            {'path': '/implicit-health', 'httpMethod': 'GET'}
-        ]
-        context = None
-        for event in events:
-            try:
-                print('Resp:', lambda_handler(event, context))
-            except Exception as e:
-                print(e)
-            print('----------------------')
-    
+       import json
+       import random
+       
+       from tiny_router import TinyLambdaRouter
+       
+       app = TinyLambdaRouter()
+       
+       @app.middleware()
+       def logging_middleware(aws_event):
+         print('In da middleware for the request')
+         aws_event['middleware'] = f'added_from_middleware-{random.randint(1,100)}'
+       
+       @app.route('/implicit-health', extra_arg='an extra arg')
+       def implicit_health(aws_event, aws_context, kwargs):
+         kwargs['middleware'] = aws_event['middleware']
+         return {
+           'statusCode': 200,
+           'body': json.dumps(kwargs)
+         }
+       
+       @app.route('/health', extra_arg='an extra arg', methods=['GET'])
+       def health(aws_event, aws_context, kwargs):
+         kwargs['middleware'] = aws_event['middleware']
+         return {
+           'statusCode': 200,
+           'body': json.dumps(kwargs)
+         }
+       
+       def lambda_handler(event, context):
+       return app.run(event, context)
+       
+       if __name__ == '__main__':
+         events = [
+           {'path': '/health', 'httpMethod': 'GET'},
+           {'path': '/definitely/fake', 'httpMethod': 'GET'},
+           {'path': '/health', 'httpMethod': 'PUT'},
+           {'path': '/implicit-health', 'httpMethod': 'GET'}
+         ]
+         context = None
+         for event in events:
+           try:
+           	print('Resp:', lambda_handler(event, context))
+           except Exception as e:
+             print(e)
+             print('----------------------')
 
 ## Other options
 
 If this doesn't fit your needs, there's other routes you can take:
 
 * Handle parsing routes yourself (not recommended 😬)
+* [AWS Lambda Powertools](https://awslabs.github.io/aws-lambda-powertools-python/2.9.1/core/event_handler/api_gateway/#api-gateway-rest-api), has lots of features, but seems well liked.
 * [Lambda-router](https://pypi.org/project/lambda-router/) - not a bad option, but not my cup of tea.
 * [Tiny-Router](https://github.com/nekonoshiri/tiny-router) - didn't exist when I made the first version a couple years ago, though I'm glad to see I'm not the only one that finds this pattern useful.
 * Biting the bullet and using Flask - [Deploying a Flask app to AWS Lambda](https://dev.to/divporter/deploying-a-flask-app-to-aws-lambda-5em0).
