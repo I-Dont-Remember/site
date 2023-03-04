@@ -2,7 +2,6 @@
 categories = ["TIL"]
 date = 2023-03-03T06:00:00Z
 description = ""
-draft = true
 images = []
 tags = ["AWS", "Serverless", "Design-Patterns"]
 title = "Serverless Design Pattern for Batch Processing with Fan Out"
@@ -14,7 +13,6 @@ This is a simple serverless design pattern that has come in handy numerous times
 
 The design pattern only requires a single Lambda, with a conditional variable in the input that chooses how the Lambda will behave. It will either operate as **A)** the fan-out orchestrator, or **B)** process a single item/batch.
 
-  
 ![](/uploads/serverless-batch-processing-smaller.jpg)
 
 The pseudocode from the photo is repeated below:
@@ -36,3 +34,9 @@ The pseudocode from the photo is repeated below:
       # handle it 
 
 In the example, `action` is our key conditional trigger.
+
+### Variations
+
+There's a few different ways you can vary the pattern to suit your needs. When input is first received to the `start_fanout` worker, it can either be passed as part of the input or just be used as the signal for the worker to go collect that information. 
+
+In the same vein, sometimes it makes sense to pull all the data and chunk it before passing it to `process_chunk`, other times you can pass something like an ID so the processor knows where to pull the data it has to act on.
