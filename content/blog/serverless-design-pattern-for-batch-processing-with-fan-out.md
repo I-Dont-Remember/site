@@ -40,3 +40,7 @@ In the example, `action` is our key conditional trigger.
 There's a few different ways you can vary the pattern to suit your needs. When input is first received to the `start_fanout` worker, it can either be passed as part of the input or just be used as the signal for the worker to go collect that information. 
 
 In the same vein, sometimes it makes sense to pull all the data and chunk it before passing it to `process_chunk`, other times you can pass something like an ID so the processor knows where to pull the data it has to act on.
+
+### Requirements
+
+You'll need to have a way (and permissions!) to recursively invoke your function for this pattern to be an option. If on AWS, that might be **`lambda:InvokeFunction` **in the IAM role. A more widely usable pattern is available if your function sits behind an API - just make a request! Even the bare bones function runtimes provide the ability to make HTTP requests.
