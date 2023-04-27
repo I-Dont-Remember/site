@@ -1,12 +1,13 @@
 +++
-categories = ["Personal Development"]
-date = 2021-02-14T06:00:00Z
+categories = [ "Personal Development" ]
+date = 2021-02-14T06:00:00.000Z
 description = "Starting a project is easy. Consistently working on one after the initial energy has faded? Much more difficult."
-images = []
-tags = ["self-help"]
+images = [ ]
+tags = [ "self-help" ]
 title = "Fighting Procrastination with Accountability"
-
+_template = "blog_post"
 +++
+
 Starting a project is easy. I get super excited and have all sorts of wild ideas where it could go. Consistently working on one after the initial energy has faded? Much more difficult. I have a stack of half-baked projects sitting around my room and hard drive waiting for the someday that never seems to come. It's frustrating to be reminded of all these unfinished ideas, but it's never enough of a push to trade out my current priorities.
 
 Observing & reading people who are prolific and successful in their fields, consistency seems to be the magic sauce to most any activity. Do anything enough times and you will be better than when you started. The only way to guarantee you won't get better is to not spend any time on it. I recently discovered I enjoy writing, and I wanted to get improve since it has long term benefits. With consistency in mind, 5 months ago I set myself a goal to write 52 pieces in 52 weeks. Unfortunately, knowing consistency is vital doesn't automatically find you the time for the [important, but not urgent](https://www.eisenhower.me/eisenhower-matrix/), tasks in life. The dreadful combination of poor time management and procrastination has led me nearly half-way with not even a quarter of the articles needed.

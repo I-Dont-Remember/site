@@ -1,13 +1,14 @@
 +++
-categories = ["Personal Development"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Personal Development" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Confusing the tracking of habits as being enough to build them."
 draft = false
-images = []
-tags = ["habits"]
+images = [ ]
+tags = [ "habits" ]
 title = "Tracking Habits ≠ Building Habits"
-
+_template = "blog_post"
 +++
+
 I struggle to make habits stick in my life — that is, the good ones. Collecting Jolly Ranchers from my apartment lobby had no problem sticking around as a bad habit. When the willpower to build new habits strikes, I fall into the same pattern:
 
 1. Get excited about adopting new good habits.

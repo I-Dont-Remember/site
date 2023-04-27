@@ -1,13 +1,14 @@
 +++
-categories = ["Guides"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Guides" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Ways to programmatically generate pages from data for Hugo. Automate your page creation."
 draft = false
-images = []
-tags = ["hugo", "static-site-generator"]
+images = [ ]
+tags = [ "hugo", "static-site-generator" ]
 title = "Creating Pages from Data Programmatically for Hugo"
-
+_template = "blog_post"
 +++
+
 So you're using the [Hugo](https://gohugo.io/) static site generator and interested in auto-generating pages from data, similar to [Gatsby's programmatic generation](https://www.gatsbyjs.com/docs/programmatically-create-pages-from-data/) or [Middleman's Dynamic Pages](https://middlemanapp.com/advanced/dynamic-pages)? As of late 2021, Hugo does not have built-in support, and since the topic has been in [discussion since _at least_ 2013](https://github.com/gohugoio/hugo/issues/140), don't hold your breath. Luckily, there's options available to accomplish the same task, from premade tools to writing your own simple scripts.
 
 ## How it Works

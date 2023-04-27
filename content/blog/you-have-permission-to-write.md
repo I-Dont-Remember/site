@@ -1,12 +1,20 @@
 +++
-categories = ["Writing"]
-date = 2020-09-27T05:00:00Z
-description = "Your piece may be bad.\n\nThe topic may be over done.\n\nIt may get ignored.\n\nBut for the chance your words resonate with someone, write."
-images = ["/uploads/youhavepermission-mugshot.jpeg"]
-tags = ["writing"]
-title = "You Have Permission to Write"
+categories = [ "Writing" ]
+date = 2020-09-27T05:00:00.000Z
+description = """
+Your piece may be bad.
 
+The topic may be over done.
+
+It may get ignored.
+
+But for the chance your words resonate with someone, write."""
+images = [ "/uploads/youhavepermission-mugshot.jpeg" ]
+tags = [ "writing" ]
+title = "You Have Permission to Write"
+_template = "blog_post"
 +++
+
 It's taken me a long time to give myself permission to write. For years, I was adamantly opposed to writing. I thought I could never be a writer, and never would have a desire to try. Part of my frustration with writing was the fear of failure. Writing isn't like math, there is no simple evaluation of right and wrong everyone agrees on. The subjective nature of it scared me. How do you become better at something that is based on the interpretation of each reader? I want to be responsible for my own successes or failures, but with writing control of the outcome leaves my hands.
 
 There was also the stream of self-doubt so many face that crushes new ideas before you can ever get them out. I'm not creative enough, I'm not an expert in anything, so what would I say?

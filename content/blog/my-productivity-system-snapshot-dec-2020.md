@@ -1,12 +1,14 @@
 +++
-categories = ["Personal Development"]
-date = 2020-12-20T06:00:00Z
+categories = [ "Personal Development" ]
+date = 2020-12-20T06:00:00.000Z
 description = "This is a snapshot in time of the productivity system I use: what it is, where it came from, and where it might go."
-images = []
-tags = ["productivity"]
+images = [ ]
+tags = [ "productivity" ]
 title = "My Productivity System Snapshot: Dec 2020"
 toc = true
+_template = "blog_post"
 +++
+
 This is a snapshot in time of the productivity system I use: what it is, where it came from, and where it might go.
 
 For me, productivity is not about squeezing work out of every minute in a day, but using time deliberately. When I'm with friends, I want to just focus on enjoying time with people I care about. When I'm working on a project, I want to be productive and not distracted, as that will lead to the project bleeding into other areas of my life. Think of this as a first draft of a system to help keep my life on track and moving intentionally towards goals, rather than wistfully following whatever breeze blows through. Theoretically by writing these snapshots, it will help me understand what I want out of it and reflect on what pieces aren't working. In the coming months I fully expect to have major shifts in the tools and habits comprising the rickety structure I have in place. It felt important to understand what an ideal personalized setup might do, as well as what I have tried in the past, before crafting the overall system.

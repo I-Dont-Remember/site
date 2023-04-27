@@ -1,13 +1,14 @@
 +++
-categories = ["Bootstrapping"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Bootstrapping" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Maintain a toolkit to avoid shiny objects and be a quicker creator."
 draft = false
-images = []
-tags = ["toolkit", "side-projects", "programming"]
+images = [ ]
+tags = [ "toolkit", "side-projects", "programming" ]
 title = "On the Importance of Maintaining a Toolkit"
-
+_template = "blog_post"
 +++
+
 Turns out, bookmarking lots of links doesn't help you create anything new.
 
 I used to spend loads of time reading online and collecting bookmarks on neat tools and services, storing them for when I eventually have a project idea which is their perfect match. I guess my thought process was if I collected tools & resources for every scenario, it would be a walk in the park to build any idea. Writing articles, coding software, any creative task was fair game. I would dig through every [Product Hunt](https://www.producthunt.com/) new products email and collect any I thought had potential. There are over 1000 links of interesting products & articles still waiting in my notes, and that's just the ones from the past few months I haven't gotten to yet!

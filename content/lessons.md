@@ -1,13 +1,15 @@
 +++
-categories = []
-date = 2022-10-07T05:00:00Z
+categories = [ ]
+date = 2022-10-07T05:00:00.000Z
 description = "Life is a long string of making mistakes and learning lessons. This list is a living document for me to reflect on past experiences."
 draft = false
-images = []
-tags = []
+images = [ ]
+tags = [ ]
 title = "Lessons"
 toc = true
+_template = "blog_post"
 +++
+
 
 ---
 

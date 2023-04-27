@@ -1,13 +1,14 @@
 +++
-categories = ["Guides"]
-date = 2022-05-07T04:00:00Z
+categories = [ "Guides" ]
+date = 2022-05-07T04:00:00.000Z
 description = "A simple guide to self-host a NocodDB Airtable alternative in just a few minutes, for free."
-images = ["/uploads/nocodb-fly_io-smaller.png"]
-tags = ["fly.io", "nocodb", "self-hosting"]
+images = [ "/uploads/nocodb-fly_io-smaller.png" ]
+tags = [ "fly.io", "nocodb", "self-hosting" ]
 title = "How to Self-Host NocoDB on Fly.io"
 toc = true
-
+_template = "blog_post"
 +++
+
 You want to [self-host](https://www.reddit.com/r/selfhosted/) apps for fun or privacy - but not the _‘running servers in your garage’_ type of self-hosted. In 2022 we live in a Golden Era of low-cost VPCs and hosting providers, and there has never been a better time for people looking to offload the frustrating parts of self-hosting, while still operating on a shoe-string budget (or free!).
 
 So you want to host your own [NocoDB Airtable alternative](https://www.nocodb.com/)? Love it! Let’s get you rolling. This guide will set you up on [Fly.io](http://Fly.io) with a SQLite backend.  [NocoDB](https://www.nocodb.com/) has so many uses cases, but one feature I want to call out is how handy it is that it comes with a built-in API for items right out of the gate. Can anyone say speedy MVPs?

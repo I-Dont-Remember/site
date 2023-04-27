@@ -1,13 +1,14 @@
 +++
-categories = ["Career"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Career" ]
+date = 2022-04-13T04:00:00.000Z
 description = "90% of advice ends up wasted, so stop asking."
 draft = false
-images = []
-tags = ["advice", "career"]
+images = [ ]
+tags = [ "advice", "career" ]
 title = "Stop Asking for Advice"
-
+_template = "blog_post"
 +++
+
 Stop asking for advice.
 
 Stop asking for advice - especially if you won’t use it.

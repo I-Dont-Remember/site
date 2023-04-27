@@ -1,13 +1,14 @@
 +++
-categories = ["Personal Development"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Personal Development" ]
+date = 2022-04-13T04:00:00.000Z
 description = "There's only so much time you can spend looking for shortcuts or trying to learn more before you need to buckle down and get your hands dirty."
 draft = false
-images = []
-tags = []
+images = [ ]
+tags = [ ]
 title = "Stop Looking for Shortcuts & Just Do the Work"
-
+_template = "blog_post"
 +++
+
 As someone who easily gets caught up in research & over-analyzing how to do new things, I need to hear this every other day.
 
 > [**"Stop looking for shortcuts and just do the work"** - @Pomp](https://twitter.com/APompliano/status/1328378491469959170?s=20 "https://twitter.com/APompliano/status/1328378491469959170?s=20")

@@ -1,13 +1,14 @@
 +++
-categories = ["Personal Development"]
+categories = [ "Personal Development" ]
 curated = true
-date = 2021-12-17T05:00:00Z
+date = 2021-12-17T05:00:00.000Z
 description = "A college degree takes 4 years, a year or more to write a book, 10 years at the DMV. Facts...or are they? Life has no speed limits, so why treat them as laws?"
-images = []
-tags = []
+images = [ ]
+tags = [ ]
 title = "Life Has No Speed Limits"
-
+_template = "blog_post"
 +++
+
 What if I said you could write a book in 1 month? Sounds like baloney, right?
 
 Most of us have never written a book, but we come up with our own hand-wavy assumptions for how long it takes to complete tasks. Sometimes we’ll put in even less thought and just use the average pace defined by society as a rule. Should college **_really___ take 4 years for everyone?*

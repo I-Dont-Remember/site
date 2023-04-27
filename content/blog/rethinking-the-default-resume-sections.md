@@ -1,13 +1,14 @@
 +++
-categories = ["Career"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Career" ]
+date = 2022-04-13T04:00:00.000Z
 description = "If the resume should showcase your skills, why is company pedigree the most eye-catching?"
 draft = false
-images = []
-tags = ["resume", "job-searching"]
+images = [ ]
+tags = [ "resume", "job-searching" ]
 title = "Rethinking the Default Resume Sections"
-
+_template = "blog_post"
 +++
+
 A resume is supposed to showcase your skills, but in the default format, the most eye-catching information is the companies you worked for. Things you've done are clustered underneath each title, hoping to be viewed even for a moment by the busy person skimming it. If your goal is to showcase skills and experiences, rather than the pedigree of your past employers, the current format feels flawed —especially since company pedigree can get you [90% callbacks even with nonsense bullet points about STDs and coffee beans](https://www.reddit.com/r/recruitinghell/comments/qhg5jo/this_resume_got_me_an_interview/) 🤮 . It's time for an adjustment.
 
 ## What's wrong with the average resume

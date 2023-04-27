@@ -1,12 +1,13 @@
 +++
-categories = ["Personal Development"]
-date = 2020-10-30T05:00:00Z
+categories = [ "Personal Development" ]
+date = 2020-10-30T05:00:00.000Z
 description = "I'm starting from zero with no audience, no businesses, no published projects or big ideas. Putting a line in the sand to look back on, no excuses."
-images = ["/uploads/initial-medium-earnings.png"]
-tags = ["personal"]
+images = [ "/uploads/initial-medium-earnings.png" ]
+tags = [ "personal" ]
 title = "Starting from Zero"
-
+_template = "blog_post"
 +++
+
 _I lied. Though I said I'm starting from zero, I'm ever so slightly above zero in some of the categories mentioned in this piece. Sue me._
 
 Making my way through college and out the other side, I never took the time to notice the 9 to 5 isn't the only way to live life. I thought you went to college, learned a few snippets here and there in between cramming for tests, then you pop out a fully fledged adult! I found myself in a corporate office like I thought was my goal, so much energy was expended in college getting there, but still a I had a gnawing in my gut telling me it's not what I want out of life.

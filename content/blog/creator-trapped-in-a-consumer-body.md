@@ -1,12 +1,14 @@
 +++
-categories = ["Personal Development"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Personal Development" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Desiring to be creative, but defaulting to consuming content to the extreme."
 draft = false
-images = []
-tags = []
+images = [ ]
+tags = [ ]
 title = "Creator Trapped in a Consumer Body"
+_template = "blog_post"
 +++
+
 
 **TL;DR:** _Find out whether you default to consuming or creating. Bias yourself towards action, **Stop reading about creating and start doing it.** Not watching TV does not mean you're productive._
 

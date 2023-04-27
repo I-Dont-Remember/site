@@ -1,12 +1,13 @@
 +++
-categories = ["Guides"]
-date = 2021-12-11T05:00:00Z
+categories = [ "Guides" ]
+date = 2021-12-11T05:00:00.000Z
 description = "Learn how to set-up the Pi-hole ad blocker on a headless Raspberry Pi Zero and connect your Android and Windows devices for maximum adblock protection!"
-images = ["/uploads/setup-pi-hole-raspberrypi-og.png"]
-tags = ["pi-hole", "privacy", "raspberrypi"]
+images = [ "/uploads/setup-pi-hole-raspberrypi-og.png" ]
+tags = [ "pi-hole", "privacy", "raspberrypi" ]
 title = "Set Up Pi-hole Ad Blocker on Raspberry Pi Zero with a Netgear Router"
-
+_template = "blog_post"
 +++
+
 You want an awesome ad blocker on your local network using [Pi-hole](https://pi-hole.net), but don't want to dig for answers? You're in the right place. This quick guide will walk you through the generic Raspberry Pi setup, install and configure Pi-hole, then manually connect devices.
 
 **Why manually connect devices instead of the Pi-hole default?** If you live with other people, they get frustrated when their browsing experience breaks inexplicably. In my experience, they are not amazed by how many ad requests you've blocked enough to warrant the interruptions.

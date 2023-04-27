@@ -1,12 +1,13 @@
 +++
-categories = ["Misc"]
-date = 2022-12-11T06:00:00Z
+categories = [ "Misc" ]
+date = 2022-12-11T06:00:00.000Z
 description = "Icebreakers that don't suck, already tested in real-life rather than being written for SEO spam."
-images = []
-tags = ["icebreakers", "social"]
+images = [ ]
+tags = [ "icebreakers", "social" ]
 title = "Quick Icebreakers That Don't Suck"
-
+_template = "blog_post"
 +++
+
 Recently I had a small get together with a variety of friend groups that didn't all know each other, and inspired by [Nick Gray's cocktail party suggestions](https://party.pro/), we used name tags and had people choose an icebreaker for themselves _(that's not how Nick recommends doing it, fwiw)_.
 
 We went looking for ice breakers that didn't suck, and sadly the vast majority of the "Top 10 Amazing Ice Breakers for Work" we read were predictably SEO bait and provided almost no value. In the spirit of saving myself time in the future, I'm collecting the ice breakers that don't suck here.

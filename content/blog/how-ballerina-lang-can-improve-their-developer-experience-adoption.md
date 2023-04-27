@@ -1,12 +1,14 @@
 +++
-categories = ["DevEx/UX"]
-date = 2020-12-20T06:00:00Z
+categories = [ "DevEx/UX" ]
+date = 2020-12-20T06:00:00.000Z
 description = ""
-images = []
-tags = ["developers", "Ballerina"]
+images = [ ]
+tags = [ "developers", "Ballerina" ]
 title = "How Ballerina Lang can Improve their Developer Experience & Adoption"
 toc = true
+_template = "blog_post"
 +++
+
 I stumbled onto Ballerina a few months back during a random jaunt through the interwebs, and after digging through their site I was intrigued enough by their features & guiding principles to give it an expanded _'Hello World!'_ test. My current method is to build a very simple package based on a popular Open Source module from PyPi or NPM. This can be a handy learning strategy, as you don't have to spend time thinking about what to build or features, you can just copy features directly from existing implementations and focus entirely on learning to put it together. You also go through the full cycle of building, testing, and deploying a module where others can use it, imitating a real world use-case. During this experiment, I noticed a few missing pieces across the developer experience and marketing which I felt could be adjusted, and in doing so have a greater impact on growing the community around the language. I pulled together my thoughts into what are hopefully coherent suggestions for the Ballerina team to implement. If you're interested in just reading about my experience learning and building a module in Ballerina, check out [Giving Ballerina Lang a Twirl](https://kevinquinn.fun/blog/giving-ballerina-lang-a-twirl/ "https://kevinquinn.fun/blog/giving-ballerina-lang-a-twirl/").
 
 ## What is Ballerina

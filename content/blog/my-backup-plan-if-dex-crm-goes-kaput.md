@@ -1,13 +1,21 @@
 +++
-categories = ["TIL"]
-date = 2023-03-16T05:00:00Z
+categories = [ "TIL" ]
+date = 2023-03-16T05:00:00.000Z
 description = "I like using Dex CRM, but I also want to know if anything ever happens to their company, I have an open-source way to still use my contacts information."
 draft = true
-images = []
-tags = ["personal-crm", "dex", "nocodb", "airtable", "sqlite", "open-source"]
+images = [ ]
+tags = [
+  "personal-crm",
+  "dex",
+  "nocodb",
+  "airtable",
+  "sqlite",
+  "open-source"
+]
 title = "My Backup Plan if Dex CRM Goes Kaput"
-
+_template = "blog_post"
 +++
+
 I like using Dex as my personal CRM - their workflows are fast, intuitive, and their support team responds really quickly if you need help. That said, nothing is guaranteed in life, so if anything ever happens to their company, I don't want to lose all my contact information along with it. We need a **Super Backup Plan**™️.
 
 ## My Backup Plan for Dex CRM

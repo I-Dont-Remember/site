@@ -1,13 +1,15 @@
 +++
-categories = ["Bootstrapping"]
-date = 2020-11-26T06:00:00Z
+categories = [ "Bootstrapping" ]
+date = 2020-11-26T06:00:00.000Z
 description = "Let's break it down and see how you only need 99 people's support for your side hustle to make a drastic change to your life."
-images = ["/uploads/mugshotbot-how-many-customers.jpeg"]
-tags = ["indie-hackers", "developers"]
+images = [ "/uploads/mugshotbot-how-many-customers.jpeg" ]
+tags = [ "indie-hackers", "developers" ]
 title = "How Many Customers Does a Successful Side Hustle Need? Just 99."
 toc = true
 curated = true
+_template = "blog_post"
 +++
+
 The founding stories of big tech companies get people pumped on the idea of starting their own thing, from [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service "https://en.wikipedia.org/wiki/Software_as_a_service") products to [paid newsletters](https://trends.vc/trends-0036-paid-newsletters/ "https://trends.vc/trends-0036-paid-newsletters/") . The concept sounds awesome. Build something, it picks up speed, and swiftly grows into a multi-million dollar company. It's a crazy success story, you're set for life! Silicon Valley has no shortage of examples to be gawked at: AirBnb, Amazon, Dropbox, Facebook, Google, Netflix, etc which all exploded in the last 15 years.
 
 Once you start trying to create it, though, odds are your idea is not a runaway success. There are ideas where the problem is so important, so valuable, so sticky to businesses that you can give them the worst pile of garbage in the world and they will fork over bajillions of dollars. If you are in that camp and pulling in cash is as easy as drinking water, stop reading, this isn't for you.

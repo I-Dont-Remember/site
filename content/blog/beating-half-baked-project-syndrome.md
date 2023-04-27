@@ -1,13 +1,14 @@
 +++
-categories = ["Personal Development"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Personal Development" ]
+date = 2022-04-13T04:00:00.000Z
 description = "A project person that can't seem to ship ideas."
 draft = false
-images = []
-tags = ["completion", "impostor-syndrome"]
+images = [ ]
+tags = [ "completion", "impostor-syndrome" ]
 title = "Beating Half-Baked Project Syndrome"
-
+_template = "blog_post"
 +++
+
 Despite considering myself a "project person" for years, I have little evidence to show for it. Plenty of ideas have crossed my mind, yet somehow instead of a laundry list to display, there's just a pile of half-baked or untouched ideas. Articles, YouTube videos, web applications, small electronics, the category matters not. After getting frustrated looking at the unfinished mound once again, I needed to pull together my thoughts on what keeps going wrong, and noticed a number of common issues kept occurring no matter the category. After learning of 'Not-To-Do' lists, I cobbled together a new approach to projects based on the wisdom of the internet.
 
 ## What goes wrong

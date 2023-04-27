@@ -3,3 +3,5 @@ public/
 .hugo*
 misc/
 
+
+node_modules

@@ -1,11 +1,13 @@
 +++
-categories = ["Software Development"]
-date = 2021-04-05T05:00:00Z
+categories = [ "Software Development" ]
+date = 2021-04-05T05:00:00.000Z
 description = "Do you want to be more than a code monkey? Learn to avoid blunders and become a superhero to your team. "
-images = ["/uploads/sarah-kilian-52jrtc2s_ve-unsplash.jpg"]
-tags = ["developers"]
+images = [ "/uploads/sarah-kilian-52jrtc2s_ve-unsplash.jpg" ]
+tags = [ "developers" ]
 title = "7 Blunders Great Developers Say 'No' To"
+_template = "blog_post"
 +++
+
 Do you want to be more than a [code monkey](https://softwareengineering.stackexchange.com/questions/79997/whats-wrong-with-being-a-code-monkey-or-what-is-a-code-monkey)?
 
 Code monkeys build what is put in front of them, while great developers understand the context around their tasks. In my own quest to become more than a fleshy automaton, I try to keep track of the traits and actions of the best developers so I can emulate them. The best always seem to know when an idea will lead to pain down the road, when corners can and can't be cut, what work is a waste of time to bother with. They see the bigger picture and understand the value of 'No' instead of blindly following what ends up on their plate. What you don't do is as important as what you do. Every time you say 'Yes' to something, you are turning down other possibilities even if you don't realize it.

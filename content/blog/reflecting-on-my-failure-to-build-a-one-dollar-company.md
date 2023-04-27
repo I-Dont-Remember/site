@@ -1,13 +1,15 @@
 +++
-categories = ["Bootstrapping"]
-date = 2022-03-23T12:00:00Z
+categories = [ "Bootstrapping" ]
+date = 2022-03-23T12:00:00.000Z
 description = "A reflection on my failure to build a viable product, so others can learn from my mistakes."
 draft = false
-images = ["/uploads/madtown-deals-mvp-deals-on-tap.png"]
-tags = ["startups", "developers", "bootstrappers", "indiehackers"]
+images = [ "/uploads/madtown-deals-mvp-deals-on-tap.png" ]
+tags = [ "startups", "developers", "bootstrappers", "indiehackers" ]
 title = "Reflecting on my Failure to Build a One-Dollar Company"
 curated = true
+_template = "blog_post"
 +++
+
 
 > TL;DR: No market validation, coding doesn't get users, and fantasizing instead of taking action.
 

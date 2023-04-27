@@ -1,12 +1,13 @@
 +++
-categories = ["TIL"]
-date = 2023-03-03T06:00:00Z
+categories = [ "TIL" ]
+date = 2023-03-03T06:00:00.000Z
 description = ""
-images = []
-tags = ["AWS", "Serverless", "Design-Patterns"]
+images = [ ]
+tags = [ "AWS", "Serverless", "Design-Patterns" ]
 title = "Serverless Design Pattern for Batch Processing with Fan Out"
-
+_template = "blog_post"
 +++
+
 This is a simple serverless design pattern that has come in handy numerous times during my career. The problem: I need to process a large amount of data through a Lambda and am running into timeouts even at 15 minutes - or maybe I just need the process to hurry itself along.
 
 ## Serverless Batch Processing

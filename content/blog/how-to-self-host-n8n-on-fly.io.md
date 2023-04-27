@@ -1,12 +1,13 @@
 +++
-categories = ["Guides"]
-date = 2022-10-04T05:00:00Z
+categories = [ "Guides" ]
+date = 2022-10-04T05:00:00.000Z
 description = "A simple guide to self-host n8n in just a few minutes on fly.io."
-images = ["/uploads/n8n-fly-io-working-ybg-sm.png"]
-tags = ["fly.io", "self-hosting", "n8n"]
+images = [ "/uploads/n8n-fly-io-working-ybg-sm.png" ]
+tags = [ "fly.io", "self-hosting", "n8n" ]
 title = "How to Self-Host n8n on Fly.io"
-
+_template = "blog_post"
 +++
+
 You want to [self-host](https://www.reddit.com/r/selfhosted/) apps for fun or privacy - but not the _‘running servers in your garage’_ type of self-hosted. In 2022 we live in a Golden Era of low-cost VPCs and hosting providers, and there has never been a better time for people looking to offload the frustrating parts of self-hosting, while still operating on a shoe-string budget.
 
 In this guide we'll be setting up your own instance of [n8n](https://n8n.io/), an alternative to Zapier. It will have minimum configuration options to get up and running with a SQLite backend, and should cost <$5/month (_Unfortunately it needs too much memory to run in the_ [_fly.io_](https://fly.io/pricing/) _free tier._) If you want Postgres or MySQL, n8n has more information in their [generic Docker instructions](https://docs.n8n.io/hosting/installation/docker/) for how to connect.

@@ -1,14 +1,16 @@
 +++
-categories = ["Software Development"]
-date = 2022-12-09T06:00:00Z
+categories = [ "Software Development" ]
+date = 2022-12-09T06:00:00.000Z
 description = "Finding a solution to parse unescaped double quotes in my JSON strings, with minimal tears."
 draft = false
-images = []
-tags = ["developers", "json"]
+images = [ ]
+tags = [ "developers", "json" ]
 title = "A Real-World Solution to Escape Embedded Double Quotes in JSON"
 toc = false
 curated = true
+_template = "blog_post"
 +++
+
 **The problem:** you need to decode a JSON string, but at some point in the process you don't control, unescaped double quotes are inserted into your string values. How might you sanitize the string to get a valid JSON object for decoding?
 
 > ⚠️

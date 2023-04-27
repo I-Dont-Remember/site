@@ -1,13 +1,15 @@
 +++
-categories = ["Guides"]
-date = 2023-01-04T06:00:00Z
+categories = [ "Guides" ]
+date = 2023-01-04T06:00:00.000Z
 description = "Not overwhelmed yet by all the Spotify Wrapped clones? Follow along to make your own Venmo Wrapped!"
 draft = false
-images = ["/uploads/venmo-wrapped-2022.jpg"]
-tags = ["venmo", "wrapped", "data"]
+images = [ "/uploads/venmo-wrapped-2022.jpg" ]
+tags = [ "venmo", "wrapped", "data" ]
 title = "Make Your Own Venmo Wrapped"
 toc = true
+_template = "blog_post"
 +++
+
 
 I'm no data scientist, but inspired by Spotify Wrapped (and even more so by [Jimmy John's Wrapped](https://twitter.com/BBarberie/status/1608476950108209158)) - let's continue the [descent into year-end madness](https://news.yahoo.com/spotify-wrapped-created-end-menace-194534713.html) and make a Venmo Wrapped!
 

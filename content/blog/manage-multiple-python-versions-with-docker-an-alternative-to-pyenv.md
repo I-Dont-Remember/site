@@ -1,12 +1,14 @@
 +++
-categories = ["Software Development"]
-date = 2021-12-03T05:00:00Z
+categories = [ "Software Development" ]
+date = 2021-12-03T05:00:00.000Z
 description = "Most devs don't need a complicated setup for Python, they just need to get running. Leverage a single Docker command to run any version in isolation."
-images = ["/uploads/docker-mugshotbot-gr.jpg"]
-tags = ["developers"]
+images = [ "/uploads/docker-mugshotbot-gr.jpg" ]
+tags = [ "developers" ]
 title = "Manage Multiple Python Versions With Docker: an Alternative to Pyenv"
 toc = true
+_template = "blog_post"
 +++
+
 You open a project to contribute code and quickly realize it requires a specific Python version you don't have. Not only that, but it's managing dependencies with some tool you don't have, like Pipenv or Poetry. What are your options? You could spend a while setting up your machine with a [fancy Python development environment](https://jacobian.org/2019/nov/11/python-environment-2020/), or you could get up and running right away using Docker as a Python version manager - which works the same across [MacOS, Windows, and Linux](https://docs.docker.com/get-docker/).
 
 {{< bootstrap-panel title="Other solutions" >}}

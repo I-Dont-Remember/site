@@ -1,13 +1,14 @@
 +++
-categories = ["Time Management"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Time Management" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Removing negative elements of your day can be more effective than optimizing your time to perfection."
 draft = false
-images = []
-tags = ["todo-list", "time-management"]
+images = [ ]
+tags = [ "todo-list", "time-management" ]
 title = "Not-To-Do List"
-
+_template = "blog_post"
 +++
+
 To end each day on a great note, it's more effective to remove the negative & disappointing elements than try to cram in more good. Not-To-Do lists can be a handy tool for understanding what causes frustration and leads to a crappy day. It's exactly what it sounds like, a list of things you should NOT do. What follows is the list I've slowly built up over time to guide my own day.
 
 ## The Not-To-Do list for a productive day

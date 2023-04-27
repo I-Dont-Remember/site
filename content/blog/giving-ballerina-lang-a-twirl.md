@@ -1,12 +1,14 @@
 +++
-categories = ["DevEx/UX"]
-date = 2020-12-20T06:00:00Z
+categories = [ "DevEx/UX" ]
+date = 2020-12-20T06:00:00.000Z
 description = "My experience learning the language by building a small package."
-images = []
-tags = ["developers", "Ballerina"]
+images = [ ]
+tags = [ "developers", "Ballerina" ]
 title = "Giving Ballerina Lang a Twirl"
 toc = true
+_template = "blog_post"
 +++
+
 I stumbled onto Ballerina a few months back during a random jaunt through the interwebs, and after digging through their site I was intrigued enough by their features & guiding principles to give it an expanded _'Hello World!'_ test. When I try a new language, I want to get past the toy examples and see what it's actually like to develop. My current method is to build a very simple package based on a popular Open Source module from PyPi or NPM. This can be a handy learning strategy, as you don't have to spend time thinking about what to build or features, you can just copy features directly from existing implementations and focus entirely on learning to put it together. You also go through the full cycle of building, testing, and deploying a module where others can use it, imitating a real world use-case. I spent about an hour reading through docs & examples so I have a rough idea where I can find answers when I get stuck, but I learn best from action, so it was time for the rubber to meet the road. For people who can't resist spoilers, here's the module I created during this process: [thyme](https://central.ballerina.io/i_dont_remember/thyme), and [docs!](https://i-dont-remember.github.io/thyme/). If you're interested in reading the suggestions I compiled to improve the developer experience & adoption of Ballerina, you can find it [here](https://kevinquinn.fun/blog/how-ballerina-lang-can-improve-their-developer-experience-adoption/ "https://kevinquinn.fun/blog/how-ballerina-lang-can-improve-their-developer-experience-adoption/").
 
 ## What is Ballerina

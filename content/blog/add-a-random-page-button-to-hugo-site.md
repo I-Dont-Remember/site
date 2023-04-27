@@ -1,12 +1,13 @@
 +++
-categories = ["TIL"]
-date = 2022-02-13T05:00:00Z
+categories = [ "TIL" ]
+date = 2022-02-13T05:00:00.000Z
 description = "Let users read a random page on your site. A quick guide on how to add this feature to your site in no time."
-images = ["/uploads/hugo-site-random-button-small.jpg"]
-tags = ["Hugo", "jamstack"]
+images = [ "/uploads/hugo-site-random-button-small.jpg" ]
+tags = [ "Hugo", "jamstack" ]
 title = "Add a Random Page Button to Hugo Site"
-
+_template = "blog_post"
 +++
+
 I wanted to add a random button to one of my Hugo sites after remembering how handy it is on [XKCD](https://xkcd.com). Turns out it's a really simple process with Hugo, just need to generate a JSON file and then write a simple script to choose your random article.
 
 ## What are we making?

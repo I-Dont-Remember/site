@@ -1,13 +1,14 @@
 +++
-categories = ["Time Management"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Time Management" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Are you spending your minutes with intention?"
 draft = false
-images = []
-tags = ["time-management", "attention-management"]
+images = [ ]
+tags = [ "time-management", "attention-management" ]
 title = "Clock is Tickin’"
-
+_template = "blog_post"
 +++
+
 The rest of our lives seems like an unlimited canvas with infinite possibilities, especially in the modern age. We are inundated with interesting career paths and life choices that just weren’t available in the past.
 
 Sadly though, we are finite creatures — even if we don’t stay aware of it. Sit down for a second, and let’s get real with time and all you’ve assigned to “**Tomorrow You**”.

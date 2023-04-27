@@ -1,13 +1,15 @@
 +++
-categories = ["Guides"]
-date = 2021-12-10T05:00:00Z
+categories = [ "Guides" ]
+date = 2021-12-10T05:00:00.000Z
 description = "Configure Obsidian for seamless daily notes by adding the Periodic Notes, Templater, and Calendar community plugins."
 draft = false
-images = ["/uploads/obsidian-periodic-notes.png"]
-tags = ["obsidian", "obsidian-plugins", "personal-development"]
+images = [ "/uploads/obsidian-periodic-notes.png" ]
+tags = [ "obsidian", "obsidian-plugins", "personal-development" ]
 title = "Get Started With Obsidian Periodic Notes and Templater"
 toc = true
+_template = "blog_post"
 +++
+
 I've enjoyed tracking my daily notes in Obsidian so far, but it was a bit more complicated to get configured than I thought it would be, so I'm sharing it here to hopefully make setup smoother for those in the future - as well as a few [extra credit](#extra-credit) pieces I've picked up along the way.
 
 > 

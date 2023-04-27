@@ -1,12 +1,14 @@
 +++
-categories = ["Personal Development"]
-date = 2020-07-14T05:00:00Z
+categories = [ "Personal Development" ]
+date = 2020-07-14T05:00:00.000Z
 description = "There are two versions of your life: the one you are living in & the one you dream about."
-images = ["/uploads/intro-circles_650px.jpg"]
-tags = ["self-help"]
+images = [ "/uploads/intro-circles_650px.jpg" ]
+tags = [ "self-help" ]
 title = "The Ideal Life Gap"
 curated = true
+_template = "blog_post"
 +++
+
 There are two versions of your life: the one you are living in & the one you dream about.
 
 ![](/uploads/intro-circles_650px.jpg)

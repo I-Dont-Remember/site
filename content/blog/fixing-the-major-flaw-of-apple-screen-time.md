@@ -1,12 +1,13 @@
 +++
-categories = ["DevEx/UX"]
-date = 2020-09-20T05:00:00Z
+categories = [ "DevEx/UX" ]
+date = 2020-09-20T05:00:00.000Z
 description = "We've all done it. You're scrolling through your phone, long past the \"just a second\" that you told yourself, when it hits you. Time Limit."
-images = ["/uploads/time-limit.png"]
-tags = ["ux"]
+images = [ "/uploads/time-limit.png" ]
+tags = [ "ux" ]
 title = "Fixing the major flaw of Apple Screen Time"
-
+_template = "blog_post"
 +++
+
 We've all done it. You're scrolling through your phone, long past the _"just a second"_ that you told yourself, when it hits you. Time Limit.
 
 ![Apple Screen Time Time Limit Notification](/uploads/time-limit.png#center "Time Limit!")

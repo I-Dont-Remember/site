@@ -1,13 +1,14 @@
 +++
-categories = ["Software Development"]
-date = 2023-01-22T06:00:00Z
+categories = [ "Software Development" ]
+date = 2023-01-22T06:00:00.000Z
 description = "DNS sinkholes like Pi-hole have to rapidly decide whether a new URL is allowed - what data structures might they use under the hood to enable quick responses?"
 draft = false
-images = []
-tags = ["data structures", "dns", "pi-hole"]
+images = [ ]
+tags = [ "data structures", "dns", "pi-hole" ]
 title = "Exploring Data Structures in the Real World: DNS Denylists"
-
+_template = "blog_post"
 +++
+
 As a long time user of [Pi-hole](https://pi-hole.net/) (and now [NextDNS](https://nextdns.io)) to unclog my network from all the garbage ads the internet serves, I've always been amazed at the speed at which their systems operate. It has to take a target URL request and compare it against huge block lists of thousands of bad domains[^1], all in the span of a few ms. Otherwise, we would get frustrated and go back to browsing the web naked & afraid.
 
 ## Potential Data Structures

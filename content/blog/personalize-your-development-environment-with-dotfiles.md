@@ -1,13 +1,14 @@
 +++
-categories = ["Guides"]
-date = 2021-12-16T05:00:00Z
+categories = [ "Guides" ]
+date = 2021-12-16T05:00:00.000Z
 description = "With a few small tweaks, take the default terminal and make it uniquely yours - then watch your dotfiles evolve as you find new tricks for your toolkit."
 draft = false
-images = ["/uploads/dotfiles-terminal-prompt.jpg"]
-tags = ["dotfiles", "command-line", "terminal"]
+images = [ "/uploads/dotfiles-terminal-prompt.jpg" ]
+tags = [ "dotfiles", "command-line", "terminal" ]
 title = "Personalize your Development Environment with Dotfiles"
-
+_template = "blog_post"
 +++
+
 Using the command line in it's default state is doable, in the same way eating plain toast 🍞 every morning will feed you. Is it enjoyable? not really. With a few small tweaks though, it can make you feel like a super hero. Dotfiles track these tweaks and encourage you to add more. We'll go over what the heck dotfiles even are (and why you should care), how to get rolling with them, and give you my favorite tweaks so you can start your own unique collection.
 
 ## What are dotfiles?

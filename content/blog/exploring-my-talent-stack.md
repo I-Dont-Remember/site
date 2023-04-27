@@ -1,13 +1,14 @@
 +++
-categories = ["Career"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Career" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Leveraging multiple strengths in concert to make the whole better."
 draft = false
-images = []
-tags = ["talent-stack", "strengths"]
+images = [ ]
+tags = [ "talent-stack", "strengths" ]
 title = "Exploring My Talent Stack"
-
+_template = "blog_post"
 +++
+
 It takes an insane amount of dedication and pure talent to reach the top 1% of any skill. For the other 99% of us, how can you reach a similar level of achievement if a single skill has such poor odds? With the [Talent Stack](https://www.sloww.co/talent-stack/), popularized by Scott Adams, you can throw away the notion you have to spend all your time striving to be 2nd best, or more likely in the global world we live, 15,456,123rd best. With a Talent Stack, instead of focusing on a single skill, you take multiple strengths and find a way to combine them, making you among the best at the combination. Each time you add to the stack, the level needed for any one skill to maintain your overall standing decreases.
 
 ## Examples of the talent stack

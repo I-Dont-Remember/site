@@ -1,12 +1,14 @@
 +++
-categories = ["Privacy & Security"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Privacy & Security" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Help your friends nab the low hanging fruits of security posture."
 draft = false
-images = []
-tags = ["privacy", "password-management"]
+images = [ ]
+tags = [ "privacy", "password-management" ]
 title = "Make Your Non-Techy Friends Safer Online in Under an Hour"
+_template = "blog_post"
 +++
+
 As someone who pretends to know tech, it can be a hair-pulling experience watching the blatant disregard people you care about have for privacy & security online. Unsecured Wi-Fi named `Sturbucks`? seems legit 🤦‍♀️. They might not know the dangers all around and need someone to watch out for them.
 
 {{< tenor-gif 7883152 "https://tenor.com/view/oblivious-fight-headphones-spiderman-stan-lee-gif-7883152" >}}

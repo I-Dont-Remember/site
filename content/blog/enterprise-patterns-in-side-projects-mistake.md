@@ -1,12 +1,18 @@
 +++
-categories = ["Software Development", "Bootstrapping"]
-date = 2023-01-26T06:00:00Z
+categories = [ "Software Development", "Bootstrapping" ]
+date = 2023-01-26T06:00:00.000Z
 description = "I naively thought I could apply the same complex & scalable solutions used by actual companies to my side projects. I was wrong."
-images = []
-tags = ["software-engineering", "serverless", "bootstrapping", "side-projects"]
+images = [ ]
+tags = [
+  "software-engineering",
+  "serverless",
+  "bootstrapping",
+  "side-projects"
+]
 title = "I Built my Side Projects Like Enterprise Software and Regretted It"
-
+_template = "blog_post"
 +++
+
 I naively thought I could apply the same complex & scalable solutions used by actual companies to my side projects. I thought it would save me time and headaches in the future. I was wrong.
 
 Having spent plenty of time living with my choices, I wish I would have started off following a few simple tenets:

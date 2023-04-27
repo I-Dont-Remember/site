@@ -1,13 +1,14 @@
 +++
-categories = []
-date = 2023-02-15T06:00:00Z
-description = "Money is relative to what we can purchase -$100 is very different to a pan handler vs a billionaire. How do we calculate our own \"trivial\" purchase price?"
+categories = [ ]
+date = 2023-02-15T06:00:00.000Z
+description = 'Money is relative to what we can purchase -$100 is very different to a pan handler vs a billionaire. How do we calculate our own "trivial" purchase price?'
 draft = true
-images = []
-tags = []
+images = [ ]
+tags = [ ]
 title = "Relative Money and Starbucks"
-
+_template = "blog_post"
 +++
+
 I was recently walking past Equinox, the fancy $250/mo gym, and was thinking about at what level of income you'd have to be at for that to be a no-brainer, "Starbucks coffee"-level, decision. As a somewhat regular person _(or so I'd like to think)_ the idea of paying for such an expensive gym when there's one down the road charging $40/mo seems insane - but if you make a metric butt load of money, it's not even worth your energy to worry about. How much does that Super Rich person make, and what does it tell us about money being relative to our purchasing power?
 
 ## Setting definitions

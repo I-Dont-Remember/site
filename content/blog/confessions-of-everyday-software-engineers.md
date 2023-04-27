@@ -1,13 +1,14 @@
 +++
-categories = ["Software Development"]
-date = 2023-01-12T06:00:00Z
+categories = [ "Software Development" ]
+date = 2023-01-12T06:00:00.000Z
 description = "A small collection of confessions from everyday devs at companies across the industry. When impostor syndrome strikes, they can act as a reminder that we're all human."
 draft = false
-images = []
-tags = ["FAANG", "Leetcode", "confessions", "software-engineering"]
+images = [ ]
+tags = [ "FAANG", "Leetcode", "confessions", "software-engineering" ]
 title = "Confessions of Everyday Software Engineers"
-
+_template = "blog_post"
 +++
+
 Impostor syndrome sucks, and without hearing from real people, you can easily assume every software engineer is a god-tier FAANG architect mage who eats Leetcode Hard problems for breakfast, and never makes a mistake (_or at least, I did)_. Luckily, there's some normal people out here, too, but we’re the quiet majority.
 
 Read on for a small collection of real world confessions from anonymous devs. These people work at companies ranging from tiny 2 person startups, up to the FAANG companies you can't stop gushing over.

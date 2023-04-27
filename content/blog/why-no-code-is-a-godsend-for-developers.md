@@ -1,12 +1,14 @@
 +++
-categories = ["Software Development"]
-date = 2020-12-10T06:00:00Z
+categories = [ "Software Development" ]
+date = 2020-12-10T06:00:00.000Z
 description = "It's so easy as a developer to dismiss the idea of learning no-code tools. After all, you know how to code, why spend time learning tools designed for those who can't?"
-images = []
-tags = ["developers"]
+images = [ ]
+tags = [ "developers" ]
 title = "Why No-code is a Godsend for Developers"
 toc = true
+_template = "blog_post"
 +++
+
 It's so easy as a developer to dismiss the idea of learning no-code tools. After all, you know how to code, why should you spend time learning tools designed for those who can't? While no-code inherently means a non-technical person is able to operate the tool, from my own experience and listening to leaders in the field like [Tara Reed](https://www.indiehackers.com/podcast/180-tara-reed-of-apps-without-code), no-code tools are often complex and lean heavily on concepts from software development. A developer will be able to get up and running much quicker and have a better understanding of a project's tech needs.
 
 ## Developer advantages

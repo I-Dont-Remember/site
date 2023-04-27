@@ -1,14 +1,14 @@
 +++
-categories = ["Writing"]
-date = 2021-01-10T05:00:00Z
-# published on April 13th with the other 17, but it really needs to have the original date or it makes no sense in context - For me. I'm the only one that reads every article on # my site in order and remember context around things.
+categories = [ "Writing" ]
+date = 2021-01-10T05:00:00.000Z
 description = ""
 draft = false
-images = []
-tags = []
+images = [ ]
+tags = [ ]
 title = "Path to a Better Writer"
-
+_template = "blog_post"
 +++
+
 For 2 decades I dreaded the act of writing and found it a chore. In elementary school, I even reached a point where my hatred of writing was so strong it destroyed one of my passions.
 
 After a rule was instituted requiring a one paragraph summary for every book read, I all but stopped reading.

@@ -1,12 +1,14 @@
 +++
-categories = ["Guides"]
-date = 2022-05-04T04:00:00Z
+categories = [ "Guides" ]
+date = 2022-05-04T04:00:00.000Z
 description = "Let the nice robots at GitHub handle sending Venmo requests to your friends."
 draft = false
-images = ["/uploads/recurring-venmo-payments-smaller.png"]
-tags = ["automation", "venmo", "ifttt", "github-actions"]
+images = [ "/uploads/recurring-venmo-payments-smaller.png" ]
+tags = [ "automation", "venmo", "ifttt", "github-actions" ]
 title = "Automate Recurring Venmo Payments with Github Actions and IFTTT"
+_template = "blog_post"
 +++
+
 Like so many tinkerers, I love to [automate small parts of my life, while ignoring any actual work](https://xkcd.com/1319/) I should be doing. After stumbling on [Joe’s Venmo automation](https://joeprevite.com/send-automatic-recurring-payments-on-venmo), I immediately swept all the important things off my plate to have some fun. Now let’s set up automatic payments on [Venmo](https://venmo.com/) in less than an hour — with email notifications for peace of mind!
 
 ![Clock + robot snake + Venmo](/uploads/recurring-venmo-payments-smaller.png#center)

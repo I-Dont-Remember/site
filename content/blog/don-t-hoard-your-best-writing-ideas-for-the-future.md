@@ -1,13 +1,14 @@
 +++
-categories = ["Writing"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Writing" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Stockpiling your best ideas for a future audience won’t make you a better writer."
 draft = false
-images = []
-tags = ["impostor-syndrome"]
+images = [ ]
+tags = [ "impostor-syndrome" ]
 title = "Don’t Hoard Your Best Writing Ideas for The Future"
-
+_template = "blog_post"
 +++
+
 My best ideas sit and gather dust on my list of potential writing topics. I don't have the skill, the audience, the whatever, to do them justice, so it's better to stockpile them for a brighter future. The future is full of potential, and there is always a way to make it look greener on the other side. Since my life is a long line of interconnected lists, I pulled together all the reasons these thoughts defy logic and prevent me from growing as a writer.
 
 Stockpiling your best ideas for a future audience won’t make you a better writer.

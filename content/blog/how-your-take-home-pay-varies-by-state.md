@@ -1,13 +1,15 @@
 +++
-categories = ["Career"]
-date = 2022-10-04T05:00:00Z
+categories = [ "Career" ]
+date = 2022-10-04T05:00:00.000Z
 description = "Given a remote worker allowed to live in any state, how does their tax burden vary if they move?"
 draft = false
-images = []
-tags = ["data"]
+images = [ ]
+tags = [ "data" ]
 title = "How Your Take-home Pay Varies By State"
 toc = true
+_template = "blog_post"
 +++
+
 
 I had a vague understanding that different states had different levels of taxes _(wow Florida with that no-income tax woot woot!)_, but never went deeper. The rise of remote work in the last couple years brought this question into sharper focus:
 

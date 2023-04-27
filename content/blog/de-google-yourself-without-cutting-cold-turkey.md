@@ -1,13 +1,14 @@
 +++
-categories = ["Privacy & Security"]
-date = 2022-04-13T04:00:00Z
+categories = [ "Privacy & Security" ]
+date = 2022-04-13T04:00:00.000Z
 description = "Incrementally remove Google from your life without having to rip it out immediately."
 draft = false
-images = []
-tags = ["google", "de-google"]
+images = [ ]
+tags = [ "google", "de-google" ]
 title = "De-Google Yourself Without Cutting Cold Turkey"
-
+_template = "blog_post"
 +++
+
 With digital privacy, it can feel like you have to become a hardcore privacy advocate using only the most secure open source tools, otherwise why bother? I had this impression for a while, but the reality is it's okay to land somewhere in the middle. Strike your own personal balance between the convenience of intrusive apps and privacy. Don't say no to reducing your digital footprint just because you aren't going to wipe it away completely.
 
 ## A quick reminder of why
