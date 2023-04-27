@@ -3,11 +3,12 @@ import { blog_postFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+const token = process.env.TINA_TOKEN || "blech";
 
 export default defineConfig({
   branch,
-  clientId: null, // Get this from tina.io
-  token: null, // Get this from tina.io
+  clientId: "e2121dd6-2454-4260-906e-f9fbe62ae6d8", // Get this from tina.io
+  token: token, // Get this from tina.io
   client: { skip: true },
   build: {
     outputFolder: "admin",
