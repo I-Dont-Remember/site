@@ -75,6 +75,10 @@ I aim to be curious and open to new experiences, which leads me down a variety o
 - Indie hacking/bootstrappers
 - Popcorn cartel
 
+## My reading recommendations
+
+I occasionally will update my favorite articles on my [Pocket](https://getpocket.com/@quinningatlife) profile. You can find some of the pieces I've found most impactful there.
+
 ---
 
 Inspiration for writing an in-depth `About` -> [_The Importance of Having an About Page | Kevin Quirk_](https://kevq.uk/the-importance-of-an-about-page/)
