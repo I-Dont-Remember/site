@@ -37,13 +37,17 @@ When Workflow Buddy didn't immediately get 50 billion installs, I was disappoint
 
 As a developer of tools, much of the time it feels like chucking work into a silent void. Even if you run a SaaS and can see people using the tool, it's pretty silent up in the cockpit unless you break something critical. J had gone through the trouble of setting up Workflow Buddy to solve one of their frustrating problems, and had tons of feedback and ideas. Even though the app only had a few users, I was super motivated to keep improving it and documenting it because of J's enthusiasm and appreciation for my work. Maybe I'm just a sucker for a pat on the head, who knows.
 
-## Lesson 3: opportunities are time-sensitive
+## Lesson 3: Build what you need, not what you can
+
+With my excitement around the tool, my mind was racing with ideas for new `Step Action`s I could add. Looking back though, the overwhelming majority of Workflow Buddy usage is around the HTTP Request step, and I didn't need to add tons of other `Actions` because no one was using them, or even asking for them. Adding features comes at a cost of increased complexity and decreased flexibility to make changes in your app. Users only use a small fraction of the capabilities of your app, so **build what you need, not what you can**.
+
+## Lesson 4: opportunities are time-sensitive
 
 I sat on the idea without attempting it, because at the time, I kept my calendar full with productive procrastination & consuming startup articles in the hopes they would magically make things happen, and [didn't leave myself any slack](https://fs.blog/slack/) _(not the company! 😄)_ in life to experiment in new directions. Eventually, in Sept 2022 I finally gave myself the chance to build and launch an MVP. Spoiler, you're reading this in 2023 (or later) because Slack chose to deprecate the functionality. For the short time it was around, Workflow Buddy was beginning to show good signs of life - a small number of enthusiastic customers, a good problem, and I even had the product Manager of Workflow Builder at the time reach out to chat about Buddy!
 
 I obviously can't predict alternate timelines, but if I had released it a couple years earlier when Workflow Builder was getting more investment from Slack... I can't help but feel like it could have had a more interesting outcome. **Opportunities are time-sensitive, and won't wait if you're "busy".**
 
-## Lesson 4: Platform Risk sucks when it's your turn
+## Lesson 5: Platform Risk sucks when it's your turn
 
 Warning signs had been on the horizon for a while. Slack had been putting out info about a new automation platform, including changes to Workflow Builder. I had continued contributing to Workflow Buddy in spite of the ominous dark clouds, because I didn't want to repeat the mistake of being dissuaded from a project on the off chance it would get change drastically.
 
