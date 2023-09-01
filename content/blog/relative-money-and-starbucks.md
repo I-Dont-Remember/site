@@ -49,6 +49,8 @@ If we actually want to see them on a chart, we have to scale up by a lot.
 
 If you're like me and fret over tiny purchases, by finding your trivial purchase price, you can start to understand where you might be wasting your energy deliberating.
 
+Something to also consider if you're a money-worrier, is the value of your time - [The magic of doing $10,000 per hour work | RadReads](https://radreads.co/10k-work/).
+
 I highly recommend reading the excellent exploration into the ideas presented in [Climbing the Wealth Ladder](https://ofdollarsanddata.com/climbing-the-wealth-ladder/).
 
 
