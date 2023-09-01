@@ -1,10 +1,10 @@
 +++
-categories = [ ]
+categories = ["Misc"]
 date = 2023-02-15T06:00:00.000Z
 description = 'Money is relative to what we can purchase -$100 is very different to a pan handler vs a billionaire. How do we calculate our own "trivial" purchase price?'
-draft = true
+draft = false
 images = [ ]
-tags = [ ]
+tags = ["money", "starbucks"]
 title = "Relative Money and Starbucks"
 +++
 
@@ -17,6 +17,10 @@ Let's establish a baseline that a new college-grad, or maybe tradesperson like a
 I'm considering **Trivial** to be: even if you do it 10 times a month, it has a low impact on your budget.
 
 With this definition, it sets our purchase threshold at **0.1%** of monthly income - 10x would be only 1%. If we set our threshold to 1% though, 10x is **10%**! 10% is a big chunk of rent/groceries/etc, so that's a no-no.
+
+Nick M. came to a similar conclusion when discussing the [Climbing the Wealth Ladder](https://ofdollarsanddata.com/climbing-the-wealth-ladder/), though for net worth:
+
+> _This data point might seem random, but 0.01% is a good proxy for what constitutes a trivial amount of money for any level of wealth. For example, if you had a net worth of $10,000, paying $1 more (or 0.01% more) for something shouldn’t affect your finances in the slightest._
 
 ## When Equinox == Starbucks
 
@@ -40,3 +44,12 @@ Now that we see how it works under the hood, this chart maps out a ratio of 0.1%
 If we actually want to see them on a chart, we have to scale up by a lot.
 
 ![](/uploads/labeled-yearly-vs-trivial.jpg)
+
+## What to do with this information
+
+If you're like me and fret over tiny purchases, by finding your trivial purchase price, you can start to understand where you might be wasting your energy deliberating.
+
+I highly recommend reading the excellent exploration into the ideas presented in [Climbing the Wealth Ladder](https://ofdollarsanddata.com/climbing-the-wealth-ladder/).
+
+
+
