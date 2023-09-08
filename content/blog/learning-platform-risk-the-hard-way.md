@@ -4,6 +4,7 @@ date = 2023-08-28T05:00:00.000Z
 description = "Slack is shutting down the functionality that powers the open-source app I built for Workflow Builder , their Nocode automation tool. I (hopefully) learned some lessons about what makes a good problem, the joy of enthusiastic customers, time-sensitive opportunities, and platform risk."
 categories = [ "Bootstrapping" ]
 tags = [ "workflow-builder", "slack" ]
+curated = true
 +++
 
 > `TL;DR:` *Slack is shutting down the functionality that powers the [open-source app](https://github.com/happybara-io/WorkflowBuddy) I built for [Workflow Builder](https://slack.com/features/workflow-automation), their Nocode automation tool. I (hopefully) learned some lessons about what makes a good problem, the joy of enthusiastic customers, time-sensitive opportunities, and platform risk.*
@@ -13,7 +14,6 @@ In 2018, Slack acquired a [neat app](https://www.robotsandpencils.com/work/high-
 
 Tinkering with Workflow Builder got my brain spinning with ideas. It felt like there were plenty of quick wins to improve the capabilities & user experience. Thanks to the hero who added Steps from Apps (connects regular Slack Apps to Workflows) it seemed possible for an outsider to contribute.
 
-![Workflow Buddy MVP options menu with the first few available actions: Send a Webhook, Random Integer, Random UUID, Wait step, and more.](/workflow-buddy-choose-step-action-modal.png)
 
 ## Building the MVP
 
@@ -21,6 +21,7 @@ The first version was super basic, just enough to make sure my ideas actually wo
 
 I released it as open-source from the start, with no reasoning behind it other than *"I wanted to"*. I've benefited tremendously from the open-source world, and I've always wanted to share a little something back. In the past, I've struggled with perfectionism in projects and getting too into the weeds. With Buddy, I tried to combat this by releasing before I felt comfortable. There were so many places I could optimize & perfect:  the developer experience, the code base, the testing, the documentation.  People can't benefit from your project if you never release it!
 
+![Workflow Buddy MVP options menu with the first few available actions: Send a Webhook, Random Integer, Random UUID, Wait step, and more.](/workflow-buddy-choose-step-action-modal.png)
 
 ## Lesson 1: Good problems don't require perfectly optimized solutions
 

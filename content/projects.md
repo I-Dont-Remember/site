@@ -11,15 +11,18 @@ title = "Projects"
 +++
 Projects listed below are in a very rough chronological order.
 
-Project Status Guide (**_23_** _in total_):
+Project Status Guide (**_24_** _in total_):
 
-* 🏃‍♂️ Active **(6)**
+* 🏃‍♂️ Active **(7)**
 * ⏳ Functional, but not regularly contributing **(3)**
 * ☠ Killed **(7)**
 * 📚 Archive **(7)**
 
 ***
 
+* [**🍳 Cooking for Lazy Fucks**](https://cookingforlazyfucks.com/)
+  * **Status: 🏃‍♂️**
+  * Recipes for lazy people.
 * [**💻 Building on Slack**](https://buildingonslack.com)
   * **Status: 🏃‍♂️**
   * Learning in Public and publishing my notes & resources on building Apps on Slack, using Workflow Builder to the fullest, as well as more generic thoughts on using Slack in the workplace.

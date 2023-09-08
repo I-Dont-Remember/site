@@ -14,6 +14,7 @@ I really like the idea of tracking the 'Firsts' I experience in my life, so star
 
 ## Firsts for 26 (Oct 20 '21 - Oct 19 '22)
 
+- May 2022 - first time selling a car - thanks Carvana for probably paying too much!
 - 12-18-21 - hit the skeeball 100 slot.
 - 11-7-21 - first time sitting in frosty pool when air temp was in 50s, stayed for 7min and got all red.
 - Swam in the ocean at midnight with a storm brewing.
