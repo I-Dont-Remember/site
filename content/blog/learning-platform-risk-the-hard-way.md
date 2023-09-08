@@ -13,6 +13,8 @@ In 2018, Slack acquired a [neat app](https://www.robotsandpencils.com/work/high-
 
 Tinkering with Workflow Builder got my brain spinning with ideas. It felt like there were plenty of quick wins to improve the capabilities & user experience. Thanks to the hero who added Steps from Apps (connects regular Slack Apps to Workflows) it seemed possible for an outsider to contribute.
 
+![Workflow Buddy MVP options menu with the first few available actions: Send a Webhook, Random Integer, Random UUID, Wait step, and more.](/workflow-buddy-choose-step-action-modal.png)
+
 ## Building the MVP
 
 The first version was super basic, just enough to make sure my ideas actually worked in the real world like they did in my head. It had dirty hacks like using a JSON file as a database, for simplicity & speed. When I saw the app finally chugging along running `Steps`, my eyes lit up, and I was off to the races. It needed a name - 30 seconds later, `Workflow Buddy` was born.
