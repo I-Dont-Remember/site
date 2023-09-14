@@ -11,9 +11,13 @@ toc = false
 
 I saw **"The Man in the Arena"** - and he wears LED-tipped gloves and a snazzy hooded boxer's robe.
 
+![A man wearing a boxer robe with glowing bulbs on his fingers](/uploads/man-in-the-arena-glowing-fingers-alone.jpg#center)
+
 ## The "Man in the Arena" hidden in plain-sight
 
 At a fratty bar on the UW-Madison campus, I saw him. Sitting alone and drinking a beer, gloves powered-off and resting at his side, waiting for the right song. I was unsure what to think, and went back to chatting with my friends. A bit later, I saw movement out of the corner of my eye. Turning, I saw him donning his gloves, like a knight heading into battle. With a silent flash the gloves came on, he flipped up his hood, then strode forward to dance and become a maelstrom of LED glow. His fingers flashed as he moved, lighting up the crowds of 20-somethings hovering in small bored groups looking disdainfully at him.
+
+![A man dancing at a bar with colorful LED bulbs on his fingertips, swirling them around while people take videos of him](/uploads/man-in-the-arena-glowing-fingers.jpg#center)
 
 At first, I felt second-hand embarrassment for this man. As expected, the people in the bar were taking videos to show their friends and post across social media, chuckling and pointing at him from their small groups before going back to standing around with their over-priced drinks. I cringed, imagining myself in his shoes and how I would feel knowing all the people around me were sending judgmental glances -- yet in spite of this, he danced on. He gave not a single glance to the people mocking him. With a constant look of concentration, of fulfillment, he became one with the music, and danced on.
 
