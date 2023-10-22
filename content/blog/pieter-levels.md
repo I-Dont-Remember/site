@@ -8,15 +8,18 @@ tags = []
 title = "How Pieter Levels Optimizes for Freedom"
 +++
 
-I was listening to the [interview with Pieter Levels on MFM](https://www.mfmpod.com/pieter-levels-making-27m-a-year-with-no-employees/), and was struck by his approach to avoiding potential frustrations, since they could derail his ability to spend time on what matters. It feels like the default in the U.S. is to collect responsibilities into your life that eat up your energy & time. I was very impressed by the choices that he makes in his life & towards the things in his life to retain his lifestyle freedom.
+I was listening to the [interview with Pieter Levels on MFM](https://www.mfmpod.com/pieter-levels-making-27m-a-year-with-no-employees/), and was struck by his approach to avoiding potential frustrations, since they could derail his ability to spend time on what matters. It feels like the default in the U.S. is to collect responsibilities into your life that eat up your energy & time. I was very impressed by the choices that he makes in his life & towards the things in his life to retain his lifestyle freedom and avoid friction.
+
+> _"If you can afford it, you can reduce the headaches of ownership...Ownership is a big hassle, shit breaks all the time. [**paraphrased:** My time is better spent working on my apps than managing owning things]"_ - Pieter Levels
 
 ## Life
 
-- He lives in apartment hotels, so he doesn't have to worry about cleaning, appliances breaking, mortgage payments. Pays one flat fee to stay and can ignore everything else.
+- He lives in apartment hotels, so he doesn't have to worry about cleaning, appliances breaking, mortgage payments. Pays one flat fee to stay and can ignore everything else. AirBnB's are too variable in quality.
 - Flies business class.
-- He doesn't fly every week, gives himself a few months in each so he can settle in and get into good habits.
+- He doesn't fly every week, gives himself a few months in each so he can settle in and get into good habits. He's a _"Slowmad"_.
 - Builds with simple technology. Doesn't bother learning Serverless, Kafka, Kubernetes, new React frameworks, etc.
 - Uses what he knows well and can churn things out in no time. Automates what he can.
+- Shoves a good chunk of his money into index funds for simplicity. A few other more risky investments, but it sounds like he tries to avoid having to spend time worrying about them.
 
 ## Things
 
