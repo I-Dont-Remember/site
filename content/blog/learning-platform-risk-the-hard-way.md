@@ -4,7 +4,7 @@ date = 2023-08-28T05:00:00.000Z
 description = "Slack is shutting down the functionality that powers the open-source app I built for Workflow Builder , their Nocode automation tool. I (hopefully) learned some lessons about what makes a good problem, the joy of enthusiastic customers, time-sensitive opportunities, and platform risk."
 categories = [ "Bootstrapping" ]
 tags = [ "workflow-builder", "slack" ]
-curated = true
+featured = true
 toc = false
 +++
 

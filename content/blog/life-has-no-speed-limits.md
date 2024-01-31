@@ -1,6 +1,6 @@
 +++
 categories = [ "Personal Development" ]
-curated = true
+featured = true
 date = 2021-12-17T05:00:00.000Z
 description = "A college degree takes 4 years, a year or more to write a book, 10 years at the DMV. Facts...or are they? Life has no speed limits, so why treat them as laws?"
 images = [ ]

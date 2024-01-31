@@ -6,7 +6,7 @@ draft = false
 images = [ "/uploads/madtown-deals-mvp-deals-on-tap.png" ]
 tags = [ "startups", "developers", "bootstrappers", "indiehackers" ]
 title = "Reflecting on my Failure to Build a One-Dollar Company"
-curated = true
+featured = true
 _template = "blog_post"
 +++
 

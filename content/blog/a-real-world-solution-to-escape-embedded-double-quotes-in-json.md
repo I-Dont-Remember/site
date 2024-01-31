@@ -7,7 +7,7 @@ images = [ ]
 tags = [ "developers", "json" ]
 title = "A Real-World Solution to Escape Embedded Double Quotes in JSON"
 toc = false
-curated = true
+featured = true
 _template = "blog_post"
 +++
 

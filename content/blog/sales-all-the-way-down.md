@@ -7,7 +7,7 @@ draft = false
 images = ["/uploads/sales-all-the-way-turtle-smaller.png"]
 tags = ["sales", "software-engineering", "bootstrapping", "indie-hackers"]
 title = "Software Engineering: It's Sales All the Way Down"
-curated = false
+featured = false
 +++
 
 > *["Turtles all the way down"](https://en.wikipedia.org/wiki/Turtles_all_the_way_down)*

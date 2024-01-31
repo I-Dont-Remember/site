@@ -6,7 +6,7 @@ images = [ "/uploads/mugshotbot-how-many-customers.jpeg" ]
 tags = [ "indie-hackers", "developers" ]
 title = "How Many Customers Does a Successful Side Hustle Need? Just 99."
 toc = true
-curated = true
+featured = true
 _template = "blog_post"
 +++
 

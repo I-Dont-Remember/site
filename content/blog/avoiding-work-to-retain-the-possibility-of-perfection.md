@@ -5,7 +5,7 @@ description = "Over 9 months ago, I set out with a simple task: paint a 3-D prin
 images = [ "/uploads/not-this-pelican-small.png" ]
 tags = [ "painting", "life-lessons" ]
 title = "Avoiding work to retain the possibility of perfection"
-curated = true
+featured = true
 _template = "blog_post"
 +++
 
