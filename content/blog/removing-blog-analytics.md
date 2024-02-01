@@ -2,7 +2,7 @@
 categories = [ "Writing" ]
 date = 2024-01-30T04:00:00.000Z
 description = "I'm turning off traffic analytics for my personal blog. It's a journey back to the heart of writing, finding solace in the quiet, and rekindling the pleasure of writing without the pressure of numbers."
-draft = true
+draft = false
 images = []
 tags = []
 featured = true
@@ -22,13 +22,15 @@ I'm also a sucker for easily trackable metrics, despite often being an inadequat
 
 ## State of my blog traffic & sources
 
-I was starting to get a decent amount of traffic - nothing to write home about, but 500-1,000 people a week reading the words I mushed together. Most of my sites are ~10 views a week, so it felt like a lot to me!
+I was starting to get decent traffic - nothing to write home about, but ~2,000 people a month reading the words I mushed together. The rest of my sites get ~10 views a month, so it feels like a lot to me!
 
- Most of my traffic—like 99% of it—was coming from Google & going to the same five articles. They were the ones I wrote to test out what I'd learned about SEO. The remaining 1% of traffic was thinly spread across my other 80+ posts.
+Most of my traffic — like 99% of it — was coming from Google & going to the same five articles. They were ones I wrote to test out what I'd learned about SEO. The remaining 1% of traffic was thinly spread across my other 80+ posts.
 
 It took a while to realize, but eventually I noticed my publishing frequency had dropped to almost nothing. The last 6-12 months I've barely published, and it's not because my life situation changed drastically. When I took time to reflect on why, my gut pointed me towards analytics as a contributing factor.
 
 ## Why analytics was negative
+
+![The venn diagram of the topics I'm excited about, barely overlapping the topics that people search for](/uploads/website-traffic-idea-overlap.png#center)
 
 I turned analytics off a couple weeks ago to experiment & ["shake the snow globe"](https://blog.nateliason.com/p/you-have-no-idea-how-much-better). So far, I haven't felt like anything is missing from life, and I'm starting to feel excited about writing again. If I had to pin down why I think analytics was negative for me:
 
