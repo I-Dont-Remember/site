@@ -118,6 +118,11 @@ displayrssicon = false
     [menu.main.params]
         newtab = true # target blank
 
+[[menu.main]]
+    name = "👋 Say Hi"
+    weight = 101
+    url = "/hi/"
+
 # Moved directly into header.html so I wouldn't have to deal with Dropdown menu configuration
 # [[menu.main]]
 #     name = "🧑‍🍳 Recipes"
