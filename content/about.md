@@ -77,7 +77,7 @@ I aim to be curious and open to new experiences, which leads me down a variety o
 
 ## My reading recommendations
 
-I occasionally will update my favorite articles on my [Pocket](https://getpocket.com/@quinningatlife) profile. You can find some of the pieces I've found most impactful there.
+I occasionally will update my [favorite writers](/great-reads/). You can find some of the pieces I've found most impactful there.
 
 ---
 
