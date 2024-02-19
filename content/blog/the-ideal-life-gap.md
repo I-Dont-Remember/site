@@ -5,7 +5,6 @@ description = "There are two versions of your life: the one you are living in & 
 images = [ "/uploads/intro-circles_650px.jpg" ]
 tags = [ "self-help" ]
 title = "The Ideal Life Gap"
-featured = true
 _template = "blog_post"
 +++
 

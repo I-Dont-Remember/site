@@ -7,6 +7,7 @@ images = []
 tags = []
 title = "The Man in the Arena has Glowing Fingers"
 toc = false
+featured = true
 +++
 
 I saw **"The Man in the Arena"** - and he wears LED-tipped gloves and a snazzy hooded boxer's robe.

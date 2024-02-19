@@ -5,7 +5,6 @@ description = "\"If more information was the answer, then we'd all be billionair
 images = [ ]
 tags = [ "productivity" ]
 title = "The Best Advice I've Ever Received"
-featured = true
 _template = "blog_post"
 +++
 

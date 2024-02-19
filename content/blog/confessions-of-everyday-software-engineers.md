@@ -6,6 +6,7 @@ draft = false
 images = [ ]
 tags = [ "FAANG", "Leetcode", "confessions", "software-engineering" ]
 title = "Confessions of Everyday Software Engineers"
+featured = true
 _template = "blog_post"
 +++
 
