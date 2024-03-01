@@ -1,11 +1,12 @@
 +++
-title = "Data Removal Tools & The Shirky Principle"
+title = "Data Removal Services Are TurboTax"
+description = "Data removal services have a lot in common with the oft-discussed king of tax software - especially that they are disincentivized to improve the underlying problem for their users."
 date = 2024-03-01T06:00:00.000Z
 categories = [ "Misc" ]
 tags = ["privacy", "security"]
 +++
 
-You've probably seen the ads from Youtubers, podcasts, and more for  data removal services - they've been marketing heavily lately, at least in my neck of the internet. These tools want you to believe they are the heroes protecting you from Big Bad Data Brokers and scrubbing your data from the internet. The intentions aren't necessarily bad, but much like TurboTax, the incentives driving their business model are misaligned from what regular people want. If all the data brokers disappeared tomorrow, that's their market going "poof". They embody the `Shirky Principle`, forced to preserve the problem they are the solution to to avoid mutual destruction.
+You've probably seen the ads from Youtubers, podcasts, and more for  data removal services - they've been marketing heavily lately, at least in my neck of the internet. These services want you to believe they are the heroes protecting you from Big Bad Data Brokers and scrubbing your data from the internet. The intentions aren't necessarily bad, but much like TurboTax, the incentives driving their business model are misaligned from what regular people want. If all the data brokers disappeared tomorrow, that's their market going "poof". They embody the `Shirky Principle`, forced to preserve the problem they are the solution to to avoid mutual destruction.
 
 ## Big Bad Data Brokers
 
@@ -38,7 +39,7 @@ As the problem for people grows _(e.g. increasing number of data brokers, acting
 | _Improving_ 📉| _Fewer Customers_ 📉|
 | _Worsening_ 📈 | _More Customers_  📈|
 
-Data removal services are de-incentivized from improving the underlying problem. If the underlying issue is improved (e.g. less of my personal information is online), it's harder to convince people to pay for their service. Also, this is only the best case scenario with good people running it! There are some data removal services that will only [pretend to send opt-outs, or even feed the data brokers themselves](https://news.ycombinator.com/item?id=30607219)!
+Data removal services are disincentivized from improving the underlying problem. If the underlying issue is improved (e.g. less of my personal information is online), it's harder to convince people to pay for their service. Also, this is only the best case scenario with good people running it! There are some data removal services that will only [pretend to send opt-outs, or even feed the data brokers themselves](https://news.ycombinator.com/item?id=30607219)!
 
 ## This seems dumb
 
