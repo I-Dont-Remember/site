@@ -34,10 +34,12 @@ Nope! As we discussed earlier, data brokers can just recollect the information o
 
 As the problem for people grows _(e.g. increasing number of data brokers, acting shadier)_, the value proposition of data removal services gets stronger. I'm not superman, so I'm not going to manually send hundreds of opt-out requests every month.
 
+{{< bootstrap-table "table table-dark table-striped table-bordered" >}}
 | Problem Status           | Customers       |
 |--------------------------|-----------------|
 | _Improving_ 📉| _Fewer Customers_ 📉|
 | _Worsening_ 📈 | _More Customers_  📈|
+{{< /bootstrap-table >}}
 
 Data removal services are disincentivized from improving the underlying problem. If the underlying issue is improved (e.g. less of my personal information is online), it's harder to convince people to pay for their service. Also, this is only the best case scenario with good people running it! There are some data removal services that will only [pretend to send opt-outs, or even feed the data brokers themselves](https://news.ycombinator.com/item?id=30607219)!
 
@@ -50,6 +52,8 @@ I'm on the upper end of the privacy conscious spectrum, and even I haven't done 
 Instead of flying cars & jetpacks in the 2020s, we get to ponder if it's worth spending hard-earned cash to get our personal information (maybe) removed from the internet, for a little while.
 
 ---
+---
+
 
 ## Other Companies with Misaligned Incentives
 
