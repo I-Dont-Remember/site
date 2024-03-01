@@ -10,6 +10,12 @@ showpagemeta = false
 showrelated = false
 +++
 
+- **Most used emoji:** 😬
+- **Top restaurant:** Pars Cove, in Chicago
+- **Social Security #:** _HA! Nice try, fiends._
+
+---
+
 Software engineer by day at Large Corp 🏛, and [all sorts of stuff by night - notary, reluctant runner, ordained, ....](#-professional-dabbler) since I can’t sit still. I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓. I’ve worn a lot of hats, from founder, developer, writer, podcaster, open source contributor, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).
