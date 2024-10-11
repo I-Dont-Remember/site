@@ -1,7 +1,9 @@
 <!-- style="padding-left: 2%;" is a hack cuz we couldnt' figure out how to do as a class social-icon -->
 <section id="social-pane" class="row text-center social">
   {{ with .Site.Params.social.twitter }}
-  <a href="https://twitter.com/{{.}}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://twitter.com/{{.}}">
+    <img src="img/twitter-x-icon.svg" alt="Twitter" style="padding-left: 2%; font-size:x-small;"/>
+  </a>
   {{ end }}
   {{ with .Site.Params.social.google }}
   <a href="https://plus.google.com/{{.}}/about"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
@@ -10,16 +12,22 @@
   <a href="https://facebook.com/{{.}}"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.github }}
-  <a href="https://github.com/{{.}}"><i class="fa fa-github social-icon" style="padding-left: 2%;" aria-hidden="true"></i></a>
+  <a href="https://github.com/{{.}}">
+    <img src="img/github-icon.svg" alt="GitHub" style="padding-left: 2%; font-size:x-small;"/>
+  </a>
   {{ end }}
   {{ with .Site.Params.social.instagram }}
   <a href="https://instagram.com/{{.}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.linkedin }}
-  <a href="https://linkedin.com/in/{{.}}"><i class="fa fa-linkedin social-icon" style="padding-left: 2%;" aria-hidden="true"></i></a>
+  <a href="https://linkedin.com/in/{{.}}">
+    <img src="img/linkedin-icon.svg" alt="LinkedIn" style="padding-left: 2%; font-size:x-small;"/>
+  </a>
   {{ end }}
   {{ with .Site.Params.social.stackoverflow }}
-  <a href="https://stackoverflow.com/users/{{.}}"><i class="fa fa-stack-overflow social-icon" style="padding-left: 2%;" aria-hidden="true"></i></a>
+  <a href="https://stackoverflow.com/users/{{.}}">
+    <img src="img/stack-overflow-icon.svg" alt="StackOverflow" style="padding-left: 2%; font-size:x-small;"/>
+  </a>
   {{ end }}
   {{ with .Site.Params.social.medium}}
   <a href="https://medium.com/{{.}}"><i class="fa fa-medium social-icon" aria-hidden="true"></i></a>

@@ -51,7 +51,7 @@ dateformat = "Jan 2, 2006"
 
 ## Social Accounts (order is not same here as on page)
 [params.social]
-angellist = "i-dont-remember"
+# angellist = "i-dont-remember"
 github = "I-Dont-Remember"
 # instagram = "<username>"
 # xing = "<username>"
@@ -63,7 +63,7 @@ twitter = "maybekq"
 stackoverflow = "7098233/i-dont-remember"
 # lastfm = "<username>"
 # goodreads = "user/show/98626391-k"
-polywork = "kevinquinn"
+# polywork = "kevinquinn"
 # gitlab = "<username>"
 # bitbucket = "<username>"
 # fivehundredpx = "<username>"
