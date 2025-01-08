@@ -90,7 +90,7 @@ stackoverflow = "7098233/i-dont-remember"
 
 ## Extras
 [params.extra]
-copyright = "© 2024. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
+copyright = "© 2017-2025. Kevin Quinn. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)."
 poweredby = false
 highlightjs = true
 socialmarkup = true
