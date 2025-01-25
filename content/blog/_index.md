@@ -1,4 +1,4 @@
 ---
-title: "Thoughts from Kevin"
+title: "Essays & Ideas from Kevin"
 description: "The ramblings of Kevin in one place"
 ---
