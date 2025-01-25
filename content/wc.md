@@ -16,6 +16,16 @@ Goal is to reach 1 million words written on the world wide web. For now I approx
 
 🌟🔢 _See footer for most up-to-date word count on this site._
 
+## Milestones for fun
+
+- Me: as of Jan 2025, `72,300` words.
+- ....
+- The **"Redwall"** series seem to vary between `90,500` - `126,200` words.
+- **"The Hobbit"** - `95,356` words.
+- **"Lord of the Rings"**, the three main books: `481,103` words.
+
+## Inspiration
+
 Partially inspired by:
 
 - [Patio11's WC page](https://www.kalzumeus.com/wc/)
