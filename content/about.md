@@ -8,17 +8,21 @@ tags = []
 title = "About Kevin Quinn"
 showpagemeta = false
 showrelated = false
+toc = true
 +++
 
 - **Most used emoji:** 😬
-- **Top restaurant:** Pars Cove, in Chicago
+- **Current city:** Chicago, IL - but my heart's still in Wisconsin.
+- **Top restaurant:** Pars Cove, Diversey Ave in Chicago.
 - **Social Security #:** _HA! Nice try, fiends._
 
 ---
 
 Software engineer by day at Large Corp 🏛, and [all sorts of stuff by night - notary, reluctant runner, ordained, ....](#-professional-dabbler) since I can’t sit still. I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓. I’ve worn a lot of hats, from founder, developer, writer, podcaster, open source contributor, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
 
-If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp).
+### Contact me
+
+If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp) or my proxy email address at [kevinquinnfun@notxss.anonaddy.com](mailto:kevinquinnfun@notxss.anonaddy.com).
 
 {{< bootstrap-panel title="😊 Personality" >}}
 If you are curious what it's like to work with me, I have been described as:
@@ -32,7 +36,7 @@ Unfortunately no one has used _"impossibly handsome"_ or _"The Rock"_ as their d
 
 ## How I got into writing code
 
-Ended up studying Computer Engineering in my first year of university, but the classes I started with didn't catch my attention, and I assumed it wasn't for me. Amidst cramming for exams, I attempted to write a small Python script to spam [a certain well-known music video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) in new browser tabs on my friends computer. I had no idea how to distribute my mildly-malicious program (thereby only spamming myself), but the seed was planted 🌱. What my courses were missing that this ~10 line script had was the capability -- unlike my classes building Java apps in the IDE CLI I didn't understand, here I was actually controlling the computer! Thus, the spark grew into into my modern-day self of Jira tickets and [**LGTM**](https://justtechdebt.com/articles/dev-already-abandoned-new-years-resolution-to-actually-read-prs/).
+Ended up studying Computer Engineering in my first year of university, but the classes I started with didn't catch my attention, and I assumed it wasn't for me. Amidst cramming for exams, I attempted to write a small Python script to spam [a certain well-known music video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) in new browser tabs on my friends computer. I had no idea how to distribute my mildly-malicious program (thereby only spamming myself), but the seed was planted 🌱. What my courses were missing that this ~10 line script had was the capability to interact with the computer -- unlike my classes building Java apps in the IDE CLI I didn't grasp yet. Thus, the spark grew into into my modern-day self of Jira tickets and [**LGTM**](https://justtechdebt.com/articles/dev-already-abandoned-new-years-resolution-to-actually-read-prs/).
 
 ## What I do
 
@@ -50,12 +54,16 @@ Ended up studying Computer Engineering in my first year of university, but the c
 
 ### 👩‍👩‍👧‍👧 Coworker
 
-- Emoji lover — been described as having “strong emoji game”.
+- Emoji lover — been described as having _“strong emoji game”_.
 - Strength in empathy, encouragement, and building a positive team atmosphere. Unfortunately, that pairs with having trouble making tough decisions about people — don’t put me in charge of firing anyone, they’ll end up with a bonus instead.
 
 ### 📝 Writer
 
 Attempting to wrangle the mess of ideas in my head with words. Moderately succeeding. Lofty goal of [1 million words published](https://kevinquinn.fun/wc/) on big wide web.
+
+### 🕵️ Editor
+
+Editor & general helper for a [tech satire site](https://justtechdebt.com)
 
 ### 🚯 Hoarding Minimalist
 

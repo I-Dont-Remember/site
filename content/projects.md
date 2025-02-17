@@ -11,8 +11,9 @@ title = "Projects"
 +++
 Projects listed below are in a very rough chronological order.
 
-Project Status Guide (**_24_** _in total_):
+Project Status Guide (**_24-26_** _in total_):
 
+* 🤫 Large secret ones I can't publicly tie my name to without plausible deniability **(0-2)**
 * 🏃‍♂️ Active **(7)**
 * ⏳ Functional, but not regularly contributing **(3)**
 * ☠ Killed **(7)**
