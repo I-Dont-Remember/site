@@ -6,7 +6,7 @@
     {{ if or (eq .Permalink (`tags/` | absURL)) (eq .Permalink (`categories/` | absURL)) }}
         <h1 class="mb-3 text-center">{{.Title | markdownify}}</h1>
         {{else}}
-        <h1 class="mb-3 text-center text-dark font-weight-bold">Showing posts from <mark>{{.Title | markdownify}}</mark></h1>
+        <h1 class="mb-3 text-center text-dark font-weight-bold">Showing essays from <mark>{{.Title | markdownify}}</mark></h1>
     {{ end }}
     <p class="text-center" style="font-size:12px !important;"><a href="/categories/">Categories</a> - <a href="/tags/">Tags</a></p>
 {{ else }}

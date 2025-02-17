@@ -1,4 +1,5 @@
 <!-- https://getbootstrap.com/docs/3.3/components/#panels-alternatives -->
+<br />
 {{ $style := .Get "style" | default "info"}}
 <div class="panel panel-{{$style}}">
     {{ with .Get "title" }}
@@ -8,3 +9,4 @@
         {{ .Inner | markdownify }}
     </div>
 </div>
+</br />

@@ -5,7 +5,6 @@ description = "I'm turning off traffic analytics for my personal blog. It's a jo
 draft = false
 images = []
 tags = []
-featured = true
 title = "Removing Analytics to Rediscover Writing"
 _template = "blog_post"
 +++

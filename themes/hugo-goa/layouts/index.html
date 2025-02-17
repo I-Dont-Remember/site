@@ -14,7 +14,7 @@
 {{/*  Curated articles  */}}
 <br />
 <!-- <h3><em>Favorites from my <a href="https://joelhooks.com/digital-garden">Digital Garden</a>...</em></h3> -->
-<h3><em>⭐Featured from my <a href="/blog/">Digital Garden ({{len (where .Site.RegularPages "Section" "==" "blog") }} posts)</a>...</em>⭐</h3>
+<h3><em>⭐Featured from my <a href="/blog/">Digital Garden ({{len (where .Site.RegularPages "Section" "==" "blog") }} essays)</a>...</em>⭐</h3>
 <ul style="padding-top: 10px;">
     {{ range where .Site.RegularPages "Params.featured" true }}
     <li class="list-entry">
@@ -40,7 +40,7 @@
     </li>
     {{ end }}
 </ul>
-<a href="/blog/">Read all posts ➡️</a>
+<a href="/blog/">Read all essays ➡️</a>
 </br />
 </br />
 </br />

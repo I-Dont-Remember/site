@@ -13,6 +13,15 @@ These are questions and ideas I'm curious about, but don't have much in the way 
 
 ---
 
+## Incentivising simplicity in systems - a "Negative" hackathon?
+
+Humans are really good at reaching for [additive solutions to problems](https://fordhaminstitute.org/ohio/commentary/people-tend-solve-problems-adding-not-subtracting), or at least in software we are. So many times I see suggestions crop up that involve buying or building a new tool or process to solve an issue that has cropped up, but rarely do I hear suggestions that solve it by removing things.
+
+How might we incentivise simplifiying our systems? Building a cool new tool, gain a bunch of headcount, roll out a new process, etc. - those are often the things you need to do to get recognition and grow in your career. At least in the places I've been, you don't get the same fanfare for turning off old systems that added risk & complexity, or for solving a problem by removing a step. I get the feeling it's too easy to discount subtractive work as being "easier" because you're not making something from scratch? Obviously it can be very difficult to remove things, but i wonder if it's our monkey brains messing with our perceptions.
+
+Would it be possible to do a "Negative" Hackathon, where teams are encouraged to find places where things could be removed, and then instead of building, they make a case for why it's safe to rip out. They will go digging to understand potential risks, any "Chesterton's Fence" issues, etc.
+
+
 ## Suburban cultural inefficiencies
 
 The U.S. is full of places where you have row after row of houses, each with 1-2 cars, a lawn mower, snow blower, washer, dryer, a garage of tools, and more. Everybody has to have their own, but do we really? I get with the current set up it's not feasible to share everything, but it seems so excessive and just wasting so much collective time & money.
