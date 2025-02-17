@@ -2,7 +2,7 @@
     <h3>See Also</h3>
     <ul >
         {{ $related := .Site.RegularPages.Related . | first 5 }}
-        {{ range first 3 $related }}
+        {{ range first 5 $related }}
         <li class="list-entry">
           <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
           <p class="meta">
