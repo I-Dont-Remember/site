@@ -6,7 +6,7 @@ featured = true
 +++
 
 
-I began my career carrying a quiet conviction: I cared about the craft of coding in a way corporate drones didn’t. While they mindlessly churned out code to meet ticket requirements, I was obsessed with elegance, readability, and the 'why' behind every line. If you’d asked me, I would’ve said I wasn’t judging them. I’d have said I was just passionate, not judgmental. But if I’m being honest, I knew the truth: I thought I was better than them.  When my work team inherited a dumpster-fire of a corporate codebase, I was ready to throw it all away and start fresh. My tech lead had other ideas. Through his methodical approach, he didn't just fix the code - he showed me that the hardest problems in software often aren't technical at all.
+I began my career carrying a quiet conviction: I cared about the craft of coding in a way corporate drones didn’t. While they mindlessly churned out code to meet ticket requirements, I was obsessed with elegance, readability, and the 'why' behind every line. If you’d asked me, I would’ve said I was just passionate, not judgmental. But if I’m being honest, I knew the truth: I thought I was better than them.  When my work team inherited a dumpster-fire of a corporate codebase, I was ready to throw it all away and start fresh. My tech lead had other ideas. Through his methodical approach, he didn't just fix the code — he showed me that the hardest problems in software often aren't technical at all.
 
 ## A dumpster fire we didn’t ask for
 
@@ -16,8 +16,7 @@ My journey towards humility began with a project we didn’t want: a system hast
 I’m explicitly not going to talk about the architecture details of the app, because I don’t need a bunch of yak-shavers giving unsolicited technical advice and missing the damn point.
 {{< /bootstrap-panel  >}}
 
-![The error backlog generator](/uploads/how-the-system-worked.png#center)
-
+![The error backlog generator](/uploads/updated-hot-potato-service-diagram.png#center)
 
 As a brash junior engineer who had read too many [Joel Spolsky](https://www.joelonsoftware.com/) articles, I was fuming. I expected to be in awe of the systems that run our world after leaving the safe harbor of school. Instead, I was met with a sharp dose of reality. I was convinced the engineers who built this dumpster-fire must be lazy or incompetent, and the monstrosity of a system beyond saving.  I was confident my tech lead felt the same way, and was waiting for him to tell us to overhaul every process they gave us & rewrite this scourge off the face of the Earth. My tech lead had other plans. Instead of joining me in my outrage, he did… nothing.
 
@@ -50,7 +49,7 @@ He left his ego at the door and reached out to the PC, showing them we were will
 
 ## Eating the elephant
 
-We may now have a better understanding of how to operate the system and a Partner Company willing to work alongside us, but we’re still experiencing the same daunting deluge of errors adding to our backlog every single day. Something needed to change, and soon.
+We now had a better understanding of how to operate the system and a Partner Company willing to work alongside us, but we were still experiencing the same daunting deluge of errors growing our backlog every single day. Something needed to change, and soon.
 
 Without panicking, our tech lead took the pile of error messages we had, sorted them by volume & severity, then went to work investigating one at a time, finding a root cause before moving on to the next. At no point did he suggest refactoring the entire system. It turns out being humble and considering some of the 4xx errors could actually be our fault was a good choice - because there were in fact numerous bugs in our system. He guided our team to detecting and fixing these errors that all the retries in the world couldn’t have fixed.
 
