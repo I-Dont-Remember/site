@@ -16,7 +16,7 @@ My journey towards humility began with a project we didn’t want: a system hast
 I’m explicitly not going to talk about the architecture details of the app, because I don’t need a bunch of yak-shavers giving unsolicited technical advice and missing the damn point.
 {{< /bootstrap-panel  >}}
 
-![The error backlog generator](/uploads/updated-hot-potato-service-diagram.png#center)
+![architecture diagram of the error backlog generator application](/uploads/hot-potato-service-diagram.png#center)
 
 As a brash junior engineer who had read too many [Joel Spolsky](https://www.joelonsoftware.com/) articles, I was fuming. I expected to be in awe of the systems that run our world after leaving the safe harbor of school. Instead, I was met with a sharp dose of reality. I was convinced the engineers who built this dumpster-fire must be lazy or incompetent, and the monstrosity of a system beyond saving.  I was confident my tech lead felt the same way, and was waiting for him to tell us to overhaul every process they gave us & rewrite this scourge off the face of the Earth. My tech lead had other plans. Instead of joining me in my outrage, he did… nothing.
 
@@ -24,7 +24,7 @@ As a brash junior engineer who had read too many [Joel Spolsky](https://www.joel
 
 To be clear, we didn’t just sit on our hands. He had us sit down with the outgoing team for knowledge transfer. Then, to my utter confusion, he insisted we follow their processes. No refactoring, no rewrites, just observation and patience. It felt like watching someone stand idly by as a fire raged, extinguisher in hand. I couldn’t understand why he wasn’t rushing to put it out.
 
-![why chesterton's fence might exist](/uploads/chestertons-fence-illustrated.png)
+![a cartoon of a junior developer running to rip up a fence as a senior engineer tries to understand - the audience sees it protects from a cliff and angry swarm of bees, hidden to the characters.](/uploads/chestertons-fence-illustrated.png)
 
 After a couple weeks of dutifully watching the error backlog pile up, we learned the ins & outs of the system, and began to understand some of the choices the original developers had made. With a little distance, we could see the previous engineers weren't lazy or stupid - they were dealing with shifting requirements and tight deadlines. Eventually it clicked: my tech lead had multiple reasons for taking this approach. The first one which got through to my technically-minded brain was  [Chesterton’s Codebase](https://fs.blog/chestertons-fence/) — don’t start changing things until you understand why they exist. The other I hadn’t considered was that to a business, engineering time to refactor often costs more than sticking with a sub-optimal architecture you already have. It turns out engineers are expensive, and refactoring isn’t always the best use of their time.
 
@@ -39,7 +39,7 @@ Upon digging deeper, we realized this was only one side of the story. The previo
 - Cue the blame game. No one fixed anything, and the relationship soured
 
 
-![playing the blame game with errors](/uploads/error-blame-game-tennis.png#center)
+![playing the blame game - cartoon stick figures playing tennis but instead of a ball, they're passing errors back and forth](/uploads/error-blame-game-tennis.png#center)
 
 In a shocking twist, people don’t like being blamed for failures — especially when it might not be their fault. It’s like blaming your spouse for muddy footprints while ignoring the trail behind you. Of course the PC wasn’t going out of their way to help; they were too busy fending off accusations.
 
@@ -56,7 +56,7 @@ Without panicking, our tech lead took the pile of error messages we had, sorted 
 Where I saw an insurmountable mountain of errors, my tech lead saw a series of solvable problems. His calm, methodical approach revealed a different path—one that didn’t involve trying to fix everything at once.  Instead, he stepped back, took a holistic view of the problem, and broke it down into manageable pieces. Then, with a clear sense of priority, he tackled the most urgent issues first.  It was a lesson I’ve carried with me ever since, perfectly captured by a tweak to an old saying: *“how do you eat an elephant? One (prioritized) bite at a time”*.
 
 
-![Eat the error backlog one bite at a time](/uploads/error-backlog-elephant.png#center)
+![A cartoon of a timid figure intimidated by an elephant named "Error Backlog" while a senior engineer prepares to chow down.](/uploads/error-backlog-elephant.png#center)
 
 ## Boring is good
 
