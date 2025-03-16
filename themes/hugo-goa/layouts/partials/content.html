@@ -12,14 +12,14 @@
         {{- if .Lastmod }}
           {{- $lastmod := .Lastmod.Format .Site.Params.dateformat | upper }}
             {{- if ne $lastmod $pubdate }}
-              UPDATED ON {{ $lastmod }}
+              UPDATED&colon; {{ $lastmod }} | PUBLISHED&colon; {{ $pubdate }}
             {{ else }}
-              PUBLISHED ON {{ $pubdate }}
+              PUBLISHED: {{ $pubdate }}
             {{ end }}
         {{ else }}
-          PUBLISHED ON {{ $pubdate }}
+          PUBLISHED: {{ $pubdate }}
         {{- end }}
-        &colon; {{ .WordCount }} words&comma; {{.ReadingTime}} minute read
+        | {{ .WordCount }} words&comma; {{.ReadingTime}} minute read
       {{end}}
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
