@@ -23,9 +23,13 @@
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 
-{{ if .RelPermalink }}
+<!-- {{ if .RelPermalink }}
   <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }} -->
+
+{{ with .OutputFormats.Get "rss" }}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
 
 {{ if .Site.Params.extra.highlightjs }}

@@ -4,6 +4,7 @@ title = "Kevin Quinn"
 # TODO: needs work to get it not broken
 # [markup.goldmark.renderer]
 #     unsafe = true # Allow us to use HTML tags
+ignoreLogs = ['warning-goldmark-raw-html']
 
 baseurl = "https://kevinquinn.fun"
 #baseurl = "https://kevinquinn.netlify.app"
@@ -95,7 +96,7 @@ poweredby = false
 highlightjs = true
 socialmarkup = true
 toc = false
-displayrssicon = false
+displayrssicon = true
 
 [menu]
 ## Main Menu
@@ -154,7 +155,14 @@ displayrssicon = false
 #     url = "https://plausible.io/kevinquinn.fun"
 
 [outputs]
-    home = ["json", "html"]
+    home = ["json", "html", "rss"]
+    section = ['html', 'rss']
+
+# TODO: changing from index.xml to feed.xml. Will this bite me in the ass?
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
 
 [related]
   includeNewer = true

@@ -19,7 +19,7 @@
         {{ else }}
           PUBLISHED: {{ $pubdate }}
         {{- end }}
-        | {{ .WordCount }} words&comma; {{.ReadingTime}} minute read
+        | {{ .WordCount | lang.FormatNumber 0 }} words&comma; {{.ReadingTime}} minute read
       {{end}}
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
