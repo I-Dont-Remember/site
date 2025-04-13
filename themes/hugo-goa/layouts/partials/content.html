@@ -19,7 +19,13 @@
         {{ else }}
           PUBLISHED: {{ $pubdate }}
         {{- end }}
-        | {{ .WordCount | lang.FormatNumber 0 }} words&comma; {{.ReadingTime}} minute read
+        | {{ $wc := .WordCount -}}
+        {{- if gt $wc 999 -}}
+          {{- $f := div (float $wc) 1000 -}}
+          {{- printf "%.2fk" $f -}}
+        {{- else -}}
+          {{- printf "%d" $wc -}}
+        {{- end }} words&comma; {{.ReadingTime}} minute read
       {{end}}
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
