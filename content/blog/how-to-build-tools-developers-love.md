@@ -1,6 +1,6 @@
 +++
 title = "How to Build Tools Developers Love"
-categories = ["DevEx/UX"]
+categories = ["DevEx&UX"]
 date = 2022-03-31T05:00:00Z
 description = "Lessons in developer experience learned from the best and worst tools."
 draft = false

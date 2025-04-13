@@ -1,5 +1,5 @@
 +++
-categories = [ "DevEx/UX" ]
+categories = [ "DevEx&UX" ]
 date = 2020-12-20T06:00:00.000Z
 description = "My experience learning the language by building a small package."
 images = [ ]

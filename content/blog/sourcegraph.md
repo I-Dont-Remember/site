@@ -2,7 +2,7 @@
 title = "A Bull Case for Sourcegraph's Potential"
 date = 2022-04-05T06:00:00.000Z
 description = "Sourcegraph is a neat company building tools with great developer experience, but Github has CodeSearch, so why be bullish on Sourcegraph? "
-tags = ["DevEx/UX", "search", "ideas-for-companies"]
+tags = ["DevEx&UX", "search", "ideas-for-companies"]
 +++
 
 Sourcegraph is a neat company building tools with great developer experience, especially search, which is a critical part of a developer's day to day. Github has CodeSearch, so why be bullish on Sourcegraph? They’re getting creative and moving beyond search[^1], and I see a number of natural areas they could grow into to expand their share of a developer's day.
