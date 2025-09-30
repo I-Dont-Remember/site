@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  {{ $ilc := resources.Get "css/ilc.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $ilc.RelPermalink }}">
+</head>
+<body class="ilc-page">
+  <main>
+    <h1>{{ .Title }}</h1>
+      {{- with .Content -}}
+        {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
+      {{- end -}}
+    <ul>
+      {{ range .Pages.ByDate.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </main>
+</body>
+</html>

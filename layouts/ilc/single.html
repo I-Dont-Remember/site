@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ .Title }}</title>
+  {{ $ilc := resources.Get "css/ilc.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $ilc.RelPermalink }}">
+</head>
+<body class="ilc-page ilc-single">
+  <main>
+    <article>
+      <header>
+        <h1>{{ .Title }}</h1>
+        <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </header>
+      <section class="ilc-content">
+        {{- with .Content -}}
+          {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
+        {{- end -}}
+      </section>
+    </article>
+  </main>
+</body>
+</html>

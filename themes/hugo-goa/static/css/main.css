@@ -364,7 +364,7 @@ li{
 }
 
 /* This hide on hover effect isn't working, but don't care to fix 🤷‍♀️ https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/12?u=kaushalmodi */
-h2:hover a, h3:hover a, h4:hover a {
+h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 visibility: visible;
 text-decoration: none;
 }
