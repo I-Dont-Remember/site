@@ -1,0 +1,36 @@
+{{- /* ILC Callout Shortcode - Notion-style
+     Usage:
+       {{< callout type="info" title="Tip" >}}
+       Your **Markdown** content here.
+       {{< /callout >}}
+
+       Params:
+         type  : info | warn | success | note | error  (default: info)
+         title : optional heading text
+         icon  : optional emoji/char; otherwise inferred from type
+         class : optional extra classes (e.g., "is-compact")
+*/ -}}
+
+{{- $type  := .Get "type" | default "info" -}}
+{{- $title := .Get "title" -}}
+{{- $icon  := .Get "icon" -}}
+{{- $extra := .Get "class" -}}
+
+{{- /* Infer an icon if one wasn't passed */ -}}
+{{- if not $icon -}}
+  {{- if eq $type "info" }}    {{- $icon = "💡" -}}{{ end -}}
+  {{- if eq $type "warn" }}    {{- $icon = "⚠️" -}}{{ end -}}
+  {{- if eq $type "success" }} {{- $icon = "✅" -}}{{ end -}}
+  {{- if eq $type "error" }}   {{- $icon = "⛔" -}}{{ end -}}
+  {{- if eq $type "note" }}    {{- $icon = "📝" -}}{{ end -}}
+{{- end -}}
+
+<div class="ilc-callout is-{{ $type }} {{ $extra }}" role="note" aria-label="{{ if $title }}{{ $title }}{{ else }}{{ $type }} callout{{ end }}">
+  <div class="ilc-callout-icon" aria-hidden="true">{{ $icon }}</div>
+  <div class="ilc-callout-body">
+    {{- with $title -}}<div class="ilc-callout-title"><strong>{{ . }}</strong></div>{{- end -}}
+    <div class="ilc-callout-text">
+      {{- .Inner | markdownify -}}
+    </div>
+  </div>
+</div>

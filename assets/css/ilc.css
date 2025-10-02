@@ -15,89 +15,242 @@ visibility: visible;
 text-decoration: none;
 }
 /* */
+/* ILC dark-only, Notion-lite styling */
+
+:root {
+  --ilc-bg: #191919; 
+  --ilc-panel: #262626;
+  --ilc-text: #e6e6e6;
+  --ilc-dim: #bdbdbd;
+  --ilc-muted: #9aa0a6;
+  --ilc-border: #2a2a2a;
+  --ilc-link: #929190;
+  --ilc-link-hover: #929190;
+  --ilc-code-bg: #1e1e1e;
+  --ilc-quote-border: #3a3a3a;
+  --ilc-success: #27c093;
+  --ilc-warn: #e6a700;
+  --ilc-info: #61dafb;
+}
 
 .ilc-page {
   max-width: 720px;
   margin: 2rem auto;
   padding: 0 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #2f3437;
+  background: var(--ilc-bg);
+  color: var(--ilc-text);
   line-height: 1.65;
   font-size: 1.05rem;
-  background: #fff;
 }
 
-.ilc-header h1,
-.ilc-single h1 {
+/* Titles */
+.ilc-single h1,
+.ilc-header h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  color: #fff;
 }
 
+.ilc-single time,
 .ilc-header .ilc-intro {
-  margin-bottom: 1.5rem;
-  color: #555;
+  color: var(--ilc-muted);
 }
 
+/* Links: light gray (no purple visited) */
+.ilc-content a,
+.ilc-listing a {
+  /*color: var(--ilc-link);*/
+  color: var(--ilc-link-hover);
+  text-decoration: none;
+  text-decoration: underline;
+}
+/* .ilc-content a:hover,
+.ilc-listing a:hover {
+  text-decoration: underline;
+  color: var(--ilc-link-hover);
+} */
+.ilc-content a:visited,
+.ilc-listing a:visited { color: var(--ilc-link); }
+
+/* Section list */
 .ilc-listing {
   list-style: none;
   padding: 0;
+  margin: 1rem 0 0;
 }
-
 .ilc-listing li {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--ilc-border);
   padding-bottom: 0.5rem;
 }
+.ilc-listing time { color: var(--ilc-muted); margin-left: .5rem; }
 
-.ilc-listing a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #1a73e8;
-}
-
-.ilc-listing a:hover {
-  text-decoration: underline;
-}
-
+/* Headings inside content */
 .ilc-content h2,
-.ilc-content h3 {
+.ilc-content h3,
+.ilc-content h4 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: #fff;
 }
 
-.ilc-content p {
-  margin: 1rem 0;
-}
+/* Paragraphs */
+.ilc-content p { margin: 1rem 0; }
 
+/* Blockquotes */
 .ilc-content blockquote {
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
   padding-left: 1rem;
-  border-left: 3px solid #e0e0e0;
-  color: #555;
+  border-left: 3px solid var(--ilc-quote-border);
+  color: var(--ilc-dim);
+  font-style: italic;
 }
 
+/* Divider */
+.ilc-content hr {
+  height: 1px;
+  border: none;
+  background: var(--ilc-border);
+  margin: 2rem 0;
+}
+
+/* Images (figure support below) */
 .ilc-content img {
   max-width: 100%;
-  border-radius: 4px;
-  margin: 1.5rem 0;
+  border-radius: 6px;
+  display: block;
+  margin: 1.25rem auto;
 }
 
+/* Figure + caption (works with render hook below) */
+.ilc-figure { margin: 1.5rem 0; }
+.ilc-figure img { margin: 0 auto 0.5rem; }
+.ilc-figure figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ilc-muted);
+}
+
+/* Lists */
 .ilc-content ul,
-.ilc-content ol {
-  margin: 1rem 0 1rem 1.25rem;
+.ilc-content ol { margin: 1rem 0 1rem 1.25rem; }
+
+/* Checklists (Goldmark taskList) */
+.ilc-content ul.contains-task-list,
+.ilc-content ol.contains-task-list { padding-left: 0; margin-left: 0; }
+.ilc-content li.task-list-item {
+  list-style: none;
+  margin: .4rem 0;
+  display: flex;
+  gap: .5rem;
+  align-items: flex-start;
+}
+.ilc-content li.task-list-item > input[type="checkbox"] {
+  margin-top: .25rem;
+  accent-color: var(--ilc-success);
 }
 
+/* Code */
 .ilc-content code {
-  background: #f6f6f6;
+  background: var(--ilc-code-bg);
+  color: #ffcc66;
   padding: 0.2em 0.4em;
-  border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, monospace;
+  border-radius: 4px;
+  font-family: "SFMono-Regular", Consolas, ui-monospace, monospace;
   font-size: 0.9em;
 }
-
 .ilc-content pre code {
   display: block;
   padding: 1rem;
   overflow-x: auto;
+  background: #191919;
+  color: var(--ilc-text);
+  border-radius: 8px;
 }
+
+/* Tables (Notion-like: clean rows, subtle dividers) */
+.ilc-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: .95rem;
+}
+.ilc-content thead th {
+  text-align: left;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid var(--ilc-border);
+  padding: .6rem .75rem;
+  background: transparent;
+}
+.ilc-content tbody td {
+  border-bottom: 1px solid var(--ilc-border);
+  padding: .55rem .75rem;
+  color: var(--ilc-text);
+}
+.ilc-content tbody tr:hover td { background: #141414; }
+.ilc-content tbody tr:last-child td { border-bottom: none; }
+
+/* Pretty ToC (styles Hugo’s .TableOfContents output) */
+.ilc-toc-wrapper {
+  background: var(--ilc-panel);
+  border: 1px solid var(--ilc-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 1rem 0 2rem;
+}
+.ilc-toc-title {
+  font-size: .9rem;
+  color: var(--ilc-muted);
+  margin-bottom: .35rem;
+}
+#TableOfContents { font-size: .95rem; }
+#TableOfContents ul { list-style: none; margin: 0; padding-left: 0; }
+#TableOfContents li { margin: .25rem 0; }
+#TableOfContents ul ul {
+  margin-left: .75rem;
+  padding-left: .75rem;
+  border-left: 1px solid var(--ilc-border);
+}
+#TableOfContents a {
+  color: var(--ilc-link);
+  text-decoration: none;
+}
+#TableOfContents a:hover { text-decoration: underline; color: var(--ilc-link-hover); }
+
+/* Callouts (use with a shortcode or raw HTML) */
+.ilc-callout {
+  display: flex;
+  gap: .75rem;
+  background: var(--ilc-panel);
+  border: 1px solid var(--ilc-border);
+  border-radius: 10px;
+  padding: .85rem 1rem;
+  margin: 1rem 0;
+}
+.ilc-callout .ilc-callout-icon { font-size: 1.1rem; line-height: 1.2; }
+.ilc-callout.is-info  { border-color: rgba(97,218,251,.35); }
+.ilc-callout.is-warn  { border-color: rgba(230,167,0,.35); }
+.ilc-callout.is-success { border-color: rgba(39,192,147,.35); }
+.ilc-callout.is-note   { border-color: rgba(200,200,200,.35); }
+.ilc-callout.is-error  { border-color: rgba(220,  70, 70,.35); }
+.ilc-callout-title { margin-bottom: .25rem; }
+.ilc-callout-body  { display: grid; gap: .15rem; }
+
+/* Toggles (details/summary) */
+.ilc-content details.ilc-toggle {
+  background: var(--ilc-panel);
+  border: 1px solid var(--ilc-border);
+  border-radius: 10px;
+  padding: .75rem 1rem;
+  margin: 1rem 0;
+}
+.ilc-content details.ilc-toggle > summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.ilc-content details.ilc-toggle > summary::-webkit-details-marker { display: none; }
+.ilc-content details.ilc-toggle[open] { background: #161616; }

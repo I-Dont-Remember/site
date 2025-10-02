@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="{{ $ilc.RelPermalink }}">
 </head>
 <body class="ilc-page ilc-single">
+  <p>single.html</p>
   <main>
     <article>
       <header>
@@ -14,6 +15,9 @@
         <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
       </header>
       <section class="ilc-content">
+        {{ if  eq .Params.toc true }}
+          {{ .TableOfContents }}
+        {{ end }}
         {{- with .Content -}}
           {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
         {{- end -}}

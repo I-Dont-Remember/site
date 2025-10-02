@@ -1,6 +1,7 @@
 ---
 title: Indie Lurker Compass
 date: 2021-12-22
+toc: true
 ---
 
 **No-B.S. resources to help you take action & start shipping 🚢**
@@ -16,7 +17,7 @@ Think of this as a compass 🧭.  I can’t tell you what destination is correct
 ---
 
 
-# 🔑 Validation
+## 🔑 Validation
 
 Why are you building without any real validation? 
 
@@ -28,7 +29,7 @@ if you don’t have any real indicators of people spending their $$ or significa
 
 ---
 
-# Critical Questions
+## Critical Questions
 
 These are the questions I wish I would have been asked before wasting hour after hour on projects which never launched ❌🚀 or were a Solution Looking for a Problem. Use them to cut the crap and see your project from an observer’s perspective.
 
@@ -36,7 +37,7 @@ These are the questions I wish I would have been asked before wasting hour after
 
 ---
 
-# 🪨🛠️ Build simpler than you think
+## 🪨🛠️ Build simpler than you think
 
 ⭐ **If it’s useful people will use it even if it looks funky or is missing features.** ⭐
 
@@ -76,7 +77,7 @@ Also it doesn't even need to be a page. It can be a Typeform. Or a Stripe Paymen
 
 ---
 
-# 🥷Fake it ‘till you build it
+## 🥷Fake it ‘till you build it
 
 Can apply to the core of your product, or to supporting features. Do you really need an automated account deletion flow on day 1? Just manually edit the database. See if [Product Validation Playbooks](https://learningloop.io/) has something you could try.
 
@@ -88,7 +89,7 @@ Can apply to the core of your product, or to supporting features. Do you really 
 
 ---
 
-# 🧑‍💼You don’t need a big team
+## 🧑‍💼You don’t need a big team
 
 - [Trends #0027 — Million-Dollar, One-Person Businesses](https://trends.vc/trends-0027-million-dollar-one-person-businesses/)
 - [AJ from Carrd](https://www.listenupih.com/carrd/) - millions of websites built on simple site builder
@@ -99,13 +100,13 @@ Can apply to the core of your product, or to supporting features. Do you really 
 
 ---
 
-# ❓You don’t need the perfect name
+## ❓You don’t need the perfect name
 
 You can always change it later - don’t let it take up more than a couple hours. Switching won’t necessarily kill your momentum. [`justin.tv`](http://justin.tv) became Twitch later on.
 
 ---
 
-# 🥊Competition
+## 🥊Competition
 
 Competition isn’t bad. [**Do not rule out ideas that there are already solutions for](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f).**
 
@@ -140,7 +141,7 @@ With the right situations in place, it might make sense for you to build an open
 
 ---
 
-# 💡 Ideas
+## 💡 Ideas
 
 The best things often aren’t original, but either a remix of what’s come before, a better version than currently exists, or serving some niche the competition hasn’t touched. Screw it, you can build the same thing if you really want, you don’t need anyone’s permission!
 
@@ -150,7 +151,7 @@ Does an existing idea not cover a specific niche? Especially good if they are un
 
 - Buy Me a Coffee → [Buy Me a Crypto Coffee](https://www.buymeacryptocoffee.xyz/)
 
-## 💡Your idea doesn’t have to be complicated
+### 💡Your idea doesn’t have to be complicated
 
 Successful companies with a simple concept at core, even if it’s layered with extra features at this point. 
 
@@ -164,13 +165,13 @@ Successful companies with a simple concept at core, even if it’s layered with 
 - TweetDeleter - [Save reputations with an API call.](https://bootstrappers.com/deleting-embarrassing-tweets-earns-this-latvian-founder-2-million-clients-a-year/)
 - 
 
-## 🤔 I have no ideas
+### 🤔 I have no ideas
 
 [Markets & Places for Ideas](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Markets%20&%20Places%20for%20Ideas%20320c9f0727d94beb809daa75907076bd.md)
 
 ---
 
-# 🫂🐦People to follow on Twitter
+## 🫂🐦People to follow on Twitter
 
 These people usually provide no-BS advice and inspiration to build and ship.
 
@@ -182,7 +183,7 @@ These people usually provide no-BS advice and inspiration to build and ship.
 
 ---
 
-# Uncategorized
+## Uncategorized
 
 Things I’ve found useful, but haven’t found a home yet on this site, YMMV.
 
@@ -199,29 +200,39 @@ Things I’ve found useful, but haven’t found a home yet on this site, YMMV.
 - [Go Fucking Do it](https://gofuckingdoit.com/)
 - [Zero to Users](https://zerotousers.com/)
 - [Pieter Level’s MAKE book](https://makebook.io)
-- 
 
-## Terms and Trends
-
-- Build in Public -
-- 
 
 ---
 
-# Reminder to keep you grounded
+## Reminder to keep you grounded
 
 [https://twitter.com/jakobgreenfeld/status/1481998537718075393](https://twitter.com/jakobgreenfeld/status/1481998537718075393)
 
 ---
 
-### Indie Lurker Compass
+## Indie Lurker Compass
 
 A living swipe file for indie hackers, [indie lurkers](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f), & founders with the examples needed to start simple and start shipping🚢.
 
-  
 
 [Toolkit](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Toolkit%209f6ca5de1c9f4ca895d4da9c77540989.md)
 
 [Contact & Submission](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Contact%20&%20Submission%20ec03e0d1f10042e8acb9dbd97cabaedc.md)
 
 [About](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/About%2065bd1ed149794d608e6d40d4b88d72ad.md)
+
+{{< notion-callout type="info" title="Tip" >}}
+Constraints often **increase** creativity by narrowing choices.
+{{< /notion-callout >}}
+
+{{< notion-callout type="warn" icon="🚧" title="Heads up" >}}
+Big refactors: set explicit time boxes or they’ll sprawl.
+{{< /notion-callout >}}
+
+{{< notion-callout type="success" >}}
+Prototype shipped. Iterate with **real** feedback.
+{{< /notion-callout >}}
+
+{{< notion-callout type="note" class="is-compact" >}}
+Meeting notes live in `/ilc/notes/`.
+{{< /notion-callout >}}

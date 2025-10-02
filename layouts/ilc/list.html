@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>{{ .Title }}</title>
   {{ $ilc := resources.Get "css/ilc.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $ilc.RelPermalink }}">
 </head>
 <body class="ilc-page">
+  <p>list.html</p>
   <main>
-    <h1>{{ .Title }}</h1>
-      {{- with .Content -}}
-        {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
-      {{- end -}}
-    <ul>
-      {{ range .Pages.ByDate.Reverse }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    <article>
+      <header>
+        <h1>{{ .Title }}</h1>
+        <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </header>
+
+      {{/* Pretty ToC like Notion’s (only shows if headings exist) */}}
+      {{ $toc := .TableOfContents }}
+      {{ if $toc }}
+      <aside class="ilc-toc-wrapper">
+        <div class="ilc-toc-title">Table of contents</div>
+        {{ $toc | safeHTML }}
+      </aside>
       {{ end }}
-    </ul>
+
+      <section class="ilc-content">
+        {{- with .Content -}}
+          {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
+        {{- end -}}
+      </section>
+    </article>
   </main>
 </body>
 </html>
