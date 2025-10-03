@@ -2,6 +2,7 @@
 title: Indie Lurker Compass
 date: 2021-12-22
 toc: true
+subtitle: "No-B.S. resources to help you take action & start shipping 🚢"
 ---
 
 **No-B.S. resources to help you take action & start shipping 🚢**
@@ -19,13 +20,12 @@ Think of this as a compass 🧭.  I can’t tell you what destination is correct
 
 ## 🔑 Validation
 
-Why are you building without any real validation? 
 
-       🛑 STOP 🛑
+{{< notion-callout type="danger" icon="🛑" title="STOP here before continuing" >}}
+Why are you building without any real validation?
 
-if you don’t have any real indicators of people spending their $$ or significant time on the problem, STOP. Reevaluate. 
-
-[https://twitter.com/dagorenouf/status/1484200885945180166?s=20](https://twitter.com/dagorenouf/status/1484200885945180166?s=20)
+If you don’t have any **REAL** indicators of people spending their $$ or significant time on the problem, STOP. Reevaluate.
+{{< /notion-callout >}}
 
 ---
 
@@ -33,7 +33,7 @@ if you don’t have any real indicators of people spending their $$ or significa
 
 These are the questions I wish I would have been asked before wasting hour after hour on projects which never launched ❌🚀 or were a Solution Looking for a Problem. Use them to cut the crap and see your project from an observer’s perspective.
 
-[Critical Questions](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Critical%20Questions%207e7fd6f3b8c74456a001d8a5c646c385.md)
+[Critical Questions](/ilc/critical-questions/)
 
 ---
 
@@ -43,11 +43,13 @@ These are the questions I wish I would have been asked before wasting hour after
 
 You don’t need it to be as pretty or as feature-filled as the perfect version in your head.  Make small bets and just put it out into the world. 
 
+{{< notion-callout type="info" >}}
 > ”[If you build an MVP you can skip most parts like design, backend, db etc
 You mostly need a very very basic page that does something rly well and charges $ for it so you can see if the idea is viable
 You don't have time to focus on other stuff, if you do you spread yourself thin
 Also it doesn't even need to be a page. It can be a Typeform. Or a Stripe Payment Link. Or a tweet and then people DM you to get the service or product. Validating is getting a customer to pay for it. Then you can build out after WITH the customers figuring out what they WANT” - Pieter Levels](https://twitter.com/levelsio/status/1466674751737188354?s=20)
 > 
+{{< /notion-callout >}}
 
 - Nomad List started as a [Google sheet](https://docs.google.com/spreadsheets/d/1zlKo3f_qMPA4I5OCI1oIwNxoSCtPTJtOgG8lEwViSg0/edit#gid=385172494).
 - [Remote OK](https://remoteok.io) is a [single 8,000+ line `index.php` file making > $100k/month](https://twitter.com/levelsio/status/1381709793769979906?s=20).
@@ -55,7 +57,7 @@ Also it doesn't even need to be a page. It can be a Typeform. Or a Stripe Paymen
 - [Levels.fyi](http://Levels.fyi) was a [Google sheet until 2021](https://twitter.com/zuhayeer/status/1466858055132348420).
 - Headlime started as a [JSON file in the frontend with no DB - sold for $60k a week later](https://twitter.com/dannypostmaa/status/1466678450933014528).
     - Before that, it was an [eBook with formulas for generating headlines](https://twitter.com/dannypostmaa/status/1425985044309417986?s=20) selling on Gumroad.
-    - Follows the `validation -> content product -> saas`.
+    - Follows the `validation -> content product -> SaaS` model.
 - Crave Cookies was making $200k a month on a SQlite DB, [which started as a JSON file](https://www.indiehackers.com/podcast/166-sam-eaton-of-crave-cookie).
     
     > *Everything is on one server in production, and there’s SQLite database, 
@@ -108,12 +110,15 @@ You can always change it later - don’t let it take up more than a couple hours
 
 ## 🥊Competition
 
-Competition isn’t bad. [**Do not rule out ideas that there are already solutions for](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f).**
+Competition isn’t bad. [**Do not rule out ideas that there are already solutions for**](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f).
 
+{{< notion-callout type="note" class="is-compact" >}}
 > *Water bottles and notebooks have thousands of competitors, yet people make them every day. In other industries, we don't have this idea that you have to be the only water bottle. We don't have this idea that, someone's already invented the water bottle, there can't be another one, but in software, we very often have this idea, of well, there's already a social media software.
-  - [paraphrased from Laura Roeder](https://www.indiehackers.com/podcast/010-laura-roeder-of-meetedgar)*
+>   - [_paraphrased from Laura Roeder_](https://www.indiehackers.com/podcast/010-laura-roeder-of-meetedgar)
 > 
-- [https://justinjackson.ca/beach](https://justinjackson.ca/beach)
+{{< /notion-callout >}}
+
+- See [Go where demand is - sell ice-cream on a crowded beach, even if there are multiple ice-cream trucks](https://justinjackson.ca/beach)
 
 ### 👥 Brands that entered crowded markets and still did well
 
@@ -167,7 +172,7 @@ Successful companies with a simple concept at core, even if it’s layered with 
 
 ### 🤔 I have no ideas
 
-[Markets & Places for Ideas](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Markets%20&%20Places%20for%20Ideas%20320c9f0727d94beb809daa75907076bd.md)
+[Markets & Places for Ideas](/ilc/markets/)
 
 ---
 
@@ -206,20 +211,32 @@ Things I’ve found useful, but haven’t found a home yet on this site, YMMV.
 
 ## Reminder to keep you grounded
 
-[https://twitter.com/jakobgreenfeld/status/1481998537718075393](https://twitter.com/jakobgreenfeld/status/1481998537718075393)
+
+
+![While you grind away, someone is making bank selling spells on Etsy](/uploads/grinding-saas-while-spells-do-numbers.jpg#center "twitter.com/jakobgreenfeld")
+_source: [twitter.com/jakobgreenfeld/status/1481998537718075393](https://twitter.com/jakobgreenfeld/status/1481998537718075393)_
 
 ---
 
 ## Indie Lurker Compass
 
+{{< twocol >}}
 A living swipe file for indie hackers, [indie lurkers](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f), & founders with the examples needed to start simple and start shipping🚢.
 
+<!-- col -->
 
-[Toolkit](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Toolkit%209f6ca5de1c9f4ca895d4da9c77540989.md)
+[Toolkit](/ilc/toolkit/)
 
-[Contact & Submission](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/Contact%20&%20Submission%20ec03e0d1f10042e8acb9dbd97cabaedc.md)
+[Critical Questions](/ilc/critical-questions/)
 
-[About](Indie%20Lurker%20Compass%208a4a5abdc52743d2847d14934f143f35/About%2065bd1ed149794d608e6d40d4b88d72ad.md)
+[Markets & Places for Ideas](/ilc/markets/)
+
+[Contact & Submission](/ilc/contact/)
+
+[About](/ilc/about/)
+
+{{< /twocol >}}
+
 
 {{< notion-callout type="info" title="Tip" >}}
 Constraints often **increase** creativity by narrowing choices.
@@ -236,3 +253,22 @@ Prototype shipped. Iterate with **real** feedback.
 {{< notion-callout type="note" class="is-compact" >}}
 Meeting notes live in `/ilc/notes/`.
 {{< /notion-callout >}}
+
+{{< twocol >}}
+Left column text with **Markdown**.
+
+<!-- col -->
+
+Right column text with _Markdown_.
+{{< /twocol >}}
+
+
+{{< twocol ratio="3:2" gap="1.75rem" >}}
+Bigger left column.
+
+<!-- col -->
+
+Smaller right column.
+{{< /twocol >}}
+
+

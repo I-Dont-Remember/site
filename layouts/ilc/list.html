@@ -7,17 +7,16 @@
   <link rel="stylesheet" href="{{ $ilc.RelPermalink }}">
 </head>
 <body class="ilc-page">
-  <p>list.html</p>
   <main>
     <article>
       <header>
         <h1>{{ .Title }}</h1>
-        <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        <p><em><strong>{{ .Params.subtitle }}</strong></em></p>
       </header>
 
       {{/* Pretty ToC like Notion’s (only shows if headings exist) */}}
       {{ $toc := .TableOfContents }}
-      {{ if $toc }}
+      {{ if and (eq .Params.toc true) ($toc) }}
       <aside class="ilc-toc-wrapper">
         <div class="ilc-toc-title">Table of contents</div>
         {{ $toc | safeHTML }}

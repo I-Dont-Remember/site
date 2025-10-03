@@ -234,6 +234,7 @@ text-decoration: none;
 .ilc-callout.is-info  { border-color: rgba(97,218,251,.35); }
 .ilc-callout.is-warn  { border-color: rgba(230,167,0,.35); }
 .ilc-callout.is-success { border-color: rgba(39,192,147,.35); }
+.ilc-callout.is-danger { border-color: rgba(220,  70, 70,.35); }
 .ilc-callout.is-note   { border-color: rgba(200,200,200,.35); }
 .ilc-callout.is-error  { border-color: rgba(220,  70, 70,.35); }
 .ilc-callout-title { margin-bottom: .25rem; }
@@ -254,3 +255,21 @@ text-decoration: none;
 }
 .ilc-content details.ilc-toggle > summary::-webkit-details-marker { display: none; }
 .ilc-content details.ilc-toggle[open] { background: #161616; }
+
+
+/* This is just for the 'twocol.html' shortcode */
+/* Two-column layout (responsive, centered within .ilc-page) */
+.ilc-content .ilc-columns {
+  display: grid;
+  grid-template-columns: 1fr;               /* mobile: stack */
+  gap: var(--ilc-col-gap, 1.25rem);
+  align-items: start;
+  margin: 1rem 0;
+}
+@media (min-width: 420px) {
+  .ilc-content .ilc-columns {
+    grid-template-columns: var(--ilc-col-template, 1fr 1fr); /* desktop: 2 cols */
+  }
+}
+.ilc-content .ilc-col > :first-child { margin-top: 0; }
+.ilc-content .ilc-col > :last-child  { margin-bottom: 0; }

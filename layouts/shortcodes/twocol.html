@@ -1,0 +1,35 @@
+{{- /* ILC Two Columns Shortcode
+     Usage:
+       {{< twocol >}}
+       Left column *Markdown* here.
+
+       <!-- col -->
+
+       Right column **Markdown** here.
+       {{< /twocol >}}
+
+     Optional params:
+       ratio: "1:1" (default), e.g. "3:2", "2:1"
+       gap:   CSS size (default "1.25rem"), e.g. "24px", "2rem"
+*/ -}}
+
+{{- $ratio := .Get "ratio" | default "1:1" -}}
+{{- $gap   := .Get "gap"   | default "1.25rem" -}}
+
+{{- $r := split $ratio ":" -}}
+{{- $a := (index $r 0) | default "1" -}}
+{{- $b := (index $r 1) | default "1" -}}
+
+{{- $parts := split .Inner "<!-- col -->" -}}
+{{- $left  := (index $parts 0) | default "" | markdownify -}}
+{{- $right := (index $parts 1) | default "" | markdownify -}}
+
+<div class="ilc-columns"
+     style="--ilc-col-gap: {{ $gap }}; --ilc-col-template: {{ $a }}fr {{ $b }}fr;">
+  <div class="ilc-col ilc-col-left">
+    {{- $left -}}
+  </div>
+  <div class="ilc-col ilc-col-right">
+    {{- $right -}}
+  </div>
+</div>
