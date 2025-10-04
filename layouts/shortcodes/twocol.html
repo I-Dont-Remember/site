@@ -11,6 +11,24 @@
      Optional params:
        ratio: "1:1" (default), e.g. "3:2", "2:1"
        gap:   CSS size (default "1.25rem"), e.g. "24px", "2rem"
+
+       {{< twocol >}}
+Left column text with **Markdown**.
+
+<!-- col -->
+
+Right column text with _Markdown_.
+{{< /twocol >}}
+
+
+{{< twocol ratio="3:2" gap="1.75rem" >}}
+Bigger left column.
+
+<!-- col -->
+
+Smaller right column.
+{{< /twocol >}}
+
 */ -}}
 
 {{- $ratio := .Get "ratio" | default "1:1" -}}

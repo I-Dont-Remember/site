@@ -24,21 +24,21 @@ If you have any thoughts about the site or content I might be missing, feel free
 
 ---
 
-## Indie Lurker Compass
+## [Indie Lurker Compass](/indie-lurker/)
 
 {{< twocol >}}
 A living swipe file for indie hackers, [indie lurkers](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f), & founders with the examples needed to start simple and start shipping🚢.
 
 <!-- col -->
 
-[Toolkit](/ilc/toolkit/)
+[Toolkit](/indie-lurker/toolkit/)
 
-[Critical Questions](/ilc/critical-questions/)
+[Critical Questions](/indie-lurker/critical-questions/)
 
-[Markets & Places for Ideas](/ilc/markets/)
+[Markets & Places for Ideas](/indie-lurker/markets/)
 
-[Contact & Submission](/ilc/contact/)
+[Contact & Submission](/indie-lurker/contact/)
 
-[About](/ilc/about/)
+[About](/indie-lurker/about/)
 
 {{< /twocol >}}

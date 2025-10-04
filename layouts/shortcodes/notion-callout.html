@@ -9,6 +9,23 @@
          title : optional heading text
          icon  : optional emoji/char; otherwise inferred from type
          class : optional extra classes (e.g., "is-compact")
+
+         
+{{< notion-callout type="info" title="Tip" >}}
+Constraints often **increase** creativity by narrowing choices.
+{{< /notion-callout >}}
+
+{{< notion-callout type="warn" icon="🚧" title="Heads up" >}}
+Big refactors: set explicit time boxes or they’ll sprawl.
+{{< /notion-callout >}}
+
+{{< notion-callout type="success" >}}
+Prototype shipped. Iterate with **real** feedback.
+{{< /notion-callout >}}
+
+{{< notion-callout type="note" class="is-compact" >}}
+Meeting notes live in `/indie-lurker/notes/`.
+{{< /notion-callout >}}
 */ -}}
 
 {{- $type  := .Get "type" | default "info" -}}

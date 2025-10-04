@@ -33,9 +33,9 @@ Project Status Guide (**_24-26_** _in total_):
 * [**💻 Hugo Shortcodes**](https://hugoshortcodes.netlify.app/)
   * **Status: 🏃‍♂️**
   * A collection of Hugo shortcodes gathered into one place, so it's easy for msyelf or others to find what they need for their next site.
-* [**💻 Indie Lurker Compass**](https://indielurker.com/)
+* [**💻 Indie Lurker Compass**](/indie-lurker/) - _previously at indielurker.com_
   * **Status: 🏃‍♂️**
-  * A living swipe file for indie hackers, indie lurkers, & founders who get stuck with indecision, perfectionism, or impostor syndrome. Examples and resources to help you put one foot in front of the other and get your experiments out the door 🚪.
+  * A living swipe file for indie hackers, indie lurkers, & founders who get stuck with indecision, perfectionism, or impostor syndrome. Examples and resources to help you put one foot in front of the other and get your experiments out the door 🚪. (Oct 2025: moved under this personal website instead of living separately).
 * [**🎙Facade Project Podcast**](https://facadeproject.com/)
   * **Status: 🏃‍♂️**
   * A podcast with a couple friends to explore new things.

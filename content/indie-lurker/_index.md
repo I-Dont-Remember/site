@@ -33,7 +33,7 @@ If you don’t have any **REAL** indicators of people spending their $$ or signi
 
 These are the questions I wish I would have been asked before wasting hour after hour on projects which never launched ❌🚀 or were a Solution Looking for a Problem. Use them to cut the crap and see your project from an observer’s perspective.
 
-[Critical Questions](/ilc/critical-questions/)
+[Critical Questions](/indie-lurker/critical-questions/)
 
 ---
 
@@ -168,11 +168,11 @@ Successful companies with a simple concept at core, even if it’s layered with 
 - Peloton - put an Ipad on a stationary bike.
 - Carrd - 1 page site builder.
 - TweetDeleter - [Save reputations with an API call.](https://bootstrappers.com/deleting-embarrassing-tweets-earns-this-latvian-founder-2-million-clients-a-year/)
-- 
+- [Concierge porch pumpkin delivery](https://porchpumpkins.com/) - with optional design & layout - charging $500-$1500 per porch. Inspired various copycats for other chunks of the country, like [these guys for Alabama](https://porchscapers.com/).
 
 ### 🤔 I have no ideas
 
-[Markets & Places for Ideas](/ilc/markets/)
+[Markets & Places for Ideas](/indie-lurker/markets/)
 
 ---
 
@@ -218,57 +218,21 @@ _source: [twitter.com/jakobgreenfeld/status/1481998537718075393](https://twitter
 
 ---
 
-## Indie Lurker Compass
+## [Indie Lurker Compass](/indie-lurker/)
 
 {{< twocol >}}
-A living swipe file for indie hackers, [indie lurkers](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f), & founders with the examples needed to start simple and start shipping🚢.
+A living swipe file for indie hackers, [indie lurkers](https://www.indiehackers.com/@lynnetye/how-i-went-from-indie-lurker-to-indie-hacker-d1042ffa5f), & founders with the examples needed to start simple and start shipping🚢. Maintained by [kevinquinn.fun](https://kevinquinn.fun).
 
 <!-- col -->
 
-[Toolkit](/ilc/toolkit/)
+[Toolkit](/indie-lurker/toolkit/)
 
-[Critical Questions](/ilc/critical-questions/)
+[Critical Questions](/indie-lurker/critical-questions/)
 
-[Markets & Places for Ideas](/ilc/markets/)
+[Markets & Places for Ideas](/indie-lurker/markets/)
 
-[Contact & Submission](/ilc/contact/)
+[Contact & Submission](/indie-lurker/contact/)
 
-[About](/ilc/about/)
+[About](/indie-lurker/about/)
 
 {{< /twocol >}}
-
-
-{{< notion-callout type="info" title="Tip" >}}
-Constraints often **increase** creativity by narrowing choices.
-{{< /notion-callout >}}
-
-{{< notion-callout type="warn" icon="🚧" title="Heads up" >}}
-Big refactors: set explicit time boxes or they’ll sprawl.
-{{< /notion-callout >}}
-
-{{< notion-callout type="success" >}}
-Prototype shipped. Iterate with **real** feedback.
-{{< /notion-callout >}}
-
-{{< notion-callout type="note" class="is-compact" >}}
-Meeting notes live in `/ilc/notes/`.
-{{< /notion-callout >}}
-
-{{< twocol >}}
-Left column text with **Markdown**.
-
-<!-- col -->
-
-Right column text with _Markdown_.
-{{< /twocol >}}
-
-
-{{< twocol ratio="3:2" gap="1.75rem" >}}
-Bigger left column.
-
-<!-- col -->
-
-Smaller right column.
-{{< /twocol >}}
-
-

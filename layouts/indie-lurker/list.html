@@ -18,7 +18,7 @@
       {{ $toc := .TableOfContents }}
       {{ if and (eq .Params.toc true) ($toc) }}
       <aside class="ilc-toc-wrapper">
-        <div class="ilc-toc-title">Table of contents</div>
+        <!-- <div class="ilc-toc-title">Table of contents</div> -->
         {{ $toc | safeHTML }}
       </aside>
       {{ end }}
