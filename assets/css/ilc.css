@@ -34,7 +34,7 @@ text-decoration: none;
 }
 
 .ilc-page {
-  max-width: 720px;
+  /* max-width: 720px; */
   margin: 2rem auto;
   padding: 0 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -273,3 +273,21 @@ text-decoration: none;
 }
 .ilc-content .ilc-col > :first-child { margin-top: 0; }
 .ilc-content .ilc-col > :last-child  { margin-bottom: 0; }
+
+/** stuff for mobile friendliness */
+/* Make sizing predictable */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* Prevent long strings/URLs from forcing horizontal zoom */
+.ilc-content { overflow-wrap: anywhere; word-break: break-word; }
+
+/* Keep tables usable on narrow screens */
+.ilc-content table { width: 100%; }
+@media (max-width: 600px) {
+  .ilc-content table { display: block; overflow-x: auto; }
+}
+
+/* iOS text autosizing sanity */
+html { -webkit-text-size-adjust: 100%; }
