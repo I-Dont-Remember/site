@@ -55,6 +55,7 @@ Also it doesn't even need to be a page. It can be a Typeform. Or a Stripe Paymen
 - [Remote OK](https://remoteok.io) is a [single 8,000+ line `index.php` file making > $100k/month](https://twitter.com/levelsio/status/1381709793769979906?s=20).
 - Product Hunt began as a [simple list that got emailed out to people](https://medium.com/lets-make-things/the-origin-of-product-hunt-7acb09e2593a).
 - [Levels.fyi](http://Levels.fyi) was a [Google sheet until 2021](https://twitter.com/zuhayeer/status/1466858055132348420).
+- [LMArena](https://en.wikipedia.org/wiki/LMArena) was just a Gradio app until they raised $100 million.
 - Headlime started as a [JSON file in the frontend with no DB - sold for $60k a week later](https://twitter.com/dannypostmaa/status/1466678450933014528).
     - Before that, it was an [eBook with formulas for generating headlines](https://twitter.com/dannypostmaa/status/1425985044309417986?s=20) selling on Gumroad.
     - Follows the `validation -> content product -> SaaS` model.
