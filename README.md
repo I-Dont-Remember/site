@@ -11,6 +11,10 @@ According to docs on [this theme](https://themes.gohugo.io/hugo-future-imperfect
 
 Considering in the future moving my TIL items to `Snippets` like this, less pressure to make them useful https://leerob.io/snippets.
 
+## Artifacts
+
+- Useful things to keep in this repo, but aren't necessarily good for a public website - e.g. original size images, etc.
+
 ## Misc
 
 Link for emoji cheat sheet in Hugo [cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/).
