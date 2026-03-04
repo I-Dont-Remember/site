@@ -72,3 +72,7 @@ It goes against "Simplicity-first" if I write a million core values, but it turn
   - In the limited cases you need a meeting, they must be time-boxed, and have a clear purpose & clear outcome.
 - We will never IPO for the sake of a payday, and ideally not ever (leaving a tiny crack in the door instead of a blanket "NEVER", in case I'm not wise enough to see positive benefits). The stock market has become severely disconnected from the actual value that a company provides, and it's unclear to me how a company really benefits from it vs just raising money privately. You see so many companies driven into the ground by optimizing around short-term changes in the stock price, and I don't want to see something I've worked on become a 2024 Boeing or one of the companies that private equity firms hollowed out.  I'm leaving a tiny opening instead of saying a blanket "NEVER", in case I'm not wise enough to see positive benefits yet. I wouldn't switch until it's the last possible recourse, though.
 - We should provide so much value & have such strong product market fit that we can afford to make mistakes. I want to be able to put out a version with minimal features, a bare HTML website with no fancy designs, and the shittiest marketing in the world, and still have people say _"yeah, but it's really useful, so I'm gonna get it"._
+
+## Companies that seem similar
+
+- [Transit](https://transitapp.com/vision) - 4 day work weeks, an app with beautiful and functional UX and actually makes my day better to use it.

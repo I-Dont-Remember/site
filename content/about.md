@@ -59,7 +59,7 @@ Ended up studying Computer Engineering in my first year of university, but the c
 
 ### 📝 Writer
 
-Attempting to wrangle the mess of ideas in my head with words. Moderately succeeding. Lofty goal of [1 million words published](https://kevinquinn.fun/wc/) on big wide web.
+Attempting to wrangle the mess of ideas in my head with words. Moderately succeeding. Lofty goal of [1 million human words published](https://kevinquinn.fun/wc/) on big wide web.
 
 ### 🕵️ Editor
 
