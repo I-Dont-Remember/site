@@ -1,0 +1,92 @@
+# Tech Debt Tracker
+
+Audited: 2026-03-04. Issues found across accessibility, performance, and general tech debt. Check items off as resolved.
+
+---
+
+## Accessibility
+
+### Iframes missing `title` attribute
+- [ ] [MED] `themes/hugo-goa/layouts/partials/email-form.html:18` — Beehiiv newsletter embed iframe
+- [ ] [MED] `layouts/shortcodes/giphy.html` — Giphy embed iframe
+- [ ] [MED] `layouts/shortcodes/tenor-gif.html` — Tenor embed iframe
+- [ ] [LOW] `static/bin/bus.html:59` — Chicago Transit tracker iframe
+
+### Missing `lang` attribute on `<html>` tag
+- [ ] [MED] `static/bin/index.html`
+- [ ] [MED] `static/bin/bus.html`
+- [ ] [MED] `static/bin/points-depreciation.html`
+
+### Broken or incorrect ARIA
+- [ ] [HIGH] `themes/hugo-goa/layouts/partials/content.html:74` — heading anchor links use `ariaLabel=` (camelCase) instead of `aria-label=`; the attribute is silently ignored by browsers
+- [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:81` — logo `<img>` has both `alt` and `aria-label`; remove `aria-label`, `alt` is sufficient
+
+### Images with empty or missing alt text
+- [ ] [HIGH] `themes/hugo-goa/layouts/partials/content.html:66` — post images rendered with `alt=""` (empty string); should be descriptive or at minimum omitted for decorative images
+
+### Missing form labels
+- [ ] [MED] `layouts/partials/pricing-calculator.html` — number input (`id="numUsersInput"`) has no associated `<label>`
+
+### Video accessibility
+- [ ] [LOW] `layouts/shortcodes/video.html` — `<video>` element has no `<track kind="captions">` fallback
+
+### Broken icon rendering
+- [ ] [MED] `themes/hugo-goa/layouts/partials/header.html:41` — FontAwesome 4.6.3 CSS is commented out, but `fa fa-twitter`, `fa fa-github`, etc. icons are still referenced in templates; social icons likely render as blank boxes. Either re-enable the CSS or replace with inline SVGs.
+
+---
+
+## Performance
+
+### Image optimization
+- [ ] [HIGH] Multiple large images in `static/uploads/` not converted to WebP. Worst offenders:
+  - `error-blame-game-tennis.png` — 760K
+  - `chestertons-fence-illustrated.png` — 517K
+  - `recurring-venmo-payments-smaller.png` — 525K
+  - `hai-nguyen-lszfnpvzjtw-unsplash.jpg` — 637K
+  - `hugo-site-random-button-small.jpg` — 489K
+  - `pihole-dashboard.png` — 370K
+- [ ] [MED] Images in `static/img/` also not WebP:
+  - `puma-puff-cropped.png` — 211K
+  - `kq-fun-default-site-img.png` — 149K
+
+### Lazy loading
+- [ ] [MED] `themes/hugo-goa/layouts/_default/_markup/render-image.html` — rendered images have no `loading="lazy"` attribute; add it to defer offscreen images
+
+### Missing SRI hashes (security + cache integrity)
+- [ ] [MED] `themes/hugo-goa/layouts/partials/footer.html:31` — jQuery CDN link has no `integrity` / `crossorigin` attributes
+- [ ] [MED] `themes/hugo-goa/layouts/partials/footer.html:20` — Highlight.js CDN link has no `integrity` / `crossorigin` attributes
+
+### Google Fonts API
+- [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:39` — Fonts URL has a duplicate `rel` attribute (both `rel="stylesheet"` and `rel="preconnect"` on the same tag) and is missing `display=swap`. Fix: split into a `<link rel="preconnect">` and a separate `<link rel="stylesheet" href="...&display=swap">`.
+
+---
+
+## Tech Debt
+
+### Severely outdated CDN dependencies
+These are load-bearing and will require careful testing if upgraded. The site's styling is tightly coupled to Bootstrap 3.
+
+- [ ] [HIGH] **Bootstrap 3.3.7** (2014) — used in `themes/hugo-goa/layouts/partials/header.html` + `footer.html`. Current: Bootstrap 5.x. Upgrading is a breaking change to grid classes and component markup; track separately if attempted.
+- [ ] [HIGH] **jQuery 1.12.4** (2016) — `themes/hugo-goa/layouts/partials/footer.html:31`. Current: 3.7+. Check if any site JS actually depends on jQuery before deciding to upgrade vs. remove.
+- [ ] [MED] **Highlight.js 9.12.0** (2017) — `themes/hugo-goa/layouts/partials/footer.html:20`. Current: 11.x. Upgrade is likely low-risk.
+
+### Dead code: IE9 compatibility shims
+- [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:48-52` — HTML5shiv and Respond.js loaded via conditional comments for IE8/9. IE is dead (EOL 2022). Safe to delete the entire block.
+- [ ] [LOW] `themes/hugo-goa/static/css/main.css` — contains `@-ms-viewport` and `@-o-viewport` rules for Windows Phone / Opera Mobile. Dead code, safe to remove.
+- [ ] [LOW] `themes/hugo-goa/static/js/main.js:3` — IE10 Mobile viewport fix. Safe to remove.
+
+### Dead CMS config
+- [ ] [LOW] `.forestry/` — Forestry.io was acquired/deprecated. This directory is entirely dead config. Safe to delete.
+
+### Tina CMS config issues
+- [ ] [LOW] `tina/config.ts:5` — hardcoded `"main"` as the branch name, but this repo uses `master`. Should be `process.env.HEAD || "master"`.
+- [ ] [LOW] `tina/config.ts:6` — fallback token is `"blech"` (a placeholder). Fine locally, but worth removing the fallback so it fails loudly in misconfigured environments.
+
+### Stale content
+- [ ] [LOW] `content/blog/my-backup-plan-if-dex-crm-goes-kaput.md` — has been `draft = true` since 2023. Review: finish, archive, or delete.
+
+### Node version
+- [ ] [LOW] `.nvmrc` specifies `18.12.0` (Oct 2022). `mise.toml` overrides this locally with `node = "latest"`. Update `.nvmrc` to a current LTS (20.x or 22.x) so it doesn't mislead.
+
+### Netlify deploy previews
+- [ ] [LOW] `netlify.toml` — deploy preview context has a `# TODO: doesn't work` comment. Either fix or remove the `[context.deploy-preview]` block to avoid confusion.

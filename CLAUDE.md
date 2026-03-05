@@ -13,10 +13,11 @@ Tina is rarely used day-to-day anymore — editing is almost always done directl
 ## Environment
 
 - `hugo` command is installed on my machine manually from a release. `v0.146.1`.
-- The `hugo/` directory in the repo root is where the binary was originally unpacked — it should be .gitignored but currently isn't. The `hugo` command on the system PATH comes from there.
-- The `mise` tool is available for you to use. I have pre-installed a version of Nodejs (used mainly for the Tina build step).
+- The `hugo/` directory in the repo root is where the binary was originally unpacked — it should be .gitignored but currently isn't. The `hugo` command on the system PATH comes from there. This is only true if you are on my personal desktop, in other environments you may need to install Hugo.
+- The `mise` tool is available for you to use. I have a version of Nodejs (used mainly for the Tina build step).
 - It deploys to Netlify whenever a push is made to the main branch.
 - `artifacts/` is for things I want to keep in the repo, but which don't get served on the site, e.g. original copies of Excalidraw files that were used as the source to generate images.
+- I have added [playwright-cli](https://github.com/microsoft/playwright-cli) to the Node dependencies of this repo. You can use it once they're installed like `npx playwright-cli *`. You should have a skill for this already prepared.
 
 ## Repo info
 
