@@ -6,7 +6,10 @@ hugo/
 misc/
 tmp/
 .playwright-cli/
-.claude/
+# .claude/ is tracked for repo-level hooks and settings.
+# Exclude private/local files within it:
+.claude/auth.json
+.claude/todos.json
 node_modules
 .env
 

@@ -12,7 +12,7 @@ Tina is rarely used day-to-day anymore — editing is almost always done directl
 
 ## Environment
 
-- Hugo `v0.146.1` and Node are managed via `mise` (`mise.toml`). Run `make setup` in a fresh environment to install all tools.
+- Hugo `v0.146.1` and Node are managed via `mise` (`mise.toml`). Run `make setup` in a fresh environment to install all tools. In Claude Code on the web, a `SessionStart` hook (`.claude/hooks/session-start.sh`) does this automatically.
 - The `hugo/` directory in the repo root is gitignored — it's a leftover from when the binary was installed manually there. Don't rely on it; use `mise` instead.
 - The `mise` tool is available for you to use.
 - It deploys to Netlify whenever a push is made to the main branch.

@@ -16,7 +16,9 @@ This folder is a condensed knowledge base for AI agents working on this repo. It
 
 ## Environment setup
 
-If you're in a fresh environment (not the owner's desktop), run:
+**Claude Code on the web:** a `SessionStart` hook in `.claude/hooks/session-start.sh` runs `make setup` automatically when a remote session starts. No manual steps needed.
+
+**Local / fresh environment:** run:
 
 ```
 make setup    # runs: mise install && npm install

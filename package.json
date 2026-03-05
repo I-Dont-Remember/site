@@ -21,5 +21,8 @@
     "@playwright/cli": "^0.1.1",
     "@tinacms/cli": "^1.5.8",
     "tinacms": "^1.5.1"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.43.0"
   }
 }

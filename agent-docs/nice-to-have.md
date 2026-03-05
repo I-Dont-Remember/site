@@ -21,10 +21,10 @@ Compiled: 2026-03-05. These are potential improvements that require a decision b
 
 ### Developer workflow
 - [ ] **Expand the archetype** — `archetypes/default.md` is only 4 lines and uses YAML, but posts use TOML. Expanding it with standard fields (`description`, `categories`, `tags`, `images`, `draft`, `featured`, `toc`) would reduce friction when creating new posts.
-- [ ] **Wire up the existing markdownlint config** — `.markdownlint.json` exists but nothing actually runs it. A `make lint` target would let you catch formatting issues without CI setup. markdownlint-cli can be run via npx since Node is already available.
+- [x] **Wire up the existing markdownlint config** — `make lint` target exists; `markdownlint-cli` is now a tracked devDependency in `package.json` and installed via `npm install`.
 - [ ] **Add `.editorconfig`** — not present. Would enforce consistent indentation and trailing whitespace handling across editors/tools, useful since the repo mixes TOML, YAML, Markdown, HTML, and TypeScript.
 - [ ] **Pre-commit hooks** — no pre-commit validation exists. Low-friction option: add a `.pre-commit-config.yaml` that runs markdownlint on changed `.md` files. Requires `pre-commit` to be installed locally.
-- [ ] **`make clean` target** — no way to wipe `public/` and Hugo's resource cache from the Makefile. Minor convenience.
+- [x] **`make clean` target** — implemented; wipes `public/`, `public-snapshot/`, and `resources/_gen`.
 
 ### Tina CMS
 - [ ] **Decide on Tina's future** — it runs on every Netlify deploy (`npx tinacms build`) but is rarely used. Options: fully remove it (simplify the build), keep it as-is, or upgrade to a current version. Removing it would simplify `netlify.toml` and `package.json`, and eliminate Node from the build chain.
