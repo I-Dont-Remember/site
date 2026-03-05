@@ -7,18 +7,18 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
 ## Accessibility
 
 ### Iframes missing `title` attribute
-- [ ] [MED] `themes/hugo-goa/layouts/partials/email-form.html:18` — Beehiiv newsletter embed iframe
-- [ ] [MED] `layouts/shortcodes/giphy.html` — Giphy embed iframe
-- [ ] [MED] `layouts/shortcodes/tenor-gif.html` — Tenor embed iframe
-- [ ] [LOW] `static/bin/bus.html:59` — Chicago Transit tracker iframe
+- [x] [MED] `themes/hugo-goa/layouts/partials/email-form.html:18` — Beehiiv iframe was already commented out; now using Kit.com JS embed (no iframe). Non-issue.
+- [x] [MED] `layouts/shortcodes/giphy.html` — fixed: added `title="Giphy GIF embed"`
+- [ ] [MED] `layouts/shortcodes/tenor-gif.html` — Tenor's iframe is injected dynamically by `embed.js` after page load; no iframe exists in the template to add a title to. Would need a MutationObserver hack or a different embed approach to fix properly.
+- [x] [LOW] `static/bin/bus.html:59` — fixed: added `title="Chicago Transit bus tracker"`
 
 ### Missing `lang` attribute on `<html>` tag
-- [ ] [MED] `static/bin/index.html`
-- [ ] [MED] `static/bin/bus.html`
-- [ ] [MED] `static/bin/points-depreciation.html`
+- [x] [MED] `static/bin/index.html` — fixed
+- [x] [MED] `static/bin/bus.html` — fixed
+- [x] [MED] `static/bin/points-depreciation.html` — fixed
 
 ### Broken or incorrect ARIA
-- [ ] [HIGH] `themes/hugo-goa/layouts/partials/content.html:74` — heading anchor links use `ariaLabel=` (camelCase) instead of `aria-label=`; the attribute is silently ignored by browsers
+- [x] [HIGH] `themes/hugo-goa/layouts/partials/content.html:74` — fixed: `ariaLabel=` → `aria-label=`; affects all blog post heading anchors
 - [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:81` — logo `<img>` has both `alt` and `aria-label`; remove `aria-label`, `alt` is sufficient
 
 ### Images with empty or missing alt text

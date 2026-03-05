@@ -1,2 +1,4 @@
 [tools]
 node = "latest"
+python = "3.12"
+hugo = "0.146.1"

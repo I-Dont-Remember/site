@@ -17,7 +17,7 @@ Tina is rarely used day-to-day anymore — editing is almost always done directl
 - The `mise` tool is available for you to use. I have a version of Nodejs (used mainly for the Tina build step).
 - It deploys to Netlify whenever a push is made to the main branch.
 - `artifacts/` is for things I want to keep in the repo, but which don't get served on the site, e.g. original copies of Excalidraw files that were used as the source to generate images.
-- I have added [playwright-cli](https://github.com/microsoft/playwright-cli) to the Node dependencies of this repo. You can use it once they're installed like `npx playwright-cli *`. You should have a skill for this already prepared.
+- I have added [playwright-cli](https://github.com/microsoft/playwright-cli) to the Node dependencies of this repo. Use `make screenshot` and `make pr-screenshots` targets rather than composing raw `npx playwright-cli` commands — see the Testing & Validation section below.
 
 ## Repo info
 
@@ -31,6 +31,30 @@ Tina is rarely used day-to-day anymore — editing is almost always done directl
 
 - The site is using very old versions of Boostrap and other libraries, since it grew off of theme that I never updated. I have some slight concern about that, but also I don't want to update and ruin all the styling and things I already have in place, so it hasn't been a pressing issue for me. I might just archive a copy of those dependencies so that I have it in the repo if CDNs ever stop serving them.
 
-## Testing
+## Testing & Validation
 
-I don't have any unit tests for the repo, usually I make changes while running the Hugo live server, or running `make build` and then checking the outputted files in the generated `public/` directory. That is probably more effective for you.
+No unit tests. Use these make targets:
+
+- `make validate` — builds the site and checks all internal links for breakage (run before/after structural changes)
+- `make lint` — runs markdownlint on content
+- `make snapshot` then `make diff-snapshot` — for risky changes (CSS, library upgrades): save a build before, diff after to see exactly which pages changed
+- `make clean` — wipe generated output for a fresh build
+- `make serve` — local dev server at localhost:1313
+- `make screenshot URL=http://localhost:1313 [OUT=tmp/screenshot.png]` — screenshot a page (requires server running)
+- `make pr-screenshots [POST=http://localhost:1313/blog/your-post/]` — take homepage + blog post screenshots for PR descriptions
+
+**Principle: prefer `make` targets over composing raw commands.** If a workflow isn't captured in the Makefile, add a target rather than documenting a multi-step raw command sequence. This keeps the process reproducible and avoids shell environment issues (PATH, mise activation, etc.).
+
+See `agent-docs/CLAUDE.md` for the full playwright workflow and the baseline broken-link count.
+
+## Pull Requests
+
+If you are opening a pull request, you **must** include screenshots of the following pages in the PR description. Start the server with `make serve`, then run:
+
+```
+make pr-screenshots POST=http://localhost:1313/blog/<recent-post-slug>/
+```
+
+This saves `tmp/pr-homepage.png` (homepage) and `tmp/pr-blog.png` (blog post). Embed both in the PR description.
+
+This lets the site owner review visual state without having to run the server themselves.

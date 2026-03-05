@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/I-Dont-Remember/site#readme",
   "dependencies": {
+    "@playwright/cli": "^0.1.1",
     "@tinacms/cli": "^1.5.8",
     "tinacms": "^1.5.1"
   }

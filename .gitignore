@@ -1,9 +1,11 @@
 public/
+public-snapshot/
 **Zone.Identifier
 .hugo*
 misc/
-
-
+tmp/
+.playwright-cli/
+.claude/
 node_modules
 .env
 
