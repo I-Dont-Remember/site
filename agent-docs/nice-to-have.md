@@ -19,6 +19,42 @@ Compiled: 2026-03-05. These are potential improvements that require a decision b
 ### Hugo asset pipeline
 - [ ] **Run `main.css` through Hugo pipes** — `themes/hugo-goa/static/css/main.css` is served as a raw static file (no minification, no fingerprinting). `assets/css/ilc.css` is already processed with `minify | fingerprint`. Doing the same for `main.css` would add cache-busting and reduce payload size. Requires moving `main.css` from `static/` to `assets/`.
 
+- [ ] **Hugo image pipeline for automatic WebP conversion** — The heaviest images in `static/uploads/` are 370K–760K PNGs/JPEGs. Hugo's built-in image processing can convert them to WebP at build time, reducing file size ~30–40% with no visible quality loss. This is a multi-step refactor; full plan below.
+
+  **Why this is non-trivial for this repo:**
+  Hugo's image processing (`Resize`, `Fit`, `Process`) only works on images in `assets/` or as page resources (images co-located with the post in a page bundle). Currently all images live in `static/uploads/` (and a few in `static/img/`) and are referenced by bare URL strings in front matter (`images = ["/uploads/foo.png"]`) and markdown (`![](/uploads/foo.png)`). Static files bypass Hugo's pipeline entirely.
+
+  **Implementation plan for a future agent:**
+
+  1. **Choose a migration scope.** Two options:
+     - **(A) Move all images to `assets/uploads/`** — Hugo can then process them globally. The downside is that images in `assets/` aren't available as raw static files, so the path structure changes.
+     - **(B) Convert per-post images to page bundles** — Move each post's images into a `content/blog/post-slug/` directory alongside `index.md`, making them page resources. This is the "Hugo way" but requires restructuring every post directory. High effort.
+     - **Recommended: Option A** — move `static/uploads/` → `assets/uploads/` and update the render-image hook.
+
+  2. **Update `render-image.html`** — `layouts/_default/_markup/render-image.html` already exists and handles markdown images. Modify it to load the image via `resources.Get`, call `.Process "webp"` (or `.Resize "x0 webp"`), and output the processed path. Fall back to the original URL if `resources.Get` returns nil (for images still in `static/`).
+     ```html
+     {{- $src := .Destination -}}
+     {{- $res := resources.GetMatch (strings.TrimPrefix "/" $src) -}}
+     {{- if $res -}}
+       {{- $webp := $res.Process "webp" -}}
+       <img src="{{ $webp.RelPermalink }}" alt="{{ .Text }}" loading="lazy">
+     {{- else -}}
+       <img src="{{ $src }}" alt="{{ .Text }}" loading="lazy">
+     {{- end -}}
+     ```
+
+  3. **Update the front matter image references in `content.html`** — `themes/hugo-goa/layouts/partials/content.html` renders header images from `images = [...]` front matter as bare `<img src="{{ . }}">` tags. After moving images to `assets/`, update this template to also go through `resources.Get` + `.Process "webp"`.
+
+  4. **Move the images.** `git mv static/uploads/ assets/uploads/` and `git mv static/img/ assets/img/`. The paths referenced in markdown and front matter (`/uploads/foo.png`) still work because `render-image.html` strips the leading `/`.
+
+  5. **Run `make validate`** to confirm no broken image links. The build will be slower the first time Hugo processes all images; subsequent builds use the cache in `resources/_gen/`.
+
+  6. **Optional: `<picture>` fallback for legacy browsers.** If supporting the ~3% of users on WebP-incompatible browsers matters, wrap the output in a `<picture>` tag with both WebP and the original as a fallback. This adds template complexity but zero user-visible impact on modern browsers.
+
+  **Effort estimate:** Medium. Steps 1–4 are mechanical but touch many files. The riskiest part is the `render-image.html` update — test with `make validate` and `make diff-snapshot` before merging.
+
+  **What this does NOT solve:** images embedded in `static/bin/*.html` tools (those are self-contained pages, not Hugo-rendered). Images in blog posts that are referenced via absolute URLs to other CDNs. Images added by the Tenor/Giphy shortcodes (those are remote embeds).
+
 ### Developer workflow
 - [ ] **Expand the archetype** — `archetypes/default.md` is only 4 lines and uses YAML, but posts use TOML. Expanding it with standard fields (`description`, `categories`, `tags`, `images`, `draft`, `featured`, `toc`) would reduce friction when creating new posts.
 - [x] **Wire up the existing markdownlint config** — `make lint` target exists; `markdownlint-cli` is now a tracked devDependency in `package.json` and installed via `npm install`.

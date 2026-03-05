@@ -1,5 +1,19 @@
 
 <div class="tenor-gif-embed" style="" data-postid="{{ (index .Params 0)}}" data-share-method="host" data-aspect-ratio="1.665" data-width="70%">
     <a href="{{ (index .Params 1) }}">gif</a>
-</div> 
+</div>
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<script>
+if (!window._tenorTitleObserver) {
+  window._tenorTitleObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(m) {
+      m.addedNodes.forEach(function(node) {
+        if (node.nodeType === 1 && node.tagName === 'IFRAME' && node.src && node.src.includes('tenor.com') && !node.title) {
+          node.title = 'Tenor GIF embed';
+        }
+      });
+    });
+  });
+  window._tenorTitleObserver.observe(document.body, { childList: true, subtree: true });
+}
+</script>

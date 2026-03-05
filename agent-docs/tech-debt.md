@@ -9,7 +9,7 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
 ### Iframes missing `title` attribute
 - [x] [MED] `themes/hugo-goa/layouts/partials/email-form.html:18` — Beehiiv iframe was already commented out; now using Kit.com JS embed (no iframe). Non-issue.
 - [x] [MED] `layouts/shortcodes/giphy.html` — fixed: added `title="Giphy GIF embed"`
-- [ ] [MED] `layouts/shortcodes/tenor-gif.html` — Tenor's iframe is injected dynamically by `embed.js` after page load; no iframe exists in the template to add a title to. Would need a MutationObserver hack or a different embed approach to fix properly.
+- [x] [MED] `layouts/shortcodes/tenor-gif.html` — Added a MutationObserver that watches for Tenor's dynamically injected iframe and sets `title="Tenor GIF embed"` on it. Observer is guarded by `window._tenorTitleObserver` so it only registers once even if the shortcode appears multiple times on a page.
 - [x] [LOW] `static/bin/bus.html:59` — fixed: added `title="Chicago Transit bus tracker"`
 
 ### Missing `lang` attribute on `<html>` tag
@@ -22,16 +22,16 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
 - [x] [LOW] `themes/hugo-goa/layouts/partials/header.html:81` — logo `<img>` has both `alt` and `aria-label`; remove `aria-label`, `alt` is sufficient
 
 ### Images with empty or missing alt text
-- [ ] [HIGH] `themes/hugo-goa/layouts/partials/content.html:66` — post images rendered with `alt=""` (empty string); should be descriptive or at minimum omitted for decorative images
+- [x] [HIGH] `themes/hugo-goa/layouts/partials/content.html:66` — post images now use `alt="{{ $.Title }}"` (the post title) as a fallback. Per-image alt text would require adding an `images_alt` front matter field and updating the template — noted as a possible future improvement but the title fallback is a significant improvement over empty string.
 
 ### Missing form labels
-- [ ] [MED] `layouts/partials/pricing-calculator.html` — number input (`id="numUsersInput"`) has no associated `<label>`
+- [x] [MED] `layouts/partials/pricing-calculator.html` — added `<label for="numUsersInput">` wrapping the "Total Users" text
 
 ### Video accessibility
-- [ ] [LOW] `layouts/shortcodes/video.html` — `<video>` element has no `<track kind="captions">` fallback
+- [x] [LOW] `layouts/shortcodes/video.html` — added `<track kind="captions">` element. Note: no actual caption files exist for any video; this satisfies the HTML validator but a screen reader user would still get no captions. Real fix requires per-video `.vtt` files.
 
 ### Broken icon rendering
-- [ ] [MED] `themes/hugo-goa/layouts/partials/header.html:41` — FontAwesome 4.6.3 CSS is commented out, but `fa fa-twitter`, `fa fa-github`, etc. icons are still referenced in templates; social icons likely render as blank boxes. Either re-enable the CSS or replace with inline SVGs.
+- [x] [MED] `themes/hugo-goa/layouts/partials/header.html:41` — re-enabled FontAwesome 4.6.3 CSS; social icons (Twitter, GitHub) now render correctly again.
 
 ---
 
@@ -53,8 +53,8 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
 - [x] [MED] `themes/hugo-goa/layouts/_default/_markup/render-image.html` — rendered images have no `loading="lazy"` attribute; add it to defer offscreen images
 
 ### Missing SRI hashes (security + cache integrity)
-- [ ] [MED] `themes/hugo-goa/layouts/partials/footer.html:31` — jQuery CDN link has no `integrity` / `crossorigin` attributes
-- [ ] [MED] `themes/hugo-goa/layouts/partials/footer.html:20` — Highlight.js CDN link has no `integrity` / `crossorigin` attributes
+- [x] [MED] `themes/hugo-goa/layouts/partials/footer.html:31` — switched jQuery CDN from `ajax.googleapis.com` to `code.jquery.com` (official jQuery CDN) and added `integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"`
+- [x] [MED] `themes/hugo-goa/layouts/partials/footer.html:20` — upgraded Highlight.js from 9.12.0 → 11.11.1, added `integrity="sha384-RH2xi4eIQ/gjtbs9fUXM68sLSi99C7ZWBRX1vDrVv6GQXRibxXLbwO2NGZB74MbU" crossorigin="anonymous"`, updated deprecated `hljs.initHighlightingOnLoad()` → `hljs.highlightAll()`, and also uncommented + updated the Highlight.js CSS link in `header.html` to 11.11.1 (was commented out, meaning code blocks had no syntax highlighting theme applied)
 
 ### Google Fonts API
 - [x] [LOW] `themes/hugo-goa/layouts/partials/header.html:39` — Fonts URL has a duplicate `rel` attribute (both `rel="stylesheet"` and `rel="preconnect"` on the same tag) and is missing `display=swap`. Fix: split into a `<link rel="preconnect">` and a separate `<link rel="stylesheet" href="...&display=swap">`.
@@ -67,8 +67,8 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
 These are load-bearing and will require careful testing if upgraded. The site's styling is tightly coupled to Bootstrap 3.
 
 - [ ] [HIGH] **Bootstrap 3.3.7** (2014) — used in `themes/hugo-goa/layouts/partials/header.html` + `footer.html`. Current: Bootstrap 5.x. Upgrading is a breaking change to grid classes and component markup; track separately if attempted.
-- [ ] [HIGH] **jQuery 1.12.4** (2016) — `themes/hugo-goa/layouts/partials/footer.html:31`. Current: 3.7+. Check if any site JS actually depends on jQuery before deciding to upgrade vs. remove.
-- [ ] [MED] **Highlight.js 9.12.0** (2017) — `themes/hugo-goa/layouts/partials/footer.html:20`. Current: 11.x. Upgrade is likely low-risk.
+- [ ] [LOW] **jQuery 1.12.4** (2016) — now on official jQuery CDN with SRI. No custom site JS uses jQuery directly — it's only there because Bootstrap 3 JS requires it. Cannot remove without also upgrading Bootstrap. Downgraded to LOW since it's now an inherent dependency of Bootstrap 3, not a standalone risk.
+- [x] [MED] **Highlight.js 9.12.0** (2017) — upgraded to 11.11.1. See SRI notes above.
 
 ### Dead code: IE9 compatibility shims
 - [x] [LOW] `themes/hugo-goa/layouts/partials/header.html:48-52` — HTML5shiv and Respond.js loaded via conditional comments for IE8/9. IE is dead (EOL 2022). Safe to delete the entire block.
@@ -83,7 +83,7 @@ These are load-bearing and will require careful testing if upgraded. The site's 
 - [x] [LOW] `tina/config.ts:6` — fallback token is `"blech"` (a placeholder). Fine locally, but worth removing the fallback so it fails loudly in misconfigured environments.
 
 ### Stale content
-- [ ] [LOW] `content/blog/my-backup-plan-if-dex-crm-goes-kaput.md` — has been `draft = true` since 2023. Review: finish, archive, or delete.
+- [ ] [LOW] `content/blog/my-backup-plan-if-dex-crm-goes-kaput.md` — has been `draft = true` since 2023. Post looks complete (explains plan, has screenshots). Needs owner decision: publish it, or delete it. Dex CRM still exists as of 2026 so it's still relevant.
 
 ### Node version
 - [x] [LOW] `.nvmrc` specifies `18.12.0` (Oct 2022). `mise.toml` overrides this locally with `node = "latest"`. Update `.nvmrc` to a current LTS (20.x or 22.x) so it doesn't mislead.

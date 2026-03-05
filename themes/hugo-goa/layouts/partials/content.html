@@ -63,7 +63,7 @@
     {{ if isset .Params "showHeaderImage" }}
       {{ if gt (len .Params.images)  0}}
         {{ range .Params.images }}
-          <img src="{{ . }}" alt="">
+          <img src="{{ . }}" alt="{{ $.Title }}">
         {{ end }}
       {{ end }}
     {{ end }}
