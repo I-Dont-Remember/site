@@ -19,7 +19,7 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
 
 ### Broken or incorrect ARIA
 - [x] [HIGH] `themes/hugo-goa/layouts/partials/content.html:74` — fixed: `ariaLabel=` → `aria-label=`; affects all blog post heading anchors
-- [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:81` — logo `<img>` has both `alt` and `aria-label`; remove `aria-label`, `alt` is sufficient
+- [x] [LOW] `themes/hugo-goa/layouts/partials/header.html:81` — logo `<img>` has both `alt` and `aria-label`; remove `aria-label`, `alt` is sufficient
 
 ### Images with empty or missing alt text
 - [ ] [HIGH] `themes/hugo-goa/layouts/partials/content.html:66` — post images rendered with `alt=""` (empty string); should be descriptive or at minimum omitted for decorative images
@@ -50,14 +50,14 @@ Audited: 2026-03-04. Issues found across accessibility, performance, and general
   - `kq-fun-default-site-img.png` — 149K
 
 ### Lazy loading
-- [ ] [MED] `themes/hugo-goa/layouts/_default/_markup/render-image.html` — rendered images have no `loading="lazy"` attribute; add it to defer offscreen images
+- [x] [MED] `themes/hugo-goa/layouts/_default/_markup/render-image.html` — rendered images have no `loading="lazy"` attribute; add it to defer offscreen images
 
 ### Missing SRI hashes (security + cache integrity)
 - [ ] [MED] `themes/hugo-goa/layouts/partials/footer.html:31` — jQuery CDN link has no `integrity` / `crossorigin` attributes
 - [ ] [MED] `themes/hugo-goa/layouts/partials/footer.html:20` — Highlight.js CDN link has no `integrity` / `crossorigin` attributes
 
 ### Google Fonts API
-- [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:39` — Fonts URL has a duplicate `rel` attribute (both `rel="stylesheet"` and `rel="preconnect"` on the same tag) and is missing `display=swap`. Fix: split into a `<link rel="preconnect">` and a separate `<link rel="stylesheet" href="...&display=swap">`.
+- [x] [LOW] `themes/hugo-goa/layouts/partials/header.html:39` — Fonts URL has a duplicate `rel` attribute (both `rel="stylesheet"` and `rel="preconnect"` on the same tag) and is missing `display=swap`. Fix: split into a `<link rel="preconnect">` and a separate `<link rel="stylesheet" href="...&display=swap">`.
 
 ---
 
@@ -71,22 +71,22 @@ These are load-bearing and will require careful testing if upgraded. The site's 
 - [ ] [MED] **Highlight.js 9.12.0** (2017) — `themes/hugo-goa/layouts/partials/footer.html:20`. Current: 11.x. Upgrade is likely low-risk.
 
 ### Dead code: IE9 compatibility shims
-- [ ] [LOW] `themes/hugo-goa/layouts/partials/header.html:48-52` — HTML5shiv and Respond.js loaded via conditional comments for IE8/9. IE is dead (EOL 2022). Safe to delete the entire block.
-- [ ] [LOW] `themes/hugo-goa/static/css/main.css` — contains `@-ms-viewport` and `@-o-viewport` rules for Windows Phone / Opera Mobile. Dead code, safe to remove.
-- [ ] [LOW] `themes/hugo-goa/static/js/main.js:3` — IE10 Mobile viewport fix. Safe to remove.
+- [x] [LOW] `themes/hugo-goa/layouts/partials/header.html:48-52` — HTML5shiv and Respond.js loaded via conditional comments for IE8/9. IE is dead (EOL 2022). Safe to delete the entire block.
+- [x] [LOW] `themes/hugo-goa/static/css/main.css` — contains `@-ms-viewport` and `@-o-viewport` rules for Windows Phone / Opera Mobile. Dead code, safe to remove.
+- [x] [LOW] `themes/hugo-goa/static/js/main.js:3` — IE10 Mobile viewport fix. Safe to remove.
 
 ### Dead CMS config
-- [ ] [LOW] `.forestry/` — Forestry.io was acquired/deprecated. This directory is entirely dead config. Safe to delete.
+- [x] [LOW] `.forestry/` — Forestry.io was acquired/deprecated. This directory is entirely dead config. Safe to delete.
 
 ### Tina CMS config issues
-- [ ] [LOW] `tina/config.ts:5` — hardcoded `"main"` as the branch name, but this repo uses `master`. Should be `process.env.HEAD || "master"`.
-- [ ] [LOW] `tina/config.ts:6` — fallback token is `"blech"` (a placeholder). Fine locally, but worth removing the fallback so it fails loudly in misconfigured environments.
+- [x] [LOW] `tina/config.ts:5` — hardcoded `"main"` as the branch name, but this repo uses `master`. Should be `process.env.HEAD || "master"`.
+- [x] [LOW] `tina/config.ts:6` — fallback token is `"blech"` (a placeholder). Fine locally, but worth removing the fallback so it fails loudly in misconfigured environments.
 
 ### Stale content
 - [ ] [LOW] `content/blog/my-backup-plan-if-dex-crm-goes-kaput.md` — has been `draft = true` since 2023. Review: finish, archive, or delete.
 
 ### Node version
-- [ ] [LOW] `.nvmrc` specifies `18.12.0` (Oct 2022). `mise.toml` overrides this locally with `node = "latest"`. Update `.nvmrc` to a current LTS (20.x or 22.x) so it doesn't mislead.
+- [x] [LOW] `.nvmrc` specifies `18.12.0` (Oct 2022). `mise.toml` overrides this locally with `node = "latest"`. Update `.nvmrc` to a current LTS (20.x or 22.x) so it doesn't mislead.
 
 ### Netlify deploy previews
-- [ ] [LOW] `netlify.toml` — deploy preview context has a `# TODO: doesn't work` comment. Either fix or remove the `[context.deploy-preview]` block to avoid confusion.
+- [x] [LOW] `netlify.toml` — deploy preview context has a `# TODO: doesn't work` comment. Either fix or remove the `[context.deploy-preview]` block to avoid confusion. Removed the block entirely.

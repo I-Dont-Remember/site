@@ -2,8 +2,8 @@ import { defineConfig } from "tinacms";
 import { blog_postFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-const token = process.env.TINA_TOKEN || "blech";
+const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
+const token = process.env.TINA_TOKEN;
 
 export default defineConfig({
   branch,
