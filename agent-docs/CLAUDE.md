@@ -22,7 +22,7 @@ If you're in a fresh environment (not the owner's desktop), run:
 make setup    # runs: mise install && npm install
 ```
 
-This installs Node, Python 3.12, and Hugo 0.146.1 via `mise.toml`, then installs the Node deps (markdownlint-cli, playwright-cli, tinacms). The owner's machine has Hugo installed manually to `hugo/` in the repo root — ignore that in other environments, mise handles it.
+This installs Node, Python 3.12, and Hugo 0.146.1 via `mise.toml`, then installs the Node deps (markdownlint-cli, playwright-cli, tinacms).
 
 ## Validation workflow
 
@@ -33,7 +33,7 @@ make validate    # builds the site + checks all internal links
 make lint        # markdownlint on content/
 ```
 
-**Known baseline:** `make validate` currently reports **69 pre-existing broken internal links** — mostly category cross-links from when categories were renamed (e.g. `/categories/dev-ex-ux/` referenced from tag pages that no longer match). These are tracked in `tech-debt.md` (see the link checker output section). If you run `make validate` and see more than 69 broken links, you've introduced a regression.
+**Known baseline:** `make validate` currently reports **47 pre-existing broken internal links** — mostly category cross-links from when categories were renamed (e.g. `/categories/dev-ex-ux/` referenced from tag pages that no longer match). These are tracked in `tech-debt.md` (see the link checker output section). If you run `make validate` and see more than 47 broken links, you've introduced a regression.
 
 For risky changes (library upgrades, CSS refactors, template changes):
 
@@ -54,7 +54,7 @@ make screenshot URL=http://localhost:1313 OUT=tmp/page.png    # screenshot any p
 make pr-screenshots POST=http://localhost:1313/blog/my-post/  # homepage + post (for PRs)
 ```
 
-For DOM inspection (snapshot, eval, network), use `mise exec -- npx playwright-cli <command>` directly — the Makefile targets only cover screenshot use cases. Run `mise exec -- npx playwright-cli --help` to see all available commands. No baseline to maintain — use your judgment.
+For DOM inspection (snapshot, eval, network), use `npx playwright-cli <command>` directly — the Makefile targets only cover screenshot use cases. Run `npx playwright-cli --help` to see all available commands. No baseline to maintain — use your judgment.
 
 **If opening a PR:** you are required to include screenshots of the homepage and a blog post page in the PR description. See the root `CLAUDE.md` for the full requirement.
 

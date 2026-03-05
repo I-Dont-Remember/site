@@ -6,15 +6,15 @@ This is a personal website built with the static site generator Hugo.
 
  It was originally started from a theme saved in `themes/hugo-goa/`, but over time this has morphed and been modified heavily, so I can't remember ever bothering to pull in updates from the original - and at this point, they might break more than they help.
 
-At one point I added Tina, which lets you run a local CMS for easier editing. I also often just manually add new content in VSCode. There's also a legacy `.forestry/` directory from a previous CMS that's no longer in use.
+At one point I added Tina, which lets you run a local CMS for easier editing. I also often just manually add new content in VSCode.
 
 Tina is rarely used day-to-day anymore — editing is almost always done directly in VSCode. Tina is still wired into the Netlify build (`npx tinacms build && hugo --gc --minify`), so it still runs on deploy.
 
 ## Environment
 
-- `hugo` command is installed on my machine manually from a release. `v0.146.1`.
-- The `hugo/` directory in the repo root is where the binary was originally unpacked — it should be .gitignored but currently isn't. The `hugo` command on the system PATH comes from there. This is only true if you are on my personal desktop, in other environments you may need to install Hugo.
-- The `mise` tool is available for you to use. I have a version of Nodejs (used mainly for the Tina build step).
+- Hugo `v0.146.1` and Node are managed via `mise` (`mise.toml`). Run `make setup` in a fresh environment to install all tools.
+- The `hugo/` directory in the repo root is gitignored — it's a leftover from when the binary was installed manually there. Don't rely on it; use `mise` instead.
+- The `mise` tool is available for you to use.
 - It deploys to Netlify whenever a push is made to the main branch.
 - `artifacts/` is for things I want to keep in the repo, but which don't get served on the site, e.g. original copies of Excalidraw files that were used as the source to generate images.
 - I have added [playwright-cli](https://github.com/microsoft/playwright-cli) to the Node dependencies of this repo. Use `make screenshot` and `make pr-screenshots` targets rather than composing raw `npx playwright-cli` commands — see the Testing & Validation section below.

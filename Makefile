@@ -1,8 +1,8 @@
 .PHONY: build validate lint snapshot diff-snapshot clean setup serve serve-drafts tina screenshot pr-screenshots
 
-# Prefer the hugo binary from the repo's local hugo/ dir (owner's installed copy) over system PATH.
-# This makes `make build` work in fresh environments as long as ./hugo/hugo is present.
-export PATH := $(PWD)/hugo:$(PATH)
+# Prefer local binaries: repo's hugo/ dir and node_modules/.bin take precedence over system PATH.
+# This lets make targets work without requiring mise or system-installed tools.
+export PATH := $(PWD)/hugo:$(PWD)/node_modules/.bin:$(PATH)
 
 # Install all language runtimes (via mise) and Node dependencies
 setup:
