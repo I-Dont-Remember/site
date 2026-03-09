@@ -2,7 +2,7 @@
 title = "My Backup Plan if Dex CRM Goes Kaput"
 date = 2023-03-16T05:00:00.000Z
 description = "I like using Dex CRM, but I also want to know if anything ever happens to their company, I have an open-source way to still use my contacts information."
-draft = true
+draft = false
 tags = [
   "personal-crm",
   "dex",
@@ -13,6 +13,15 @@ tags = [
 ]
 _template = "blog_post"
 +++
+
+{{< bootstrap-panel title="Update Mar 2026" >}}
+I haven't used Dex in a couple years at this point, although I still have the account. I found I wasn't really using Dex to record notes on interactions or what I talked about with people. I still like the idea of being able to quickly find all the people who match a concept, e.g. find all my friends who like churning credit cards, or who would find this article about software dev interesting. Also it would be nice to be able to have a baseline of info we've talked about in the past so i don't have to rehash the same conversations about where people work, what their hobbies are, etc. This is mainly useful for people I see less than every 6 months, whether they are long-term friend far away or acquaintance.
+
+What do i use for now then?
+-  Fossify Contacts with some backup scripts to maintain key info like address, birthday
+- Google Keep Note as a crappy way to trap recommendations from people so i can remember to tell them what I thought of the book/movie/article/etc.
+- No solution for keeping track of what context is relevant for people other than my lossy brain 
+{{< /bootstrap-panel >}}
 
 I like using Dex as my personal CRM - their workflows are fast, intuitive, and their support team responds really quickly if you need help. That said, nothing is guaranteed in life, so if anything ever happens to their company, I don't want to lose all my contact information along with it. We need a **Super Backup Plan**™️.
 
