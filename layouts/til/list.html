@@ -1,0 +1,31 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <h1 class="text-center">💡 Today I Learned</h1>
+  <p class="text-center" style="font-size:16px; font-weight:bold;"><span class="excalidraw-bg exc-yellow">{{ len .Data.Pages }}</span> things learned and counting.</p>
+  <p class="text-center" style="font-size:12px;">Small, atomic things I've picked up — CLI tricks, language behaviors, tools, concepts.</p>
+
+  <style>
+    .til-content { font-size: 14px; }
+    .til-content h1, .til-content h2, .til-content h3,
+    .til-content h4, .til-content h5, .til-content h6 {
+      font-size: 1em; font-weight: bold; margin: 0.75em 0 0.25em;
+    }
+    .til-content pre, .til-content code { font-size: 12px; }
+    .til-content pre { padding: 8px 12px; }
+  </style>
+
+  <section class="row">
+    {{ range .Data.Pages.ByPublishDate.Reverse }}
+    <div style="border-bottom: 2px solid #ddd; padding: 20px 0;">
+      <p class="meta" style="margin-bottom: 6px;">
+        {{ if not .Date.IsZero }}<a href="{{ .Permalink }}">{{ .Date.Format $.Site.Params.dateformat | upper }}</a>{{ end }}
+      </p>
+      <h2 style="margin-top: 0; font-size: 1.1em;"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <div class="content til-content">{{ .Content | replaceRE `(?s)<h[1-3][^>]*>(.*?)</h[1-3]>` `<strong>$1</strong>` | safeHTML }}</div>
+    </div>
+    {{ end }}
+  </section>
+
+  {{ partial "footer.html" . }}
+</div>

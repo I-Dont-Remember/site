@@ -13,7 +13,8 @@ build:
 	hugo --gc --minify --printPathWarnings
 
 # Build then check all internal links in the generated output
-validate: build
+# Always cleans first so stale HTML from moved/deleted content doesn't cause false positives.
+validate: clean build
 	python3 scripts/check-links.py
 
 # Lint markdown content (uses .markdownlint.json config)
@@ -49,12 +50,12 @@ tina:
 # Usage: make screenshot URL=http://localhost:1313 [OUT=tmp/screenshot.png]
 screenshot:
 	@test -n "$(URL)" || (echo "Usage: make screenshot URL=http://localhost:1313 [OUT=tmp/screenshot.png]" && exit 1)
-	bash scripts/playwright-screenshot.sh $(URL) $(or $(OUT),tmp/screenshot.png)
+	mise exec -- bash scripts/playwright-screenshot.sh "$(URL)" "$(or $(OUT),tmp/screenshot.png)"
 
 # Take homepage + a blog post screenshot for PR descriptions.
 # Requires 'make serve' running in another terminal.
 # Blog post URL can be overridden: make pr-screenshots POST=http://localhost:1313/blog/your-post/
 pr-screenshots:
-	bash scripts/playwright-screenshot.sh http://localhost:1313 tmp/pr-homepage.png
-	bash scripts/playwright-screenshot.sh $(or $(POST),http://localhost:1313/blog/) tmp/pr-blog.png
+	mise exec -- bash scripts/playwright-screenshot.sh "http://localhost:1313" "tmp/pr-homepage.png"
+	mise exec -- bash scripts/playwright-screenshot.sh "$(or $(POST),http://localhost:1313/blog/)" "tmp/pr-blog.png"
 	@echo "Screenshots saved: tmp/pr-homepage.png and tmp/pr-blog.png"

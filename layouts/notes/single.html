@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <article>
+    <h1>📝 {{ .Title }}</h1>
+    <p class="meta">
+      {{ if not .Date.IsZero }}{{ .Date.Format .Site.Params.dateformat | upper }}{{ end }}
+      &nbsp;·&nbsp; <a href="/notes/">← All Notes</a>
+    </p>
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </article>
+
+  {{ partial "footer.html" . }}
+</div>

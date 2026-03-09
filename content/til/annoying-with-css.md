@@ -1,11 +1,8 @@
 +++
-categories = ["TIL"]
+title = "How to be Annoying with CSS Cursors (and a sprinkle of JS)"
 date = 2022-04-19T05:00:00Z
 description = "Emoji cursors changing based on position? Oh my."
-draft = false
-images = []
 tags = ["CSS","JS", "cursors"]
-title = "How to be Annoying with CSS Cursors (and a sprinkle of JS)"
 +++
 
 Looking for a new way to annoy[^1] your website visitors? Of course you are! How about changing their cursors to an emoji -- and we won't stop there.

@@ -1,12 +1,8 @@
 +++
-categories = ["TIL"]
+title = "Tiny Python Router for AWS Lambda APIs"
 date = 2022-01-21T05:00:00Z
 description = "The utility of Python Flask routing on a Lambda, without the framework."
-images = []
 tags = ["AWS", "Python", "Serverless"]
-title = "Tiny Python Router for AWS Lambda APIs"
-toc = true
-
 +++
 I frequently run into the situation where I want the elegance of Python Flask routing on an AWS Lambda, but without the extra hassle of using the framework on a simple project. Golang has a mux built into the standard library, and [a whole host of stand-alone routers](https://github.com/avelino/awesome-go#routers), but so far I have not come across a good one for Python - so I made this. Is it the best possible? Definitely not. Does it meet my 80/20 use case? You betcha!
 

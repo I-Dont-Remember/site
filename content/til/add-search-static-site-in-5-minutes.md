@@ -1,12 +1,8 @@
 +++
-categories = ["TIL"]
+title = "Add Search to Hugo Static Site in 5 Minutes with No Dependencies"
 date = 2022-01-28T05:00:00Z
 description = "Add search to your static site in 5 minutes, the 80/20 effort-saving guide. No dependencies needed here."
-draft = false
-images = []
 tags = ["Hugo", "static-site", "search"]
-title = "Add Search to Hugo Static Site in 5 Minutes with No Dependencies"
-toc = false
 +++
 
 Having search on your site is a big plus for the user experience _(and for finding that piece of content I remember writing but can't find!)_.

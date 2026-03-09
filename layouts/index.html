@@ -1,0 +1,112 @@
+{{ partial "header.html" . }}
+
+<div class="container-fluid">
+  {{ partial "hero.html" . }}
+</div>
+
+<div class="container">
+
+  {{/* Gather content — featured essays only for default view, all TILs + notes */}}
+  {{ $allEssays := where .Site.RegularPages "Section" "blog" }}
+  {{ $featuredEssays := where $allEssays "Params.featured" true }}
+  {{ $tils := where .Site.RegularPages "Section" "til" }}
+  {{ $notes := where .Site.RegularPages "Section" "notes" }}
+  {{ $allPages := union (union $allEssays $tils) $notes }}
+
+  {{/* Section counts */}}
+  <br />
+  <h3>
+    <em>
+      ⭐ My <a href="/blog/">Digital Garden</a>
+      ({{ len $allEssays }} essays
+      {{- if gt (len $tils) 0 }} &middot; {{ len $tils }} TILs{{ end }}
+      {{- if gt (len $notes) 0 }} &middot; {{ len $notes }} notes{{ end -}}
+      )
+    </em>
+  </h3>
+
+  {{/* Filter buttons */}}
+  <div class="btn-group stream-filters" role="group" aria-label="Content filter" style="margin-bottom: 16px;">
+    <button type="button" class="btn btn-sm btn-default active" data-filter="featured">📜 Essays</button>
+    <button type="button" class="btn btn-sm btn-default" data-filter="til">💡 TIL</button>
+    <button type="button" class="btn btn-sm btn-default" data-filter="notes">📝 Notes</button>
+    <button type="button" class="btn btn-sm btn-default" data-filter="all">All</button>
+  </div>
+
+  {{/* Combined stream — featured essays are shown by default; TILs/notes hidden until filtered */}}
+  <ul style="padding-top: 4px;" id="content-stream">
+    {{ range ($allPages.ByPublishDate.Reverse) }}
+    {{ $section := .Section }}
+    {{ $isFeatured := and (eq $section "blog") (eq .Params.featured true) }}
+    <li class="list-entry stream-item"
+      data-section="{{ $section }}"
+      data-featured="{{ $isFeatured }}"
+      {{- if not $isFeatured }} style="display:none;"{{ end }}>
+
+      {{/* Section badge for non-essay content */}}
+      {{ if eq $section "til" }}
+        <span class="label label-warning" style="font-size:10px;vertical-align:middle;margin-right:4px;">TIL</span>
+      {{ else if eq $section "notes" }}
+        <span class="label label-success" style="font-size:10px;vertical-align:middle;margin-right:4px;">Note</span>
+      {{ end }}
+
+      <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+
+      {{ if eq $section "blog" }}
+        <p class="excerpt">{{ .Description }}</p>
+      {{ else }}
+        <p class="meta">{{ if not .Date.IsZero }}{{ .Date.Format .Site.Params.dateformat | upper }}{{ end }}</p>
+        {{ if .Description }}<p class="excerpt">{{ .Description }}</p>{{ end }}
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+
+  <div id="stream-empty-msg" style="display:none; color:#888; padding: 8px 0;">
+    Nothing here yet.
+  </div>
+
+  <a href="/blog/">Read all essays ➡️</a>
+  <br /><br /><br />
+
+  {{ partial "email-form.html" . }}
+  {{ partial "social.html" . }}
+  {{ partial "footer.html" . }}
+</div>
+
+<script>
+(function() {
+  var buttons = document.querySelectorAll('.stream-filters button');
+  var items = document.querySelectorAll('.stream-item');
+  var emptyMsg = document.getElementById('stream-empty-msg');
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = this.dataset.filter;
+
+      // Update active button
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      // Show/hide items
+      var visibleCount = 0;
+      items.forEach(function(item) {
+        var show;
+        if (filter === 'all') {
+          show = true;
+        } else if (filter === 'featured') {
+          // Default view: only featured essays
+          show = item.dataset.featured === 'true';
+        } else {
+          show = item.dataset.section === filter;
+        }
+        item.style.display = show ? '' : 'none';
+        if (show) visibleCount++;
+      });
+
+      // Show empty state if nothing matches
+      emptyMsg.style.display = visibleCount === 0 ? '' : 'none';
+    });
+  });
+})();
+</script>
