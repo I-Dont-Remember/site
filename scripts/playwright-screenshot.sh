@@ -13,17 +13,17 @@ OUTPUT="${2:-tmp/screenshot.png}"
 mkdir -p "$(dirname "$OUTPUT")"
 
 # Open browser and navigate in background (stays running until closed)
-npx playwright-cli open "$URL" &
+playwright-cli open "$URL" &
 OPEN_PID=$!
 
 # Give the browser a moment to initialize and navigate
 sleep 2
 
 # Take the screenshot
-npx playwright-cli screenshot --filename "$OUTPUT" --full-page
+playwright-cli screenshot --filename "$OUTPUT" --full-page
 
 # Close the browser session
-npx playwright-cli close 2>/dev/null || true
+playwright-cli close 2>/dev/null || true
 
 # Wait for open process to finish
 wait "$OPEN_PID" 2>/dev/null || true

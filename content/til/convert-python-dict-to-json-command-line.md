@@ -1,11 +1,7 @@
 +++
-categories = ["TIL"]
-date = 2022-01-20T05:00:00Z
-description = ""
-draft = false
-images = []
-tags = ["Python","CLI"]
 title = "Convert Python Dict to JSON on the Command Line With Sed"
+date = 2022-01-20T05:00:00Z
+tags = ["Python","CLI"]
 +++
 
 Plenty of times I've run into logging Python `dict` and needing to convert them to JSON for whatever reason. Have run into this across numerous projects and working with a variety of people who have stumbled into the same issue.

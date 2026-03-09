@@ -1,12 +1,8 @@
 +++
-categories = ["TIL"]
+title = "Python Parse RSS Feed With No Dependencies"
 date = 2022-02-03T05:00:00Z
 description = "Parsing RSS with Python standard library."
-draft = false
-images = []
 tags = ["Hugo", "rss", "python"]
-title = "Python Parse RSS Feed With No Dependencies"
-toc = false
 +++
 
 I recently wanted to parse an RSS feed as a part of a larger script. Luckily, that boils down to just working with regular-old XML. Despite the proliferation of great libraries like BeautifulSoup, whenever possible I try to stick to the standard library. Not that using Pipenv or another Python dependency tool is necessarily a ton of work, it just feels like excess overhead. Plus, it's just fun to explore libs I haven't had the pleasure of interacting with.
