@@ -1,13 +1,8 @@
 
-{{ $scratch := newScratch }}
-{{ range (where .Site.RegularPages "Type" "in" (slice "page" "blog")) }}
-{{ $scratch.Add "wordcount" .WordCount }}
-{{ end }}
-
 <footer class="row text-center footer">
   <hr />
   {{ with .Site.Params.extra }}
-  <p class="text-center copyright">{{ .copyright | markdownify }}. <a href="/wc/">📝{{ $scratch.Get "wordcount" | lang.FormatNumber 0 }} words.</a> <a href="{{ .Permalink }}/feed.xml">📶</a></p>
+  <p class="text-center copyright">{{ .copyright | markdownify }}. <a href="/wc/">📝{{ partial "wc.html" $ }} words.</a> <a href="{{ .Permalink }}/feed.xml">📶</a></p>
   {{ if ne .poweredby false }}
   <p class="text-center powered">Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/shenoybr/hugo-goa">Goa</a>.</p>
   {{ end }}

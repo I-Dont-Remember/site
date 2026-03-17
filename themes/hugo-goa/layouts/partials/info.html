@@ -6,11 +6,7 @@
   {{ with .Site.Params.description }}
   <h4 class="description">{{ . | markdownify }}</h4>
   {{ end }}
-  {{ $scratch := newScratch }}
-  {{ range (where .Site.RegularPages "Type" "in" (slice "page" "blog")) }}
-  {{ $scratch.Add "wordcount" .WordCount }}
-  {{ end }}
-  <a href="/wc/"><h4><em>📝{{ $scratch.Get "wordcount" | lang.FormatNumber 0 }} / 1,000,000 human words</em></h4></a>
+  <a href="/wc/"><h4><em>📝{{ partial "wc.html" . }} / 1,000,000 human words</em></h4></a>
   {{ with .Site.Params.description2 }}
   <h4 class="description2">{{ . | markdownify }}</h4>
   {{ end }}
