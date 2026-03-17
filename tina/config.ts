@@ -16,7 +16,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "static/uploads",
+      mediaRoot: "uploads",
       publicFolder: "static",
     },
   },
@@ -48,6 +48,69 @@ export default defineConfig({
         label: "Blog",
         name: "blog",
         path: "content/blog",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
+        match: {
+          include: "**/*",
+        },
+        fields: [
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body of Document",
+            description: "This is the markdown body",
+            isBody: true,
+          },
+          ...blog_postFields(),
+        ],
+      },
+      {
+        format: "md",
+        label: "Notes",
+        name: "notes",
+        path: "content/notes",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
+        match: {
+          include: "**/*",
+        },
+        fields: [
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body of Document",
+            description: "This is the markdown body",
+            isBody: true,
+          },
+          ...blog_postFields(),
+        ],
+      },
+      {
+        format: "md",
+        label: "TIL",
+        name: "til",
+        path: "content/til",
+        frontmatterFormat: "toml",
+        frontmatterDelimiters: "+++",
+        match: {
+          include: "**/*",
+        },
+        fields: [
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body of Document",
+            description: "This is the markdown body",
+            isBody: true,
+          },
+          ...blog_postFields(),
+        ],
+      },
+      {
+        format: "md",
+        label: "Recipes",
+        name: "recipes",
+        path: "content/recipes",
         frontmatterFormat: "toml",
         frontmatterDelimiters: "+++",
         match: {
