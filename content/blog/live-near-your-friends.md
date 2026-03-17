@@ -29,3 +29,9 @@ It sounds a bit silly, or like I'm not trying hard enough, if a 15 min journey i
 My current theory is by having friends next door, the friction to hang out drops to almost 0. You end up doing more  because you don't have to invest cognitive effort to coordinate schedules & plan a dinner/drinks/etc. Now, maybe i can push back on this mental effect and be intentional about trying to spontaneously invite people to do things, but I only have so much willpower. I'm human, I want the easy option when I can get it.
 
 In a way, the laziest thing you can do is all move next door. I'll see you soon!
+
+## Select Comments from the Peanut Gallery
+
+> _"Completely agree. 2 minutes and 15 minutes feel like they are so far apart. I think that holds true for more than even just hanging out with friends" - N.F._
+>
+> _"I wonder if having next door friend is even better than roommate friend in terms of hanging out more often? Because I hang with my roommates a lot but it's not usually actually doing something. Like I'm in the kitchen making dinner and they're 10 feet away watching Bluey. But if there's that tiny amount of friction of not living in the same unit it would maybe make hangouts more meaningful" - A.M._
