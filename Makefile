@@ -1,4 +1,4 @@
-.PHONY: build validate lint snapshot diff-snapshot clean setup serve serve-drafts tina screenshot pr-screenshots
+.PHONY: build validate lint lint-fix snapshot diff-snapshot clean setup serve serve-drafts tina screenshot pr-screenshots
 
 # Prefer local binaries: repo's hugo/ dir and node_modules/.bin take precedence over system PATH.
 # This lets make targets work without requiring mise or system-installed tools.
@@ -20,6 +20,13 @@ validate: clean build
 # Lint markdown content (uses .markdownlint.json config)
 lint:
 	npx markdownlint-cli "content/**/*.md"
+
+# Auto-fix markdown style issues on changed files only (run after editing in Tina, which uses different defaults)
+# Fixes: * bullets → -, * emphasis → _, and list indentation
+# Also used by git-hooks/pre-commit — see that file to activate it.
+lint-fix:
+	@changed=$$( ( git diff --name-only HEAD -- content/; git ls-files --others --exclude-standard -- content/ ) | grep '\.md$$'); \
+	if [ -z "$$changed" ]; then echo "No changed markdown files to fix."; else echo "$$changed" | xargs npx markdownlint-cli --fix; fi
 
 # Save a copy of the current build for later diffing.
 # Use before a risky change (library upgrade, CSS refactor), then run diff-snapshot after.

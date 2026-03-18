@@ -1,0 +1,14 @@
+#!/bin/sh
+# pre-commit hook: auto-fix markdown style on changed files.
+#
+# To activate, symlink this file into .git/hooks/:
+#   ln -s ../../git-hooks/pre-commit .git/hooks/pre-commit
+#
+# The symlink target is relative to .git/hooks/, so it works
+# regardless of where the repo is cloned.
+
+changed=$( ( git diff --name-only HEAD -- content/; git ls-files --others --exclude-standard -- content/ ) | grep '\.md$')
+if [ -n "$changed" ]; then
+  echo "$changed" | xargs npx markdownlint-cli --fix
+  echo "$changed" | xargs git add
+fi
