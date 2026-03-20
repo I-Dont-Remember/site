@@ -2,6 +2,8 @@
 
 This is a personal website built with the static site generator Hugo.
 
+Use `agent-docs/` as a reference, since it's meant for documenting specific knowledge useful for agents working in this repository.
+
 ## History of the repo
 
  It was originally started from a theme saved in `themes/hugo-goa/`, but over time this has morphed and been modified heavily, so I can't remember ever bothering to pull in updates from the original - and at this point, they might break more than they help.
