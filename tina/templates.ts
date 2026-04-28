@@ -7,6 +7,11 @@ export function blog_postFields() {
       label: "title",
     },
     {
+      type: "boolean",
+      name: "draft",
+      label: "draft",
+    },
+    {
       type: "datetime",
       name: "date",
       label: "date",

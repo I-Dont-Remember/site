@@ -14,11 +14,11 @@ Lo and behold, my habit of leaving VSCode (and the WSL2 VM) running alongside 30
 
 {{< bootstrap-table "table table-dark table-striped table-bordered" >}}
 
-|              | CPU | Mem  | Swap | Storage |
-|--------------|-----|------|------|---------|
-| Laptop       | 8   | 16GB | n/a  | 1TB     |
-| WSL2 (old)   | 🤬8  | 🤬8GB | 🤬2GB | n/a     |
-| ✨ WSL2 (new) | 5   | 5    | 4    | n/a     |
+|                | CPU   | Mem    | Swap   | Storage   |
+| -------------- | ----- | ------ | ------ | --------- |
+| Laptop         | 8     | 16GB   | n/a    | 1TB       |
+| WSL2 (old)     | 🤬8   | 🤬8GB  | 🤬2GB  | n/a       |
+| ✨ WSL2 (new)  | 5     | 5      | 4      | n/a       |
 
 {{< /bootstrap-table >}}
 

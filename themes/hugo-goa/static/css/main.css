@@ -356,3 +356,23 @@ h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
 visibility: visible;
 text-decoration: none;
 }
+
+/* Copy button for code blocks */
+pre.code-with-copy { position: relative; }
+.copy-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(0,0,0,0.3);
+  line-height: 0;
+  border-radius: 3px;
+  transition: color 0.15s;
+}
+.copy-btn:hover { color: rgba(0,0,0,0.75); }
+.copy-btn.copied { color: #2a7a3b; }
+.copy-btn.copied svg { display: none; }
+.copy-btn.copied::after { content: '✓'; font-size: 13px; line-height: 14px; display: block; }
