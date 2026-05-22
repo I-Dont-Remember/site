@@ -9,6 +9,6 @@
 
 changed=$(git diff --name-only --cached -- content/ | grep '\.md$')
 if [ -n "$changed" ]; then
-  echo "$changed" | xargs npx markdownlint-cli --fix
+  echo "$changed" | xargs npm run mdlint-fix -- 
   echo "$changed" | xargs git add
 fi

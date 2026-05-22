@@ -4,7 +4,8 @@
   "description": "original theme: [https://github.com/shenoybr/hugo-goa](https://github.com/shenoybr/hugo-goa)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mdlint-fix": "markdownlint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
     "@playwright/cli": "^0.1.1",
     "@tinacms/cli": "^1.5.8",
     "tinacms": "^1.5.1"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.48.0"
   }
 }
