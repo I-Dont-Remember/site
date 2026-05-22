@@ -1,7 +1,10 @@
 +++
 title = "Is it really my project if AI wrote it?"
 date = 2026-03-18T05:00:00.000Z
+description = "Sitting with the discomfort of using agentic engineering when it doesn't feel like 'real' work yet."
+categories = [ "AI" ]
 tags = [ "ai", "agentic-engineering" ]
+aliases = [ "/notes/is-it-really-my-project-if-ai/" ]
 +++
 
 I'm starting a new project, and I'm struggling with how much of it I should be writing by hand. I feel like a fraud if I use agentic engineering to develop it, but also that's where the world is going. I think I'm afraid that people will view me as one of the people who vibe-codes a project in a couple prompts and then claims the work as their own. Part of this is deciding to push past the fear of other people's opinions and just do it. I can choose to build this with care, while also learning the skills that seem to be the next abstraction layer for software engineers. I imagine it must have been pretty intimidating surrendering control to compilers and moving up the stack to higher level languages, so I can take some comfort that this dissonance is a feeling others have felt in the past & made it out the other side.

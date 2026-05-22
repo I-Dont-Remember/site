@@ -3,6 +3,8 @@ title = "My most recent iteration of todo-list system with TickTick"
 date = 2026-03-19T05:00:00.000Z
 tags = [ "productivity", "tick-tick", "todos" ]
 description = "A couple months back I realized my various attempts at finding a todo system that worked for me had once again left me with a steaming pile of crap. "
+categories = [ "Personal Development" ]
+aliases = [ "/notes/todo-system-mar-2026/" ]
 +++
 
 Over time I've tried many different styles of to-do systems and apps, most of which have ended in the slow realization that I was stressed & the my version of the system was a flaming pile of crap _(exhibit A:  the ["mountain of post-its" system](/blog/lack-of-system/))_.

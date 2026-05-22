@@ -1,5 +1,5 @@
 import { defineConfig } from "tinacms";
-import { blog_postFields } from "./templates";
+import { blog_postFields, stream_postFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
@@ -66,9 +66,9 @@ export default defineConfig({
       },
       {
         format: "md",
-        label: "Notes",
-        name: "notes",
-        path: "content/notes",
+        label: "Stream",
+        name: "stream",
+        path: "content/stream",
         frontmatterFormat: "toml",
         frontmatterDelimiters: "+++",
         match: {
@@ -82,7 +82,7 @@ export default defineConfig({
             description: "This is the markdown body",
             isBody: true,
           },
-          ...blog_postFields(),
+          ...stream_postFields(),
         ],
       },
       {

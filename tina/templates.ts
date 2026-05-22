@@ -1,4 +1,22 @@
 import type { TinaField } from "tinacms";
+export function stream_postFields(): TinaField[] {
+  return [
+    {
+      type: "datetime",
+      name: "date",
+      label: "date",
+    },
+    {
+      type: "string",
+      name: "tags",
+      label: "tags",
+      list: true,
+      ui: {
+        component: "tags",
+      },
+    },
+  ];
+}
 export function blog_postFields() {
   return [
     {
@@ -10,6 +28,16 @@ export function blog_postFields() {
       type: "boolean",
       name: "draft",
       label: "draft",
+    },
+    {
+      type: "boolean",
+      name: "featured",
+      label: "featured",
+    },
+    {
+      type: "boolean",
+      name: "toc",
+      label: "toc",
     },
     {
       type: "datetime",

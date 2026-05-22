@@ -1,0 +1,23 @@
+{{ $keyword := .File.ContentBaseName | replaceRE `^\d{4}-\d{2}-\d{2}-?` "" | replaceRE `[-_]` " " | title }}
+{{ .Scratch.Set "pageTitle" (printf "%s · %s" (.Date.Format "Jan 2, 2006") $keyword) }}
+{{ partial "header.html" . }}
+
+<div class="container">
+  <article>
+    <div class="content">
+      {{ .Content }}
+    </div>
+     <p class="meta">
+      {{ if not .Date.IsZero }}{{ .Date.Format .Site.Params.dateformat | upper }}{{ end }}
+      &nbsp;·&nbsp; {{ .WordCount }} words
+      &nbsp;·&nbsp; {{ $tags := .Params.tags }}{{ $n := len $tags }}{{ $last := sub $n 1 }}{{ range $i, $tag := sort $tags }}<a class="meta" href="/tags/{{ $tag | urlize }}/">#{{ $tag | upper }}</a>{{ if lt $i $last }}, {{ end }}{{ end }}
+    </p>
+    {{ if .Params.tags }}
+    <p class="meta">
+      <a href="/stream/">← All Stream Thoughts</a> 
+    </p>
+    {{ end }}
+  </article>
+
+  {{ partial "footer.html" . }}
+</div>

@@ -19,7 +19,7 @@
 {{ if .IsHome }}
 <title>{{ .Title }}</title>
 {{ else }}
-<title>{{ .Title }} | Kevin Quinn</title>
+<title>{{ with .Scratch.Get "pageTitle" }}{{ . }}{{ else }}{{ .Title }}{{ end }} | Kevin Quinn</title>
 {{ end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 
@@ -88,7 +88,7 @@
             {{ end }}
             <li><a href="/blog/">📜 Essays</a></li>
             <li><a href="/til/">💡 TIL</a></li>
-            <li><a href="/notes/">📝 Notes</a></li>
+            <li><a href="/stream/">🌊 Stream</a></li>
             <li><a href="/open-questions/">🤔 Open Questions</a></li>
             <li><a href="/no-speed-limits/">⏩ No Speed Limits</a></li>
           </ul>

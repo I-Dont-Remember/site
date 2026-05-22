@@ -10,7 +10,7 @@
   {{ $allEssays := where .Site.RegularPages "Section" "blog" }}
   {{ $featuredEssays := where $allEssays "Params.featured" true }}
   {{ $tils := where .Site.RegularPages "Section" "til" }}
-  {{ $notes := where .Site.RegularPages "Section" "notes" }}
+  {{ $notes := where .Site.RegularPages "Section" "stream" }}
   {{ $allPages := union (union $allEssays $tils) $notes }}
 
   {{/* Section counts */}}
@@ -20,7 +20,7 @@
       ⭐ My <a href="/blog/">Digital Garden</a>
       ({{ len $allEssays }} essays
       {{- if gt (len $tils) 0 }} &middot; {{ len $tils }} TILs{{ end }}
-      {{- if gt (len $notes) 0 }} &middot; {{ len $notes }} notes{{ end -}}
+      {{- if gt (len $notes) 0 }} &middot; {{ len $notes }} Streams {{ end -}}
       )
     </em>
   </h3>
@@ -29,11 +29,11 @@
   <div class="btn-group stream-filters" role="group" aria-label="Content filter" style="margin-bottom: 16px;">
     <button type="button" class="btn btn-sm btn-default active" data-filter="featured">📜 Essays</button>
     <button type="button" class="btn btn-sm btn-default" data-filter="til">💡 TIL</button>
-    <button type="button" class="btn btn-sm btn-default" data-filter="notes">📝 Notes</button>
+    <button type="button" class="btn btn-sm btn-default" data-filter="stream">🌊 Stream</button>
     <button type="button" class="btn btn-sm btn-default" data-filter="all">All</button>
   </div>
 
-  {{/* Combined stream — featured essays are shown by default; TILs/notes hidden until filtered */}}
+  {{/* Combined stream — featured essays are shown by default; TILs/Stream thoughts hidden until filtered */}}
   <ul style="padding-top: 4px;" id="content-stream">
     {{ range ($allPages.ByPublishDate.Reverse) }}
     {{ $section := .Section }}
@@ -46,11 +46,15 @@
       {{/* Section badge for non-essay content */}}
       {{ if eq $section "til" }}
         <span class="label label-warning" style="font-size:10px;vertical-align:middle;margin-right:4px;">TIL</span>
-      {{ else if eq $section "notes" }}
-        <span class="label label-success" style="font-size:10px;vertical-align:middle;margin-right:4px;">Note</span>
+      {{ else if eq $section "stream" }}
+        <span class="label label-success" style="font-size:10px;vertical-align:middle;margin-right:4px;">Stream</span>
       {{ end }}
 
+      {{ if eq $section "stream" }}
+      <a class="list-entry-link" href="{{ .Permalink }}">{{ .Plain | truncate 80 "…" }}</a>
+      {{ else }}
       <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
 
       {{ if eq $section "blog" }}
         <p class="excerpt">{{ .Description }}</p>
