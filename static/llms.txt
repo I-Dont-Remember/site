@@ -1,0 +1,29 @@
+# Kevin Quinn — kevinquinn.fun
+
+> Writer. Product-minded Software Engineer. Professional Dabbler. Usually confused.
+
+**Last updated:** 2026-05-22
+
+## About
+
+Kevin Quinn is a software engineer and writer. This site is where he thinks out loud —
+long-form essays, short takes, quick learnings, and the occasional recipe.
+
+He also co-hosts a podcast: [The Facade Project](https://facadeproject.com/).
+
+## What's here
+
+- **Blog** — main writing, mix of personal essays and tech opinions
+- **Stream** — short-form takes, closer to tweets than posts
+- **TIL** — quick "today I learned" technical notes
+- **Recipes** — small collection of things worth cooking again
+
+## Recent thinking (as of 2026-05-22)
+
+Lately Kevin has been writing a lot about AI and agentic engineering — specifically how
+to use AI agents effectively without losing ownership of the work (agent skills design,
+docs as a superpower with LLMs, security practices in Claude Code, trust and autonomy
+tradeoffs in agentic coding). Alongside that: a thread on productivity systems
+(TickTick, todo design), and more personal essays on living deliberately — staying
+close to friends geographically, disconnecting from frictionless convenience, and
+whether consuming ideas has crowded out producing them.
