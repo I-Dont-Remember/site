@@ -88,16 +88,14 @@ html { overflow-x: hidden; }
 .event-date {
   padding: 9px 14px;
   border-radius: 4px;
-  border-left: 4px solid transparent;
+  border-left: 4px solid #e5e7eb;
   margin-bottom: 5px;
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
   font-size: 1rem;
 }
 .event-date.past {
   opacity: .38;
   text-decoration: line-through;
+  border-left-color: transparent;
 }
 .event-date.next {
   background: #fef3c7;
@@ -106,12 +104,24 @@ html { overflow-x: hidden; }
   font-size: 1.1rem;
 }
 .event-date__note {
+  display: block;
+  margin-top: 3px;
   font-size: .85rem;
   color: #777;
   font-weight: normal;
   font-style: italic;
 }
 .event-date.next .event-date__note { color: #92400e; }
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .event-hero--emoji { padding: 24px 0 12px; }
+  .event-hero__emoji { font-size: 3rem; }
+  .event-hero--emoji .event-hero__title,
+  .event-hero--image .event-hero__title { font-size: 1.6rem; }
+  .event-content { padding: 18px 16px; margin: 12px 0 24px; }
+  .event-action-btn { padding: 10px 14px; min-height: 42px; }
+}
 
 /* ── Shared button base ── */
 .event-action-btn {

@@ -9,6 +9,16 @@ location = "Lincoln Park — near the chess pavilion"
 location_url = "https://maps.app.goo.gl/example"
 
 [[event_dates]]
+  date = "2026-05-05T22:00:00Z"
+  label = "Monday, May 5 · 5pm"
+[[event_dates]]
+  date = "2026-05-12T22:00:00Z"
+  label = "Monday, May 12 · 5pm"
+[[event_dates]]
+  date = "2026-05-19T22:00:00Z"
+  label = "Monday, May 19 · 5pm"
+  note = "Moved to the south meadow — shorter walk from the bus"
+[[event_dates]]
   date = "2026-06-02T22:00:00Z"
   label = "Monday, June 2 · 5pm"
 [[event_dates]]
