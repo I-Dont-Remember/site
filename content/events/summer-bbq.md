@@ -11,7 +11,6 @@ location = "123 Example Street"
 [[event_dates]]
   date = "2026-07-12T21:00:00Z"
   duration_hours = 4
-  note = "Runs until 8 pm"
 
 [build]
   list = "local"

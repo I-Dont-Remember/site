@@ -188,7 +188,7 @@ html { overflow-x: hidden; }
         <h2>Dates</h2>
         <ul class="event-dates__list">
           {{ range . }}
-          <li class="event-date" data-date="{{ .date }}" data-duration="{{ .duration_hours | default 2 }}">
+          <li class="event-date" data-date="{{ .date }}"{{ with .duration_hours }} data-duration="{{ . }}"{{ end }}>
             <span class="event-date__label"></span>
             {{ with .note }}<span class="event-date__note">{{ . }}</span>{{ end }}
           </li>
@@ -222,17 +222,22 @@ html { overflow-x: hidden; }
     return new Intl.DateTimeFormat('en-US', opts).format(d).replace(/ /g, ' ').toLowerCase();
   }
 
-  function fmtLabel(d) {
+  function fmtLabel(d, duration) {
     var datePart = new Intl.DateTimeFormat('en-US', {
       timeZone: tz, weekday: 'long', month: 'long', day: 'numeric'
     }).format(d);
-    return datePart + ' · ' + fmtTime(d);
+    var timeStr = fmtTime(d);
+    if (duration) {
+      timeStr += ' – ' + fmtTime(new Date(d.getTime() + duration * 60 * 60 * 1000));
+    }
+    return datePart + ' · ' + timeStr;
   }
 
   items.forEach(function (el) {
     var d = new Date(el.dataset.date);
+    var duration = el.dataset.duration ? parseFloat(el.dataset.duration) : null;
     var lbl = el.querySelector('.event-date__label');
-    if (lbl) lbl.textContent = fmtLabel(d);
+    if (lbl) lbl.textContent = fmtLabel(d, duration);
     if (d < now) {
       el.classList.add('past');
     } else if (!nextItem) {
@@ -253,7 +258,7 @@ html { overflow-x: hidden; }
   btn.addEventListener('click', function () {
     var meta = { title: btn.dataset.title, location: btn.dataset.location, slug: btn.dataset.slug };
     var d = new Date(nextItem.dataset.date);
-    var duration = parseFloat(nextItem.dataset.duration) || 2;
+    var duration = nextItem.dataset.duration ? parseFloat(nextItem.dataset.duration) : 2;
     var fmt = function (dt) {
       return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
     };
