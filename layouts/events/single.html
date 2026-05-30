@@ -6,6 +6,7 @@
   background-image: radial-gradient(circle, rgba(0,0,0,.06) 1px, transparent 1px);
   background-size: 20px 20px;
   min-height: 60vh;
+  overflow-x: hidden;
 }
 
 /* ── Hero: emoji ── */
@@ -143,7 +144,7 @@
   <div class="container">
     <article class="event-content">
 
-      {{ with .Params.location }}<p class="event-location">📍 {{ . }}</p>{{ end }}
+      {{ with .Params.location }}<p class="event-location">📍 {{ if $.Params.location_url }}<a href="{{ $.Params.location_url }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}{{ . }}{{ end }}</p>{{ end }}
 
       {{ with .Content }}<div class="event-body">{{ . }}</div>{{ end }}
 
@@ -201,21 +202,34 @@
     var fmt = function (dt) {
       return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
     };
+    // Escape text values per RFC 5545: \ ; , and newlines
+    var esc = function (s) {
+      return (s || '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
+    };
+    // Fold lines longer than 75 octets (RFC 5545 §3.1)
+    var fold = function (line) {
+      if (line.length <= 75) return line;
+      var out = '';
+      while (line.length > 75) { out += line.slice(0, 75) + '\r\n '; line = line.slice(75); }
+      return out + line;
+    };
     var end = new Date(d.getTime() + 2 * 60 * 60 * 1000);
     var lines = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
       'PRODID:-//kevinquinn.fun//events//EN',
       'BEGIN:VEVENT',
+      'UID:' + fmt(d) + '-' + meta.slug + '@kevinquinn.fun',
+      'DTSTAMP:' + fmt(new Date()),
       'DTSTART:' + fmt(d),
       'DTEND:' + fmt(end),
-      'SUMMARY:' + meta.title,
-      'LOCATION:' + meta.location,
-      'URL:' + window.location.href,
+      'SUMMARY:' + esc(meta.title),
+      'LOCATION:' + esc(meta.location),
+      'URL:' + window.location.origin + window.location.pathname,
       'END:VEVENT',
       'END:VCALENDAR'
     ];
-    var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar' });
+    var blob = new Blob([lines.map(fold).join('\r\n')], { type: 'text/calendar' });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;

@@ -6,6 +6,7 @@ noindex = true
 event_key = "park-sit-m2k9"
 emoji = "🌳☀️🧺"
 location = "Lincoln Park — near the chess pavilion"
+location_url = "https://maps.app.goo.gl/example"
 
 [[event_dates]]
   date = "2026-06-02T22:00:00Z"

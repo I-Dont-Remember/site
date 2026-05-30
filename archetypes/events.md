@@ -6,6 +6,7 @@ noindex = true
 event_key = "REPLACE_ME"
 emoji = "🎉"
 location = "TBD"
+# location_url = "https://maps.app.goo.gl/..."
 
 [[event_dates]]
   date = "2006-01-02T19:00:00Z"
