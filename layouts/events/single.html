@@ -158,7 +158,10 @@
           </li>
           {{ end }}
         </ul>
-        <button class="event-cal-btn" id="add-to-cal">📅 Add next date to calendar</button>
+        <button class="event-cal-btn" id="add-to-cal"
+          data-title="{{ $.Title }}"
+          data-location="{{ $.Params.location | default "" }}"
+          data-slug="{{ $.File.ContentBaseName }}">📅 Add next date to calendar</button>
       </section>
       {{ end }}
 
@@ -166,10 +169,6 @@
   </div>
 
 </div>
-
-<script id="event-meta" type="application/json">
-{"title":{{ .Title | jsonify }},"location":{{ .Params.location | default "" | jsonify }},"slug":{{ .Slug | jsonify }}}
-</script>
 
 <script>
 (function () {
@@ -197,7 +196,7 @@
   }
 
   btn.addEventListener('click', function () {
-    var meta = JSON.parse(document.getElementById('event-meta').textContent);
+    var meta = { title: btn.dataset.title, location: btn.dataset.location, slug: btn.dataset.slug };
     var d = new Date(nextItem.dataset.date);
     var fmt = function (dt) {
       return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
