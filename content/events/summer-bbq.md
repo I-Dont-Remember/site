@@ -12,8 +12,11 @@ location = "123 Example Street"
   label = "Saturday, July 12 · 4pm–8pm"
 
 [build]
-  list = "never"
+  list = "local"
   render = "always"
+
+[sitemap]
+  disable = true
 +++
 
 Come hang out for food, drinks, and good vibes in the backyard.

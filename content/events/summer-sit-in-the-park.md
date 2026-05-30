@@ -29,8 +29,11 @@ location = "Lincoln Park — near the chess pavilion"
   label = "Monday, August 18 · 5pm"
 
 [build]
-  list = "never"
+  list = "local"
   render = "always"
+
+[sitemap]
+  disable = true
 +++
 
 Bring whatever you want — a blanket, snacks, a book. Show up anytime after 5, stay as long as you like.

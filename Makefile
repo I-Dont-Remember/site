@@ -1,4 +1,4 @@
-.PHONY: build validate lint lint-fix snapshot diff-snapshot clean setup serve serve-drafts tina screenshot pr-screenshots
+.PHONY: build validate lint lint-fix snapshot diff-snapshot clean setup serve serve-drafts tina screenshot pr-screenshots list-events
 
 # Prefer local binaries: repo's hugo/ dir and node_modules/.bin take precedence over system PATH.
 # This lets make targets work without requiring mise or system-installed tools.
@@ -62,6 +62,17 @@ screenshot:
 # Take homepage + a blog post screenshot for PR descriptions.
 # Requires 'make serve' running in another terminal.
 # Blog post URL can be overridden: make pr-screenshots POST=http://localhost:1313/blog/your-post/
+# Print all event page URLs with their hash keys for local dev access
+list-events:
+	@echo ""
+	@find content/events -name "*.md" ! -name "_index.md" | sort | while read f; do \
+		title=$$(grep '^title' "$$f" | sed 's/title = "\(.*\)"/\1/'); \
+		key=$$(grep '^event_key' "$$f" | sed 's/event_key = "\(.*\)"/\1/'); \
+		slug=$$(basename "$$f" .md); \
+		printf "  %-32s http://localhost:1313/events/%s/#%s\n" "$$title" "$$slug" "$$key"; \
+	done
+	@echo ""
+
 pr-screenshots:
 	mise exec -- bash scripts/playwright-screenshot.sh "http://localhost:1313" "tmp/pr-homepage.png"
 	mise exec -- bash scripts/playwright-screenshot.sh "$(or $(POST),http://localhost:1313/blog/)" "tmp/pr-blog.png"

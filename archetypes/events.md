@@ -12,8 +12,11 @@ location = "TBD"
   label = "Day, Month D · Hpm"
 
 [build]
-  list = "never"
+  list = "local"
   render = "always"
+
+[sitemap]
+  disable = true
 +++
 
 Event details go here.

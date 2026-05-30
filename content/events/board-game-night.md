@@ -12,8 +12,11 @@ location = "456 Example Ave, Apt 3B"
   label = "Friday, June 20 · 7pm"
 
 [build]
-  list = "never"
+  list = "local"
   render = "always"
+
+[sitemap]
+  disable = true
 +++
 
 Monthly board game night is back. We'll have a few options but feel free to bring your favorites.
