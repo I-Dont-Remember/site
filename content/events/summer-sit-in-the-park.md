@@ -5,39 +5,31 @@ draft = false
 noindex = true
 event_key = "park-sit-m2k9"
 emoji = "🌳☀️🧺"
+timezone = "America/Chicago"
 location = "Lincoln Park — near the chess pavilion"
 location_url = "https://maps.app.goo.gl/example"
 
 [[event_dates]]
   date = "2026-05-05T22:00:00Z"
-  label = "Monday, May 5 · 5pm"
 [[event_dates]]
   date = "2026-05-12T22:00:00Z"
-  label = "Monday, May 12 · 5pm"
 [[event_dates]]
   date = "2026-05-19T22:00:00Z"
-  label = "Monday, May 19 · 5pm"
   note = "Moved to the south meadow — shorter walk from the bus"
 [[event_dates]]
   date = "2026-06-02T22:00:00Z"
-  label = "Monday, June 2 · 5pm"
 [[event_dates]]
   date = "2026-06-16T22:00:00Z"
-  label = "Monday, June 16 · 5pm"
 [[event_dates]]
   date = "2026-07-07T22:00:00Z"
-  label = "Monday, July 7 · 5pm"
   note = "Might be at the south meadow instead — check back"
 [[event_dates]]
   date = "2026-07-21T22:00:00Z"
-  label = "Monday, July 21 · 5pm"
 [[event_dates]]
   date = "2026-08-04T22:00:00Z"
-  label = "Tuesday, August 4 · 5pm"
   note = "Tuesday this week — Monday is a holiday"
 [[event_dates]]
   date = "2026-08-18T22:00:00Z"
-  label = "Monday, August 18 · 5pm"
 
 [build]
   list = "local"

@@ -153,7 +153,7 @@ html { overflow-x: hidden; }
 .event-cal-btn { /* inherits .event-action-btn */ }
 </style>
 
-<div class="event-page">
+<div class="event-page" data-tz="{{ .Params.timezone | default "America/Chicago" }}">
 
   {{ if .Params.cover_image }}
   <div class="event-hero event-hero--image" style="background-image:url('{{ .Params.cover_image }}')">
@@ -188,8 +188,8 @@ html { overflow-x: hidden; }
         <h2>Dates</h2>
         <ul class="event-dates__list">
           {{ range . }}
-          <li class="event-date" data-date="{{ .date }}">
-            <span class="event-date__label">{{ .label }}</span>
+          <li class="event-date" data-date="{{ .date }}" data-duration="{{ .duration_hours | default 2 }}">
+            <span class="event-date__label"></span>
             {{ with .note }}<span class="event-date__note">{{ . }}</span>{{ end }}
           </li>
           {{ end }}
@@ -208,12 +208,31 @@ html { overflow-x: hidden; }
 
 <script>
 (function () {
+  var pageEl = document.querySelector('.event-page');
+  var tz = (pageEl && pageEl.dataset.tz) || 'America/Chicago';
   var now = new Date();
   var items = document.querySelectorAll('.event-date');
   var nextItem = null;
 
+  function fmtTime(d) {
+    var m = +new Intl.DateTimeFormat('en-US', { timeZone: tz, minute: 'numeric' }).format(d);
+    var opts = { timeZone: tz, hour: 'numeric', hour12: true };
+    if (m) opts.minute = '2-digit';
+    //   is the narrow no-break space some engines emit before AM/PM
+    return new Intl.DateTimeFormat('en-US', opts).format(d).replace(/ /g, ' ').toLowerCase();
+  }
+
+  function fmtLabel(d) {
+    var datePart = new Intl.DateTimeFormat('en-US', {
+      timeZone: tz, weekday: 'long', month: 'long', day: 'numeric'
+    }).format(d);
+    return datePart + ' · ' + fmtTime(d);
+  }
+
   items.forEach(function (el) {
     var d = new Date(el.dataset.date);
+    var lbl = el.querySelector('.event-date__label');
+    if (lbl) lbl.textContent = fmtLabel(d);
     if (d < now) {
       el.classList.add('past');
     } else if (!nextItem) {
@@ -234,6 +253,7 @@ html { overflow-x: hidden; }
   btn.addEventListener('click', function () {
     var meta = { title: btn.dataset.title, location: btn.dataset.location, slug: btn.dataset.slug };
     var d = new Date(nextItem.dataset.date);
+    var duration = parseFloat(nextItem.dataset.duration) || 2;
     var fmt = function (dt) {
       return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
     };
@@ -248,7 +268,7 @@ html { overflow-x: hidden; }
       while (line.length > 75) { out += line.slice(0, 75) + '\r\n '; line = line.slice(75); }
       return out + line;
     };
-    var end = new Date(d.getTime() + 2 * 60 * 60 * 1000);
+    var end = new Date(d.getTime() + duration * 60 * 60 * 1000);
     var lines = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
@@ -272,6 +292,7 @@ html { overflow-x: hidden; }
     a.click();
     URL.revokeObjectURL(url);
   });
+
   var shareBtn = document.getElementById('share-btn');
   if (shareBtn) {
     shareBtn.addEventListener('click', function () {

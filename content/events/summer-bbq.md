@@ -5,11 +5,13 @@ draft = false
 noindex = true
 event_key = "bbq-r7x2"
 emoji = "🍖🔥"
+timezone = "America/Chicago"
 location = "123 Example Street"
 
 [[event_dates]]
   date = "2026-07-12T21:00:00Z"
-  label = "Saturday, July 12 · 4pm–8pm"
+  duration_hours = 4
+  note = "Runs until 8 pm"
 
 [build]
   list = "local"

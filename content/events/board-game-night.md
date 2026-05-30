@@ -5,11 +5,11 @@ draft = false
 noindex = true
 event_key = "games-k9m3"
 emoji = "🎲🎮"
+timezone = "America/Chicago"
 location = "456 Example Ave, Apt 3B"
 
 [[event_dates]]
-  date = "2026-06-20T00:00:00Z"
-  label = "Friday, June 20 · 7pm"
+  date = "2026-06-21T00:00:00Z"
 
 [build]
   list = "local"
