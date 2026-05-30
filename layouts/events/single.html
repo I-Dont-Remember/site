@@ -4,6 +4,13 @@
 <style>
 html { overflow-x: hidden; }
 
+/* main.css sets overflow:auto on .container for float-clearing in the
+   Bootstrap 3 grid. The event hero has no floats, so override to avoid
+   a spurious scrollbar when hero content approaches the container width. */
+.event-hero .container {
+  overflow: visible;
+}
+
 .event-page {
   background-image: radial-gradient(circle, rgba(0,0,0,.06) 1px, transparent 1px);
   background-size: 20px 20px;
