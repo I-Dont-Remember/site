@@ -104,8 +104,8 @@
 }
 .event-date.next .event-date__note { color: #92400e; }
 
-/* ── Add-to-calendar button ── */
-.event-cal-btn {
+/* ── Shared button base ── */
+.event-action-btn {
   background: transparent;
   border: 1.5px solid #bbb;
   border-radius: 4px;
@@ -114,14 +114,24 @@
   cursor: pointer;
   transition: border-color .15s, background .15s;
 }
-.event-cal-btn:hover:not(:disabled) {
+.event-action-btn:hover:not(:disabled) {
   border-color: #555;
   background: rgba(0,0,0,.04);
 }
-.event-cal-btn:disabled {
+.event-action-btn:disabled {
   opacity: .5;
   cursor: default;
 }
+
+/* ── Share button ── */
+.event-share {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+/* ── Add-to-calendar button ── */
+.event-cal-btn { /* inherits .event-action-btn */ }
 </style>
 
 <div class="event-page">
@@ -144,6 +154,12 @@
   <div class="container">
     <article class="event-content">
 
+      <div class="event-share">
+        <button class="event-action-btn" id="share-btn"
+          data-title="{{ .Title }}"
+          data-location="{{ .Params.location | default "" }}">📤 Share link</button>
+      </div>
+
       {{ with .Params.location }}<p class="event-location">📍 {{ if $.Params.location_url }}<a href="{{ $.Params.location_url }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}{{ . }}{{ end }}</p>{{ end }}
 
       {{ with .Content }}<div class="event-body">{{ . }}</div>{{ end }}
@@ -159,7 +175,7 @@
           </li>
           {{ end }}
         </ul>
-        <button class="event-cal-btn" id="add-to-cal"
+        <button class="event-action-btn event-cal-btn" id="add-to-cal"
           data-title="{{ $.Title }}"
           data-location="{{ $.Params.location | default "" }}"
           data-slug="{{ $.File.ContentBaseName }}">📅 Add next date to calendar</button>
@@ -237,6 +253,31 @@
     a.click();
     URL.revokeObjectURL(url);
   });
+  var shareBtn = document.getElementById('share-btn');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', function () {
+      var url = window.location.href;
+      var title = shareBtn.dataset.title;
+      var location = shareBtn.dataset.location;
+      var nextLabel = nextItem ? nextItem.querySelector('.event-date__label').textContent.trim() : '';
+      var parts = [title];
+      if (nextLabel) parts.push(nextLabel);
+      if (location) parts.push(location);
+      var text = parts.join(' · ');
+
+      if (navigator.share) {
+        navigator.share({ title: title, text: text, url: url });
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function () {
+          var orig = shareBtn.textContent;
+          shareBtn.textContent = '✓ Copied!';
+          setTimeout(function () { shareBtn.textContent = orig; }, 2000);
+        });
+      } else {
+        window.prompt('Copy this link:', url);
+      }
+    });
+  }
 }());
 </script>
 
