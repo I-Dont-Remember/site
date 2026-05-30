@@ -149,8 +149,17 @@ html { overflow-x: hidden; }
   margin-bottom: 16px;
 }
 
-/* ── Add-to-calendar button ── */
-.event-cal-btn { /* inherits .event-action-btn */ }
+/* ── Calendar action buttons ── */
+.event-cal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+a.event-action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
 </style>
 
 <div class="event-page" data-tz="{{ .Params.timezone | default "America/Chicago" }}">
@@ -194,10 +203,13 @@ html { overflow-x: hidden; }
           </li>
           {{ end }}
         </ul>
-        <button class="event-action-btn event-cal-btn" id="add-to-cal"
-          data-title="{{ $.Title }}"
-          data-location="{{ $.Params.location | default "" }}"
-          data-slug="{{ $.File.ContentBaseName }}">📅 Add next date to calendar</button>
+        <div class="event-cal-actions">
+          <a class="event-action-btn" id="add-to-gcal" href="#" target="_blank" rel="noopener noreferrer">📅 Google Calendar</a>
+          <button class="event-action-btn" id="add-to-cal"
+            data-title="{{ $.Title }}"
+            data-location="{{ $.Params.location | default "" }}"
+            data-slug="{{ $.File.ContentBaseName }}">📥 Download .ics</button>
+        </div>
       </section>
       {{ end }}
 
@@ -218,8 +230,8 @@ html { overflow-x: hidden; }
     var m = +new Intl.DateTimeFormat('en-US', { timeZone: tz, minute: 'numeric' }).format(d);
     var opts = { timeZone: tz, hour: 'numeric', hour12: true };
     if (m) opts.minute = '2-digit';
-    //   is the narrow no-break space some engines emit before AM/PM
-    return new Intl.DateTimeFormat('en-US', opts).format(d).replace(/ /g, ' ').toLowerCase();
+    // \u202f is the narrow no-break space some engines emit before AM/PM
+    return new Intl.DateTimeFormat('en-US', opts).format(d).replace(/\u202f/g, ' ').toLowerCase();
   }
 
   function fmtLabel(d, duration) {
@@ -246,22 +258,34 @@ html { overflow-x: hidden; }
     }
   });
 
-  var btn = document.getElementById('add-to-cal');
-  if (!btn) return;
+  var calBtn = document.getElementById('add-to-cal');
+  var gcalLink = document.getElementById('add-to-gcal');
+  if (!calBtn) return;
 
   if (!nextItem) {
-    btn.textContent = '(all dates have passed)';
-    btn.disabled = true;
+    calBtn.textContent = '(all dates have passed)';
+    calBtn.disabled = true;
+    if (gcalLink) gcalLink.style.display = 'none';
     return;
   }
 
-  btn.addEventListener('click', function () {
-    var meta = { title: btn.dataset.title, location: btn.dataset.location, slug: btn.dataset.slug };
-    var d = new Date(nextItem.dataset.date);
-    var duration = nextItem.dataset.duration ? parseFloat(nextItem.dataset.duration) : 2;
-    var fmt = function (dt) {
-      return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    };
+  // Shared by both Google Calendar link and ICS download
+  var calStart = new Date(nextItem.dataset.date);
+  var calDuration = nextItem.dataset.duration ? parseFloat(nextItem.dataset.duration) : 2;
+  var calEnd = new Date(calStart.getTime() + calDuration * 60 * 60 * 1000);
+  var fmtUtc = function (dt) {
+    return dt.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+  };
+
+  if (gcalLink) {
+    gcalLink.href = 'https://calendar.google.com/calendar/render?action=TEMPLATE' +
+      '&text=' + encodeURIComponent(calBtn.dataset.title) +
+      '&dates=' + fmtUtc(calStart) + '/' + fmtUtc(calEnd) +
+      '&location=' + encodeURIComponent(calBtn.dataset.location) +
+      '&details=' + encodeURIComponent(window.location.origin + window.location.pathname);
+  }
+
+  calBtn.addEventListener('click', function () {
     // Escape text values per RFC 5545: \ ; , and newlines
     var esc = function (s) {
       return (s || '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
@@ -273,18 +297,17 @@ html { overflow-x: hidden; }
       while (line.length > 75) { out += line.slice(0, 75) + '\r\n '; line = line.slice(75); }
       return out + line;
     };
-    var end = new Date(d.getTime() + duration * 60 * 60 * 1000);
     var lines = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
       'PRODID:-//kevinquinn.fun//events//EN',
       'BEGIN:VEVENT',
-      'UID:' + fmt(d) + '-' + meta.slug + '@kevinquinn.fun',
-      'DTSTAMP:' + fmt(new Date()),
-      'DTSTART:' + fmt(d),
-      'DTEND:' + fmt(end),
-      'SUMMARY:' + esc(meta.title),
-      'LOCATION:' + esc(meta.location),
+      'UID:' + fmtUtc(calStart) + '-' + calBtn.dataset.slug + '@kevinquinn.fun',
+      'DTSTAMP:' + fmtUtc(new Date()),
+      'DTSTART:' + fmtUtc(calStart),
+      'DTEND:' + fmtUtc(calEnd),
+      'SUMMARY:' + esc(calBtn.dataset.title),
+      'LOCATION:' + esc(calBtn.dataset.location),
       'URL:' + window.location.origin + window.location.pathname,
       'END:VEVENT',
       'END:VCALENDAR'
@@ -293,7 +316,7 @@ html { overflow-x: hidden; }
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;
-    a.download = meta.slug + '.ics';
+    a.download = calBtn.dataset.slug + '.ics';
     a.click();
     URL.revokeObjectURL(url);
   });
@@ -303,11 +326,11 @@ html { overflow-x: hidden; }
     shareBtn.addEventListener('click', function () {
       var url = window.location.href;
       var title = shareBtn.dataset.title;
-      var location = shareBtn.dataset.location;
+      var eventLocation = shareBtn.dataset.location;
       var nextLabel = nextItem ? nextItem.querySelector('.event-date__label').textContent.trim() : '';
       var parts = [title];
       if (nextLabel) parts.push(nextLabel);
-      if (location) parts.push(location);
+      if (eventLocation) parts.push(eventLocation);
       var text = parts.join(' · ');
 
       if (navigator.share) {

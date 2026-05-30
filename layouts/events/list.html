@@ -8,7 +8,7 @@
     {{ range .Pages }}
     <li style="margin-bottom: 1.4rem">
       <a href="{{ .Permalink }}#{{ .Params.event_key }}" style="font-size: 1.1rem; font-weight: 600">{{ .Title }}</a>
-      {{ with .Params.event_dates }}{{ with index . 0 }}<span style="color: #888; margin-left: .5rem; font-size: .9rem">{{ .label }}</span>{{ end }}{{ end }}
+      {{ with .Params.event_dates }}{{ with index . 0 }}<span style="color: #888; margin-left: .5rem; font-size: .9rem">{{ with (time .date) }}{{ dateFormat "Jan 2" . }}{{ end }}</span>{{ end }}{{ end }}
       <br>
       <code style="color: #bbb; font-size: .8rem; user-select: all">{{ .RelPermalink }}#{{ .Params.event_key }}</code>
     </li>

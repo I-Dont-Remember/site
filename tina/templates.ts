@@ -27,6 +27,7 @@ export function event_postFields(): TinaField[] {
       name: "event_key",
       label: "Event Key",
       description: "Secret key guests need in the URL hash to view this page",
+      required: true,
     },
     {
       type: "string",
@@ -63,7 +64,7 @@ export function event_postFields(): TinaField[] {
       label: "Dates",
       list: true,
       ui: {
-        itemProps: (item) => ({ label: item?.label || "New date" }),
+        itemProps: (item) => ({ label: item?.date ? item.date.substring(0, 10) : 'New date' }),
       },
       fields: [
         {
