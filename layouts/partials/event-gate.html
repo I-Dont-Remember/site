@@ -1,0 +1,10 @@
+{{ with .Params.event_key }}
+<script>
+(function() {
+  var key = {{ . | jsonify | safeJS }};
+  if (window.location.hash.slice(1) !== key) {
+    window.location.replace('/');
+  }
+})();
+</script>
+{{ end }}

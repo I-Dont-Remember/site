@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "event-gate.html" . }}
+
+<div class="container">
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.event_date }}
+    <p class="meta">{{ . }}</p>
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </article>
+
+  {{ partial "footer.html" . }}
+</div>
