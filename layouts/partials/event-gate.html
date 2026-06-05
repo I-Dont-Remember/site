@@ -3,7 +3,7 @@
 (function() {
   var key = {{ . | jsonify | safeJS }};
   if (window.location.hash.slice(1) !== key) {
-    window.location.replace('/');
+    window.location.replace('/404');
   }
 })();
 </script>
