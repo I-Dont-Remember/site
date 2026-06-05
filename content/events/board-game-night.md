@@ -1,7 +1,7 @@
 +++
 title = "Board Game Night"
 date = 2026-05-29T12:00:00Z
-draft = false
+draft = true
 noindex = true
 event_key = "games-k9m3"
 emoji = "🎲🎮"

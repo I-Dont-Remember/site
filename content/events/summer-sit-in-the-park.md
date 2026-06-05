@@ -3,34 +3,31 @@ title = "Summer Sit in the Park"
 date = 2026-05-29T12:00:00Z
 draft = false
 noindex = true
-event_key = "park-sit-m2k9"
+event_key = "ssitp"
 emoji = "🌳☀️🧺"
 timezone = "America/Chicago"
-location = "Lincoln Park — near the chess pavilion"
-location_url = "https://maps.app.goo.gl/example"
+location = "Lincoln Park — near the Hamilton statue"
+location_url = "https://maps.app.goo.gl/QHTyKNUjzrtCyAm36"
 
 [[event_dates]]
-  date = "2026-05-05T22:00:00Z"
+  date = "2026-06-04T23:00:00Z"
+  duration_hours = 2.5
+  note = "test one solo, no you didn't miss it"
 [[event_dates]]
-  date = "2026-05-12T22:00:00Z"
+  date = "2026-06-08T23:00:00Z"
+  note = "until sunset"
 [[event_dates]]
-  date = "2026-05-19T22:00:00Z"
-  note = "Moved to the south meadow — shorter walk from the bus"
+  date = "2026-06-15T23:00:00Z"
+  note = "⚠️ tentative"
 [[event_dates]]
-  date = "2026-06-02T22:00:00Z"
+  date = "2026-06-22T23:00:00Z"
+  note = "⚠️ tentative"
 [[event_dates]]
-  date = "2026-06-16T22:00:00Z"
+  date = "2026-06-29T23:00:00Z"
+  note = "⚠️ tentative"
 [[event_dates]]
-  date = "2026-07-07T22:00:00Z"
-  note = "Might be at the south meadow instead — check back"
-[[event_dates]]
-  date = "2026-07-21T22:00:00Z"
-[[event_dates]]
-  date = "2026-08-04T22:00:00Z"
-  note = "Tuesday this week — Monday is a holiday"
-[[event_dates]]
-  date = "2026-08-18T22:00:00Z"
-
+  date = "2026-09-14T23:00:00Z"
+  note = "⚠️ tentative"
 [build]
   list = "local"
   render = "always"
@@ -39,6 +36,57 @@ location_url = "https://maps.app.goo.gl/example"
   disable = true
 +++
 
-Bring whatever you want — a blanket, snacks, a book. Show up anytime after 5, stay as long as you like.
+I don't spend enough time outside appreciating that it's **NOT WINTER**, so we should sit outside all together.
 
-No RSVP needed. If it rains I'll add a note here.
+## TL;DR
+
+Come sit in the park with me, aiming for Mon's all summer _(See the schedule)_
+
+- No RSVPs, just show up, or don't
+- Bring: a chair or blanket to sit on. I'll have one or two extra.
+- Food: eat before, or bring food from local restaurant
+- Dogs: totally welcome, there's many others nearby.
+
+## Ok but what is this?
+
+A mobile `Third Space`, if you will.
+
+As long as it isn't raining, I plan to sit outside in the park throughout the summer on a regular basis. Anyone is welcome to come join, whether we have 0 or 20 people show up.
+
+No need to RSVP, if you can make it just show up. If not, hopefully the next one!
+
+## What will we do?
+
+Great question.  You can:
+
+- Eat dinner
+- Work on "Life Admin" type chores
+- Read a book
+- Chat
+- People/dog watch
+- Whatever the heck you want, this is a shared third space
+
+Dogs are welcome, there's even a field people treat as a dog park right next to it.
+
+## 📅 When does this happen?
+
+Timing: **roughly `6pm` - `sunset`🌇 _(around 830pm much of the summer)_**
+
+- You're welcome to arrive early or leave later, this is a shared space and I'm not your mommy.
+
+Dates: **June - early Sept**
+
+- I'll keep the schedule on this invite updated as best I can, but aiming for Monday's until roughly 9/14 when the daylight finally dips below 7pm.
+
+## 🍽️ I'm HUNGRY
+
+You're welcome to bring food, we also live near a ton of really nice restaurants. Tenzin & I highly recommend:
+
+- Del Seoul (literally anything on the menu, it all rocks)
+- Sultan's Market (Get yourself a filling pita sandwich)
+- Kala (hyped up Greek food)
+- ...many more all within a 5 min walk
+
+## Questions?
+
+Text me! Don't be a stranger :D

@@ -77,7 +77,7 @@ html { overflow-x: hidden; }
 
 /* ── Dates list ── */
 .event-dates { margin-top: 28px; }
-.event-dates h2 { font-size: 1.2rem; margin-bottom: 12px; }
+/* .event-dates h2 { font-size: 1.2rem; margin-bottom: 12px; } */
 
 .event-dates__list {
   list-style: none;
@@ -183,9 +183,10 @@ html { overflow-x: hidden; }
 
       {{ with .Content }}<div class="event-body">{{ . }}</div>{{ end }}
 
-      {{ with .Params.event_dates }}
+         {{ with .Params.event_dates }}
+      <hr />
       <section class="event-dates">
-        <h2>Dates</h2>
+        <h2 id="dates">Dates</h2>
         <ul class="event-dates__list">
           {{ range . }}
           <li class="event-date" data-date="{{ .date }}"{{ with .duration_hours }} data-duration="{{ . }}"{{ end }}>
@@ -200,7 +201,6 @@ html { overflow-x: hidden; }
           data-slug="{{ $.File.ContentBaseName }}">📅 Add next date to calendar</button>
       </section>
       {{ end }}
-
     </article>
   </div>
 
