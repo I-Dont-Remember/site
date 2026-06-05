@@ -9,4 +9,5 @@ tmp/
 .claude/
 node_modules
 .env
+.ics
 
