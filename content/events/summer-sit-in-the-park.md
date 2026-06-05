@@ -18,12 +18,12 @@ location_url = "https://maps.app.goo.gl/QHTyKNUjzrtCyAm36"
   note = "until sunset"
 [[event_dates]]
   date = "2026-06-15T23:00:00Z"
-  note = "⚠️ tentative"
 [[event_dates]]
   date = "2026-06-22T23:00:00Z"
-  note = "⚠️ tentative"
 [[event_dates]]
   date = "2026-06-29T23:00:00Z"
+[[event_dates]]
+  date = "2026-07-06T23:00:00Z"
   note = "⚠️ tentative"
 [[event_dates]]
   date = "2026-09-14T23:00:00Z"
@@ -47,13 +47,19 @@ Come sit in the park with me, aiming for Mon's all summer _(See the schedule)_
 - Food: eat before, or bring food from local restaurant
 - Dogs: totally welcome, there's many others nearby.
 
+## 📅 When does this happen?
+
+Timing: **roughly `6pm` - `sunset`🌇 _(around 830pm much of the summer)_**
+
+Dates: **June - early Sept**
+
+- I'll keep the schedule on this invite updated as best I can, but aiming for Monday's until roughly 9/14 when the daylight finally dips below 7pm.
+
 ## Ok but what is this?
 
 A mobile `Third Space`, if you will.
 
 As long as it isn't raining, I plan to sit outside in the park throughout the summer on a regular basis. Anyone is welcome to come join, whether we have 0 or 20 people show up.
-
-No need to RSVP, if you can make it just show up. If not, hopefully the next one!
 
 ## What will we do?
 
@@ -65,18 +71,6 @@ Great question.  You can:
 - Chat
 - People/dog watch
 - Whatever the heck you want, this is a shared third space
-
-Dogs are welcome, there's even a field people treat as a dog park right next to it.
-
-## 📅 When does this happen?
-
-Timing: **roughly `6pm` - `sunset`🌇 _(around 830pm much of the summer)_**
-
-- You're welcome to arrive early or leave later, this is a shared space and I'm not your mommy.
-
-Dates: **June - early Sept**
-
-- I'll keep the schedule on this invite updated as best I can, but aiming for Monday's until roughly 9/14 when the daylight finally dips below 7pm.
 
 ## 🍽️ I'm HUNGRY
 
