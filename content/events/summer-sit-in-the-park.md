@@ -15,7 +15,7 @@ location_url = "https://maps.app.goo.gl/QHTyKNUjzrtCyAm36"
   note = "test one solo, no you didn't miss it"
 [[event_dates]]
   date = "2026-06-08T23:00:00Z"
-  note = "until sunset"
+  note = "❌️ rain & thunderstorms - cancelled"
 [[event_dates]]
   date = "2026-06-15T23:00:00Z"
 [[event_dates]]
