@@ -8,6 +8,11 @@ emoji = "🍸🌆"
 timezone = "America/Chicago"
 location = "Kevin's building rooftop — 123 N Somewhere Ave"
 location_url = "https://maps.app.goo.gl/QHTyKNUjzrtCyAm36"
+cost = "Free"
+bring = "Something to share if you'd like — no pressure"
+food = "Drinks and snacks provided"
+dress = "Casual"
+rain_plan = "Moves inside if needed"
 
 [[event_dates]]
   date = "2026-07-12T22:00:00Z"

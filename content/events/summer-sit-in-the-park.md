@@ -8,6 +8,10 @@ emoji = "🌳☀️🧺"
 timezone = "America/Chicago"
 location = "Lincoln Park — near the Hamilton statue"
 location_url = "https://maps.app.goo.gl/QHTyKNUjzrtCyAm36"
+cost = "Free"
+bring = "A chair or blanket (I have 1–2 extra)"
+food = "Eat before or grab something nearby"
+rain_plan = "Cancelled if raining — check back"
 
 [[event_dates]]
   date = "2026-06-04T23:00:00Z"

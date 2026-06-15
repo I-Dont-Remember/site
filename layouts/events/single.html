@@ -173,6 +173,18 @@ html { overflow-x: hidden; }
   margin-top: 14px;
 }
 
+/* ── Quick-info meta ── */
+.event-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: .95rem;
+  color: #555;
+}
+
 /* ── Add-to-calendar button ── */
 .event-cal-btn { /* inherits .event-action-btn */ }
 </style>
@@ -203,12 +215,23 @@ html { overflow-x: hidden; }
 
       {{ with .Params.location }}<p class="event-location">📍 {{ if $.Params.location_url }}<a href="{{ $.Params.location_url }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}{{ . }}{{ end }}</p>{{ end }}
 
+      {{ $hasMeta := or .Params.cost .Params.bring .Params.food .Params.dress .Params.rain_plan }}
+      {{ if $hasMeta }}
+      <ul class="event-meta">
+        {{ with .Params.cost }}<li>💸 {{ . }}</li>{{ end }}
+        {{ with .Params.bring }}<li>🎒 {{ . }}</li>{{ end }}
+        {{ with .Params.food }}<li>🍽️ {{ . }}</li>{{ end }}
+        {{ with .Params.dress }}<li>👔 {{ . }}</li>{{ end }}
+        {{ with .Params.rain_plan }}<li>🌧️ {{ . }}</li>{{ end }}
+      </ul>
+      {{ end }}
+
       {{ with .Content }}<div class="event-body">{{ . }}</div>{{ end }}
 
          {{ with .Params.event_dates }}
       <hr />
       <section class="event-dates">
-        <h2 id="dates">{{ if gt (len .Params.event_dates) 1 }}All dates{{ else }}Date{{ end }}</h2>
+        <h2 id="dates">{{ if gt (len $.Params.event_dates) 1 }}All dates{{ else }}Date{{ end }}</h2>
         <ul class="event-dates__list">
           {{ range . }}
           <li class="event-date" data-date="{{ .date }}"{{ with .duration_hours }} data-duration="{{ . }}"{{ end }}>
