@@ -208,7 +208,7 @@ html { overflow-x: hidden; }
          {{ with .Params.event_dates }}
       <hr />
       <section class="event-dates">
-        <h2 id="dates">All dates</h2>
+        <h2 id="dates">{{ if gt (len .Params.event_dates) 1 }}All dates{{ else }}Date{{ end }}</h2>
         <ul class="event-dates__list">
           {{ range . }}
           <li class="event-date" data-date="{{ .date }}"{{ with .duration_hours }} data-duration="{{ . }}"{{ end }}>
@@ -221,7 +221,7 @@ html { overflow-x: hidden; }
           <button class="event-action-btn event-cal-btn" id="add-to-cal"
             data-title="{{ $.Title }}"
             data-location="{{ $.Params.location | default "" }}"
-            data-slug="{{ $.File.ContentBaseName }}">📅 Add next date to calendar</button>
+            data-slug="{{ $.File.ContentBaseName }}">📅 {{ if gt (len $.Params.event_dates) 1 }}Add next date to calendar{{ else }}Add to calendar{{ end }}</button>
           <button class="event-action-btn" id="share-btn"
             data-title="{{ $.Title }}"
             data-location="{{ $.Params.location | default "" }}">📤 Share link</button>
@@ -284,6 +284,8 @@ html { overflow-x: hidden; }
     var callout = document.getElementById('next-date-callout');
     var calloutDate = document.getElementById('next-date-text');
     if (callout && calloutDate) {
+      var labelEl = callout.querySelector('.event-next-callout__label');
+      if (labelEl) labelEl.textContent = items.length > 1 ? 'Next up' : 'When';
       calloutDate.textContent = nextItem.querySelector('.event-date__label').textContent;
       callout.style.display = '';
     }
@@ -293,7 +295,7 @@ html { overflow-x: hidden; }
   if (!btn) return;
 
   if (!nextItem) {
-    btn.textContent = '(all dates have passed)';
+    btn.textContent = items.length > 1 ? '(all dates have passed)' : '(this event has passed)';
     btn.disabled = true;
     return;
   }
