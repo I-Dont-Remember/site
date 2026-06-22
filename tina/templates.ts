@@ -90,7 +90,7 @@ export function event_postFields(): TinaField[] {
   ] as TinaField[];
 }
 
-export function stream_postFields(): TinaField[] {
+export function jottings_postFields(): TinaField[] {
   return [
     {
       type: "datetime",

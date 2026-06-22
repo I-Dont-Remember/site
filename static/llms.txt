@@ -14,7 +14,7 @@ He also co-hosts a podcast: [The Facade Project](https://facadeproject.com/).
 ## What's here
 
 - **Blog** — main writing, mix of personal essays and tech opinions
-- **Stream** — short-form takes, closer to tweets than posts
+- **Jottings** — short-form takes, quotes, and half-formed thoughts
 - **TIL** — quick "today I learned" technical notes
 - **Recipes** — small collection of things worth cooking again
 
