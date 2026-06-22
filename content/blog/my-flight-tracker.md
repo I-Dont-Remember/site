@@ -6,7 +6,7 @@ categories = [ "Software Development" ]
 tags = [ "flights", "Google Sheets", "AI" ]
 +++
 
-Have you ever had important tasks to get done, so instead you built a personal flight tracker dashboard? Great, me too!
+Recently I was procrastinating and my brain was searching for something to latch onto. After seeing a picture for a pretty looking flight tracker, I was sunk. I HAD to have one. It would not leave my mind no matter how much I told myself that it was silly and I'd probably never look at it.
 
 _"Ah, so obviously you had AI build you a quick snazzy version?"_
 
@@ -35,8 +35,6 @@ After reviewing my key requirements, Google Sheets won out. Really the only thin
 {{< /bootstrap-table >}}
 
 ## The process to decide
-
-Recently I was procrastinating and my brain was searching for something to latch onto. After seeing a picture for a pretty looking flight tracker, I was sunk. I HAD to have one. It would not leave my mind no matter how much I told myself that it was silly and I'd probably never look at it.
 
 Since I have the attention span of a weak-willed goat, there's a good chance this is a passing fad. I didn't want to invest in anything that would require long-term upkeep beyond occasionally adding a flight.
 
