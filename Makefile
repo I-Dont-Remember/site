@@ -45,13 +45,13 @@ clean:
 	rm -rf public public-snapshot resources/_gen
 
 serve:
-	hugo server -b localhost:1313
+	hugo server -b http://localhost:1313
 
 serve-drafts:
-	hugo server -D -b localhost:1313
+	hugo server -D -b http://localhost:1313
 
 tina:
-	npx tinacms dev -c "hugo server -b localhost:1313"
+	npx tinacms dev -c "hugo server -b http://localhost:1313"
 
 # Take a screenshot. Requires 'make serve' running in another terminal.
 # Usage: make screenshot URL=http://localhost:1313 [OUT=tmp/screenshot.png]

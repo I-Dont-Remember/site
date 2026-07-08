@@ -376,3 +376,12 @@ pre.code-with-copy { position: relative; }
 .copy-btn.copied { color: #2a7a3b; }
 .copy-btn.copied svg { display: none; }
 .copy-btn.copied::after { content: '✓'; font-size: 13px; line-height: 14px; display: block; }
+
+#TableOfContents {
+    margin: 0; /* Remove outer margins */
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
+
+#TableOfContents li {
+    margin-bottom: 0.5em; /* Reduce space between list items */
+}

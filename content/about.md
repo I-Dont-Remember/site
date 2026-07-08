@@ -20,7 +20,7 @@ toc = true
 
 Software engineer by day at Large Corp 🏛, and [all sorts of stuff by night - notary, reluctant runner, ordained, ....](#-professional-dabbler) since I can’t sit still. I’ve attempted to build a number of different SaaS products before realizing creating content is just as, if not more, fun than writing code you have to maintain 🤓. I’ve worn a lot of hats, from founder, developer, writer, podcaster, open source contributor, and more. Investigating a growing interest in writing, Developer & User Experience, No-code, entrepreneurship, and cyber security.
 
-### Contact me
+## Contact me
 
 If you'd like to reach out for whatever reason, easiest place to reach me is through [Twitter](https://twitter.com/maybekq) or [LinkedIn](https://linkedin.com/in/quinnkevinp) or my proxy email address at [kevinquinnfun@notxss.anonaddy.com](mailto:kevinquinnfun@notxss.anonaddy.com).
 
@@ -44,7 +44,7 @@ Ended up studying Computer Engineering in my first year of university, but the c
 
 - If you’re looking for a code monkey to optimize clicks, we’ll both be disappointed 🙈.
 - Know enough to be dangerous across the stack, from [infra with Ansible](https://github.com/I-Dont-Remember/AnsibleLaptop) to APIs in Python to SPAs like React, but most effective working with non-GUI projects — CLIs, APIs, backend systems. Frontend just ain't my jam long-term.
-  - _Slack bots are the most fun to work with, because you can do "front-end" UX work without having to deal with CSS - their [Block Kit framework](https://api.slack.com/block-kit) just takes JSON and then renders things all pretty for you._
+    - _Slack bots are the most fun to work with, because you can do "front-end" UX work without having to deal with CSS - their [Block Kit framework](https://api.slack.com/block-kit) just takes JSON and then renders things all pretty for you._
 - I focus on building products with value, rather than being obsessed with any particular language or tool. Sometimes the best language to use is the Delete button.
 - Obsessed with documentation and automation - my memory sucks, so if it's not written down somewhere easy to find, it doesn't exist. Every team I've ever been on I've been a champion for documenting processes in our repos and writing scripts for any annoying tasks.
 - Exploring an interest in developer experience & UX
@@ -67,7 +67,7 @@ Editor & general helper for a [tech satire site](https://justtechdebt.com)
 
 ### 🚯 Hoarding Minimalist
 
-Embraced minimalism, but I struggle to throw things away that are “perfectly good” (spoiler: to most people they are already trash). 
+Embraced minimalism, but I struggle to throw things away that are “perfectly good” (spoiler: to most people they are already trash).
 
 ### 🥣 Serial Creator
 

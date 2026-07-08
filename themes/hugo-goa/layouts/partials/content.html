@@ -68,7 +68,12 @@
       {{ end }}
     {{ end }}
     {{ if and ( eq .Params.toc true) (gt .WordCount 400 ) }}
-        {{ .TableOfContents }}
+          <div class="panel panel-warning">
+            <div class="panel-heading"><strong>Table of Contents</strong></div>
+                <div class="panel-body">
+              {{ .TableOfContents -}}
+            </div>
+          </div>
     {{ end }}
     {{- with .Content -}}
       {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" aria-label="Anchor" style="font-size: 70%"> 🔗&#xFE0E;</a> ${3}` | safeHTML }}
