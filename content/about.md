@@ -34,6 +34,10 @@ If you are curious what it's like to work with me, I have been described as:
 Unfortunately no one has used _"impossibly handsome"_ or _"The Rock"_ as their descriptors, but someday....
 {{< /bootstrap-panel >}}
 
+## Anonymous Feedback
+
+If you're someone who knows me well, I'd very much appreciate you giving honest feedback and helping me notice blind spots in my life! Submit anonymously here: https://www.admonymous.co/kevin-quinn
+
 ## How I got into writing code
 
 Ended up studying Computer Engineering in my first year of university, but the classes I started with didn't catch my attention, and I assumed it wasn't for me. Amidst cramming for exams, I attempted to write a small Python script to spam [a certain well-known music video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) in new browser tabs on my friends computer. I had no idea how to distribute my mildly-malicious program (thereby only spamming myself), but the seed was planted 🌱. What my courses were missing that this ~10 line script had was the capability to interact with the computer -- unlike my classes building Java apps in the IDE CLI I didn't grasp yet. Thus, the spark grew into into my modern-day self of Jira tickets and [**LGTM**](https://justtechdebt.com/articles/dev-already-abandoned-new-years-resolution-to-actually-read-prs/).
