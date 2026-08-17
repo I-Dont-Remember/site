@@ -4,7 +4,7 @@
         {{ $related := .Site.RegularPages.Related . | first 5 }}
         {{ range first 5 $related }}
         <li class="list-entry">
-          <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+          <a class="list-entry-link" href="{{ .Permalink }}">{{ if not .Title }} {{ .File.BaseFileName | humanize  }} {{ else }} {{ .Title }} {{ end }}</a>
           <p class="meta">
             {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat | upper }}&comma; {{ .ReadingTime }} minute read{{end}}
             <span class="category">
